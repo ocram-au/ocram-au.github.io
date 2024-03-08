@@ -5,17 +5,52 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="./node_modules/material-design-lite/material.min.css">
-    <script src="./node_modules/material-design-lite/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="./node_modules/animate.css/animate.min.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
     <title>ocram</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        /* h1 {
+            height: 100%;
+            text-align: center;
+            font-size: 10em;
+        } */
+        .companyHeader {
+            text-align: center;
+            font-size: 10em;
+        }
+        .siteTitle {
+            color: #f35626;
+            background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: hue 60s infinite linear;
+            height: 100%;
+        }
+        @keyframes hue {
+            from {
+                filter: hue-rotate(0deg);
+            }
+
+            to {
+                filter: hue-rotate(-360deg);
+            }
+        }
+        #moto {
+            text-align: center;
+            font-size: 2em;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1 class="siteTitle mega">ocram 123</h1>
+        <div class="companyHeader">ocram</h1>
     </header>
-    <script src="bundle.js"></script>
+    <div id="moto">Its does not cost the earth to view the earth</div>
 </body>
 </html>
