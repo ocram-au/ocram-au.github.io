@@ -77,7 +77,10 @@ For example if a GIS web application can consume data from another application, 
 No system should store or ask for a users credentials directly to access data or processes from another system.</td>
                         <td class="mdl-data-table__cell--non-numeric">There are a number of ways data from 3rd party systems can be accessed. One of the most common is using a token which is associated with the application which is asking for access and has an expiration date. This means the token and only be used by the application and does not work after a certain date.
 A secure way a token can be generated is the application url is registered with the 3rd part system it wants to access. When the application tries to access this data it checks if a token is sent and valid. If not token is present, the it will check to see if the url of the application is registered and allowed, when it is, the 3rd party system will go to its authentication process to authenticate the user. When successful a token will be generated and passed back to the requesting application via a callback url. This callback will initiate a process to store the token and subsequent calls to the 3rd party system will pass the token to authorise access.
-<a href="https://developers.arcgis.com/documentation/mapping-apis-and-services/security/app-credential-authentication/">ESRI ArcGIS Application Credential Authentication</a> is an example of how this is done.
+Examples of how this is done:
+<a href="https://developers.arcgis.com/documentation/mapping-apis-and-services/security/app-credential-authentication/">ESRI ArcGIS Application Credential Authentication</a>
+<a href="https://developer.bentley.com/apis/overview/authorization/">Bentley API OAUTH2 Authorisation</a>
+
                         </td>
                       </tr>
                       <tr>
