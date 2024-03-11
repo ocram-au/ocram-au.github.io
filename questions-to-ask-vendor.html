@@ -16,110 +16,91 @@
 <body>
     <div id="container">
         <div class="homeLink"><a href="index.html" >ocram home</a></div>
-        <h2>Questions to Ask Vendor Proposing a Solution or Application</h1>
+        <h2>Questions to Ask Vendor Proposing a Solution or Application</h2>
         <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--12-col">Bamboozled by what vendors are proposing, especially when just starting out. No worries use the following questions to cover some areas which are important to consider. 
+          <div>Bamboozled by what vendors are proposing, especially when just starting out. No worries use the following questions to cover some areas which are important to consider. 
                 If they cannot answer these clearly, concisely and in a timely fashion, or indicate "they are working on it", then their product/system/service may not be mature enough to provide the service and security you should expect, or simply they do not know what they are talking about.
                 <br/>These are specific to Geographic Information Systems (GIS) and Geospatial applications such as Digital Twins, which we all know is just a 4D GIS :).
                 <br/>Some of the information here is specific to an Australian context, but could be adapted for any country, IE. Metadata standard.
                 <br/>This is an evolving list. Come back regularly to see updates, or follow <a href="https://www.linkedin.com/in/marco-giana/" target="_blank">Marco Giana on LinkedIn</a> where updates will be posted.
-        </div>
-        <div class="mdl-grid">
-                <table class="mdl-data-table">
-                    <thead>
-                      <tr>
-                        <th class="mdl-data-table__cell--non-numeric">Topic</th>
-                        <th class="mdl-data-table__cell--non-numeric">Summary</th>
-                        <th class="mdl-data-table__cell--non-numeric">Question</th>
-                        <th class="mdl-data-table__cell--non-numeric">Reason</th>
-                        <th class="mdl-data-table__cell--non-numeric">Expectation</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Security</td>
-                        <td class="mdl-data-table__cell--non-numeric">Granular Security</td>
-                        <td class="mdl-data-table__cell--non-numeric">As well as organisational wide access, can individual datasets be secure to group of users, or individual user?</td>
-                        <td class="mdl-data-table__cell--non-numeric">Some data may be restricted due to sensitivity, hence only a subset of users should be able to access.</td>
-                        <td class="mdl-data-table__cell--non-numeric">Would expect to be provided</td>
-                      </tr>
-                      <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Security</td>
-                        <td class="mdl-data-table__cell--non-numeric">Integrated Security</td>
-                        <td class="mdl-data-table__cell--non-numeric">Does it support Single Sign On (SSO)?</td>
-                        <td class="mdl-data-table__cell--non-numeric">SSO is an authentication scheme that allows a user to log in with a single ID, which means once you have logged on to your computer, the application should have able undertake authorisation based on the credentials the use used to log into the computer without having to re-enter credentials.
-This enhances the security of the system as when a use leaves and organisational, access to the application is automatically removed when their organisational  login is disabled.
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric">Would expect to be provided</td>
-                      </tr>
-                      <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Security</td>
-                        <td class="mdl-data-table__cell--non-numeric">Security Documentation</td>
-                        <td class="mdl-data-table__cell--non-numeric">Can the vendor provide links to security documentation?</td>
-                        <td class="mdl-data-table__cell--non-numeric">Having official documentation allows any organisation staff to use the documentation as reference to answer any questions which may not have been covered.
-For example security specialist will have a set of criteria which the system needs to pass before it can be used for a pilot or even production. These documents saves having to have meetings to clarify specific questions.
-Also any claims by the vendor should be backed up with official documentation, not just their say so or via emails.
-Any vendor which uses AWS, Azure or andy other reputable cloud service provider for their data storage and application service should immediately be able to provide links to these cloud services security documents.
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric">Would expect to be provided.
-ESRI ArcGIS: <a href="https://trust.arcgis.com/en/documents/" target="_blank">ArcGIS Trust Center Documents</a>.
-Microsoft Azure: <a href="https://learn.microsoft.com/en-us/azure/security/">Azure Security Documentation</a>.
-Amazon AWS: <a href="https://docs.aws.amazon.com/security/">AWS Security Documentation</a>.
-</a></td>
-                      </tr>
-                      <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Security</td>
-                        <td class="mdl-data-table__cell--non-numeric">3rd Party Application Authorisation</td>
-                        <td class="mdl-data-table__cell--non-numeric">How does the system integrate with 3rd party systems? Does it store username and password of the other system, or does it ask for a token to use to gain access?</td>
-                        <td class="mdl-data-table__cell--non-numeric">THIS IS EXTREMELY IMPORTANT TO UNDERSTAND!
-Any system which stores the username and password, or credentials of another system is a MAJOR SECURITY RISK! If it does DO NOT USE IT!
-For example if a GIS web application can consume data from another application, for example <a href="https://www.teambinder.com" target="_blank">TeamBinder</a> and that application asks for your username and password to synchronies the data then this is a major security risk.
-No system should store or ask for a users credentials directly to access data or processes from another system.</td>
-                        <td class="mdl-data-table__cell--non-numeric">There are a number of ways data from 3rd party systems can be accessed. One of the most common is using a token which is associated with the application which is asking for access and has an expiration date. This means the token and only be used by the application and does not work after a certain date.
-A secure way a token can be generated is the application url is registered with the 3rd part system it wants to access. When the application tries to access this data it checks if a token is sent and valid. If not token is present, the it will check to see if the url of the application is registered and allowed, when it is, the 3rd party system will go to its authentication process to authenticate the user. When successful a token will be generated and passed back to the requesting application via a callback url. This callback will initiate a process to store the token and subsequent calls to the 3rd party system will pass the token to authorise access.
-Examples of how this is done:
-<a href="https://developers.arcgis.com/documentation/mapping-apis-and-services/security/app-credential-authentication/">ESRI ArcGIS Application Credential Authentication</a>
-<a href="https://developer.bentley.com/apis/overview/authorization/">Bentley API OAUTH2 Authorisation</a>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
+            <h3>Security</h3>
+            <h4>Granular Security</h4>
+            <div class="question">As well as organisational wide access, can individual datasets be secure to group of users, or individual user?</div>
+            <div class="reason">Some data may be restricted due to sensitivity, hence only a subset of users should be able to access.</div>
+            
+            <h4>Integrated Security</h4>
+            <div class="question">Does it support Single Sign On (SSO)?</div>
+            <div class="reason">SSO is an authentication scheme that allows a user to log in with a single ID, which means once you have logged on to your computer, the application should have able undertake authorisation based on the credentials the use used to log into the computer without having to re-enter credentials.
+              This enhances the security of the system as when a use leaves and organisational, access to the application is automatically removed when their organisational login is disabled.</div>
 
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Application</td>
-                        <td class="mdl-data-table__cell--non-numeric">Map Projection</td>
-                        <td class="mdl-data-table__cell--non-numeric">What map project is displayed to the user?</td>
-                        <td class="mdl-data-table__cell--non-numeric">With the release of Google Maps, <a href="https://epsg.io/900913" target="_blank">Google Maps Global Mercator</a> has become a popular default map projection to use and is supported by many mapping applications. This projection is more commonly now known as <a href="https://epsg.io/3857" target="_blank">WGS 84 / Pseudo-Mercator</a>. This map projection does serve a purpose at a "Global" scale, that is when data covers the entire earth this would be a map projection to consider.
-Most specialist applications in my opinion are at a local, region, state or country scale, and as such should use the appropriate scale.
-EG. Melbourne: <a href="https://epsg.io/7855" target="_blank">GDA2020 / MGA zone 55</a>, Victoria: <a href="https://epsg.io/7899" target="_blank">GDA2020 / Vicgrid</a>, Australia: <a href="https://epsg.io/7844" target="_blank">GDA2020</a></td>
-                        <td class="mdl-data-table__cell--non-numeric">Would expect to use map projection relative to the area. Usually data is collected in the relevant map projection or re-projected to that projection from GPS collected data. If the data is re-projected to be displayed in in the application other than the projection used for data collection, then errors in the data will be introduced. This is especially important to consider when dealing with critical infrastructure data such as utilities.</td>
-                      </tr>
-                      <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Data</td>
-                        <td class="mdl-data-table__cell--non-numeric">Metadata</td>
-                        <td class="mdl-data-table__cell--non-numeric">Does the application support read and/or writing of AS/NZS ISO 19115.1:2015 Geographic information - Metadata?</td>
-                        <td class="mdl-data-table__cell--non-numeric">Metadata is the key to understanding the quality, relevance, and currency of the data you are viewing. Without it how can you be sure it is any good?
-Every Geospatial application and process must be able to produce and consume metadata. Anything other than that indicates it is not worthy to use.
-                        </td>
-                        <td class="mdl-data-table__cell--non-numeric">Would expect to be provided.
-Metadata standards have been around since the 1980s.
-The current standard <a href="https://www.standards.org.au/standards-catalogue/standard-details?designation=as-nzs-iso-19115-1-2015">AS/NZS ISO 19115.1:2015 Geographic information - Metadata</a> was first released in 2003</td>
-                      </tr>
-                      <tr>
-                        <td class="mdl-data-table__cell--non-numeric">Data</td>
-                        <td class="mdl-data-table__cell--non-numeric">Authoritative Source</td>
-                        <td class="mdl-data-table__cell--non-numeric">Does the application use a authoritative and reliable data source?</td>
-                        <td class="mdl-data-table__cell--non-numeric">When pilot program has been agreed, vendors will usually create a project of the area of interest using freely available data. Ensuring reliable data is used for the features such as base maps during the pilot will ensure continual use during production.</td>
-                        <td class="mdl-data-table__cell--non-numeric">Depending of location, one would expect the Authoritative Data provider for the region to be used for base data such a roads, address, property.
-EG. Victoria: <a href="https://www.land.vic.gov.au/maps-and-spatial/spatial-data/vicmap-catalogue" target="_blank">Vicmap</a>
-                        </tr>
-                      <tr>
-                        <td class="mdl-data-table__cell--non-numeric">General</td>
-                        <td class="mdl-data-table__cell--non-numeric">Claims and Statements</td>
-                        <td class="mdl-data-table__cell--non-numeric">Can all claims and statements be backed-up with official documentation?</td>
-                        <td class="mdl-data-table__cell--non-numeric">You have something solid to refer to later on. It also builds trust with the vendor that what they are saying is true.</td>
-                        <td class="mdl-data-table__cell--non-numeric">Would expect to be provided as documentation (PDF) or links to their website or sites of utilised infrastructure.</td>
-                      </tr>
-                    </tbody>
-                  </table>
+            <h4>Security Documentation</h4>
+            <div class="question">Can the vendor provide links to security documentation?</div>
+            <div class="reason">Having official documentation allows any organisation staff to use the documentation as reference to answer any questions which may not have been covered.
+              For example security specialist will have a set of criteria which the system needs to pass before it can be used for a pilot or even production. These documents saves having to have meetings to clarify specific questions.
+              Also any claims by the vendor should be backed up with official documentation, not just their say so or via emails.
+              Any vendor which uses AWS, Azure or andy other reputable cloud service provider for their data storage and application service should immediately be able to provide links to these cloud services security documents.</div>
+            <div class="example">
+              <br/>ESRI ArcGIS: <a href="https://trust.arcgis.com/en/documents/" target="_blank">ArcGIS Trust Center Documents</a>.
+              <br/>Microsoft Azure: <a href="https://learn.microsoft.com/en-us/azure/security/">Azure Security Documentation</a>.
+              <br/>Amazon AWS: <a href="https://docs.aws.amazon.com/security/">AWS Security Documentation</a>.
+            </div>
+
+            <h4>3rd Party Application Authorisation</h4>
+            <div class="question">How does the system integrate with 3rd party systems? Does it store username and password of the other system, or does it ask for a token to use to gain access?</div>
+            <div class="reason">THIS IS EXTREMELY IMPORTANT TO UNDERSTAND!
+              Any system which stores the username and password, or credentials of another system is a MAJOR SECURITY RISK! If it does DO NOT USE IT!
+              For example if a GIS web application can consume data from another application, for example <a href="https://www.teambinder.com" target="_blank">TeamBinder</a> and that application asks for your username and password to synchronies the data then this is a major security risk.
+              No system should store or ask for a users credentials directly to access data or processes from another system.
+              There are a number of ways data from 3rd party systems can be accessed. One of the most common is using a token which is associated with the application which is asking for access and has an expiration date. This means the token and only be used by the application and does not work after a certain date.
+A secure way a token can be generated is the application url is registered with the 3rd part system it wants to access. When the application tries to access this data it checks if a token is sent and valid. If not token is present, the it will check to see if the url of the application is registered and allowed, when it is, the 3rd party system will go to its authentication process to authenticate the user. When successful a token will be generated and passed back to the requesting application via a callback url. This callback will initiate a process to store the token and subsequent calls to the 3rd party system will pass the token to authorise access.
+            </div>
+            <div class="example">
+              <br/><a href="https://developers.arcgis.com/documentation/mapping-apis-and-services/security/app-credential-authentication/">ESRI ArcGIS Application Credential Authentication</a>
+              <br/><a href="https://developer.bentley.com/apis/overview/authorization/">Bentley API OAUTH2 Authorisation</a>
+            </div>
+
+            <h3>Application</h3>
+            <h4>Map Projection</h4>
+            <div class="question">What map project is displayed to the user?</div>
+            <div class="reason">With the release of Google Maps, <a href="https://epsg.io/900913" target="_blank">Google Maps Global Mercator</a> has become a popular default map projection to use and is supported by many mapping applications. This projection is now more commonly known as <a href="https://epsg.io/3857" target="_blank">WGS 84 / Pseudo-Mercator</a>, and is a projection to consider when representing data at a "Global" scale.
+              Most specialist Geospatial applications in my opinion are at a local, region, state or country scale, and as such should use the appropriate scale.
+              EG. Melbourne: <a href="https://epsg.io/7855" target="_blank">GDA2020 / MGA zone 55</a>, Victoria: <a href="https://epsg.io/7899" target="_blank">GDA2020 / Vicgrid</a>, Australia: <a href="https://epsg.io/7844" target="_blank">GDA2020</a>
+              Would expect to use map projection relative to the area. Usually data is collected in the relevant map projection or re-projected to that projection from GPS collected data. If the data is re-projected to be displayed in in the application other than the projection used for data collection, then errors in the data will be introduced. This is especially important to consider when dealing with critical infrastructure data such as utilities and should be noted in the Metadata.
+            </div>
+            
+            <h3>Data</h3>
+            <h4>Metadata</h4>
+            <div class="question">Does the application support read and/or writing of AS/NZS ISO 19115.1:2015 Geographic information - Metadata?</div>
+            <div class="reason">Metadata is the key to understanding the quality, relevance, and currency of the data you are viewing. Without it how can you be sure it is any good?
+              Every Geospatial application and process must be able to produce and consume metadata. Anything other than that indicates it is not worthy to use.
+              <br/>Metadata standards have been around since the 1980s.
+              The current standard <a href="https://www.standards.org.au/standards-catalogue/standard-details?designation=as-nzs-iso-19115-1-2015">AS/NZS ISO 19115.1:2015 Geographic information - Metadata</a> was first released in 2003
+            </div>
+            
+            <h4>Authoritative Source</h4>
+            <div class="question">Does the application use a authoritative and reliable data source?</div>
+            <div class="reason">When pilot program has been agreed, vendors will usually create a project of the area of interest using freely available data. Ensuring reliable data is used for the features such as base maps during the pilot will ensure continual use during production.
+              Depending of location, one would expect the Authoritative Data provider for the region to be used for base data such a roads, address, property.
+            </div>
+            <div class="example">
+            Victoria: <a href="https://www.land.vic.gov.au/maps-and-spatial/spatial-data/vicmap-catalogue" target="_blank">Vicmap</a>
+            </div>
+            
+            <h3>General</h3>
+            <h4>Claims and Statements</h4>
+            <div class="question">Can all claims and statements be backed-up with official documentation?</div>
+            <div class="reason">You have something solid to refer to later on. It also builds trust with the vendor that what they are saying is true.
+              Would expect to be provided as documentation (PDF) or links to their website or sites of utilised infrastructure.
+            </div>
+            
+            <!-- <h4></h4>
+            <div class="question"></div>
+            <div class="reason"></div>
+            <div class="example"></div> -->
+
+          </div>
         </div>
     </div>
 </body>

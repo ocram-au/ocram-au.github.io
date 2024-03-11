@@ -41,4 +41,26 @@ html, body {
 a {
     color: blue;
 }
+.question:before {
+    content:"Question: ";
+    font-weight: bold;
+}
+.question {
+    padding-left: 1em;
+}
+.reason:before {
+    content:"Reason: ";
+    font-weight: bold;
+}
+.reason {
+    padding-left: 1em;
+}
+.example:before {
+    content:"Example: ";
+    font-weight: bold;
+}
+.example {
+    padding-left: 1em;
+}
+
 
