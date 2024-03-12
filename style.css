@@ -62,5 +62,12 @@ a {
 .example {
     padding-left: 1em;
 }
+.reference:before {
+    content:"Reference: ";
+    font-weight: bold;
+}
+.reference {
+    padding-left: 1em;
+}
 
 

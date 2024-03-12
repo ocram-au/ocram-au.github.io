@@ -18,10 +18,10 @@
         <div class="homeLink"><a href="index.html" >ocram home</a></div>
         <h2>Questions to Ask Vendor Proposing a Solution or Application</h2>
         <div class="mdl-grid">
-          <div>Bamboozled by what vendors are proposing, especially when just starting out. No worries use the following questions to cover some areas which are important to consider. 
-                If they cannot answer these clearly, concisely and in a timely fashion, or indicate "they are working on it", then their product/system/service may not be mature enough to provide the service and security you should expect, or simply they do not know what they are talking about.
-                <br/>These are specific to Geographic Information Systems (GIS) and Geospatial applications such as Digital Twins, which we all know is just a 4D GIS :).
-                <br/>Some of the information here is specific to an Australian context, but could be adapted for any country, IE. Metadata standard.
+          <div>Bamboozled by what vendors are proposing within the GIS, Geospatial domain, especially when just starting out. No worries, use the following questions as a starting point to cover some areas which are important to consider. 
+                If they cannot answer these clearly, concisely and in a timely fashion, or indicate "they are working on it", then their product/solution may not be mature enough to provide the service and security you should expect, or simply they do not know what they are talking about.
+                <br/>These are specific to Geographic Information Systems (GIS) and Geospatial systems/applications such as Digital Twins, which we all know is just a 4D GIS :).
+                <br/>Some of the information here is specific to an Australian context, but could be adapted for any country, such as Metadata standard.
                 <br/>This is an evolving list. Come back regularly to see updates, or follow <a href="https://www.linkedin.com/in/marco-giana/" target="_blank">Marco Giana on LinkedIn</a> where updates will be posted.
           </div>
           <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
@@ -29,34 +29,42 @@
             <h4>Granular Security</h4>
             <div class="question">As well as organisational wide access, can individual datasets be secure to group of users, or individual user?</div>
             <div class="reason">Some data may be restricted due to sensitivity, hence only a subset of users should be able to access.</div>
-            
+            <div class="reference">
+              See Microsoft Security 101 <a href="https://www.microsoft.com/en-au/security/business/security-101/what-is-access-control">What is access control?</a>
+            </div>
+
             <h4>Integrated Security</h4>
             <div class="question">Does it support Single Sign On (SSO)?</div>
-            <div class="reason">SSO is an authentication scheme that allows a user to log in with a single ID, which means once you have logged on to your computer, the application should have able undertake authorisation based on the credentials the use used to log into the computer without having to re-enter credentials.
-              This enhances the security of the system as when a use leaves and organisational, access to the application is automatically removed when their organisational login is disabled.</div>
+            <div class="reason">SSO is an authentication scheme that allows a user to log in with a single ID, which means once you have logged on to your computer, the application should be able undertake authorisation based on the credentials used to log into the computer without the user having to re-enter then, or enter credentials specific to the application.
+              This enhances the security of the system. For example, when a user leaves an organisational, access to the application is automatically removed when their organisational login is disabled.</div>
+            <div class="reference">
+              See Microsoft <a href="https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/what-is-single-sign-on">What is single sign-on?</a>
+            </div>
 
             <h4>Security Documentation</h4>
             <div class="question">Can the vendor provide links to security documentation?</div>
-            <div class="reason">Having official documentation allows any organisation staff to use the documentation as reference to answer any questions which may not have been covered.
-              For example security specialist will have a set of criteria which the system needs to pass before it can be used for a pilot or even production. These documents saves having to have meetings to clarify specific questions.
-              Also any claims by the vendor should be backed up with official documentation, not just their say so or via emails.
-              Any vendor which uses AWS, Azure or andy other reputable cloud service provider for their data storage and application service should immediately be able to provide links to these cloud services security documents.</div>
-            <div class="example">
+            <div class="reason">
+              Any security claims by the vendor should be backed up with official documentation, not just their say so or statements in emails.
+              Having official security documentation allows any organisation staff to use the documentation as reference to answer any questions which may not have been covered.
+              For example security specialist will have a set of criteria which the system needs to pass before it can be used for a pilot let alone production. These documents removes the need to have meetings to clarify specific questions.
+              Any vendor which uses AWS, Azure or other reputable cloud service provider for their data storage and application service should immediately be able to provide links to these cloud services security documents.
+              Documentation ideally would include information such data storage and fail over locations, and frequency of penetration tests, as well as a many other security details.</div>
+            <div class="reference">
               <br/>ESRI ArcGIS: <a href="https://trust.arcgis.com/en/documents/" target="_blank">ArcGIS Trust Center Documents</a>.
               <br/>Microsoft Azure: <a href="https://learn.microsoft.com/en-us/azure/security/">Azure Security Documentation</a>.
               <br/>Amazon AWS: <a href="https://docs.aws.amazon.com/security/">AWS Security Documentation</a>.
             </div>
 
             <h4>3rd Party Application Authorisation</h4>
-            <div class="question">How does the system integrate with 3rd party systems? Does it store username and password of the other system, or does it ask for a token to use to gain access?</div>
+            <div class="question">How does the system integrate with 3rd party systems? Does it store username and password of the other systems, or does it ask for a token to gain access?</div>
             <div class="reason">THIS IS EXTREMELY IMPORTANT TO UNDERSTAND!
-              Any system which stores the username and password, or credentials of another system is a MAJOR SECURITY RISK! If it does DO NOT USE IT!
+              Any system which stores the username and password, or credentials of another system is a MAJOR SECURITY RISK! If it does, undertake an extensive security assessment to determine where and how this information is stored and encrypted.
               For example if a GIS web application can consume data from another application, for example <a href="https://www.teambinder.com" target="_blank">TeamBinder</a> and that application asks for your username and password to synchronies the data then this is a major security risk.
               No system should store or ask for a users credentials directly to access data or processes from another system.
-              There are a number of ways data from 3rd party systems can be accessed. One of the most common is using a token which is associated with the application which is asking for access and has an expiration date. This means the token and only be used by the application and does not work after a certain date.
-A secure way a token can be generated is the application url is registered with the 3rd part system it wants to access. When the application tries to access this data it checks if a token is sent and valid. If not token is present, the it will check to see if the url of the application is registered and allowed, when it is, the 3rd party system will go to its authentication process to authenticate the user. When successful a token will be generated and passed back to the requesting application via a callback url. This callback will initiate a process to store the token and subsequent calls to the 3rd party system will pass the token to authorise access.
+              There are a number of ways data from 3rd party systems can be accessed. One of the most common methods is using a token which is associated with the application to authorise access and has an expiration date. This means the token can only be used by the application and does not work after a certain date.
+A secure way a token can be generated is the application url is registered with the 3rd party system it wants to access. When the application tries to access this data it checks if a token is sent and valid. If a token is not present, the it will check to see if the url of the application is registered and allowed. If it is, the 3rd party system will undertake its authentication process to authenticate the user. When successful a token will be generated and passed back to the requesting application via a callback url. This callback will initiate a process to store the token and subsequent calls to the 3rd party system will pass the token to authorise access.
             </div>
-            <div class="example">
+            <div class="reference">
               <br/><a href="https://developers.arcgis.com/documentation/mapping-apis-and-services/security/app-credential-authentication/">ESRI ArcGIS Application Credential Authentication</a>
               <br/><a href="https://developer.bentley.com/apis/overview/authorization/">Bentley API OAUTH2 Authorisation</a>
             </div>
@@ -68,6 +76,9 @@ A secure way a token can be generated is the application url is registered with 
               Most specialist Geospatial applications in my opinion are at a local, region, state or country scale, and as such should use the appropriate scale.
               EG. Melbourne: <a href="https://epsg.io/7855" target="_blank">GDA2020 / MGA zone 55</a>, Victoria: <a href="https://epsg.io/7899" target="_blank">GDA2020 / Vicgrid</a>, Australia: <a href="https://epsg.io/7844" target="_blank">GDA2020</a>
               Would expect to use map projection relative to the area. Usually data is collected in the relevant map projection or re-projected to that projection from GPS collected data. If the data is re-projected to be displayed in in the application other than the projection used for data collection, then errors in the data will be introduced. This is especially important to consider when dealing with critical infrastructure data such as utilities and should be noted in the Metadata.
+            </div>
+            <div class="reference">
+              See the following ArcGIS Blog <a href="https://www.esri.com/arcgis-blog/products/arcgis-enterprise/mapping/measuring-distances-and-areas-when-your-map-uses-the-mercator-projection/">Measuring distances and areas when your map uses the Mercator projection</a>
             </div>
             
             <h3>Data</h3>
@@ -84,7 +95,7 @@ A secure way a token can be generated is the application url is registered with 
             <div class="reason">When pilot program has been agreed, vendors will usually create a project of the area of interest using freely available data. Ensuring reliable data is used for the features such as base maps during the pilot will ensure continual use during production.
               Depending of location, one would expect the Authoritative Data provider for the region to be used for base data such a roads, address, property.
             </div>
-            <div class="example">
+            <div class="reference">
             Victoria: <a href="https://www.land.vic.gov.au/maps-and-spatial/spatial-data/vicmap-catalogue" target="_blank">Vicmap</a>
             </div>
             
@@ -98,7 +109,7 @@ A secure way a token can be generated is the application url is registered with 
             <!-- <h4></h4>
             <div class="question"></div>
             <div class="reason"></div>
-            <div class="example"></div> -->
+            <div class="reference"></div> -->
 
           </div>
         </div>
