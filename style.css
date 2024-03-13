@@ -23,6 +23,9 @@ html, body {
         filter: hue-rotate(-360deg);
     }
 }
+#logo {
+    max-width: 100%;
+}
 #moto {
     text-align: center;
     font-size: 2em;
