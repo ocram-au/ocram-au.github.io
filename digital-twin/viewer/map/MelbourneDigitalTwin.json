@@ -1,0 +1,1811 @@
+{
+    "operationalLayers": [
+        {
+            "id": "",
+            "title": "Google Photorealistic 3D Tiles",
+            "url": "https://tile.googleapis.com/v1/3dtiles/root.json",
+            "customParameters": {
+                "key": "AIzaSyBQ7Wj99aTxRqET-22qYWGFcDCWgVDt89A"
+            },
+            "layerType": "IntegratedMesh3DTilesLayer",
+            "visibility": false
+        },
+        {
+            "id": "",
+            "title": "Open Data",
+            "layers": [
+                {
+                    "layerType": "GeoJSON",
+                    "title": "Development Activity",
+                    "url": "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/development-activity-monitor/exports/geojson",
+                    "visibility": false,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": "Development Activity",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "data_format",
+                                "isEditable": true,
+                                "label": "Data Format",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "development_key",
+                                "isEditable": true,
+                                "label": "Development Key",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "status",
+                                "isEditable": true,
+                                "label": "Status",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "year_completed",
+                                "isEditable": true,
+                                "label": "Year Completed",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "clue_small_area",
+                                "isEditable": true,
+                                "label": "Clue Small Area",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "clue_block",
+                                "isEditable": true,
+                                "label": "Clue Block",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "street_address",
+                                "isEditable": true,
+                                "label": "Street Address",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "property_id",
+                                "isEditable": true,
+                                "label": "Property Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "property_id_2",
+                                "isEditable": true,
+                                "label": "Property Id 2",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "property_id_3",
+                                "isEditable": true,
+                                "label": "Property Id 3",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "property_id_4",
+                                "isEditable": true,
+                                "label": "Property Id 4",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "property_id_5",
+                                "isEditable": true,
+                                "label": "Property Id 5",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "floors_above",
+                                "isEditable": true,
+                                "label": "Floors Above",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "resi_dwellings",
+                                "isEditable": true,
+                                "label": "Resi Dwellings",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "studio_dwe",
+                                "isEditable": true,
+                                "label": "Studio Dwe",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "one_bdrm_dwe",
+                                "isEditable": true,
+                                "label": "One Bdrm Dwe",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "two_bdrm_dwe",
+                                "isEditable": true,
+                                "label": "Two Bdrm Dwe",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "three_bdrm_dwe",
+                                "isEditable": true,
+                                "label": "Three Bdrm Dwe",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "student_apartments",
+                                "isEditable": true,
+                                "label": "Student Apartments",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "student_beds",
+                                "isEditable": true,
+                                "label": "Student Beds",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "student_accommodation_units",
+                                "isEditable": true,
+                                "label": "Student Accommodation Units",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "institutional_accom_beds",
+                                "isEditable": true,
+                                "label": "Institutional Accom Beds",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "hotel_rooms",
+                                "isEditable": true,
+                                "label": "Hotel Rooms",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "serviced_apartments",
+                                "isEditable": true,
+                                "label": "Serviced Apartments",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "hotels_serviced_apartments",
+                                "isEditable": true,
+                                "label": "Hotels Serviced Apartments",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "hostel_beds",
+                                "isEditable": true,
+                                "label": "Hostel Beds",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "childcare_places",
+                                "isEditable": true,
+                                "label": "Childcare Places",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "office_flr",
+                                "isEditable": true,
+                                "label": "Office Flr",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "retail_flr",
+                                "isEditable": true,
+                                "label": "Retail Flr",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "industrial_flr",
+                                "isEditable": true,
+                                "label": "Industrial Flr",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "storage_flr",
+                                "isEditable": true,
+                                "label": "Storage Flr",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "education_flr",
+                                "isEditable": true,
+                                "label": "Education Flr",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "hospital_flr",
+                                "isEditable": true,
+                                "label": "Hospital Flr",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "recreation_flr",
+                                "isEditable": true,
+                                "label": "Recreation Flr",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "publicdispaly_flr",
+                                "isEditable": true,
+                                "label": "Publicdispaly Flr",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "community_flr",
+                                "isEditable": true,
+                                "label": "Community Flr",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "car_spaces",
+                                "isEditable": true,
+                                "label": "Car Spaces",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "bike_spaces",
+                                "isEditable": true,
+                                "label": "Bike Spaces",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "town_planning_application",
+                                "isEditable": true,
+                                "label": "Town Planning Application",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "longitude",
+                                "isEditable": true,
+                                "label": "Longitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "latitude",
+                                "isEditable": true,
+                                "label": "Latitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "geopoint",
+                                "isEditable": true,
+                                "label": "Geopoint",
+                                "visible": true
+                            }
+                        ]
+                    },
+                    "refreshInterval": 0,
+                    "customParameters": {
+                        "where": "status != 'COMPLETED'",
+                        "limit": "-1",
+                        "use_labels": "False",
+                        "epsg": 4326
+                    },
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "data_format",
+                                "alias": "Data Format",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "development_key",
+                                "alias": "Development Key",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "status",
+                                "alias": "Status",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "year_completed",
+                                "alias": "Year Completed",
+                                "editable": false,
+                                "length": 20,
+                                "nullable": true,
+                                "type": "esriFieldTypeDate"
+                            },
+                            {
+                                "name": "clue_small_area",
+                                "alias": "Clue Small Area",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "clue_block",
+                                "alias": "Clue Block",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "street_address",
+                                "alias": "Street Address",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "property_id",
+                                "alias": "Property Id",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "property_id_2",
+                                "alias": "Property Id 2",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "property_id_3",
+                                "alias": "Property Id 3",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "property_id_4",
+                                "alias": "Property Id 4",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "property_id_5",
+                                "alias": "Property Id 5",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "floors_above",
+                                "alias": "Floors Above",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "resi_dwellings",
+                                "alias": "Resi Dwellings",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "studio_dwe",
+                                "alias": "Studio Dwe",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "one_bdrm_dwe",
+                                "alias": "One Bdrm Dwe",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "two_bdrm_dwe",
+                                "alias": "Two Bdrm Dwe",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "three_bdrm_dwe",
+                                "alias": "Three Bdrm Dwe",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "student_apartments",
+                                "alias": "Student Apartments",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "student_beds",
+                                "alias": "Student Beds",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "student_accommodation_units",
+                                "alias": "Student Accommodation Units",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "institutional_accom_beds",
+                                "alias": "Institutional Accom Beds",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "hotel_rooms",
+                                "alias": "Hotel Rooms",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "serviced_apartments",
+                                "alias": "Serviced Apartments",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "hotels_serviced_apartments",
+                                "alias": "Hotels Serviced Apartments",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "hostel_beds",
+                                "alias": "Hostel Beds",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "childcare_places",
+                                "alias": "Childcare Places",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "office_flr",
+                                "alias": "Office Flr",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "retail_flr",
+                                "alias": "Retail Flr",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "industrial_flr",
+                                "alias": "Industrial Flr",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "storage_flr",
+                                "alias": "Storage Flr",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "education_flr",
+                                "alias": "Education Flr",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "hospital_flr",
+                                "alias": "Hospital Flr",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "recreation_flr",
+                                "alias": "Recreation Flr",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "publicdispaly_flr",
+                                "alias": "Publicdispaly Flr",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "community_flr",
+                                "alias": "Community Flr",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "car_spaces",
+                                "alias": "Car Spaces",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "bike_spaces",
+                                "alias": "Bike Spaces",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "town_planning_application",
+                                "alias": "Town Planning Application",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "longitude",
+                                "alias": "Longitude",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "latitude",
+                                "alias": "Latitude",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "geopoint",
+                                "alias": "Geopoint",
+                                "editable": false,
+                                "length": 1000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            }
+                        ],
+                        "displayField": "status_description",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "uniqueValue",
+                                "field1": "status",
+                                "defaultLabel": "Other",
+                                "uniqueValueGroups": [
+                                    {
+                                        "classes": [
+                                            {
+                                                "label": "APPLIED",
+                                                "values": [
+                                                    [
+                                                        "APPLIED"
+                                                    ]
+                                                ],
+                                                "symbol": {
+                                                    "type": "PointSymbol3D",
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 350,
+                                                        "minWorldLength": 100
+                                                    },
+                                                    "symbolLayers": [
+                                                        {
+                                                            "type": "Icon",
+                                                            "resource": {
+                                                                "primitive": "circle"
+                                                            },
+                                                            "size": 15,
+                                                            "material": {
+                                                                "color": [
+                                                                    0,
+                                                                    174,
+                                                                    203
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "Icon",
+                                                            "resource": {
+                                                                "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgZmlsbD0iIzAwMDAwMCIKICAgaGVpZ2h0PSI0MCIKICAgdmlld0JveD0iMCAwIDMwIDQwIgogICB3aWR0aD0iMzAiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzQiCiAgIHNvZGlwb2RpOmRvY25hbWU9ImJ1aWxkaW5nX2JsYWNrLnN2ZyIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMS4yLjEgKDljNmQ0MWU0MTAsIDIwMjItMDctMTQpIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM4IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0ibmFtZWR2aWV3NiIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIxMy43MDQ0MDMiCiAgICAgaW5rc2NhcGU6Y3g9IjUuNDcyNjkzOCIKICAgICBpbmtzY2FwZTpjeT0iMjAuOTc4NjU5IgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTkyMCIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxMDAxIgogICAgIGlua3NjYXBlOndpbmRvdy14PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmc0IiAvPgogIDxyZWN0CiAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZjtzdHJva2U6I2ZmZmZmZjtzdHJva2Utd2lkdGg6MC45NzQxNjE7ZmlsbC1vcGFjaXR5OjEiCiAgICAgaWQ9InJlY3QzNDMiCiAgICAgd2lkdGg9IjI1LjY3NjczNSIKICAgICBoZWlnaHQ9IjM2LjY0MzQxNCIKICAgICB4PSIyLjI3NjM4NiIKICAgICB5PSIzLjM1NjU4NTUiIC8+CiAgPHBhdGgKICAgICBjbGlwLXJ1bGU9ImV2ZW5vZGQiCiAgICAgZD0iTSAwLDAuOTU5OTk5MjMgQyAwLDAuNDI5ODA3OTggMC40MDI5NDM5LDAgMC45MDAwMDA5LDAgSCAyOS4wOTk5OTkgQyAyOS41OTcwNywwIDMwLDAuNDI5ODA2MDYgMzAsMC45NTk5OTkyMyBWIDM5LjA0MDAwMSBDIDMwLDM5LjU3MDIwOCAyOS41OTcwNyw0MCAyOS4wOTk5OTksNDAgSCAxOC43NDk5ODkgViAzMS45OTk5NDIgSCAxMS4yNTAwMTEgViA0MCBIIDAuOSBDIDAuNDAyOTQzLDQwIDAsMzkuNTcwMjA4IDAsMzkuMDQwMDAxIFogTSA5LjM3NTAzOTQsNS45OTk5OTUyIEggNS42MjUwMDU2IFYgMTAuMDAwMDI0IEggOS4zNzUwMzk0IFogTSA1LjYyNTAwNTYsMTMuOTk5OTU3IGggMy43NTAwMzM4IHYgNC4wMDAwMjkgSCA1LjYyNTAwNTYgWiBtIDMuNzUwMDMzOCw4LjAwMDA1NyBIIDUuNjI1MDA1NiB2IDMuOTk5OTMzIEggOS4zNzUwMzk0IFogTSAxMy4xMjQ5ODMsNS45OTk5OTUyIGggMy43NTAwMzQgdiA0LjAwMDAyODggaCAtMy43NTAwMzQgeiBtIDMuNzUwMDM0LDcuOTk5OTYxOCBoIC0zLjc1MDAzNCB2IDQuMDAwMDI5IGggMy43NTAwMzQgeiBtIC0zLjc1MDAzNCw4LjAwMDA1NyBoIDMuNzUwMDM0IHYgMy45OTk5MzMgSCAxMy4xMjQ5ODMgWiBNIDI0LjM3NDk5NCw1Ljk5OTk5NTIgaCAtMy43NDk5NDMgdiA0LjAwMDAyODggaCAzLjc0OTk0MyB6IG0gLTMuNzQ5OTQzLDcuOTk5OTYxOCBoIDMuNzQ5OTQzIHYgNC4wMDAwMjkgaCAtMy43NDk5NDMgeiBtIDMuNzQ5OTQzLDguMDAwMDU3IGggLTMuNzQ5OTQzIHYgMy45OTk5MzMgaCAzLjc0OTk0MyB6IgogICAgIGZpbGw9IiMwMDAwMDAiCiAgICAgZmlsbC1ydWxlPSJldmVub2RkIgogICAgIGlkPSJwYXRoMiIKICAgICBzdHlsZT0ic3Ryb2tlLXdpZHRoOjAuOTI5NTE2IiAvPgo8L3N2Zz4K"
+                                                            },
+                                                            "size": 10
+                                                        }
+                                                    ],
+                                                    "callout": {
+                                                        "type": "line",
+                                                        "color": [
+                                                            0,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "size": 1,
+                                                        "border": {
+                                                            "color": [
+                                                                255,
+                                                                255,
+                                                                255
+                                                            ],
+                                                            "transparency": 50
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "label": "APPROVED",
+                                                "values": [
+                                                    [
+                                                        "APPROVED"
+                                                    ]
+                                                ],
+                                                "symbol": {
+                                                    "type": "PointSymbol3D",
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 350,
+                                                        "minWorldLength": 100
+                                                    },
+                                                    "symbolLayers": [
+                                                        {
+                                                            "type": "Icon",
+                                                            "resource": {
+                                                                "primitive": "circle"
+                                                            },
+                                                            "size": 15,
+                                                            "material": {
+                                                                "color": [
+                                                                    0,
+                                                                    136,
+                                                                    80
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "Icon",
+                                                            "resource": {
+                                                                "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgZmlsbD0iIzAwMDAwMCIKICAgaGVpZ2h0PSI0MCIKICAgdmlld0JveD0iMCAwIDMwIDQwIgogICB3aWR0aD0iMzAiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzQiCiAgIHNvZGlwb2RpOmRvY25hbWU9ImJ1aWxkaW5nX2JsYWNrLnN2ZyIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMS4yLjEgKDljNmQ0MWU0MTAsIDIwMjItMDctMTQpIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM4IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0ibmFtZWR2aWV3NiIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIxMy43MDQ0MDMiCiAgICAgaW5rc2NhcGU6Y3g9IjUuNDcyNjkzOCIKICAgICBpbmtzY2FwZTpjeT0iMjAuOTc4NjU5IgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTkyMCIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxMDAxIgogICAgIGlua3NjYXBlOndpbmRvdy14PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmc0IiAvPgogIDxyZWN0CiAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZjtzdHJva2U6I2ZmZmZmZjtzdHJva2Utd2lkdGg6MC45NzQxNjE7ZmlsbC1vcGFjaXR5OjEiCiAgICAgaWQ9InJlY3QzNDMiCiAgICAgd2lkdGg9IjI1LjY3NjczNSIKICAgICBoZWlnaHQ9IjM2LjY0MzQxNCIKICAgICB4PSIyLjI3NjM4NiIKICAgICB5PSIzLjM1NjU4NTUiIC8+CiAgPHBhdGgKICAgICBjbGlwLXJ1bGU9ImV2ZW5vZGQiCiAgICAgZD0iTSAwLDAuOTU5OTk5MjMgQyAwLDAuNDI5ODA3OTggMC40MDI5NDM5LDAgMC45MDAwMDA5LDAgSCAyOS4wOTk5OTkgQyAyOS41OTcwNywwIDMwLDAuNDI5ODA2MDYgMzAsMC45NTk5OTkyMyBWIDM5LjA0MDAwMSBDIDMwLDM5LjU3MDIwOCAyOS41OTcwNyw0MCAyOS4wOTk5OTksNDAgSCAxOC43NDk5ODkgViAzMS45OTk5NDIgSCAxMS4yNTAwMTEgViA0MCBIIDAuOSBDIDAuNDAyOTQzLDQwIDAsMzkuNTcwMjA4IDAsMzkuMDQwMDAxIFogTSA5LjM3NTAzOTQsNS45OTk5OTUyIEggNS42MjUwMDU2IFYgMTAuMDAwMDI0IEggOS4zNzUwMzk0IFogTSA1LjYyNTAwNTYsMTMuOTk5OTU3IGggMy43NTAwMzM4IHYgNC4wMDAwMjkgSCA1LjYyNTAwNTYgWiBtIDMuNzUwMDMzOCw4LjAwMDA1NyBIIDUuNjI1MDA1NiB2IDMuOTk5OTMzIEggOS4zNzUwMzk0IFogTSAxMy4xMjQ5ODMsNS45OTk5OTUyIGggMy43NTAwMzQgdiA0LjAwMDAyODggaCAtMy43NTAwMzQgeiBtIDMuNzUwMDM0LDcuOTk5OTYxOCBoIC0zLjc1MDAzNCB2IDQuMDAwMDI5IGggMy43NTAwMzQgeiBtIC0zLjc1MDAzNCw4LjAwMDA1NyBoIDMuNzUwMDM0IHYgMy45OTk5MzMgSCAxMy4xMjQ5ODMgWiBNIDI0LjM3NDk5NCw1Ljk5OTk5NTIgaCAtMy43NDk5NDMgdiA0LjAwMDAyODggaCAzLjc0OTk0MyB6IG0gLTMuNzQ5OTQzLDcuOTk5OTYxOCBoIDMuNzQ5OTQzIHYgNC4wMDAwMjkgaCAtMy43NDk5NDMgeiBtIDMuNzQ5OTQzLDguMDAwMDU3IGggLTMuNzQ5OTQzIHYgMy45OTk5MzMgaCAzLjc0OTk0MyB6IgogICAgIGZpbGw9IiMwMDAwMDAiCiAgICAgZmlsbC1ydWxlPSJldmVub2RkIgogICAgIGlkPSJwYXRoMiIKICAgICBzdHlsZT0ic3Ryb2tlLXdpZHRoOjAuOTI5NTE2IiAvPgo8L3N2Zz4K"
+                                                            },
+                                                            "size": 10
+                                                        }
+                                                    ],
+                                                    "callout": {
+                                                        "type": "line",
+                                                        "color": [
+                                                            0,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "size": 1,
+                                                        "border": {
+                                                            "color": [
+                                                                255,
+                                                                255,
+                                                                255
+                                                            ],
+                                                            "transparency": 50
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "label": "UNDER CONSTRUCTION",
+                                                "values": [
+                                                    [
+                                                        "UNDER CONSTRUCTION"
+                                                    ]
+                                                ],
+                                                "symbol": {
+                                                    "type": "PointSymbol3D",
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 350,
+                                                        "minWorldLength": 100
+                                                    },
+                                                    "symbolLayers": [
+                                                        {
+                                                            "type": "Icon",
+                                                            "resource": {
+                                                                "primitive": "circle"
+                                                            },
+                                                            "size": 15,
+                                                            "material": {
+                                                                "color": [
+                                                                    255,
+                                                                    199,
+                                                                    38
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "Icon",
+                                                            "resource": {
+                                                                "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgZmlsbD0iIzAwMDAwMCIKICAgaGVpZ2h0PSI0MCIKICAgdmlld0JveD0iMCAwIDMwIDQwIgogICB3aWR0aD0iMzAiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzQiCiAgIHNvZGlwb2RpOmRvY25hbWU9ImJ1aWxkaW5nX2JsYWNrLnN2ZyIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMS4yLjEgKDljNmQ0MWU0MTAsIDIwMjItMDctMTQpIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM4IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0ibmFtZWR2aWV3NiIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIxMy43MDQ0MDMiCiAgICAgaW5rc2NhcGU6Y3g9IjUuNDcyNjkzOCIKICAgICBpbmtzY2FwZTpjeT0iMjAuOTc4NjU5IgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTkyMCIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxMDAxIgogICAgIGlua3NjYXBlOndpbmRvdy14PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmc0IiAvPgogIDxyZWN0CiAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZjtzdHJva2U6I2ZmZmZmZjtzdHJva2Utd2lkdGg6MC45NzQxNjE7ZmlsbC1vcGFjaXR5OjEiCiAgICAgaWQ9InJlY3QzNDMiCiAgICAgd2lkdGg9IjI1LjY3NjczNSIKICAgICBoZWlnaHQ9IjM2LjY0MzQxNCIKICAgICB4PSIyLjI3NjM4NiIKICAgICB5PSIzLjM1NjU4NTUiIC8+CiAgPHBhdGgKICAgICBjbGlwLXJ1bGU9ImV2ZW5vZGQiCiAgICAgZD0iTSAwLDAuOTU5OTk5MjMgQyAwLDAuNDI5ODA3OTggMC40MDI5NDM5LDAgMC45MDAwMDA5LDAgSCAyOS4wOTk5OTkgQyAyOS41OTcwNywwIDMwLDAuNDI5ODA2MDYgMzAsMC45NTk5OTkyMyBWIDM5LjA0MDAwMSBDIDMwLDM5LjU3MDIwOCAyOS41OTcwNyw0MCAyOS4wOTk5OTksNDAgSCAxOC43NDk5ODkgViAzMS45OTk5NDIgSCAxMS4yNTAwMTEgViA0MCBIIDAuOSBDIDAuNDAyOTQzLDQwIDAsMzkuNTcwMjA4IDAsMzkuMDQwMDAxIFogTSA5LjM3NTAzOTQsNS45OTk5OTUyIEggNS42MjUwMDU2IFYgMTAuMDAwMDI0IEggOS4zNzUwMzk0IFogTSA1LjYyNTAwNTYsMTMuOTk5OTU3IGggMy43NTAwMzM4IHYgNC4wMDAwMjkgSCA1LjYyNTAwNTYgWiBtIDMuNzUwMDMzOCw4LjAwMDA1NyBIIDUuNjI1MDA1NiB2IDMuOTk5OTMzIEggOS4zNzUwMzk0IFogTSAxMy4xMjQ5ODMsNS45OTk5OTUyIGggMy43NTAwMzQgdiA0LjAwMDAyODggaCAtMy43NTAwMzQgeiBtIDMuNzUwMDM0LDcuOTk5OTYxOCBoIC0zLjc1MDAzNCB2IDQuMDAwMDI5IGggMy43NTAwMzQgeiBtIC0zLjc1MDAzNCw4LjAwMDA1NyBoIDMuNzUwMDM0IHYgMy45OTk5MzMgSCAxMy4xMjQ5ODMgWiBNIDI0LjM3NDk5NCw1Ljk5OTk5NTIgaCAtMy43NDk5NDMgdiA0LjAwMDAyODggaCAzLjc0OTk0MyB6IG0gLTMuNzQ5OTQzLDcuOTk5OTYxOCBoIDMuNzQ5OTQzIHYgNC4wMDAwMjkgaCAtMy43NDk5NDMgeiBtIDMuNzQ5OTQzLDguMDAwMDU3IGggLTMuNzQ5OTQzIHYgMy45OTk5MzMgaCAzLjc0OTk0MyB6IgogICAgIGZpbGw9IiMwMDAwMDAiCiAgICAgZmlsbC1ydWxlPSJldmVub2RkIgogICAgIGlkPSJwYXRoMiIKICAgICBzdHlsZT0ic3Ryb2tlLXdpZHRoOjAuOTI5NTE2IiAvPgo8L3N2Zz4K"
+                                                            },
+                                                            "size": 10
+                                                        }
+                                                    ],
+                                                    "callout": {
+                                                        "type": "line",
+                                                        "color": [
+                                                            0,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "size": 1,
+                                                        "border": {
+                                                            "color": [
+                                                                255,
+                                                                255,
+                                                                255
+                                                            ],
+                                                            "transparency": 50
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "labelingInfo": []
+                        }
+                    }
+                },
+                {
+                    "layerType": "GeoJSON",
+                    "title": "On Street Parking Bay",
+                    "url": "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/on-street-parking-bay-sensors/exports/geojson",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": "On Street Parking Bay",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "lastupdated",
+                                "isEditable": true,
+                                "label": "Lastupdated",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "status_timestamp",
+                                "isEditable": true,
+                                "label": "Status Timestamp",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "zone_number",
+                                "isEditable": true,
+                                "label": "Zone Number",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "status_description",
+                                "isEditable": true,
+                                "label": "Status Description",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "kerbsideid",
+                                "isEditable": true,
+                                "label": "Kerbsideid",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "location",
+                                "isEditable": true,
+                                "label": "Location",
+                                "visible": true
+                            }
+                        ]
+                    },
+                    "refreshInterval": 2,
+                    "customParameters": {
+                        "where": "lastupdated >= now(weeks=-1)",
+                        "limit": "-1",
+                        "use_labels": "False",
+                        "epsg": 4326
+                    },
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "lastupdated",
+                                "alias": "Lastupdated",
+                                "editable": false,
+                                "length": 50,
+                                "nullable": true,
+                                "type": "esriFieldTypeDate"
+                            },
+                            {
+                                "name": "status_timestamp",
+                                "alias": "Status Timestamp",
+                                "editable": false,
+                                "length": 50,
+                                "nullable": true,
+                                "type": "esriFieldTypeDate"
+                            },
+                            {
+                                "name": "zone_number",
+                                "alias": "Zone Number",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "status_description",
+                                "alias": "Status Description",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "kerbsideid",
+                                "alias": "Kerbsideid",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "location",
+                                "alias": "Location",
+                                "editable": false,
+                                "length": 1000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            }
+                        ],
+                        "displayField": "status_description",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "uniqueValue",
+                                "field1": "status_description",
+                                "defaultLabel": "Other",
+                                "uniqueValueGroups": [
+                                    {
+                                        "classes": [
+                                            {
+                                                "label": "Present",
+                                                "values": [
+                                                    [
+                                                        "Present"
+                                                    ]
+                                                ],
+                                                "symbol": {
+                                                    "type": "PointSymbol3D",
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 10,
+                                                        "minWorldLength": 3
+                                                    },
+                                                    "symbolLayers": [
+                                                        {
+                                                            "type": "Icon",
+                                                            "resource": {
+                                                                "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmVyc2lvbj0iMS4xIgogICBpZD0iQ2FwYV8xIgogICB4PSIwcHgiCiAgIHk9IjBweCIKICAgd2lkdGg9IjQ1Ljk1cHgiCiAgIGhlaWdodD0iNDUuOTVweCIKICAgdmlld0JveD0iMCAwIDQ1Ljk1IDQ1Ljk1IgogICBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NS45NSA0NS45NTsiCiAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgIHNvZGlwb2RpOmRvY25hbWU9InBhcmtpbmctc2lnbi1yZWQuc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjIuMSAoOWM2ZDQxZTQxMCwgMjAyMi0wNy0xNCkiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnMKICAgaWQ9ImRlZnMxMyIgLz48c29kaXBvZGk6bmFtZWR2aWV3CiAgIGlkPSJuYW1lZHZpZXcxMSIKICAgcGFnZWNvbG9yPSIjZmZmZmZmIgogICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgaW5rc2NhcGU6c2hvd3BhZ2VzaGFkb3c9IjIiCiAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgIGlua3NjYXBlOmRlc2tjb2xvcj0iI2QxZDFkMSIKICAgc2hvd2dyaWQ9ImZhbHNlIgogICBpbmtzY2FwZTp6b29tPSIxNy43MTQ5MDciCiAgIGlua3NjYXBlOmN4PSIxOS41NTk3OTgiCiAgIGlua3NjYXBlOmN5PSIyMy4wMDMyMjUiCiAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTkyMCIKICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTAwMSIKICAgaW5rc2NhcGU6d2luZG93LXg9Ii05IgogICBpbmtzY2FwZTp3aW5kb3cteT0iLTkiCiAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9Imc4IiAvPgo8ZwogICBpZD0iZzgiPgoJPHJlY3QKICAgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUuOTUgNDUuOTU7ZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTojZmZmZmZmO3N0cm9rZS1vcGFjaXR5OjEiCiAgIGlkPSJyZWN0NTk2NiIKICAgd2lkdGg9IjM5LjI4ODk0NCIKICAgaGVpZ2h0PSI0MC42NDM3MzQiCiAgIHg9IjMuMjE3NjI5IgogICB5PSIyLjcwOTU4MjMiIC8+PHBhdGgKICAgZD0iTTIyLjU2OCwxNC45OGMtMS4xNjYsMC0xLjkzNSwwLjExMi0yLjM3OCwwLjIyNXY3LjQ4YzAuNTA2LDAuMTEzLDEuMSwwLjE1LDEuOTI3LDAuMTVjMy4wNDUsMCw0LjkyNC0xLjU0Miw0LjkyNC00LjEzNCAgIEMyNy4wNDIsMTYuMzcsMjUuNDI0LDE0Ljk4LDIyLjU2OCwxNC45OHoiCiAgIGlkPSJwYXRoMiIKICAgc3R5bGU9ImZpbGw6I2RhMjkxYztmaWxsLW9wYWNpdHk6MSIgLz4KCTxwYXRoCiAgIGQ9Ik00MC4wMDEsMEg1Ljk0OUMyLjk0MiwwLDAuNTA2LDIuNDM3LDAuNTA2LDUuNDQzdjM1LjA2NWMwLDMuMDA2LDIuNDM3LDUuNDQyLDUuNDQzLDUuNDQyaDM0LjA1MiAgIGMzLjAwNywwLDUuNDQyLTIuNDM3LDUuNDQyLTUuNDQyVjUuNDQzQzQ1LjQ0NCwyLjQzNiw0My4wMDgsMCw0MC4wMDEsMHogTTQyLjA5LDM5LjYzNWMwLDEuNjM3LTEuMzI2LDIuOTYxLTIuOTYxLDIuOTYxSDYuNzU5ICAgYy0xLjYzNiwwLTIuOTYyLTEuMzI2LTIuOTYyLTIuOTYxVjYuMzc5YzAtMS42MzUsMS4zMjYtMi45NjEsMi45NjItMi45NjFoMzIuMzY5YzEuNjM2LDAsMi45NjEsMS4zMjYsMi45NjEsMi45NjFMNDIuMDksMzkuNjM1ICAgTDQyLjA5LDM5LjYzNXoiCiAgIGlkPSJwYXRoNCIKICAgc3R5bGU9ImZpbGw6IzAwNGM5NztmaWxsLW9wYWNpdHk6MSIgLz4KCTxwYXRoCiAgIGQ9Ik0zOS4xMjgsNS41MDdINi43NTljLTAuNDgyLDAtMC44NzQsMC4zOS0wLjg3NCwwLjg3M3YzMy4yNTZjMCwwLjQ4LDAuMzkxLDAuODczLDAuODc0LDAuODczaDMyLjM2OSAgIGMwLjQ4MSwwLDAuODczLTAuMzkyLDAuODczLTAuODczVjYuMzc5QzQwLjAwMSw1Ljg5NywzOS42MSw1LjUwNywzOS4xMjgsNS41MDd6IE0zMC4zOTUsMjQuNTY2ICAgYy0xLjk1MywxLjg0MS00Ljg1NywyLjY2OC04LjI0MSwyLjY2OGMtMC43NTEsMC0xLjM5NC0wLjAzOC0xLjk2NC0wLjExM3Y5LjA4MmgtNS42MzN2LTI1LjAyICAgYzEuNzcyLTAuMzAxLDQuMjM2LTAuNTI3LDcuNzMyLTAuNTI3YzMuNTM0LDAsNi4wNDYsMC42NzcsNy43MzksMi4wMzFjMS42MTUsMS4yNzcsMi43MDMsMy4zODMsMi43MDMsNS44NjMgICBDMzIuNzMxLDIxLjAzMywzMS45MDEsMjMuMTM5LDMwLjM5NSwyNC41NjZ6IgogICBpZD0icGF0aDYiCiAgIHN0eWxlPSJmaWxsOiNkYTI5MWM7ZmlsbC1vcGFjaXR5OjEiIC8+CjwvZz4KPC9zdmc+Cg=="
+                                                            },
+                                                            "size": 18
+                                                        }
+                                                    ],
+                                                    "callout": {
+                                                        "type": "line",
+                                                        "color": [
+                                                            0,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "size": 1,
+                                                        "border": {
+                                                            "color": [
+                                                                255,
+                                                                255,
+                                                                255
+                                                            ],
+                                                            "transparency": 50
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "label": "Unoccupied",
+                                                "values": [
+                                                    [
+                                                        "Unoccupied"
+                                                    ]
+                                                ],
+                                                "symbol": {
+                                                    "type": "PointSymbol3D",
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 10,
+                                                        "minWorldLength": 3
+                                                    },
+                                                    "symbolLayers": [
+                                                        {
+                                                            "type": "Icon",
+                                                            "resource": {
+                                                                "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmVyc2lvbj0iMS4xIgogICBpZD0iQ2FwYV8xIgogICB4PSIwcHgiCiAgIHk9IjBweCIKICAgd2lkdGg9IjQ1Ljk1cHgiCiAgIGhlaWdodD0iNDUuOTVweCIKICAgdmlld0JveD0iMCAwIDQ1Ljk1IDQ1Ljk1IgogICBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NS45NSA0NS45NTsiCiAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgIHNvZGlwb2RpOmRvY25hbWU9InBhcmtpbmctc2lnbi1ncmVlbi5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcwogICBpZD0iZGVmczEzIiAvPjxzb2RpcG9kaTpuYW1lZHZpZXcKICAgaWQ9Im5hbWVkdmlldzExIgogICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgIGJvcmRlcmNvbG9yPSIjMDAwMDAwIgogICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAuMCIKICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICBzaG93Z3JpZD0iZmFsc2UiCiAgIGlua3NjYXBlOnpvb209IjE3LjcxNDkwNyIKICAgaW5rc2NhcGU6Y3g9IjE5LjU1OTc5OCIKICAgaW5rc2NhcGU6Y3k9IjIyLjk3NSIKICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxOTIwIgogICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxMDAxIgogICBpbmtzY2FwZTp3aW5kb3cteD0iLTkiCiAgIGlua3NjYXBlOndpbmRvdy15PSItOSIKICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIKICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0iZzgiIC8+CjxnCiAgIGlkPSJnOCI+Cgk8cmVjdAogICBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NS45NSA0NS45NTtmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOiNmZmZmZmY7c3Ryb2tlLW9wYWNpdHk6MSIKICAgaWQ9InJlY3Q1OTY2IgogICB3aWR0aD0iMzkuMjg4OTQ0IgogICBoZWlnaHQ9IjQwLjY0MzczNCIKICAgeD0iMy4yMTc2MjkiCiAgIHk9IjIuNzA5NTgyMyIgLz48cGF0aAogICBkPSJNMjIuNTY4LDE0Ljk4Yy0xLjE2NiwwLTEuOTM1LDAuMTEyLTIuMzc4LDAuMjI1djcuNDhjMC41MDYsMC4xMTMsMS4xLDAuMTUsMS45MjcsMC4xNWMzLjA0NSwwLDQuOTI0LTEuNTQyLDQuOTI0LTQuMTM0ICAgQzI3LjA0MiwxNi4zNywyNS40MjQsMTQuOTgsMjIuNTY4LDE0Ljk4eiIKICAgaWQ9InBhdGgyIgogICBzdHlsZT0iZmlsbDojMmU5ZjQ1O2ZpbGwtb3BhY2l0eToxIiAvPgoJPHBhdGgKICAgZD0iTTQwLjAwMSwwSDUuOTQ5QzIuOTQyLDAsMC41MDYsMi40MzcsMC41MDYsNS40NDN2MzUuMDY1YzAsMy4wMDYsMi40MzcsNS40NDIsNS40NDMsNS40NDJoMzQuMDUyICAgYzMuMDA3LDAsNS40NDItMi40MzcsNS40NDItNS40NDJWNS40NDNDNDUuNDQ0LDIuNDM2LDQzLjAwOCwwLDQwLjAwMSwweiBNNDIuMDksMzkuNjM1YzAsMS42MzctMS4zMjYsMi45NjEtMi45NjEsMi45NjFINi43NTkgICBjLTEuNjM2LDAtMi45NjItMS4zMjYtMi45NjItMi45NjFWNi4zNzljMC0xLjYzNSwxLjMyNi0yLjk2MSwyLjk2Mi0yLjk2MWgzMi4zNjljMS42MzYsMCwyLjk2MSwxLjMyNiwyLjk2MSwyLjk2MUw0Mi4wOSwzOS42MzUgICBMNDIuMDksMzkuNjM1eiIKICAgaWQ9InBhdGg0IgogICBzdHlsZT0iZmlsbDojMDA0Yzk3O2ZpbGwtb3BhY2l0eToxIiAvPgoJPHBhdGgKICAgZD0iTTM5LjEyOCw1LjUwN0g2Ljc1OWMtMC40ODIsMC0wLjg3NCwwLjM5LTAuODc0LDAuODczdjMzLjI1NmMwLDAuNDgsMC4zOTEsMC44NzMsMC44NzQsMC44NzNoMzIuMzY5ICAgYzAuNDgxLDAsMC44NzMtMC4zOTIsMC44NzMtMC44NzNWNi4zNzlDNDAuMDAxLDUuODk3LDM5LjYxLDUuNTA3LDM5LjEyOCw1LjUwN3ogTTMwLjM5NSwyNC41NjYgICBjLTEuOTUzLDEuODQxLTQuODU3LDIuNjY4LTguMjQxLDIuNjY4Yy0wLjc1MSwwLTEuMzk0LTAuMDM4LTEuOTY0LTAuMTEzdjkuMDgyaC01LjYzM3YtMjUuMDIgICBjMS43NzItMC4zMDEsNC4yMzYtMC41MjcsNy43MzItMC41MjdjMy41MzQsMCw2LjA0NiwwLjY3Nyw3LjczOSwyLjAzMWMxLjYxNSwxLjI3NywyLjcwMywzLjM4MywyLjcwMyw1Ljg2MyAgIEMzMi43MzEsMjEuMDMzLDMxLjkwMSwyMy4xMzksMzAuMzk1LDI0LjU2NnoiCiAgIGlkPSJwYXRoNiIKICAgc3R5bGU9ImZpbGw6IzJlOWY0NTtmaWxsLW9wYWNpdHk6MSIgLz4KPC9nPgo8L3N2Zz4K"
+                                                            },
+                                                            "size": 18
+                                                        }
+                                                    ],
+                                                    "callout": {
+                                                        "type": "line",
+                                                        "color": [
+                                                            0,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "size": 1,
+                                                        "border": {
+                                                            "color": [
+                                                                255,
+                                                                255,
+                                                                255
+                                                            ],
+                                                            "transparency": 50
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "labelingInfo": [
+                                {
+                                    "labelExpressionInfo": {
+                                        "expression": "var dataDiff = DateDiff(Date(Now()), Date($feature[\"status_timestamp\"]), 'minutes'); var hour = Floor(dataDiff/60); var minute = Round(dataDiff - hour*60); return hour + 'h:' + minute + 'm'"
+                                    },
+                                    "expression": "var dataDiff = DateDiff(Date(Now()), Date($feature[\"status_timestamp\"]), 'minutes'); var hour = Floor(dataDiff/60); var minute = Round(dataDiff - hour*60); return hour + 'h:' + minute + 'm'",
+                                    "where": "LOWER(status_description) = 'present'",
+                                    "minScale": 1000,
+                                    "symbol": {
+                                        "type": "LabelSymbol3D",
+                                        "symbolLayers": [
+                                            {
+                                                "type": "Text",
+                                                "size": 10,
+                                                "material": {
+                                                    "color": [
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        255
+                                                    ]
+                                                },
+                                                "halo": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "size": 1.5
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "minScale": 1500
+                },
+                {
+                    "layerType": "GeoJSON",
+                    "title": "Microclimate",
+                    "url": "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/microclimate-sensors-data/exports/geojson",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": "Microclimate",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "device_id",
+                                "isEditable": true,
+                                "label": "Device ID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "received_at",
+                                "isEditable": true,
+                                "label": "Received At",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "sensorlocation",
+                                "isEditable": true,
+                                "label": "Location",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "latlong",
+                                "isEditable": true,
+                                "label": "Coordinates",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "minimumwinddirection",
+                                "isEditable": true,
+                                "label": "Minimum Wind Direction (\u00b0)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "averagewinddirection",
+                                "isEditable": true,
+                                "label": "Average Wind Direction (\u00b0)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "maximumwinddirection",
+                                "isEditable": true,
+                                "label": "Maximum Wind Direction (\u00b0)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "minimumwindspeed",
+                                "isEditable": true,
+                                "label": "Minimum Wind Speed (m/s)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "averagewindspeed",
+                                "isEditable": true,
+                                "label": "Average Wind Speed (m/s)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "gustwindspeed",
+                                "isEditable": true,
+                                "label": "Gust Wind Speed (m/s)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "airtemperature",
+                                "isEditable": true,
+                                "label": "Air Temperature (\u00b0C)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "relativehumidity",
+                                "isEditable": true,
+                                "label": "Relative Humidity (%)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "atmosphericpressure",
+                                "isEditable": true,
+                                "label": "Atmospheric Pressure (hPa)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "pm25",
+                                "isEditable": true,
+                                "label": "PM2.5 (Particulate Matter) (\u00b5g/m\u00b3)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "pm10",
+                                "isEditable": true,
+                                "label": "PM10 (Particulate Matter) (\u00b5g/m\u00b3)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "noise",
+                                "isEditable": true,
+                                "label": "Noise Level (dB)",
+                                "visible": true
+                            }
+                        ]
+                    },
+                    "refreshInterval": 15,
+                    "customParameters": {
+                        "where": "received_at >= now(minutes=-15)",
+                        "limit": "-1",
+                        "use_labels": "False",
+                        "epsg": 4326
+                    },
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "device_id",
+                                "alias": "Device ID",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "received_at",
+                                "alias": "Received At",
+                                "editable": false,
+                                "length": 50,
+                                "nullable": true,
+                                "type": "esriFieldTypeDate"
+                            },
+                            {
+                                "name": "sensorlocation",
+                                "alias": "Location",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "latlong",
+                                "alias": "Coordinates",
+                                "editable": false,
+                                "length": 1000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "minimumwinddirection",
+                                "alias": "Minimum Wind Direction (\u00b0)",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "averagewinddirection",
+                                "alias": "Average Wind Direction (\u00b0)",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "maximumwinddirection",
+                                "alias": "Maximum Wind Direction (\u00b0)",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "minimumwindspeed",
+                                "alias": "Minimum Wind Speed (m/s)",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "averagewindspeed",
+                                "alias": "Average Wind Speed (m/s)",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "gustwindspeed",
+                                "alias": "Gust Wind Speed (m/s)",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "airtemperature",
+                                "alias": "Air Temperature (\u00b0C)",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "relativehumidity",
+                                "alias": "Relative Humidity (%)",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "atmosphericpressure",
+                                "alias": "Atmospheric Pressure (hPa)",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "pm25",
+                                "alias": "PM2.5 (Particulate Matter) (\u00b5g/m\u00b3)",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "pm10",
+                                "alias": "PM10 (Particulate Matter) (\u00b5g/m\u00b3)",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "noise",
+                                "alias": "Noise Level (dB)",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            }
+                        ],
+                        "displayField": "status_description",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "classBreaks",
+                                "field": "airtemperature",
+                                "defaultLabel": "Other",
+                                "classBreakInfos": [
+                                    {
+                                        "classMinValue": 30,
+                                        "classMaxValue": 100,
+                                        "label": "Hot",
+                                        "symbol": {
+                                            "type": "PointSymbol3D",
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            },
+                                            "symbolLayers": [
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "primitive": "square"
+                                                    },
+                                                    "size": 23,
+                                                    "material": {
+                                                        "color": [
+                                                            255,
+                                                            0,
+                                                            0
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGUuc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjIuMSAoOWM2ZDQxZTQxMCwgMjAyMi0wNy0xNCkiCiAgIHdpZHRoPSI2NCIKICAgaGVpZ2h0PSI2NCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXczMCIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIxMC41ODQwMDIiCiAgICAgaW5rc2NhcGU6Y3g9IjYuODk3MjAyIgogICAgIGlua3NjYXBlOmN5PSIyOC4xMDg0NiIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjI0MDAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTQyMSIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnMjgiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiPgogICAgPHN0eWxlCiAgICAgICBpZD0ic3R5bGUyIj4uY2xzLTF7ZmlsbDpub25lO30uY2xzLTEsLmNscy0ye3N0cm9rZTojMmQyYTI4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPgogIDwvZGVmcz4KICA8dGl0bGUKICAgICBpZD0idGl0bGU2Ij50ZW1pLXZlbmRpdGEyQDMwMHgyPC90aXRsZT4KICA8ZwogICAgIGlkPSJMaXZlbGxvXzIiCiAgICAgZGF0YS1uYW1lPSJMaXZlbGxvIDIiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOC40MDg5MTcxLDQuMjUxNjk5NykiPgogICAgPGcKICAgICAgIGlkPSJMYXllcl8yIgogICAgICAgZGF0YS1uYW1lPSJMYXllciAyIj4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDMxLjQ1LDEwLjc0IGMgMCwwIC0wLjIyLDQuNTMgLTUuMDgsOS42MiBDIDIxLjUxLDI1LjQ1IDE1LjY1LDMxLjMgMTcuMDksMzkuOCAxOC41Myw0OC4zIDI4LjQ3LDUxIDMxLjQ1LDUxIDM0LjQzLDUxIDQ0LjM4LDQ4LjMxIDQ1LjgyLDM5LjggNDcuMjYsMzEuMjkgNDEuNCwyNS40NCAzNi41MywyMC4zNiAzMS42NiwxNS4yOCAzMS40NSwxMC43NCAzMS40NSwxMC43NCBaIgogICAgICAgICBpZD0icGF0aDgiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMGZmZmY7ZmlsbC1vcGFjaXR5OjEiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgZD0ibSA0MC43OCwzNC42NCBjIDAsMCAwLjk0LDkuNTQgLTEwLDEwLjQ5IgogICAgICAgICBpZD0icGF0aDEwIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIGQ9Im0gMjAuNDIsNDMuNDggYyAwLDAgMC42Nyw2LjgxIC03LjEyLDcuNDkiCiAgICAgICAgIGlkPSJwYXRoMTQiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjE0LjcwMjk5IgogICAgICAgICB5MT0iNS43NjU5NTQ1IgogICAgICAgICB4Mj0iMTQuNzAyOTkiCiAgICAgICAgIHkyPSIzNC41MzU5NTQiCiAgICAgICAgIGlkPSJsaW5lMTYiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIxOC4xMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjE4LjExODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMCIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMjMuMjE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyMy4yMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjIiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIgLz4KICAgIDwvZz4KICA8L2c+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMzE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOnRpdGxlPnRlbWktdmVuZGl0YTJAMzAweDI8L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KPC9zdmc+Cg=="
+                                                    },
+                                                    "size": 18
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "classMinValue": 20.1,
+                                        "classMaxValue": 29.9,
+                                        "label": "Warm",
+                                        "symbol": {
+                                            "type": "PointSymbol3D",
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            },
+                                            "symbolLayers": [
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "primitive": "square"
+                                                    },
+                                                    "size": 23,
+                                                    "material": {
+                                                        "color": [
+                                                            252,
+                                                            136,
+                                                            3
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGUuc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjIuMSAoOWM2ZDQxZTQxMCwgMjAyMi0wNy0xNCkiCiAgIHdpZHRoPSI2NCIKICAgaGVpZ2h0PSI2NCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXczMCIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIxMC41ODQwMDIiCiAgICAgaW5rc2NhcGU6Y3g9IjYuODk3MjAyIgogICAgIGlua3NjYXBlOmN5PSIyOC4xMDg0NiIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjI0MDAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTQyMSIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnMjgiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiPgogICAgPHN0eWxlCiAgICAgICBpZD0ic3R5bGUyIj4uY2xzLTF7ZmlsbDpub25lO30uY2xzLTEsLmNscy0ye3N0cm9rZTojMmQyYTI4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPgogIDwvZGVmcz4KICA8dGl0bGUKICAgICBpZD0idGl0bGU2Ij50ZW1pLXZlbmRpdGEyQDMwMHgyPC90aXRsZT4KICA8ZwogICAgIGlkPSJMaXZlbGxvXzIiCiAgICAgZGF0YS1uYW1lPSJMaXZlbGxvIDIiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOC40MDg5MTcxLDQuMjUxNjk5NykiPgogICAgPGcKICAgICAgIGlkPSJMYXllcl8yIgogICAgICAgZGF0YS1uYW1lPSJMYXllciAyIj4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDMxLjQ1LDEwLjc0IGMgMCwwIC0wLjIyLDQuNTMgLTUuMDgsOS42MiBDIDIxLjUxLDI1LjQ1IDE1LjY1LDMxLjMgMTcuMDksMzkuOCAxOC41Myw0OC4zIDI4LjQ3LDUxIDMxLjQ1LDUxIDM0LjQzLDUxIDQ0LjM4LDQ4LjMxIDQ1LjgyLDM5LjggNDcuMjYsMzEuMjkgNDEuNCwyNS40NCAzNi41MywyMC4zNiAzMS42NiwxNS4yOCAzMS40NSwxMC43NCAzMS40NSwxMC43NCBaIgogICAgICAgICBpZD0icGF0aDgiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMGZmZmY7ZmlsbC1vcGFjaXR5OjEiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgZD0ibSA0MC43OCwzNC42NCBjIDAsMCAwLjk0LDkuNTQgLTEwLDEwLjQ5IgogICAgICAgICBpZD0icGF0aDEwIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIGQ9Im0gMjAuNDIsNDMuNDggYyAwLDAgMC42Nyw2LjgxIC03LjEyLDcuNDkiCiAgICAgICAgIGlkPSJwYXRoMTQiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjE0LjcwMjk5IgogICAgICAgICB5MT0iNS43NjU5NTQ1IgogICAgICAgICB4Mj0iMTQuNzAyOTkiCiAgICAgICAgIHkyPSIzNC41MzU5NTQiCiAgICAgICAgIGlkPSJsaW5lMTYiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIxOC4xMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjE4LjExODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMCIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMjMuMjE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyMy4yMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjIiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIgLz4KICAgIDwvZz4KICA8L2c+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMzE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOnRpdGxlPnRlbWktdmVuZGl0YTJAMzAweDI8L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KPC9zdmc+Cg=="
+                                                    },
+                                                    "size": 18
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "classMinValue": 15.1,
+                                        "classMaxValue": 20,
+                                        "label": "Mild",
+                                        "symbol": {
+                                            "type": "PointSymbol3D",
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            },
+                                            "symbolLayers": [
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "primitive": "square"
+                                                    },
+                                                    "size": 23,
+                                                    "material": {
+                                                        "color": [
+                                                            255,
+                                                            165,
+                                                            0
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGUuc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjIuMSAoOWM2ZDQxZTQxMCwgMjAyMi0wNy0xNCkiCiAgIHdpZHRoPSI2NCIKICAgaGVpZ2h0PSI2NCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXczMCIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIxMC41ODQwMDIiCiAgICAgaW5rc2NhcGU6Y3g9IjYuODk3MjAyIgogICAgIGlua3NjYXBlOmN5PSIyOC4xMDg0NiIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjI0MDAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTQyMSIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnMjgiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiPgogICAgPHN0eWxlCiAgICAgICBpZD0ic3R5bGUyIj4uY2xzLTF7ZmlsbDpub25lO30uY2xzLTEsLmNscy0ye3N0cm9rZTojMmQyYTI4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPgogIDwvZGVmcz4KICA8dGl0bGUKICAgICBpZD0idGl0bGU2Ij50ZW1pLXZlbmRpdGEyQDMwMHgyPC90aXRsZT4KICA8ZwogICAgIGlkPSJMaXZlbGxvXzIiCiAgICAgZGF0YS1uYW1lPSJMaXZlbGxvIDIiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOC40MDg5MTcxLDQuMjUxNjk5NykiPgogICAgPGcKICAgICAgIGlkPSJMYXllcl8yIgogICAgICAgZGF0YS1uYW1lPSJMYXllciAyIj4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDMxLjQ1LDEwLjc0IGMgMCwwIC0wLjIyLDQuNTMgLTUuMDgsOS42MiBDIDIxLjUxLDI1LjQ1IDE1LjY1LDMxLjMgMTcuMDksMzkuOCAxOC41Myw0OC4zIDI4LjQ3LDUxIDMxLjQ1LDUxIDM0LjQzLDUxIDQ0LjM4LDQ4LjMxIDQ1LjgyLDM5LjggNDcuMjYsMzEuMjkgNDEuNCwyNS40NCAzNi41MywyMC4zNiAzMS42NiwxNS4yOCAzMS40NSwxMC43NCAzMS40NSwxMC43NCBaIgogICAgICAgICBpZD0icGF0aDgiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMGZmZmY7ZmlsbC1vcGFjaXR5OjEiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgZD0ibSA0MC43OCwzNC42NCBjIDAsMCAwLjk0LDkuNTQgLTEwLDEwLjQ5IgogICAgICAgICBpZD0icGF0aDEwIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIGQ9Im0gMjAuNDIsNDMuNDggYyAwLDAgMC42Nyw2LjgxIC03LjEyLDcuNDkiCiAgICAgICAgIGlkPSJwYXRoMTQiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjE0LjcwMjk5IgogICAgICAgICB5MT0iNS43NjU5NTQ1IgogICAgICAgICB4Mj0iMTQuNzAyOTkiCiAgICAgICAgIHkyPSIzNC41MzU5NTQiCiAgICAgICAgIGlkPSJsaW5lMTYiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIxOC4xMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjE4LjExODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMCIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMjMuMjE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyMy4yMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjIiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIgLz4KICAgIDwvZz4KICA8L2c+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMzE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOnRpdGxlPnRlbWktdmVuZGl0YTJAMzAweDI8L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KPC9zdmc+Cg=="
+                                                    },
+                                                    "size": 18
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "classMinValue": 10.1,
+                                        "classMaxValue": 15,
+                                        "label": "Cool",
+                                        "symbol": {
+                                            "type": "PointSymbol3D",
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            },
+                                            "symbolLayers": [
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "primitive": "square"
+                                                    },
+                                                    "size": 23,
+                                                    "material": {
+                                                        "color": [
+                                                            51,
+                                                            204,
+                                                            254
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGUuc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjIuMSAoOWM2ZDQxZTQxMCwgMjAyMi0wNy0xNCkiCiAgIHdpZHRoPSI2NCIKICAgaGVpZ2h0PSI2NCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXczMCIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIxMC41ODQwMDIiCiAgICAgaW5rc2NhcGU6Y3g9IjYuODk3MjAyIgogICAgIGlua3NjYXBlOmN5PSIyOC4xMDg0NiIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjI0MDAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTQyMSIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnMjgiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiPgogICAgPHN0eWxlCiAgICAgICBpZD0ic3R5bGUyIj4uY2xzLTF7ZmlsbDpub25lO30uY2xzLTEsLmNscy0ye3N0cm9rZTojMmQyYTI4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPgogIDwvZGVmcz4KICA8dGl0bGUKICAgICBpZD0idGl0bGU2Ij50ZW1pLXZlbmRpdGEyQDMwMHgyPC90aXRsZT4KICA8ZwogICAgIGlkPSJMaXZlbGxvXzIiCiAgICAgZGF0YS1uYW1lPSJMaXZlbGxvIDIiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOC40MDg5MTcxLDQuMjUxNjk5NykiPgogICAgPGcKICAgICAgIGlkPSJMYXllcl8yIgogICAgICAgZGF0YS1uYW1lPSJMYXllciAyIj4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDMxLjQ1LDEwLjc0IGMgMCwwIC0wLjIyLDQuNTMgLTUuMDgsOS42MiBDIDIxLjUxLDI1LjQ1IDE1LjY1LDMxLjMgMTcuMDksMzkuOCAxOC41Myw0OC4zIDI4LjQ3LDUxIDMxLjQ1LDUxIDM0LjQzLDUxIDQ0LjM4LDQ4LjMxIDQ1LjgyLDM5LjggNDcuMjYsMzEuMjkgNDEuNCwyNS40NCAzNi41MywyMC4zNiAzMS42NiwxNS4yOCAzMS40NSwxMC43NCAzMS40NSwxMC43NCBaIgogICAgICAgICBpZD0icGF0aDgiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMGZmZmY7ZmlsbC1vcGFjaXR5OjEiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgZD0ibSA0MC43OCwzNC42NCBjIDAsMCAwLjk0LDkuNTQgLTEwLDEwLjQ5IgogICAgICAgICBpZD0icGF0aDEwIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIGQ9Im0gMjAuNDIsNDMuNDggYyAwLDAgMC42Nyw2LjgxIC03LjEyLDcuNDkiCiAgICAgICAgIGlkPSJwYXRoMTQiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjE0LjcwMjk5IgogICAgICAgICB5MT0iNS43NjU5NTQ1IgogICAgICAgICB4Mj0iMTQuNzAyOTkiCiAgICAgICAgIHkyPSIzNC41MzU5NTQiCiAgICAgICAgIGlkPSJsaW5lMTYiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIxOC4xMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjE4LjExODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMCIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMjMuMjE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyMy4yMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjIiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIgLz4KICAgIDwvZz4KICA8L2c+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMzE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOnRpdGxlPnRlbWktdmVuZGl0YTJAMzAweDI8L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KPC9zdmc+Cg=="
+                                                    },
+                                                    "size": 18
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "classMinValue": -100,
+                                        "classMaxValue": 10,
+                                        "label": "Cold",
+                                        "symbol": {
+                                            "type": "PointSymbol3D",
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            },
+                                            "symbolLayers": [
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "primitive": "square"
+                                                    },
+                                                    "size": 23,
+                                                    "material": {
+                                                        "color": [
+                                                            0,
+                                                            0,
+                                                            255
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGUuc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjIuMSAoOWM2ZDQxZTQxMCwgMjAyMi0wNy0xNCkiCiAgIHdpZHRoPSI2NCIKICAgaGVpZ2h0PSI2NCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXczMCIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIxMC41ODQwMDIiCiAgICAgaW5rc2NhcGU6Y3g9IjYuODk3MjAyIgogICAgIGlua3NjYXBlOmN5PSIyOC4xMDg0NiIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjI0MDAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTQyMSIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnMjgiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiPgogICAgPHN0eWxlCiAgICAgICBpZD0ic3R5bGUyIj4uY2xzLTF7ZmlsbDpub25lO30uY2xzLTEsLmNscy0ye3N0cm9rZTojMmQyYTI4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPgogIDwvZGVmcz4KICA8dGl0bGUKICAgICBpZD0idGl0bGU2Ij50ZW1pLXZlbmRpdGEyQDMwMHgyPC90aXRsZT4KICA8ZwogICAgIGlkPSJMaXZlbGxvXzIiCiAgICAgZGF0YS1uYW1lPSJMaXZlbGxvIDIiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOC40MDg5MTcxLDQuMjUxNjk5NykiPgogICAgPGcKICAgICAgIGlkPSJMYXllcl8yIgogICAgICAgZGF0YS1uYW1lPSJMYXllciAyIj4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDMxLjQ1LDEwLjc0IGMgMCwwIC0wLjIyLDQuNTMgLTUuMDgsOS42MiBDIDIxLjUxLDI1LjQ1IDE1LjY1LDMxLjMgMTcuMDksMzkuOCAxOC41Myw0OC4zIDI4LjQ3LDUxIDMxLjQ1LDUxIDM0LjQzLDUxIDQ0LjM4LDQ4LjMxIDQ1LjgyLDM5LjggNDcuMjYsMzEuMjkgNDEuNCwyNS40NCAzNi41MywyMC4zNiAzMS42NiwxNS4yOCAzMS40NSwxMC43NCAzMS40NSwxMC43NCBaIgogICAgICAgICBpZD0icGF0aDgiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMGZmZmY7ZmlsbC1vcGFjaXR5OjEiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgZD0ibSA0MC43OCwzNC42NCBjIDAsMCAwLjk0LDkuNTQgLTEwLDEwLjQ5IgogICAgICAgICBpZD0icGF0aDEwIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIGQ9Im0gMjAuNDIsNDMuNDggYyAwLDAgMC42Nyw2LjgxIC03LjEyLDcuNDkiCiAgICAgICAgIGlkPSJwYXRoMTQiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjE0LjcwMjk5IgogICAgICAgICB5MT0iNS43NjU5NTQ1IgogICAgICAgICB4Mj0iMTQuNzAyOTkiCiAgICAgICAgIHkyPSIzNC41MzU5NTQiCiAgICAgICAgIGlkPSJsaW5lMTYiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIxOC4xMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjE4LjExODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMCIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMjMuMjE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyMy4yMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjIiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIgLz4KICAgIDwvZz4KICA8L2c+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMzE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOnRpdGxlPnRlbWktdmVuZGl0YTJAMzAweDI8L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KPC9zdmc+Cg=="
+                                                    },
+                                                    "size": 18
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "labelingInfo": [
+                                {
+                                    "labelExpressionInfo": {
+                                        "expression": "'Temp: ' + Round($feature[\"airtemperature\"],1) + '\u00b0C' + TextFormatting.NewLine +'Wind: ' + Round($feature[\"averagewindspeed\"],1) + 'm/s' + TextFormatting.NewLine +'Noise: ' + Round($feature[\"noise\"],1) + 'dB'"
+                                    },
+                                    "expression": "'Temp: ' + Round($feature[\"airtemperature\"],1) + '\u00b0C' + TextFormatting.NewLine +'Wind: ' + Round($feature[\"averagewindspeed\"],1) + 'm/s' + TextFormatting.NewLine +'Noise: ' + Round($feature[\"noise\"],1) + 'dB'",
+                                    "symbol": {
+                                        "type": "LabelSymbol3D",
+                                        "symbolLayers": [
+                                            {
+                                                "type": "Text",
+                                                "size": 10,
+                                                "material": {
+                                                    "color": [
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        255
+                                                    ]
+                                                },
+                                                "halo": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "size": 1.5
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "minScale": 50000
+                }
+            ],
+            "layerType": "GroupLayer"
+        },
+        {
+            "id": "",
+            "title": "Nearmap",
+            "urlTemplate": "https://api.nearmap.com/tiles/v3/Vert/{level}/{col}/{row}.jpg?apikey=Y2ExMTE4NzUtOTc5YS00YjkwLTg4ODAtMDg0NWRkYTlkM2Ux",
+            "imageFormat": "image/png",
+            "layerType": "WebTiledLayer",
+            "visibility": false
+        }
+    ],
+    "baseMap": {
+        "baseMapLayers": [
+            {
+                "fullExtent": {
+                    "spatialReference": {
+                        "wkid": 102100
+                    },
+                    "xmin": -20037508.342789244,
+                    "ymin": -20037508.33721075,
+                    "xmax": 20037508.33721075,
+                    "ymax": 20037508.342789244
+                },
+                "id": "19107665030-layer-159",
+                "title": "Vicmap Basemap - Web Mercator 256px - Cartographic",
+                "wmtsInfo": {
+                    "url": "https://base.maps.vic.gov.au/service",
+                    "layerIdentifier": "CARTO_WM_256",
+                    "tileMatrixSet": "EPSG:3857:256"
+                },
+                "visibility": true,
+                "layerType": "WebTiledLayer",
+                "refreshInterval": 0,
+                "templateUrl": "https://base.maps.vic.gov.au/service?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&LAYER=CARTO_WM_256&STYLE=default&FORMAT=image/png&TILEMATRIXSET=EPSG:3857:256&TILEMATRIX={level}&TILEROW={row}&TILECOL={col}",
+                "tileInfo": {
+                    "dpi": 96,
+                    "origin": {
+                        "spatialReference": {
+                            "wkid": 102100
+                        },
+                        "x": -20037508.342789244,
+                        "y": 20037508.342789244
+                    },
+                    "lods": [
+                        {
+                            "level": 0,
+                            "levelValue": "00",
+                            "resolution": 156543.03390624997,
+                            "scale": 591658710.8267716
+                        },
+                        {
+                            "level": 1,
+                            "levelValue": "01",
+                            "resolution": 78271.51696402047,
+                            "scale": 295829355.4545655
+                        },
+                        {
+                            "level": 2,
+                            "levelValue": "02",
+                            "resolution": 39135.758482010235,
+                            "scale": 147914677.72728276
+                        },
+                        {
+                            "level": 3,
+                            "levelValue": "03",
+                            "resolution": 19567.879241005117,
+                            "scale": 73957338.86364138
+                        },
+                        {
+                            "level": 4,
+                            "levelValue": "04",
+                            "resolution": 9783.939620502559,
+                            "scale": 36978669.43182069
+                        },
+                        {
+                            "level": 5,
+                            "levelValue": "05",
+                            "resolution": 4891.969810251279,
+                            "scale": 18489334.715910345
+                        },
+                        {
+                            "level": 6,
+                            "levelValue": "06",
+                            "resolution": 2445.9849051256397,
+                            "scale": 9244667.357955173
+                        },
+                        {
+                            "level": 7,
+                            "levelValue": "07",
+                            "resolution": 1222.9924525628198,
+                            "scale": 4622333.678977586
+                        },
+                        {
+                            "level": 8,
+                            "levelValue": "08",
+                            "resolution": 611.4962262814099,
+                            "scale": 2311166.839488793
+                        },
+                        {
+                            "level": 9,
+                            "levelValue": "09",
+                            "resolution": 305.74811314070496,
+                            "scale": 1155583.4197443966
+                        },
+                        {
+                            "level": 10,
+                            "levelValue": "10",
+                            "resolution": 152.87405657035248,
+                            "scale": 577791.7098721983
+                        },
+                        {
+                            "level": 11,
+                            "levelValue": "11",
+                            "resolution": 76.43702828517624,
+                            "scale": 288895.85493609915
+                        },
+                        {
+                            "level": 12,
+                            "levelValue": "12",
+                            "resolution": 38.21851414258812,
+                            "scale": 144447.92746804957
+                        },
+                        {
+                            "level": 13,
+                            "levelValue": "13",
+                            "resolution": 19.10925707129406,
+                            "scale": 72223.96373402479
+                        },
+                        {
+                            "level": 14,
+                            "levelValue": "14",
+                            "resolution": 9.55462853564703,
+                            "scale": 36111.98186701239
+                        },
+                        {
+                            "level": 15,
+                            "levelValue": "15",
+                            "resolution": 4.777314267823515,
+                            "scale": 18055.990933506197
+                        },
+                        {
+                            "level": 16,
+                            "levelValue": "16",
+                            "resolution": 2.3886571339117575,
+                            "scale": 9027.995466753098
+                        },
+                        {
+                            "level": 17,
+                            "levelValue": "17",
+                            "resolution": 1.1943285669558787,
+                            "scale": 4513.997733376549
+                        },
+                        {
+                            "level": 18,
+                            "levelValue": "18",
+                            "resolution": 0.5971642834779394,
+                            "scale": 2256.9988666882746
+                        },
+                        {
+                            "level": 19,
+                            "levelValue": "19",
+                            "resolution": 0.2985821417389697,
+                            "scale": 1128.4994333441373
+                        },
+                        {
+                            "level": 20,
+                            "levelValue": "20",
+                            "resolution": 0.14929107086948484,
+                            "scale": 564.2497166720686
+                        }
+                    ],
+                    "cols": 256,
+                    "rows": 256,
+                    "spatialReference": {
+                        "wkid": 102100
+                    }
+                }
+            }
+        ],
+        "id": "",
+        "title": "",
+        "elevationLayers": []
+    },
+    "ground": {
+        "layers": [
+            {
+                "id": "DEM_2023_1m_WGS84",
+                "title": "DEM 2023 1m WGS84",
+                "url": "https://tiles.arcgis.com/tiles/KGdHCCUjGBpOPPac/arcgis/rest/services/DEM_2023_1m_WGS84/ImageServer?cacheKey=b647432efb9e81f0",
+                "visibility": true,
+                "layerType": "ArcGISTiledElevationServiceLayer"
+            }
+        ],
+        "transparency": 0,
+        "navigationConstraint": {
+            "type": "stayAbove"
+        }
+    },
+    "heightModelInfo": {
+        "heightModel": "gravity_related_height",
+        "heightUnit": "meter"
+    },
+    "initialState": {
+        "viewpoint": {
+            "rotation": 2.4700484630102437e-05,
+            "scale": 26015.858081464667,
+            "targetGeometry": {
+                "spatialReference": {
+                    "latestWkid": 3857,
+                    "wkid": 3857
+                },
+                "x": 16137300.964725746,
+                "y": -4553829.208646657,
+                "z": 3.2396280746906996
+            },
+            "camera": {
+                "position": {
+                    "spatialReference": {
+                        "latestWkid": 3857,
+                        "wkid": 3857
+                    },
+                    "x": 16137300.96475021,
+                    "y": -4553885.959109418,
+                    "z": 5144.421181940474
+                },
+                "heading": 359.99997529951537,
+                "tilt": 0.4995973439193955
+            }
+        }
+    },
+    "spatialReference": {
+        "latestWkid": 3857,
+        "wkid": 3857
+    },
+    "viewingMode": "global",
+    "version": "1.33",
+    "authoringApp": "OCRAM"
+}
