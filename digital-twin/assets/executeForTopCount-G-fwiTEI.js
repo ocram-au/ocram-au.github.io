@@ -1,1 +1,0 @@
-import{f$ as n,hb as c}from"./index-5d_Oj-E1.js";import{c as f}from"./queryTopFeatures-CAxmA2IF.js";async function e(o,t,r){const a=n(o);return(await f(a,c.from(t),{...r})).data.count}export{e as executeForTopCount};
