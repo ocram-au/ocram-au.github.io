@@ -1,1 +1,0 @@
-import{f$ as m,hb as i,bg as n}from"./index-ByUZEoNK.js";import{p}from"./queryTopFeatures-Dwv35Qot.js";async function $(r,a,o,t){const e=m(r),f={...t},{data:s}=await p(e,i.from(a),o,f);return n.fromJSON(s)}export{$ as executeTopFeaturesQuery};
