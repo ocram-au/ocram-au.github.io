@@ -1,1 +1,0 @@
-import{f9 as e,fa as t}from"./index-AdHZlOg8.js";function n(f,u){return u.push(f.buffer),{buffer:f.buffer,layout:new t(f.layout)}}function o(f){return new e(f.layout).createView(f.buffer)}export{o as t,n as u};

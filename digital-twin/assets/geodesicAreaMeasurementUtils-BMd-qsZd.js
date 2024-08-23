@@ -1,1 +1,0 @@
-import{b6 as s,b7 as t,b8 as a,b9 as n}from"./index-AdHZlOg8.js";function b(r){const{spatialReference:e}=r;return s(e,u,o,r)}function u(r){return t(Math.abs(a([r],"square-meters")[0]),"square-meters")}function o(r){try{return t(Math.abs(n(r,"square-meters")),"square-meters")}catch{return null}}export{b as o};
