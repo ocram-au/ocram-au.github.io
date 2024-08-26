@@ -639,7 +639,7 @@
                                 "type": "esriFieldTypeString"
                             }
                         ],
-                        "displayField": "status_description",
+                        "displayField": "street_address",
                         "drawingInfo": {
                             "renderer": {
                                 "type": "uniqueValue",
@@ -945,7 +945,7 @@
                                 "type": "esriFieldTypeString"
                             }
                         ],
-                        "displayField": "status_description",
+                        "displayField": "zone_number",
                         "drawingInfo": {
                             "renderer": {
                                 "type": "uniqueValue",
@@ -1343,7 +1343,7 @@
                                 "type": "esriFieldTypeDouble"
                             }
                         ],
-                        "displayField": "status_description",
+                        "displayField": "device_id",
                         "drawingInfo": {
                             "renderer": {
                                 "type": "classBreaks",
@@ -1406,9 +1406,9 @@
                                                     "size": 23,
                                                     "material": {
                                                         "color": [
-                                                            252,
-                                                            136,
-                                                            3
+                                                            255,
+                                                            166,
+                                                            0
                                                         ]
                                                     }
                                                 },
@@ -1443,7 +1443,7 @@
                                                     "material": {
                                                         "color": [
                                                             255,
-                                                            165,
+                                                            234,
                                                             0
                                                         ]
                                                     }
@@ -1572,6 +1572,73 @@
                 }
             ],
             "layerType": "GroupLayer"
+        },
+        {
+            "id": "",
+            "showLegend": true,
+            "listMode": "show",
+            "disablePopup": true,
+            "title": "Building",
+            "url": "https://services1.arcgis.com/KGdHCCUjGBpOPPac/ArcGIS/rest/services/Buildings/SceneServer/layers/0",
+            "visibility": true,
+            "layerDefinition": {
+                "minScale": 0,
+                "maxScale": 0,
+                "excludeObjectIds": [],
+                "definitionExpression": null,
+                "polygonFilter": null,
+                "drawingInfo": {
+                    "renderer": {
+                        "authoringInfo": {},
+                        "type": "simple",
+                        "symbol": {
+                            "type": "MeshSymbol3D",
+                            "symbolLayers": [
+                                {
+                                    "type": "Fill",
+                                    "material": {
+                                        "color": [
+                                            160,
+                                            160,
+                                            160
+                                        ]
+                                    },
+                                    "edges": {
+                                        "type": "solid",
+                                        "color": [
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "size": 0.5
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "layerType": "ArcGISSceneServiceLayer",
+            "showLabels": false,
+            "popupInfo": {
+                "popupElements": [
+                    {
+                        "type": "fields"
+                    }
+                ],
+                "expressionInfos": [],
+                "fieldInfos": [
+                    {
+                        "fieldName": "Sheet1__Star_Rating__Nabers_Dat",
+                        "isEditable": true,
+                        "label": "Star_Rating__Nabers_Data_",
+                        "visible": true
+                    }
+                ],
+                "title": "Star Rating"
+            },
+            "screenSizePerspective": true,
+            "timeAnimation": true
         },
         {
             "id": "",
