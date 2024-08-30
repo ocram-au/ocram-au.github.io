@@ -18,7 +18,7 @@
                     "layerType": "GeoJSON",
                     "title": "Development Activity",
                     "url": "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/development-activity-monitor/exports/geojson",
-                    "visibility": false,
+                    "visibility": true,
                     "spatialReference": {
                         "wkid": 4326
                     },
@@ -39,6 +39,12 @@
                         ],
                         "showAttachments": true,
                         "fieldInfos": [
+                            {
+                                "fieldName": "planning-application-link",
+                                "isEditable": false,
+                                "label": "Planning Application Link",
+                                "visible": true
+                            },
                             {
                                 "fieldName": "data_format",
                                 "isEditable": true,
@@ -290,6 +296,13 @@
                                 "isEditable": true,
                                 "label": "Geopoint",
                                 "visible": true
+                            }
+                        ],
+                        "expressionInfos": [
+                            {
+                                "name": "planning-application-link",
+                                "title": "Planning Application Link",
+                                "expression": "`https://www.melbourne.vic.gov.au/planning-permit-register-search-results?permit=${$feature.town_planning_application}`"
                             }
                         ]
                     },
@@ -885,7 +898,8 @@
                                 "label": "Location",
                                 "visible": true
                             }
-                        ]
+                        ],
+                        "expressionInfos": []
                     },
                     "refreshInterval": 2,
                     "customParameters": {
@@ -1203,7 +1217,8 @@
                                 "label": "Noise Level (dB)",
                                 "visible": true
                             }
-                        ]
+                        ],
+                        "expressionInfos": []
                     },
                     "refreshInterval": 15,
                     "customParameters": {
@@ -1580,7 +1595,7 @@
             "disablePopup": true,
             "title": "Building",
             "url": "https://services1.arcgis.com/KGdHCCUjGBpOPPac/ArcGIS/rest/services/Buildings/SceneServer/layers/0",
-            "visibility": true,
+            "visibility": false,
             "layerDefinition": {
                 "minScale": 0,
                 "maxScale": 0,
