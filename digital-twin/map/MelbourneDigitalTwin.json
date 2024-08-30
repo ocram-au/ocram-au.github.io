@@ -302,7 +302,7 @@
                             {
                                 "name": "planning-application-link",
                                 "title": "Planning Application Link",
-                                "expression": "`https://www.melbourne.vic.gov.au/planning-permit-register-search-results?permit=${$feature.town_planning_application}`"
+                                "expression": "`https://www.melbourne.vic.gov.au/planning-permit-register-search-results?permit=${$feature.town_planning_application}#:~:text=Search%20results`"
                             }
                         ]
                     },
