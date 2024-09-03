@@ -8,7 +8,115 @@
                 "key": "AIzaSyBQ7Wj99aTxRqET-22qYWGFcDCWgVDt89A"
             },
             "layerType": "IntegratedMesh3DTilesLayer",
-            "visibility": false
+            "visibility": true
+        },
+        {
+            "layerType": "GeoJSON",
+            "title": [
+                "Matterport"
+            ],
+            "url": "./digital-twin/data/matterport.geojson",
+            "visibility": true,
+            "spatialReference": {
+                "wkid": 4326
+            },
+            "outFields": [
+                "*"
+            ],
+            "disablePopup": false,
+            "popupInfo": {
+                "title": [
+                    "Matterport"
+                ],
+                "popupElements": [
+                    {
+                        "type": "fields"
+                    },
+                    {
+                        "type": "attachments",
+                        "displayType": "auto"
+                    }
+                ],
+                "showAttachments": true,
+                "fieldInfos": [
+                    {
+                        "fieldName": "site",
+                        "isEditable": true,
+                        "label": "Site",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "matterport_link",
+                        "isEditable": true,
+                        "label": "Matterport Link",
+                        "visible": true
+                    }
+                ],
+                "expressionInfos": []
+            },
+            "refreshInterval": 0,
+            "customParameters": null,
+            "layerDefinition": {
+                "fields": [
+                    {
+                        "name": "site",
+                        "alias": "Site",
+                        "editable": false,
+                        "length": 500,
+                        "nullable": true,
+                        "type": "esriFieldTypeString"
+                    },
+                    {
+                        "name": "matterport_link",
+                        "alias": "Matterport Link",
+                        "editable": false,
+                        "length": 3000,
+                        "nullable": true,
+                        "type": "esriFieldTypeString"
+                    }
+                ],
+                "displayField": "site",
+                "drawingInfo": {
+                    "renderer": {
+                        "type": "simple",
+                        "symbol": {
+                            "type": "PointSymbol3D",
+                            "symbolLayers": [
+                                {
+                                    "type": "Icon",
+                                    "resource": {
+                                        "primitive": "circle"
+                                    },
+                                    "size": 15,
+                                    "material": {
+                                        "color": [
+                                            255,
+                                            255,
+                                            255
+                                        ]
+                                    },
+                                    "outline": {
+                                        "size": 2,
+                                        "color": [
+                                            255,
+                                            0,
+                                            0
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Icon",
+                                    "resource": {
+                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgd2lkdGg9IjI2IgogICBoZWlnaHQ9IjI2IgogICBmaWxsPSJub25lIgogICB2ZXJzaW9uPSIxLjEiCiAgIGlkPSJzdmcyMSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWF0dGVycG9ydC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzIzIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjE2LjU4MjI3OCIKICAgICBpbmtzY2FwZTpjeD0iNDQuMzI0NDI4IgogICAgIGlua3NjYXBlOmN5PSIzMS44MTEwNjkiCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIyNDAwIgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjE0MjEiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9IjIzOTIiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnMjEiIC8+CiAgPGcKICAgICBjbGlwLXBhdGg9InVybCgjYSkiCiAgICAgaWQ9ImcxMCI+CiAgICA8cGF0aAogICAgICAgZD0iTSAyMi4yNjgsMCAxMi45NCwyLjYwMiAzLjY4NywwIDAsMS4wMTIgdiAyMy45MjUgbCAzLjY4NywxLjAxMiA5LjMyNiwtMi41MyA5LjI1NSwyLjYwMiAzLjY4NywtMS4wMTIgViAxLjAxMiBaIG0gLTMuNzYsMTcuODU0IC01LjU2NywtMS41MTggLTUuNTY3LDEuNTE4IFYgOC4xNjggbCA1LjU2NywxLjUxOCA1LjU2NywtMS41MTggeiIKICAgICAgIGZpbGw9IiNmZjMxNTgiCiAgICAgICBpZD0icGF0aDQiIC8+CiAgICA8cGF0aAogICAgICAgZD0iTSAxMi45NDEsNC42OTggViA5LjY4NiBMIDMuNjg3LDcuMDg0IFYgMjUuOTQ5IEwgMCwyNC45MzcgViAxLjAxMiBaIG0gNS41NjcsMTUuMTggLTUuNTY3LC0xLjUxOCB2IDQuOTg3IGwgOS4zMjcsMi42MDIgViA3LjA4NCBsIC0zLjc2LDEuMDg0IHoiCiAgICAgICBmaWxsPSIjYzAwMDMzIgogICAgICAgaWQ9InBhdGg2IiAvPgogICAgPHBhdGgKICAgICAgIGQ9Ik0gMjIuMjY4LDAgMjUuOTU1LDEuMDEyIDEyLjk0LDQuNjk4IDAsMS4wMTIgMy42ODcsMCAxMi45NDEsMi42MDIgWiBtIC05LjMyNywxNi4yNjMgNS41NjcsMS41OSB2IDIuMDI0IEwgMTIuOTQxLDE4LjM2IDcuNDQ3LDE5Ljg3OCB2IC0yLjAyNCBsIDUuNDk0LC0xLjU5IHoiCiAgICAgICBmaWxsPSIjZmY3Nzg4IgogICAgICAgaWQ9InBhdGg4IiAvPgogIDwvZz4KICA8ZGVmcwogICAgIGlkPSJkZWZzMTkiPgogICAgPGNsaXBQYXRoCiAgICAgICBpZD0iYSI+CiAgICAgIDxwYXRoCiAgICAgICAgIGZpbGw9IiNmZmZmZmYiCiAgICAgICAgIGQ9Ik0gMCwwIEggMTU4IFYgMjYuMDE4IEggMCBaIgogICAgICAgICBpZD0icGF0aDE2IiAvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+Cjwvc3ZnPgo="
+                                    },
+                                    "size": 10
+                                }
+                            ]
+                        }
+                    },
+                    "labelingInfo": []
+                }
+            }
         },
         {
             "id": "",
@@ -18,7 +126,7 @@
                     "layerType": "GeoJSON",
                     "title": "Development Activity",
                     "url": "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/development-activity-monitor/exports/geojson",
-                    "visibility": true,
+                    "visibility": false,
                     "spatialReference": {
                         "wkid": 4326
                     },
@@ -670,11 +778,6 @@
                                                 ],
                                                 "symbol": {
                                                     "type": "PointSymbol3D",
-                                                    "verticalOffset": {
-                                                        "screenLength": 50,
-                                                        "maxWorldLength": 350,
-                                                        "minWorldLength": 100
-                                                    },
                                                     "symbolLayers": [
                                                         {
                                                             "type": "Icon",
@@ -698,6 +801,11 @@
                                                             "size": 10
                                                         }
                                                     ],
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 350,
+                                                        "minWorldLength": 100
+                                                    },
                                                     "callout": {
                                                         "type": "line",
                                                         "color": [
@@ -726,11 +834,6 @@
                                                 ],
                                                 "symbol": {
                                                     "type": "PointSymbol3D",
-                                                    "verticalOffset": {
-                                                        "screenLength": 50,
-                                                        "maxWorldLength": 350,
-                                                        "minWorldLength": 100
-                                                    },
                                                     "symbolLayers": [
                                                         {
                                                             "type": "Icon",
@@ -754,6 +857,11 @@
                                                             "size": 10
                                                         }
                                                     ],
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 350,
+                                                        "minWorldLength": 100
+                                                    },
                                                     "callout": {
                                                         "type": "line",
                                                         "color": [
@@ -782,11 +890,6 @@
                                                 ],
                                                 "symbol": {
                                                     "type": "PointSymbol3D",
-                                                    "verticalOffset": {
-                                                        "screenLength": 50,
-                                                        "maxWorldLength": 350,
-                                                        "minWorldLength": 100
-                                                    },
                                                     "symbolLayers": [
                                                         {
                                                             "type": "Icon",
@@ -810,6 +913,11 @@
                                                             "size": 10
                                                         }
                                                     ],
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 350,
+                                                        "minWorldLength": 100
+                                                    },
                                                     "callout": {
                                                         "type": "line",
                                                         "color": [
@@ -977,11 +1085,6 @@
                                                 ],
                                                 "symbol": {
                                                     "type": "PointSymbol3D",
-                                                    "verticalOffset": {
-                                                        "screenLength": 50,
-                                                        "maxWorldLength": 10,
-                                                        "minWorldLength": 3
-                                                    },
                                                     "symbolLayers": [
                                                         {
                                                             "type": "Icon",
@@ -991,6 +1094,11 @@
                                                             "size": 18
                                                         }
                                                     ],
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 10,
+                                                        "minWorldLength": 3
+                                                    },
                                                     "callout": {
                                                         "type": "line",
                                                         "color": [
@@ -1019,11 +1127,6 @@
                                                 ],
                                                 "symbol": {
                                                     "type": "PointSymbol3D",
-                                                    "verticalOffset": {
-                                                        "screenLength": 50,
-                                                        "maxWorldLength": 10,
-                                                        "minWorldLength": 3
-                                                    },
                                                     "symbolLayers": [
                                                         {
                                                             "type": "Icon",
@@ -1033,6 +1136,11 @@
                                                             "size": 18
                                                         }
                                                     ],
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 10,
+                                                        "minWorldLength": 3
+                                                    },
                                                     "callout": {
                                                         "type": "line",
                                                         "color": [
@@ -1371,11 +1479,6 @@
                                         "label": "Hot",
                                         "symbol": {
                                             "type": "PointSymbol3D",
-                                            "verticalOffset": {
-                                                "screenLength": 50,
-                                                "maxWorldLength": 350,
-                                                "minWorldLength": 100
-                                            },
                                             "symbolLayers": [
                                                 {
                                                     "type": "Icon",
@@ -1398,7 +1501,12 @@
                                                     },
                                                     "size": 18
                                                 }
-                                            ]
+                                            ],
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            }
                                         }
                                     },
                                     {
@@ -1407,11 +1515,6 @@
                                         "label": "Warm",
                                         "symbol": {
                                             "type": "PointSymbol3D",
-                                            "verticalOffset": {
-                                                "screenLength": 50,
-                                                "maxWorldLength": 350,
-                                                "minWorldLength": 100
-                                            },
                                             "symbolLayers": [
                                                 {
                                                     "type": "Icon",
@@ -1434,7 +1537,12 @@
                                                     },
                                                     "size": 18
                                                 }
-                                            ]
+                                            ],
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            }
                                         }
                                     },
                                     {
@@ -1443,11 +1551,6 @@
                                         "label": "Mild",
                                         "symbol": {
                                             "type": "PointSymbol3D",
-                                            "verticalOffset": {
-                                                "screenLength": 50,
-                                                "maxWorldLength": 350,
-                                                "minWorldLength": 100
-                                            },
                                             "symbolLayers": [
                                                 {
                                                     "type": "Icon",
@@ -1470,7 +1573,12 @@
                                                     },
                                                     "size": 18
                                                 }
-                                            ]
+                                            ],
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            }
                                         }
                                     },
                                     {
@@ -1479,11 +1587,6 @@
                                         "label": "Cool",
                                         "symbol": {
                                             "type": "PointSymbol3D",
-                                            "verticalOffset": {
-                                                "screenLength": 50,
-                                                "maxWorldLength": 350,
-                                                "minWorldLength": 100
-                                            },
                                             "symbolLayers": [
                                                 {
                                                     "type": "Icon",
@@ -1506,7 +1609,12 @@
                                                     },
                                                     "size": 18
                                                 }
-                                            ]
+                                            ],
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            }
                                         }
                                     },
                                     {
@@ -1515,11 +1623,6 @@
                                         "label": "Cold",
                                         "symbol": {
                                             "type": "PointSymbol3D",
-                                            "verticalOffset": {
-                                                "screenLength": 50,
-                                                "maxWorldLength": 350,
-                                                "minWorldLength": 100
-                                            },
                                             "symbolLayers": [
                                                 {
                                                     "type": "Icon",
@@ -1542,7 +1645,12 @@
                                                     },
                                                     "size": 18
                                                 }
-                                            ]
+                                            ],
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            }
                                         }
                                     }
                                 ]
@@ -1857,16 +1965,16 @@
     },
     "initialState": {
         "viewpoint": {
-            "rotation": 2.4700484630102437e-05,
-            "scale": 26015.858081464667,
+            "rotation": 0.5656214683681924,
+            "scale": 8589.993225416441,
             "targetGeometry": {
                 "spatialReference": {
                     "latestWkid": 3857,
                     "wkid": 3857
                 },
-                "x": 16137300.964725746,
-                "y": -4553829.208646657,
-                "z": 3.2396280746906996
+                "x": 16137166.253751462,
+                "y": -4553346.907690696,
+                "z": 32.63943684846163
             },
             "camera": {
                 "position": {
@@ -1874,12 +1982,12 @@
                         "latestWkid": 3857,
                         "wkid": 3857
                     },
-                    "x": 16137300.96475021,
-                    "y": -4553885.959109418,
-                    "z": 5144.421181940474
+                    "x": 16137197.935767349,
+                    "y": -4556556.593134941,
+                    "z": 1913.7762692123652
                 },
-                "heading": 359.99997529951537,
-                "tilt": 0.4995973439193955
+                "heading": 359.4343785316318,
+                "tilt": 53.418850433852434
             }
         }
     },
