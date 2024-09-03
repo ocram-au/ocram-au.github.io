@@ -15,7 +15,7 @@
             "title": [
                 "Matterport"
             ],
-            "url": "./digital-twin/data/matterport.geojson",
+            "url": "./data/matterport.geojson",
             "visibility": true,
             "spatialReference": {
                 "wkid": 4326
