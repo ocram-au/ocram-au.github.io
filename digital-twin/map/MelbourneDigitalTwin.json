@@ -15,7 +15,7 @@
             "title": [
                 "View 360"
             ],
-            "url": "./digital-twin/data/360View.geojson",
+            "url": "./data/360View.geojson",
             "visibility": true,
             "spatialReference": {
                 "wkid": 4326
