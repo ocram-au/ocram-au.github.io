@@ -13,9 +13,9 @@
         {
             "layerType": "GeoJSON",
             "title": [
-                "Matterport"
+                "View 360"
             ],
-            "url": "./data/matterport.geojson",
+            "url": "./digital-twin/data/360View.geojson",
             "visibility": true,
             "spatialReference": {
                 "wkid": 4326
@@ -26,7 +26,7 @@
             "disablePopup": false,
             "popupInfo": {
                 "title": [
-                    "Matterport"
+                    "View 360"
                 ],
                 "popupElements": [
                     {
@@ -46,9 +46,15 @@
                         "visible": true
                     },
                     {
-                        "fieldName": "matterport_link",
+                        "fieldName": "view_360_link",
                         "isEditable": true,
-                        "label": "Matterport Link",
+                        "label": "View 360 Link",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "web_link",
+                        "isEditable": true,
+                        "label": "Web Link",
                         "visible": true
                     }
                 ],
@@ -67,8 +73,16 @@
                         "type": "esriFieldTypeString"
                     },
                     {
-                        "name": "matterport_link",
-                        "alias": "Matterport Link",
+                        "name": "view_360_link",
+                        "alias": "View 360 Link",
+                        "editable": false,
+                        "length": 3000,
+                        "nullable": true,
+                        "type": "esriFieldTypeString"
+                    },
+                    {
+                        "name": "web_link",
+                        "alias": "Web Link",
                         "editable": false,
                         "length": 3000,
                         "nullable": true,
@@ -87,34 +101,60 @@
                                     "resource": {
                                         "primitive": "circle"
                                     },
-                                    "size": 15,
+                                    "size": 24,
                                     "material": {
                                         "color": [
                                             255,
                                             255,
                                             255
                                         ]
-                                    },
-                                    "outline": {
-                                        "size": 2,
-                                        "color": [
-                                            255,
-                                            0,
-                                            0
-                                        ]
                                     }
                                 },
                                 {
                                     "type": "Icon",
                                     "resource": {
-                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgd2lkdGg9IjI2IgogICBoZWlnaHQ9IjI2IgogICBmaWxsPSJub25lIgogICB2ZXJzaW9uPSIxLjEiCiAgIGlkPSJzdmcyMSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWF0dGVycG9ydC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzIzIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjE2LjU4MjI3OCIKICAgICBpbmtzY2FwZTpjeD0iNDQuMzI0NDI4IgogICAgIGlua3NjYXBlOmN5PSIzMS44MTEwNjkiCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIyNDAwIgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjE0MjEiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9IjIzOTIiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnMjEiIC8+CiAgPGcKICAgICBjbGlwLXBhdGg9InVybCgjYSkiCiAgICAgaWQ9ImcxMCI+CiAgICA8cGF0aAogICAgICAgZD0iTSAyMi4yNjgsMCAxMi45NCwyLjYwMiAzLjY4NywwIDAsMS4wMTIgdiAyMy45MjUgbCAzLjY4NywxLjAxMiA5LjMyNiwtMi41MyA5LjI1NSwyLjYwMiAzLjY4NywtMS4wMTIgViAxLjAxMiBaIG0gLTMuNzYsMTcuODU0IC01LjU2NywtMS41MTggLTUuNTY3LDEuNTE4IFYgOC4xNjggbCA1LjU2NywxLjUxOCA1LjU2NywtMS41MTggeiIKICAgICAgIGZpbGw9IiNmZjMxNTgiCiAgICAgICBpZD0icGF0aDQiIC8+CiAgICA8cGF0aAogICAgICAgZD0iTSAxMi45NDEsNC42OTggViA5LjY4NiBMIDMuNjg3LDcuMDg0IFYgMjUuOTQ5IEwgMCwyNC45MzcgViAxLjAxMiBaIG0gNS41NjcsMTUuMTggLTUuNTY3LC0xLjUxOCB2IDQuOTg3IGwgOS4zMjcsMi42MDIgViA3LjA4NCBsIC0zLjc2LDEuMDg0IHoiCiAgICAgICBmaWxsPSIjYzAwMDMzIgogICAgICAgaWQ9InBhdGg2IiAvPgogICAgPHBhdGgKICAgICAgIGQ9Ik0gMjIuMjY4LDAgMjUuOTU1LDEuMDEyIDEyLjk0LDQuNjk4IDAsMS4wMTIgMy42ODcsMCAxMi45NDEsMi42MDIgWiBtIC05LjMyNywxNi4yNjMgNS41NjcsMS41OSB2IDIuMDI0IEwgMTIuOTQxLDE4LjM2IDcuNDQ3LDE5Ljg3OCB2IC0yLjAyNCBsIDUuNDk0LC0xLjU5IHoiCiAgICAgICBmaWxsPSIjZmY3Nzg4IgogICAgICAgaWQ9InBhdGg4IiAvPgogIDwvZz4KICA8ZGVmcwogICAgIGlkPSJkZWZzMTkiPgogICAgPGNsaXBQYXRoCiAgICAgICBpZD0iYSI+CiAgICAgIDxwYXRoCiAgICAgICAgIGZpbGw9IiNmZmZmZmYiCiAgICAgICAgIGQ9Ik0gMCwwIEggMTU4IFYgMjYuMDE4IEggMCBaIgogICAgICAgICBpZD0icGF0aDE2IiAvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+Cjwvc3ZnPgo="
+                                        "dataURI": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTI5LjggMjQuNmMwIDIuMTQtMy45ODggMy41NDItOC44IDQuMTExdjIuNDhMMTkuNjQ3IDMwbC0xLjcwNS0xLjUgMS43MDUtMS41TDIxIDI1LjgxdjEuODk0YzQuNjgtLjU3NCA3LjgtMS44OTMgNy44LTMuMTA0IDAtMS42MDUtNS40NzQtMy40LTEyLjgtMy40UzMuMiAyMi45OTUgMy4yIDI0LjZjMCAxLjM3NyA0LjAzMiAyLjg5IDkuOCAzLjI5M3YxQzcuMzQ2IDI4LjUwNiAyLjIgMjcuMDMxIDIuMiAyNC42YzAtMi44NTggNy4xMS00LjQgMTMuOC00LjRzMTMuOCAxLjU0MiAxMy44IDQuNHpNMTguMiA3LjVhMS4zIDEuMyAwIDEgMSAxLjMgMS4zIDEuMzAxIDEuMzAxIDAgMCAxLTEuMy0xLjN6bS45NDIuMzU4YS41MDcuNTA3IDAgMSAwIDAtLjcxNy41MDguNTA4IDAgMCAwIDAgLjcxN3pNMzAgMS41ODJ2MTcuODM2QTQ0LjQ4NiA0NC40ODYgMCAwIDAgMTYgMTcuMmE0NC40ODYgNDQuNDg2IDAgMCAwLTE0IDIuMjE4VjEuNTgyQTQ0LjQ4NyA0NC40ODcgMCAwIDAgMTYgMy44YTQ0LjQ4NyA0NC40ODcgMCAwIDAgMTQtMi4yMTh6TTMgMTguMDQ0Yy4yOTUtLjA4Ny42MzctLjE4NCAxLjAxOC0uMjg1bDQuNzg2LTQuNTk3YS40ODEuNDgxIDAgMCAxIC41MzktLjA4OGwuNjIuMjkzIDQuMjI5LTMuNTc2YS40OS40OSAwIDAgMSAuNjQzLjAxczIuNjc5IDIuMzY3IDMuNTMgMy4wOThsMi4xOTMtMi4wNmEuNDkuNDkgMCAwIDEgLjY5NS4wMjVsNy43NDQgNy4xNzkuMDAzLjAwMVYyLjk1NkE0Ny4wNTYgNDcuMDU2IDAgMCAxIDE2IDQuOCA0Ny4wNTYgNDcuMDU2IDAgMCAxIDMgMi45NTZ6TTE2IDE2LjJhNDcuNTQ4IDQ3LjU0OCAwIDAgMSAxMS4xODMgMS4zNTVsLTYuMzE2LTUuNjM1LTEuODE3IDEuNzA4YTEgMSAwIDAgMS0xLjMzNi4wMyA1NTIuMjI1IDU1Mi4yMjUgMCAwIDEtMy4yMTYtMi44MTZsLTMuODkgMy4yODlhMSAxIDAgMCAxLTEuMDcyLjE0bC0uMjk3LS4xNC0zLjI5NCAzLjE2M0E0Ny42MDIgNDcuNjAyIDAgMCAxIDE2IDE2LjJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzMnYzMkgweiIvPjwvc3ZnPg=="
                                     },
-                                    "size": 10
+                                    "size": 16
                                 }
                             ]
                         }
                     },
-                    "labelingInfo": []
+                    "labelingInfo": [
+                        {
+                            "labelExpressionInfo": {
+                                "expression": "$feature.site"
+                            },
+                            "expression": "$feature.site",
+                            "minScale": 1000,
+                            "symbol": {
+                                "type": "LabelSymbol3D",
+                                "symbolLayers": [
+                                    {
+                                        "type": "Text",
+                                        "size": 10,
+                                        "material": {
+                                            "color": [
+                                                0,
+                                                0,
+                                                0,
+                                                255
+                                            ]
+                                        },
+                                        "halo": {
+                                            "color": [
+                                                255,
+                                                255,
+                                                255,
+                                                255
+                                            ],
+                                            "size": 1.5
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
                 }
             }
         },
@@ -148,15 +188,15 @@
                         "showAttachments": true,
                         "fieldInfos": [
                             {
-                                "fieldName": "planning-application-link",
-                                "isEditable": false,
-                                "label": "Planning Application Link",
-                                "visible": true
-                            },
-                            {
                                 "fieldName": "data_format",
                                 "isEditable": true,
                                 "label": "Data Format",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "planning-application-link",
+                                "isEditable": false,
+                                "label": "Planning Application Link",
                                 "visible": true
                             },
                             {
@@ -784,7 +824,7 @@
                                                             "resource": {
                                                                 "primitive": "circle"
                                                             },
-                                                            "size": 15,
+                                                            "size": 18,
                                                             "material": {
                                                                 "color": [
                                                                     0,
@@ -840,7 +880,7 @@
                                                             "resource": {
                                                                 "primitive": "circle"
                                                             },
-                                                            "size": 15,
+                                                            "size": 18,
                                                             "material": {
                                                                 "color": [
                                                                     0,
@@ -896,7 +936,7 @@
                                                             "resource": {
                                                                 "primitive": "circle"
                                                             },
-                                                            "size": 15,
+                                                            "size": 18,
                                                             "material": {
                                                                 "color": [
                                                                     255,
@@ -971,6 +1011,12 @@
                         "showAttachments": true,
                         "fieldInfos": [
                             {
+                                "fieldName": "data-link",
+                                "isEditable": false,
+                                "label": "Data Link",
+                                "visible": true
+                            },
+                            {
                                 "fieldName": "lastupdated",
                                 "isEditable": true,
                                 "label": "Lastupdated",
@@ -1007,7 +1053,13 @@
                                 "visible": true
                             }
                         ],
-                        "expressionInfos": []
+                        "expressionInfos": [
+                            {
+                                "name": "data-link",
+                                "title": "Data Link",
+                                "expression": "`https://data.melbourne.vic.gov.au/explore/dataset/on-street-parking-bay-sensors`"
+                            }
+                        ]
                     },
                     "refreshInterval": 2,
                     "customParameters": {
@@ -1230,6 +1282,12 @@
                         "showAttachments": true,
                         "fieldInfos": [
                             {
+                                "fieldName": "data-link",
+                                "isEditable": false,
+                                "label": "Data Link",
+                                "visible": true
+                            },
+                            {
                                 "fieldName": "device_id",
                                 "isEditable": true,
                                 "label": "Device ID",
@@ -1326,7 +1384,13 @@
                                 "visible": true
                             }
                         ],
-                        "expressionInfos": []
+                        "expressionInfos": [
+                            {
+                                "name": "data-link",
+                                "title": "Data Link",
+                                "expression": "`https://data.melbourne.vic.gov.au/explore/dataset/microclimate-sensors-data`"
+                            }
+                        ]
                     },
                     "refreshInterval": 15,
                     "customParameters": {
@@ -1485,7 +1549,7 @@
                                                     "resource": {
                                                         "primitive": "square"
                                                     },
-                                                    "size": 23,
+                                                    "size": 26,
                                                     "material": {
                                                         "color": [
                                                             255,
@@ -1521,7 +1585,7 @@
                                                     "resource": {
                                                         "primitive": "square"
                                                     },
-                                                    "size": 23,
+                                                    "size": 26,
                                                     "material": {
                                                         "color": [
                                                             255,
@@ -1557,7 +1621,7 @@
                                                     "resource": {
                                                         "primitive": "square"
                                                     },
-                                                    "size": 23,
+                                                    "size": 26,
                                                     "material": {
                                                         "color": [
                                                             255,
@@ -1593,7 +1657,7 @@
                                                     "resource": {
                                                         "primitive": "square"
                                                     },
-                                                    "size": 23,
+                                                    "size": 26,
                                                     "material": {
                                                         "color": [
                                                             51,
@@ -1629,7 +1693,7 @@
                                                     "resource": {
                                                         "primitive": "square"
                                                     },
-                                                    "size": 23,
+                                                    "size": 26,
                                                     "material": {
                                                         "color": [
                                                             0,
@@ -1762,14 +1826,6 @@
             },
             "screenSizePerspective": true,
             "timeAnimation": true
-        },
-        {
-            "id": "",
-            "title": "Nearmap",
-            "urlTemplate": "https://api.nearmap.com/tiles/v3/Vert/{level}/{col}/{row}.jpg?apikey=Y2ExMTE4NzUtOTc5YS00YjkwLTg4ODAtMDg0NWRkYTlkM2Ux",
-            "imageFormat": "image/png",
-            "layerType": "WebTiledLayer",
-            "visibility": false
         }
     ],
     "baseMap": {
