@@ -11,7 +11,7 @@
             "type": "Feature",
             "properties": {
                 "site": "Melbourne Town Hall",
-                "view_360_link": "<iframe src='https://my.matterport.com/show/?play=1&lang=de&m=Knyns6QdBEo' allowfullscreen></iframe>",
+                "view_360_link": "<iframe src='https://my.matterport.com/show/?play=1&lang=de&m=Knyns6QdBEo&mls=1' allowfullscreen></iframe>",
 				"web_link": "https://www.melbourne.vic.gov.au/melbourne-town-hall-history"
             },
             "geometry": {

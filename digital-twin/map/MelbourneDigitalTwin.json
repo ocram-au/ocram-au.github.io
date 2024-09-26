@@ -5,10 +5,10 @@
             "title": "Google Photorealistic 3D Tiles",
             "url": "https://tile.googleapis.com/v1/3dtiles/root.json",
             "customParameters": {
-                "key": "AIzaSyBQ7Wj99aTxRqET-22qYWGFcDCWgVDt89A"
+                "key": "AIzaSyDrSNqujmAmhhZtenz6MEofEuITd3z0JM0"
             },
             "layerType": "IntegratedMesh3DTilesLayer",
-            "visibility": true
+            "visibility": false
         },
         {
             "layerType": "GeoJSON",
@@ -1767,7 +1767,7 @@
             "disablePopup": true,
             "title": "Building",
             "url": "https://services1.arcgis.com/KGdHCCUjGBpOPPac/ArcGIS/rest/services/Buildings/SceneServer/layers/0",
-            "visibility": false,
+            "visibility": true,
             "layerDefinition": {
                 "minScale": 0,
                 "maxScale": 0,
