@@ -2,161 +2,766 @@
     "operationalLayers": [
         {
             "id": "",
-            "title": "Google Photorealistic 3D Tiles",
-            "url": "https://tile.googleapis.com/v1/3dtiles/root.json",
-            "customParameters": {
-                "key": "AIzaSyDrSNqujmAmhhZtenz6MEofEuITd3z0JM0"
-            },
-            "layerType": "IntegratedMesh3DTilesLayer",
-            "visibility": false
+            "title": "3D Building",
+            "layers": [
+                {
+                    "id": "",
+                    "title": "Google Photorealistic 3D Tiles",
+                    "url": "https://tile.googleapis.com/v1/3dtiles/root.json",
+                    "customParameters": {
+                        "key": "AIzaSyDrSNqujmAmhhZtenz6MEofEuITd3z0JM0"
+                    },
+                    "layerType": "IntegratedMesh3DTilesLayer",
+                    "visibility": false
+                },
+                {
+                    "id": "",
+                    "showLegend": true,
+                    "listMode": "show",
+                    "disablePopup": true,
+                    "title": "Building",
+                    "url": "https://services1.arcgis.com/KGdHCCUjGBpOPPac/ArcGIS/rest/services/Buildings/SceneServer/layers/0",
+                    "visibility": true,
+                    "layerDefinition": {
+                        "minScale": 0,
+                        "maxScale": 0,
+                        "excludeObjectIds": [],
+                        "definitionExpression": null,
+                        "polygonFilter": null,
+                        "drawingInfo": {
+                            "renderer": {
+                                "authoringInfo": {},
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "MeshSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Fill",
+                                            "material": {
+                                                "color": [
+                                                    160,
+                                                    160,
+                                                    160
+                                                ]
+                                            },
+                                            "edges": {
+                                                "type": "solid",
+                                                "color": [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ],
+                                                "size": 0.5
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "layerType": "ArcGISSceneServiceLayer",
+                    "showLabels": false,
+                    "popupInfo": {
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            }
+                        ],
+                        "expressionInfos": [],
+                        "fieldInfos": [
+                            {
+                                "fieldName": "Sheet1__Star_Rating__Nabers_Dat",
+                                "isEditable": true,
+                                "label": "Star_Rating__Nabers_Data_",
+                                "visible": true
+                            }
+                        ],
+                        "title": "Star Rating"
+                    },
+                    "screenSizePerspective": true,
+                    "timeAnimation": true
+                }
+            ],
+            "layerType": "GroupLayer",
+            "visibilityMode": "exclusive"
         },
         {
-            "layerType": "GeoJSON",
-            "title": [
-                "View 360"
-            ],
-            "url": "./data/360View.geojson",
-            "visibility": true,
-            "spatialReference": {
-                "wkid": 4326
-            },
-            "outFields": [
-                "*"
-            ],
-            "disablePopup": false,
-            "popupInfo": {
-                "title": [
-                    "View 360"
-                ],
-                "popupElements": [
-                    {
-                        "type": "fields"
+            "id": "",
+            "title": "Public Transport Victoria",
+            "layers": [
+                {
+                    "layerType": "GeoJSON",
+                    "title": [
+                        "Train Station"
+                    ],
+                    "url": "./data/ptv_stop_train.geojson",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
                     },
-                    {
-                        "type": "attachments",
-                        "displayType": "auto"
-                    }
-                ],
-                "showAttachments": true,
-                "fieldInfos": [
-                    {
-                        "fieldName": "site",
-                        "isEditable": true,
-                        "label": "Site",
-                        "visible": true
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": [
+                            "Train Station"
+                        ],
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "OBJECTID",
+                                "isEditable": true,
+                                "label": "OBJECTID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_suburb",
+                                "isEditable": true,
+                                "label": "Stop Suburb",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_type",
+                                "isEditable": true,
+                                "label": "Route Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_latitude",
+                                "isEditable": true,
+                                "label": "Stop Latitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_longitude",
+                                "isEditable": true,
+                                "label": "Stop Longitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_sequence",
+                                "isEditable": true,
+                                "label": "Stop Sequence",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ticket_type",
+                                "isEditable": true,
+                                "label": "Ticket Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "zone",
+                                "isEditable": true,
+                                "label": "Zone",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "is_free_fare_zone",
+                                "isEditable": true,
+                                "label": "Is Free Fare Zone",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ticket_machine",
+                                "isEditable": true,
+                                "label": "Ticket Machine",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ticket_checks",
+                                "isEditable": true,
+                                "label": "Ticket Checks",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vline_reservation",
+                                "isEditable": true,
+                                "label": "Vline Reservation",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_id",
+                                "isEditable": true,
+                                "label": "Stop Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_name",
+                                "isEditable": true,
+                                "label": "Stop Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_landmark",
+                                "isEditable": true,
+                                "label": "Stop Landmark",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_name",
+                                "isEditable": true,
+                                "label": "Route Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_number",
+                                "isEditable": true,
+                                "label": "Route Number",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "next_departure_link",
+                                "isEditable": true,
+                                "label": "Next Departure Link",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "disruption_link",
+                                "isEditable": true,
+                                "label": "Disruption Link",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_id",
+                                "isEditable": true,
+                                "label": "Route Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "metro_train_link",
+                                "isEditable": true,
+                                "label": "Metro Train Link",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": []
                     },
-                    {
-                        "fieldName": "view_360_link",
-                        "isEditable": true,
-                        "label": "View 360 Link",
-                        "visible": true
-                    },
-                    {
-                        "fieldName": "web_link",
-                        "isEditable": true,
-                        "label": "Web Link",
-                        "visible": true
-                    }
-                ],
-                "expressionInfos": []
-            },
-            "refreshInterval": 0,
-            "customParameters": null,
-            "layerDefinition": {
-                "fields": [
-                    {
-                        "name": "site",
-                        "alias": "Site",
-                        "editable": false,
-                        "length": 500,
-                        "nullable": true,
-                        "type": "esriFieldTypeString"
-                    },
-                    {
-                        "name": "view_360_link",
-                        "alias": "View 360 Link",
-                        "editable": false,
-                        "length": 3000,
-                        "nullable": true,
-                        "type": "esriFieldTypeString"
-                    },
-                    {
-                        "name": "web_link",
-                        "alias": "Web Link",
-                        "editable": false,
-                        "length": 3000,
-                        "nullable": true,
-                        "type": "esriFieldTypeString"
-                    }
-                ],
-                "displayField": "site",
-                "drawingInfo": {
-                    "renderer": {
-                        "type": "simple",
-                        "symbol": {
-                            "type": "PointSymbol3D",
-                            "symbolLayers": [
+                    "refreshInterval": 0,
+                    "customParameters": null,
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "OBJECTID",
+                                "type": "esriFieldTypeOID",
+                                "alias": "OBJECTID"
+                            },
+                            {
+                                "name": "stop_suburb",
+                                "type": "esriFieldTypeString",
+                                "alias": "Stop Suburb",
+                                "length": 500
+                            },
+                            {
+                                "name": "route_type",
+                                "type": "esriFieldTypeSmallInteger",
+                                "alias": "Route Type"
+                            },
+                            {
+                                "name": "stop_latitude",
+                                "type": "esriFieldTypeSingle",
+                                "alias": "Stop Latitude"
+                            },
+                            {
+                                "name": "stop_longitude",
+                                "type": "esriFieldTypeSingle",
+                                "alias": "Stop Longitude"
+                            },
+                            {
+                                "name": "stop_sequence",
+                                "type": "esriFieldTypeSmallInteger",
+                                "alias": "Stop Sequence"
+                            },
+                            {
+                                "name": "ticket_type",
+                                "type": "esriFieldTypeString",
+                                "alias": "Ticket Type",
+                                "length": 500
+                            },
+                            {
+                                "name": "zone",
+                                "type": "esriFieldTypeString",
+                                "alias": "Zone",
+                                "length": 500
+                            },
+                            {
+                                "name": "is_free_fare_zone",
+                                "type": "esriFieldTypeString",
+                                "alias": "Is Free Fare Zone",
+                                "length": 500
+                            },
+                            {
+                                "name": "ticket_machine",
+                                "type": "esriFieldTypeString",
+                                "alias": "Ticket Machine",
+                                "length": 500
+                            },
+                            {
+                                "name": "ticket_checks",
+                                "type": "esriFieldTypeString",
+                                "alias": "Ticket Checks",
+                                "length": 500
+                            },
+                            {
+                                "name": "vline_reservation",
+                                "type": "esriFieldTypeString",
+                                "alias": "Vline Reservation",
+                                "length": 500
+                            },
+                            {
+                                "name": "stop_id",
+                                "type": "esriFieldTypeSmallInteger",
+                                "alias": "Stop Id"
+                            },
+                            {
+                                "name": "stop_name",
+                                "type": "esriFieldTypeString",
+                                "alias": "Stop Name",
+                                "length": 500
+                            },
+                            {
+                                "name": "stop_landmark",
+                                "type": "esriFieldTypeString",
+                                "alias": "Stop Landmark",
+                                "length": 500
+                            },
+                            {
+                                "name": "route_name",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Name",
+                                "length": 500
+                            },
+                            {
+                                "name": "route_number",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Number",
+                                "length": 500
+                            },
+                            {
+                                "name": "next_departure_link",
+                                "type": "esriFieldTypeString",
+                                "alias": "Next Departure Link",
+                                "length": 50000
+                            },
+                            {
+                                "name": "disruption_link",
+                                "type": "esriFieldTypeString",
+                                "alias": "Disruption Link",
+                                "length": 50000
+                            },
+                            {
+                                "name": "route_id",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Id",
+                                "length": 500
+                            },
+                            {
+                                "name": "metro_train_link",
+                                "type": "esriFieldTypeString",
+                                "alias": "Metro Train Link",
+                                "length": 50000
+                            }
+                        ],
+                        "displayField": "stop_name",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "PointSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "dataURI": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii03NzQ3Ljk4NCAxNTUwNyAyMy45ODQgMjMuOTg0Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjMDA3MmNlOwogICAgICB9CgogICAgICAuY2xzLTIgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMyB7CiAgICAgICAgZmlsbDogIzJhNzFiOTsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPGcgaWQ9Ikdyb3VwXzY0MTciIGRhdGEtbmFtZT0iR3JvdXAgNjQxNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTc3NzIuOTg0IDE0NjQzKSI+CiAgICA8cGF0aCBpZD0iUGF0aF85OTE3IiBkYXRhLW5hbWU9IlBhdGggOTkxNyIgY2xhc3M9ImNscy0xIiBkPSJNMTEuOTkyLDBBMTEuOTkyLDExLjk5MiwwLDEsMSwwLDExLjk5MiwxMS45OTIsMTEuOTkyLDAsMCwxLDExLjk5MiwwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjUgODY0KSIvPgogICAgPGcgaWQ9Ikdyb3VwXzY0MTYiIGRhdGEtbmFtZT0iR3JvdXAgNjQxNiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjkuNzk3IDg2OC40NTQpIj4KICAgICAgPHBhdGggaWQ9IlBhdGhfODM0MyIgZGF0YS1uYW1lPSJQYXRoIDgzNDMiIGNsYXNzPSJjbHMtMiIgZD0iTTI1LjUyMiwxOS42SDIyLjU5YzAsLjE5LS4xOSwyLjQtLjE5LDIuNjY1aDMuMTIyWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE4LjUxNyAtMTYuNTkyKSIvPgogICAgICA8cGF0aCBpZD0iUGF0aF84MzQ0IiBkYXRhLW5hbWU9IlBhdGggODM0NCIgY2xhc3M9ImNscy0yIiBkPSJNMzQuNzMxLDE5LjZIMzEuOHYyLjY2NWgzLjEyMkMzNC44ODQsMjIsMzQuNzMxLDE5Ljc5LDM0LjczMSwxOS42WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI0LjMzOCAtMTYuNTkyKSIvPgogICAgICA8cGF0aCBpZD0iUGF0aF84MzQ1IiBkYXRhLW5hbWU9IlBhdGggODM0NSIgY2xhc3M9ImNscy0yIiBkPSJNMjYuMjEsMjUuNDA1SDIzLjdsLS42NDctLjk5aDEuOWEuMjI4LjIyOCwwLDAsMCwwLS40NTdIMjIuNzQ2bC0uNzIzLS45OWgyLjU1MWExLjYwOSwxLjYwOSwwLDAsMCwxLjYtMS42aDBsLS42MDktOC4xMDlWMTMuM2ExLjYwOSwxLjYwOSwwLDAsMC0xLjYtMS42SDE0LjlhMS42MDksMS42MDksMCwwLDAtMS42LDEuNnYtLjAzOGwtLjYwOSw4LjA3MWgwYTEuNjA5LDEuNjA5LDAsMCwwLDEuNiwxLjZoMi41NTFMMTYuMTU5LDI0SDEzLjk1MWEuMjI4LjIyOCwwLDAsMCwwLC40NTdoMS45bC0uNjg1Ljk1MkgxMi42NTdhLjQ1Ny40NTcsMCwxLDAsMCwuOTE0aDEuOWwtLjY0Ny45MTRhLjE3LjE3LDAsMCwwLDAsLjE5LjIwOS4yMDksMCwwLDAsLjE5LjExNGgxLjMzMmEuMjA5LjIwOSwwLDAsMCwuMTktLjExNGwuNDU3LTEuMWg2LjdsLjQ1NywxLjFhLjIwOS4yMDksMCwwLDAsLjE5LjExNEgyNC44Yy4wNzYsMCwuMTUyLS4wMzguMTUyLS4xMTRhLjE3LjE3LDAsMCwwLDAtLjE5bC0uNjQ3LS45MTRoMS45YS40NTcuNDU3LDAsMCwwLDAtLjkxNFpNMjEuOTg0LDIxLjE4YS41MzMuNTMzLDAsMSwxLC41MzMtLjUzM0EuNS41LDAsMCwxLDIxLjk4NCwyMS4xOFpNMjEuODcsMjRIMTdsLjQxOS0xLjAyOGg0LjA3NFptMi4wOTQtMy4zNWEuNTMzLjUzMywwLDEsMS0uNTMzLS41MzNBLjU0NC41NDQsMCwwLDEsMjMuOTY0LDIwLjY0N1ptLTguNzk0LTMuMTYuMjI4LTIuODkzYS43NjQuNzY0LDAsMCwxLC43NjEtLjc2MWg2LjU0OGEuNzY0Ljc2NCwwLDAsMSwuNzYxLjc2MWwuMjI4LDIuODkzdi4wMzhhLjc2NC43NjQsMCwwLDEtLjc2MS43NjFoLTdhLjc3My43NzMsMCwwLDEtLjc2MS0uOFptLjI2NiwzLjY5M2EuNTMzLjUzMywwLDEsMSwuNTMzLS41MzNBLjU0NC41NDQsMCwwLDEsMTUuNDM2LDIxLjE4Wm0uODc2LS41MzNhLjUzMy41MzMsMCwxLDEsLjUzMy41MzNBLjU0NC41NDQsMCwwLDEsMTYuMzEyLDIwLjY0N1ptLjExNCw0Ljc1OS4zODEtLjk5aDUuMjE2bC4zODEuOTlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTIuMiAtMTEuNykiLz4KICAgICAgPHBhdGggaWQ9IlBhdGhfODM0NiIgZGF0YS1uYW1lPSJQYXRoIDgzNDYiIGNsYXNzPSJjbHMtMSIgZD0iTTIwLjc2MSwyMS43NTRoN2EuNzY0Ljc2NCwwLDAsMCwuNzYxLS43NjF2LS4wMzhMMjguMywxOC4wNjFhLjc2NC43NjQsMCwwLDAtLjc2MS0uNzYxSDIwLjk5YS43NjQuNzY0LDAsMCwwLS43NjEuNzYxTDIwLDIwLjk1NXYuMDM4QS43NjQuNzY0LDAsMCwwLDIwLjc2MSwyMS43NTRabTMuNzMxLTMuNTc5aDIuOTMxYzAsLjE5LjE5LDIuNC4xOSwyLjY2NUgyNC40OTJabS0zLjM4OCwwaDIuOTMxdjIuNjY1SDIwLjkxNEMyMC45MTQsMjAuNTc0LDIxLjEsMTguMzY2LDIxLjEsMTguMTc2WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE3LjAzMSAtMTUuMTY4KSIvPgogICAgICA8Y2lyY2xlIGlkPSJFbGxpcHNlXzM3NTAiIGRhdGEtbmFtZT0iRWxsaXBzZSAzNzUwIiBjbGFzcz0iY2xzLTEiIGN4PSIwLjUzMyIgY3k9IjAuNTMzIiByPSIwLjUzMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMi43MDMgOC40MTQpIi8+CiAgICAgIDxwYXRoIGlkPSJQYXRoXzgzNDciIGRhdGEtbmFtZT0iUGF0aCA4MzQ3IiBjbGFzcz0iY2xzLTEiIGQ9Ik0zNy4wMzMsMzMuOGEuNTMzLjUzMywwLDEsMCwuNTMzLjUzM0EuNTIuNTIsMCwwLDAsMzcuMDMzLDMzLjhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjcuMjQ5IC0yNS4zODYpIi8+CiAgICAgIDxjaXJjbGUgaWQ9IkVsbGlwc2VfMzc1MSIgZGF0YS1uYW1lPSJFbGxpcHNlIDM3NTEiIGNsYXNzPSJjbHMtMSIgY3g9IjAuNTMzIiBjeT0iMC41MzMiIHI9IjAuNTMzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMC42OTggOC40MTQpIi8+CiAgICAgIDxwYXRoIGlkPSJQYXRoXzgzNDgiIGRhdGEtbmFtZT0iUGF0aCA4MzQ4IiBjbGFzcz0iY2xzLTEiIGQ9Ik0yNC4wNjYsMzQuMzMzYS41MzMuNTMzLDAsMSwwLS41MzMuNTMzQS41Mi41MiwwLDAsMCwyNC4wNjYsMzQuMzMzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE4Ljg4OCAtMjUuMzg2KSIvPgogICAgICA8cGF0aCBpZD0iUGF0aF84MzQ5IiBkYXRhLW5hbWU9IlBhdGggODM0OSIgY2xhc3M9ImNscy0zIiBkPSJNMjUuMjE5LDQxLjMsMjQuOCw0Mi4zMjhoNC44NzNMMjkuMjU0LDQxLjNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjAuMDAzIC0zMC4wMzEpIi8+CiAgICAgIDxwYXRoIGlkPSJQYXRoXzgzNTAiIGRhdGEtbmFtZT0iUGF0aCA4MzUwIiBjbGFzcz0iY2xzLTMiIGQ9Ik0yMy42ODEsNDUuMmwtLjM4MS45NTJoNi4wMTVsLS4zODEtLjk1MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xOS4wNzQgLTMyLjQ0NikiLz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo="
+                                            },
+                                            "size": 16
+                                        }
+                                    ]
+                                }
+                            },
+                            "labelingInfo": [
                                 {
-                                    "type": "Icon",
-                                    "resource": {
-                                        "primitive": "circle"
+                                    "labelExpressionInfo": {
+                                        "expression": "$feature.stop_name"
                                     },
-                                    "size": 24,
-                                    "material": {
-                                        "color": [
-                                            255,
-                                            255,
-                                            255
+                                    "expression": "$feature.stop_name",
+                                    "minScale": 5000,
+                                    "symbol": {
+                                        "type": "LabelSymbol3D",
+                                        "symbolLayers": [
+                                            {
+                                                "type": "Text",
+                                                "size": 10,
+                                                "material": {
+                                                    "color": [
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        255
+                                                    ]
+                                                },
+                                                "halo": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "size": 1.5
+                                                }
+                                            }
                                         ]
                                     }
-                                },
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "layerType": "GeoJSON",
+                    "title": [
+                        "Tram Stop"
+                    ],
+                    "url": "./data/ptv_stop_tram.geojson",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": [
+                            "Tram Stop"
+                        ],
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "OBJECTID",
+                                "isEditable": true,
+                                "label": "OBJECTID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_suburb",
+                                "isEditable": true,
+                                "label": "Stop Suburb",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_type",
+                                "isEditable": true,
+                                "label": "Route Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_latitude",
+                                "isEditable": true,
+                                "label": "Stop Latitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_longitude",
+                                "isEditable": true,
+                                "label": "Stop Longitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_sequence",
+                                "isEditable": true,
+                                "label": "Stop Sequence",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ticket_type",
+                                "isEditable": true,
+                                "label": "Ticket Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "zone",
+                                "isEditable": true,
+                                "label": "Zone",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "is_free_fare_zone",
+                                "isEditable": true,
+                                "label": "Is Free Fare Zone",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ticket_machine",
+                                "isEditable": true,
+                                "label": "Ticket Machine",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ticket_checks",
+                                "isEditable": true,
+                                "label": "Ticket Checks",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vline_reservation",
+                                "isEditable": true,
+                                "label": "Vline Reservation",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_id",
+                                "isEditable": true,
+                                "label": "Stop Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_name",
+                                "isEditable": true,
+                                "label": "Stop Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_landmark",
+                                "isEditable": true,
+                                "label": "Stop Landmark",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_name",
+                                "isEditable": true,
+                                "label": "Route Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_number",
+                                "isEditable": true,
+                                "label": "Route Number",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "next_departure_link",
+                                "isEditable": true,
+                                "label": "Next Departure Link",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "disruption_link",
+                                "isEditable": true,
+                                "label": "Disruption Link",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_id",
+                                "isEditable": true,
+                                "label": "Route Id",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": []
+                    },
+                    "refreshInterval": 0,
+                    "customParameters": null,
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "OBJECTID",
+                                "type": "esriFieldTypeOID",
+                                "alias": "OBJECTID"
+                            },
+                            {
+                                "name": "stop_suburb",
+                                "type": "esriFieldTypeString",
+                                "alias": "Stop Suburb",
+                                "length": 500
+                            },
+                            {
+                                "name": "route_type",
+                                "type": "esriFieldTypeSmallInteger",
+                                "alias": "Route Type"
+                            },
+                            {
+                                "name": "stop_latitude",
+                                "type": "esriFieldTypeSingle",
+                                "alias": "Stop Latitude"
+                            },
+                            {
+                                "name": "stop_longitude",
+                                "type": "esriFieldTypeSingle",
+                                "alias": "Stop Longitude"
+                            },
+                            {
+                                "name": "stop_sequence",
+                                "type": "esriFieldTypeSmallInteger",
+                                "alias": "Stop Sequence"
+                            },
+                            {
+                                "name": "ticket_type",
+                                "type": "esriFieldTypeString",
+                                "alias": "Ticket Type",
+                                "length": 500
+                            },
+                            {
+                                "name": "zone",
+                                "type": "esriFieldTypeString",
+                                "alias": "Zone",
+                                "length": 500
+                            },
+                            {
+                                "name": "is_free_fare_zone",
+                                "type": "esriFieldTypeString",
+                                "alias": "Is Free Fare Zone",
+                                "length": 500
+                            },
+                            {
+                                "name": "ticket_machine",
+                                "type": "esriFieldTypeString",
+                                "alias": "Ticket Machine",
+                                "length": 500
+                            },
+                            {
+                                "name": "ticket_checks",
+                                "type": "esriFieldTypeString",
+                                "alias": "Ticket Checks",
+                                "length": 500
+                            },
+                            {
+                                "name": "vline_reservation",
+                                "type": "esriFieldTypeString",
+                                "alias": "Vline Reservation",
+                                "length": 500
+                            },
+                            {
+                                "name": "stop_id",
+                                "type": "esriFieldTypeSmallInteger",
+                                "alias": "Stop Id"
+                            },
+                            {
+                                "name": "stop_name",
+                                "type": "esriFieldTypeString",
+                                "alias": "Stop Name",
+                                "length": 500
+                            },
+                            {
+                                "name": "stop_landmark",
+                                "type": "esriFieldTypeString",
+                                "alias": "Stop Landmark",
+                                "length": 500
+                            },
+                            {
+                                "name": "route_name",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Name",
+                                "length": 500
+                            },
+                            {
+                                "name": "route_number",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Number",
+                                "length": 500
+                            },
+                            {
+                                "name": "next_departure_link",
+                                "type": "esriFieldTypeString",
+                                "alias": "Next Departure Link",
+                                "length": 50000
+                            },
+                            {
+                                "name": "disruption_link",
+                                "type": "esriFieldTypeString",
+                                "alias": "Disruption Link",
+                                "length": 50000
+                            },
+                            {
+                                "name": "route_id",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Id",
+                                "length": 500
+                            }
+                        ],
+                        "displayField": "stop_name",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "PointSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "dataURI": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii03NzQ4LjA2IDE1NTQ3IDI0LjA2IDI0LjA2MSI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzc4YmUyMDsKICAgICAgfQoKICAgICAgLmNscy0yIHsKICAgICAgICBmaWxsOiAjZmZmOwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZpbGw6ICM3OGJlNDM7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxnIGlkPSJHcm91cF82NDE4IiBkYXRhLW5hbWU9Ikdyb3VwIDY0MTgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03ODI5LjA2IDE0NjQzKSI+CiAgICA8Y2lyY2xlIGlkPSJFbGxpcHNlXzM3NTIiIGRhdGEtbmFtZT0iRWxsaXBzZSAzNzUyIiBjbGFzcz0iY2xzLTEiIGN4PSIxMi4wMyIgY3k9IjEyLjAzIiByPSIxMi4wMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODEgOTA0KSIvPgogICAgPHBhdGggaWQ9IlBhdGhfODM1MSIgZGF0YS1uYW1lPSJQYXRoIDgzNTEiIGNsYXNzPSJjbHMtMiIgZD0iTTIyLjM5MSwyNi42OGgyLjc4OEwyNC4wNzEsMjUuMTlsLS4wNzYuNjExYS4yMzIuMjMyLDAsMCwxLS40NTgtLjA3NmwuMzQ0LTMuMDU1YS4yMzIuMjMyLDAsMSwxLC40NTguMDc2bC0uMjI5LDEuODMzLDEuNiwyLjEzOWgzLjMyM2EuMTguMTgsMCwwLDAsLjE5MS0uMTkxYzAtLjAzOC0uMzA2LTYuOC0uMzA2LTYuOHYtLjAzOGEuMTguMTgsMCwwLDAtLjE5MS0uMTkxSDIyLjdhLjE4LjE4LDAsMCwwLS4xOTEuMTkxdi4wMzhzLS4zMDYsNi43Ni0uMzA2LDYuOEEuMTc1LjE3NSwwLDAsMCwyMi4zOTEsMjYuNjhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2Ny4yNzggODkxLjk0NykiLz4KICAgIDxwYXRoIGlkPSJQYXRoXzgzNTIiIGRhdGEtbmFtZT0iUGF0aCA4MzUyIiBjbGFzcz0iY2xzLTIiIGQ9Ik0yNS4zOTMsOS42NDJIMjEuMzQ1VjguNDU4aDMuNDM3YS41NzguNTc4LDAsMCwxLC41NzMuNS4yMzIuMjMyLDAsMCwwLC40NTgtLjA3NkExLDEsMCwwLDAsMjQuNzgyLDhIMTcuNDEyYTEuMDMzLDEuMDMzLDAsMCwwLTEuMDMxLjkxNy4yMzIuMjMyLDAsMCwwLC40NTguMDc2LjU3OC41NzgsMCwwLDEsLjU3My0uNWgzLjQ3NVY5LjcxOUgxNi44MzlhMS42MTQsMS42MTQsMCwwLDAtMS42LDEuNnYtLjAzOEwxNC43LDIyLjUxMmgwYTEuNjE0LDEuNjE0LDAsMCwwLDEuNiwxLjZoMS4zNzV2LjY0OWwtLjg0Ljg0YS4yOS4yOSwwLDAsMC0uMDc2LjE1My4yLjIsMCwwLDAsLjA3Ni4xNTMuMjMyLjIzMiwwLDAsMCwuMzA2LDBsLjg3OC0uOTE3YS4yOS4yOSwwLDAsMCwuMDc2LS4xNTN2LS43NjRIMjMuOTh2Ljc2NGEuMi4yLDAsMCwwLC4wNzYuMTUzbC44NzguOTE3YS4yMzIuMjMyLDAsMCwwLC4zMDYsMCwuMTkxLjE5MSwwLDAsMCwwLS4zMDZsLS44NC0uODR2LS42NDlIMjUuODlhMS42MTQsMS42MTQsMCwwLDAsMS42LTEuNmgwbC0uNTM1LTExLjI2NkExLjU1NywxLjU1NywwLDAsMCwyNS4zOTMsOS42NDJabS04Ljc0Niw5LjczOS4zMDYtNi44di4wMzhhMS4xMDgsMS4xMDgsMCwwLDEsMS4xMDgtMS4xMDhoNi4wNzJhMS4xMDgsMS4xMDgsMCwwLDEsMS4xMDgsMS4xMDh2LS4wMzhsLjMwNiw2Ljh2LjAzOGExLjEwOCwxLjEwOCwwLDAsMS0xLjEwOCwxLjEwOEgxNy43NTVhMS4xNjgsMS4xNjgsMCwwLDEtMS4xMDgtMS4xNDZabTIuMjE1LDIuOTQxSDE2Ljk5MWEuNDU4LjQ1OCwwLDAsMSwwLS45MTdoMS44NzFhLjQ0MS40NDEsMCwwLDEsLjQ1OC40NThBLjQ2NC40NjQsMCwwLDEsMTguODYzLDIyLjMyMVptNi4zNCwwSDIzLjMzMWEuNDU4LjQ1OCwwLDAsMSwwLS45MTdIMjUuMmEuNDQxLjQ0MSwwLDAsMSwuNDU4LjQ1OEEuNDY0LjQ2NCwwLDAsMSwyNS4yLDIyLjMyMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcxLjkxNCA4OTkuMDU1KSIvPgogICAgPHBhdGggaWQ9IlBhdGhfODM1MyIgZGF0YS1uYW1lPSJQYXRoIDgzNTMiIGNsYXNzPSJjbHMtMiIgZD0iTTQ2LjksMTYuNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUyLjAxMSA4OTMuODAyKSIvPgogICAgPHBhdGggaWQ9IlBhdGhfODM1NCIgZGF0YS1uYW1lPSJQYXRoIDgzNTQiIGNsYXNzPSJjbHMtMyIgZD0iTTIwLjkwOCwyNi4xNzVoNi42ODNBMS4xMDgsMS4xMDgsMCwwLDAsMjguNywyNS4wNjd2LS4wMzhsLS4zMDYtNi43NnYuMDM4QTEuMTA4LDEuMTA4LDAsMCwwLDI3LjI4NSwxNy4ySDIxLjIxM2ExLjEwOCwxLjEwOCwwLDAsMC0xLjEwOCwxLjEwOHYtLjAzOGwtLjMwNiw2Ljh2LjAzOEExLjEsMS4xLDAsMCwwLDIwLjkwOCwyNi4xNzVabS4xMTUtNy44NjdoMGEuMjE0LjIxNCwwLDAsMSwuMTkxLS4yMjloNi4wNzJhLjE4LjE4LDAsMCwxLC4xOTEuMTkxdi4wMzhzLjMwNiw2Ljc2LjMwNiw2LjhhLjE4LjE4LDAsMCwxLS4xOTEuMTkxSDI0LjI2OGwtMS42LTIuMTM5LjIyOS0xLjgzM2EuMjMyLjIzMiwwLDEsMC0uNDU4LS4wNzZMMjIuMDkxLDI0LjNhLjIzMi4yMzIsMCwwLDAsLjQ1OC4wNzZsLjA3Ni0uNTczTDIzLjczNCwyNS4zSDIwLjk0NmEuMTguMTgsMCwwLDEtLjE5MS0uMTkxQzIwLjcxNywyNS4wNjcsMjEuMDIyLDE4LjMwOCwyMS4wMjIsMTguMzA4WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjguNzYyIDg5My4zNjkpIi8+CiAgICA8cGF0aCBpZD0iUGF0aF84MzU1IiBkYXRhLW5hbWU9IlBhdGggODM1NSIgY2xhc3M9ImNscy0zIiBkPSJNMjEuODMsNDMuMUgxOS45NThhLjQ1OC40NTgsMCwxLDAsMCwuOTE3SDIxLjgzYS40NTguNDU4LDAsMSwwLDAtLjkxN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY4Ljk0NyA4NzcuMzYpIi8+CiAgICA8cGF0aCBpZD0iUGF0aF84MzU2IiBkYXRhLW5hbWU9IlBhdGggODM1NiIgY2xhc3M9ImNscy0zIiBkPSJNMzguNDMsNDMuMUgzNi41NThhLjQ1OC40NTgsMCwwLDAsMCwuOTE3SDM4LjQzYS40NTguNDU4LDAsMSwwLDAtLjkxN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU4LjY4NyA4NzcuMzYpIi8+CiAgPC9nPgo8L3N2Zz4K"
+                                            },
+                                            "size": 16
+                                        }
+                                    ],
+                                    "verticalOffset": {
+                                        "screenLength": 50,
+                                        "maxWorldLength": 10,
+                                        "minWorldLength": 5
+                                    }
+                                }
+                            },
+                            "labelingInfo": [
                                 {
-                                    "type": "Icon",
-                                    "resource": {
-                                        "dataURI": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTI5LjggMjQuNmMwIDIuMTQtMy45ODggMy41NDItOC44IDQuMTExdjIuNDhMMTkuNjQ3IDMwbC0xLjcwNS0xLjUgMS43MDUtMS41TDIxIDI1LjgxdjEuODk0YzQuNjgtLjU3NCA3LjgtMS44OTMgNy44LTMuMTA0IDAtMS42MDUtNS40NzQtMy40LTEyLjgtMy40UzMuMiAyMi45OTUgMy4yIDI0LjZjMCAxLjM3NyA0LjAzMiAyLjg5IDkuOCAzLjI5M3YxQzcuMzQ2IDI4LjUwNiAyLjIgMjcuMDMxIDIuMiAyNC42YzAtMi44NTggNy4xMS00LjQgMTMuOC00LjRzMTMuOCAxLjU0MiAxMy44IDQuNHpNMTguMiA3LjVhMS4zIDEuMyAwIDEgMSAxLjMgMS4zIDEuMzAxIDEuMzAxIDAgMCAxLTEuMy0xLjN6bS45NDIuMzU4YS41MDcuNTA3IDAgMSAwIDAtLjcxNy41MDguNTA4IDAgMCAwIDAgLjcxN3pNMzAgMS41ODJ2MTcuODM2QTQ0LjQ4NiA0NC40ODYgMCAwIDAgMTYgMTcuMmE0NC40ODYgNDQuNDg2IDAgMCAwLTE0IDIuMjE4VjEuNTgyQTQ0LjQ4NyA0NC40ODcgMCAwIDAgMTYgMy44YTQ0LjQ4NyA0NC40ODcgMCAwIDAgMTQtMi4yMTh6TTMgMTguMDQ0Yy4yOTUtLjA4Ny42MzctLjE4NCAxLjAxOC0uMjg1bDQuNzg2LTQuNTk3YS40ODEuNDgxIDAgMCAxIC41MzktLjA4OGwuNjIuMjkzIDQuMjI5LTMuNTc2YS40OS40OSAwIDAgMSAuNjQzLjAxczIuNjc5IDIuMzY3IDMuNTMgMy4wOThsMi4xOTMtMi4wNmEuNDkuNDkgMCAwIDEgLjY5NS4wMjVsNy43NDQgNy4xNzkuMDAzLjAwMVYyLjk1NkE0Ny4wNTYgNDcuMDU2IDAgMCAxIDE2IDQuOCA0Ny4wNTYgNDcuMDU2IDAgMCAxIDMgMi45NTZ6TTE2IDE2LjJhNDcuNTQ4IDQ3LjU0OCAwIDAgMSAxMS4xODMgMS4zNTVsLTYuMzE2LTUuNjM1LTEuODE3IDEuNzA4YTEgMSAwIDAgMS0xLjMzNi4wMyA1NTIuMjI1IDU1Mi4yMjUgMCAwIDEtMy4yMTYtMi44MTZsLTMuODkgMy4yODlhMSAxIDAgMCAxLTEuMDcyLjE0bC0uMjk3LS4xNC0zLjI5NCAzLjE2M0E0Ny42MDIgNDcuNjAyIDAgMCAxIDE2IDE2LjJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzMnYzMkgweiIvPjwvc3ZnPg=="
+                                    "labelExpressionInfo": {
+                                        "expression": "$feature.stop_name"
                                     },
-                                    "size": 16
+                                    "expression": "$feature.stop_name",
+                                    "minScale": 1000,
+                                    "symbol": {
+                                        "type": "LabelSymbol3D",
+                                        "symbolLayers": [
+                                            {
+                                                "type": "Text",
+                                                "size": 10,
+                                                "material": {
+                                                    "color": [
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        255
+                                                    ]
+                                                },
+                                                "halo": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "size": 1.5
+                                                }
+                                            }
+                                        ]
+                                    }
                                 }
                             ]
                         }
                     },
-                    "labelingInfo": [
-                        {
-                            "labelExpressionInfo": {
-                                "expression": "$feature.site"
-                            },
-                            "expression": "$feature.site",
-                            "minScale": 1000,
-                            "symbol": {
-                                "type": "LabelSymbol3D",
-                                "symbolLayers": [
-                                    {
-                                        "type": "Text",
-                                        "size": 10,
-                                        "material": {
-                                            "color": [
-                                                0,
-                                                0,
-                                                0,
-                                                255
-                                            ]
-                                        },
-                                        "halo": {
-                                            "color": [
-                                                255,
-                                                255,
-                                                255,
-                                                255
-                                            ],
-                                            "size": 1.5
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    ]
+                    "minScale": 5000
                 }
-            }
+            ],
+            "layerType": "GroupLayer",
+            "visibilityMode": "independent"
         },
         {
             "id": "",
@@ -1549,7 +2154,7 @@
                                                     "resource": {
                                                         "primitive": "square"
                                                     },
-                                                    "size": 26,
+                                                    "size": 22,
                                                     "material": {
                                                         "color": [
                                                             255,
@@ -1561,9 +2166,9 @@
                                                 {
                                                     "type": "Icon",
                                                     "resource": {
-                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGUuc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjIuMSAoOWM2ZDQxZTQxMCwgMjAyMi0wNy0xNCkiCiAgIHdpZHRoPSI2NCIKICAgaGVpZ2h0PSI2NCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXczMCIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIxMC41ODQwMDIiCiAgICAgaW5rc2NhcGU6Y3g9IjYuODk3MjAyIgogICAgIGlua3NjYXBlOmN5PSIyOC4xMDg0NiIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjI0MDAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTQyMSIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnMjgiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiPgogICAgPHN0eWxlCiAgICAgICBpZD0ic3R5bGUyIj4uY2xzLTF7ZmlsbDpub25lO30uY2xzLTEsLmNscy0ye3N0cm9rZTojMmQyYTI4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPgogIDwvZGVmcz4KICA8dGl0bGUKICAgICBpZD0idGl0bGU2Ij50ZW1pLXZlbmRpdGEyQDMwMHgyPC90aXRsZT4KICA8ZwogICAgIGlkPSJMaXZlbGxvXzIiCiAgICAgZGF0YS1uYW1lPSJMaXZlbGxvIDIiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOC40MDg5MTcxLDQuMjUxNjk5NykiPgogICAgPGcKICAgICAgIGlkPSJMYXllcl8yIgogICAgICAgZGF0YS1uYW1lPSJMYXllciAyIj4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDMxLjQ1LDEwLjc0IGMgMCwwIC0wLjIyLDQuNTMgLTUuMDgsOS42MiBDIDIxLjUxLDI1LjQ1IDE1LjY1LDMxLjMgMTcuMDksMzkuOCAxOC41Myw0OC4zIDI4LjQ3LDUxIDMxLjQ1LDUxIDM0LjQzLDUxIDQ0LjM4LDQ4LjMxIDQ1LjgyLDM5LjggNDcuMjYsMzEuMjkgNDEuNCwyNS40NCAzNi41MywyMC4zNiAzMS42NiwxNS4yOCAzMS40NSwxMC43NCAzMS40NSwxMC43NCBaIgogICAgICAgICBpZD0icGF0aDgiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMGZmZmY7ZmlsbC1vcGFjaXR5OjEiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgZD0ibSA0MC43OCwzNC42NCBjIDAsMCAwLjk0LDkuNTQgLTEwLDEwLjQ5IgogICAgICAgICBpZD0icGF0aDEwIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIGQ9Im0gMjAuNDIsNDMuNDggYyAwLDAgMC42Nyw2LjgxIC03LjEyLDcuNDkiCiAgICAgICAgIGlkPSJwYXRoMTQiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjE0LjcwMjk5IgogICAgICAgICB5MT0iNS43NjU5NTQ1IgogICAgICAgICB4Mj0iMTQuNzAyOTkiCiAgICAgICAgIHkyPSIzNC41MzU5NTQiCiAgICAgICAgIGlkPSJsaW5lMTYiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIxOC4xMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjE4LjExODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMCIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMjMuMjE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyMy4yMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjIiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIgLz4KICAgIDwvZz4KICA8L2c+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMzE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOnRpdGxlPnRlbWktdmVuZGl0YTJAMzAweDI8L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KPC9zdmc+Cg=="
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGVfdGVtcGVyYXR1cmVfd2luZC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgd2lkdGg9IjY0IgogICBoZWlnaHQ9IjY0IgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzMwIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjEwLjU4NDAwMiIKICAgICBpbmtzY2FwZTpjeD0iMzMuODcxODc2IgogICAgIGlua3NjYXBlOmN5PSIyOS4yNDIyNDciCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxOTIwIgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMDEiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy15PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzI4IiAvPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0Ij4KICAgIDxzdHlsZQogICAgICAgaWQ9InN0eWxlMiI+LmNscy0xe2ZpbGw6bm9uZTt9LmNscy0xLC5jbHMtMntzdHJva2U6IzJkMmEyODtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLXdpZHRoOjJweDt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT4KICA8L2RlZnM+CiAgPHRpdGxlCiAgICAgaWQ9InRpdGxlNiI+dGVtaS12ZW5kaXRhMkAzMDB4MjwvdGl0bGU+CiAgPGcKICAgICBpZD0iTGl2ZWxsb18yIgogICAgIGRhdGEtbmFtZT0iTGl2ZWxsbyAyIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNzU1ODU3MzEsMy44NzM3NzA4KSI+CiAgICA8ZwogICAgICAgaWQ9IkxheWVyXzIiCiAgICAgICBkYXRhLW5hbWU9IkxheWVyIDIiPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDIwLjQyLDQzLjQ4IGMgMCwwIDAuNjcsNi44MSAtNy4xMiw3LjQ5IgogICAgICAgICBpZD0icGF0aDE0IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMjg7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTQuNzAyOTkiCiAgICAgICAgIHkxPSI1Ljc2NTk1NDUiCiAgICAgICAgIHgyPSIxNC43MDI5OSIKICAgICAgICAgeTI9IjM0LjUzNTk1NCIKICAgICAgICAgaWQ9ImxpbmUxNiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMTguMTE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIxOC4xMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjAiCiAgICAgICAgIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utb3BhY2l0eToxIiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIyMy4yMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjIzLjIxODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICA8L2c+CiAgPC9nPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTMxNyI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzp0aXRsZT50ZW1pLXZlbmRpdGEyQDMwMHgyPC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPHBhdGgKICAgICBkPSJtIDUxLjk4NTIxNSwxNi4yNDg1MzEgYyAwLjk4MzMyNywtMS42MDI0MTMgMi40MTI0NTQsLTIuNjEwODU3IDQuMDAzMDEyLC0yLjYxMDg1NyAyLjk2NjE0NywwIDUuMzcwNTIyLDMuNTA2NzcyIDUuMzcwNTIyLDcuODMyNTY4IDAsNC4zMjU5MjcgLTIuNDA0Mzk0LDcuODMyNTcgLTUuMzcwNTIyLDcuODMyNTcgSCAyOS4xMzU2MDMgbSA5Ljg2MjUzNiwtMTkuMTQ2MjY5IGMgMC42NTU1OTYsLTEuMDY4Mjg3IDEuNjA4MzE1LC0xLjc0MDU4NCAyLjY2ODY4MSwtMS43NDA1ODQgMS45Nzc0MjksMCAzLjU4MDM1MywyLjMzNzg0IDMuNTgwMzUzLDUuMjIxNzEyIDAsMi44ODM4NzUgLTEuNjAyOTE0LDUuMjIxNzEzIC0zLjU4MDM1Myw1LjIyMTcxMyBIIDI5LjEzNTYwMyBtIDE1LjIzMzEzNiwyOS41ODk2MTUgYyAwLjY1NTU2NywxLjA2ODM3MSAxLjYwODI4NiwxLjc0MDY1NiAyLjY2ODU4NCwxLjc0MDY1NiAxLjk3NzQzMSwwIDMuNTgwMzUyLC0yLjMzNzc4OCAzLjU4MDM1MiwtNS4yMjE3MTQgMCwtMi44ODM5NDIgLTEuNjAyOTUyLC01LjIyMTcxMSAtMy41ODAzNTIsLTUuMjIxNzExIGggLTE3LjkwMTcyIgogICAgIHN0cm9rZT0iIzAwMDAwMCIKICAgICBzdHJva2Utd2lkdGg9IjIiCiAgICAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiCiAgICAgaWQ9InBhdGgzMTAtMyIKICAgICBpbmtzY2FwZTpsYWJlbD0icGF0aDMxMCIKICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZmZmZmZmO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiAvPgogIDxwYXRoCiAgICAgZD0ibSA1MS45ODUyMTUsMTYuMjQ4NTMxIGMgMC45ODMzMjcsLTEuNjAyNDEzIDIuNDEyNDU0LC0yLjYxMDg1NyA0LjAwMzAxMiwtMi42MTA4NTcgMi45NjYxNDcsMCA1LjM3MDUyMiwzLjUwNjc3MiA1LjM3MDUyMiw3LjgzMjU2OCAwLDQuMzI1OTI3IC0yLjQwNDM5NCw3LjgzMjU3IC01LjM3MDUyMiw3LjgzMjU3IEggMjkuMTM1NjAzIG0gOS44NjI1MzYsLTE5LjE0NjI2OSBjIDAuNjU1NTk2LC0xLjA2ODI4NjkgMS42MDgzMTUsLTEuNzQwNTgzOSAyLjY2ODY4MSwtMS43NDA1ODM5IDEuOTc3NDI5LDAgMy41ODAzNTMsMi4zMzc4Mzk5IDMuNTgwMzUzLDUuMjIxNzExOSAwLDIuODgzODc1IC0xLjYwMjkxNCw1LjIyMTcxMyAtMy41ODAzNTMsNS4yMjE3MTMgSCAyOS4xMzU2MDMgbSAxNS4yMzMxMzYsMjkuNTg5NjE1IGMgMC42NTU1NjcsMS4wNjgzNzEgMS42MDgyODYsMS43NDA2NTYgMi42Njg1ODQsMS43NDA2NTYgMS45Nzc0MzEsMCAzLjU4MDM1MiwtMi4zMzc3ODggMy41ODAzNTIsLTUuMjIxNzE0IDAsLTIuODgzOTQyIC0xLjYwMjk1MiwtNS4yMjE3MTEgLTMuNTgwMzUyLC01LjIyMTcxMSBoIC0xNy45MDE3MiIKICAgICBzdHJva2U9IiMwMDAwMDAiCiAgICAgc3Ryb2tlLXdpZHRoPSIyIgogICAgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIgogICAgIGlkPSJwYXRoMzEwIgogICAgIGlua3NjYXBlOmxhYmVsPSJwYXRoMzEwIgogICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjIuNTtzdHJva2UtZGFzaGFycmF5Om5vbmUiIC8+Cjwvc3ZnPgo="
                                                     },
-                                                    "size": 18
+                                                    "size": 14
                                                 }
                                             ],
                                             "verticalOffset": {
@@ -1585,7 +2190,7 @@
                                                     "resource": {
                                                         "primitive": "square"
                                                     },
-                                                    "size": 26,
+                                                    "size": 22,
                                                     "material": {
                                                         "color": [
                                                             255,
@@ -1597,9 +2202,9 @@
                                                 {
                                                     "type": "Icon",
                                                     "resource": {
-                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGUuc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjIuMSAoOWM2ZDQxZTQxMCwgMjAyMi0wNy0xNCkiCiAgIHdpZHRoPSI2NCIKICAgaGVpZ2h0PSI2NCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXczMCIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIxMC41ODQwMDIiCiAgICAgaW5rc2NhcGU6Y3g9IjYuODk3MjAyIgogICAgIGlua3NjYXBlOmN5PSIyOC4xMDg0NiIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjI0MDAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTQyMSIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnMjgiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiPgogICAgPHN0eWxlCiAgICAgICBpZD0ic3R5bGUyIj4uY2xzLTF7ZmlsbDpub25lO30uY2xzLTEsLmNscy0ye3N0cm9rZTojMmQyYTI4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPgogIDwvZGVmcz4KICA8dGl0bGUKICAgICBpZD0idGl0bGU2Ij50ZW1pLXZlbmRpdGEyQDMwMHgyPC90aXRsZT4KICA8ZwogICAgIGlkPSJMaXZlbGxvXzIiCiAgICAgZGF0YS1uYW1lPSJMaXZlbGxvIDIiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOC40MDg5MTcxLDQuMjUxNjk5NykiPgogICAgPGcKICAgICAgIGlkPSJMYXllcl8yIgogICAgICAgZGF0YS1uYW1lPSJMYXllciAyIj4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDMxLjQ1LDEwLjc0IGMgMCwwIC0wLjIyLDQuNTMgLTUuMDgsOS42MiBDIDIxLjUxLDI1LjQ1IDE1LjY1LDMxLjMgMTcuMDksMzkuOCAxOC41Myw0OC4zIDI4LjQ3LDUxIDMxLjQ1LDUxIDM0LjQzLDUxIDQ0LjM4LDQ4LjMxIDQ1LjgyLDM5LjggNDcuMjYsMzEuMjkgNDEuNCwyNS40NCAzNi41MywyMC4zNiAzMS42NiwxNS4yOCAzMS40NSwxMC43NCAzMS40NSwxMC43NCBaIgogICAgICAgICBpZD0icGF0aDgiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMGZmZmY7ZmlsbC1vcGFjaXR5OjEiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgZD0ibSA0MC43OCwzNC42NCBjIDAsMCAwLjk0LDkuNTQgLTEwLDEwLjQ5IgogICAgICAgICBpZD0icGF0aDEwIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIGQ9Im0gMjAuNDIsNDMuNDggYyAwLDAgMC42Nyw2LjgxIC03LjEyLDcuNDkiCiAgICAgICAgIGlkPSJwYXRoMTQiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjE0LjcwMjk5IgogICAgICAgICB5MT0iNS43NjU5NTQ1IgogICAgICAgICB4Mj0iMTQuNzAyOTkiCiAgICAgICAgIHkyPSIzNC41MzU5NTQiCiAgICAgICAgIGlkPSJsaW5lMTYiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIxOC4xMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjE4LjExODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMCIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMjMuMjE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyMy4yMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjIiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIgLz4KICAgIDwvZz4KICA8L2c+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMzE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOnRpdGxlPnRlbWktdmVuZGl0YTJAMzAweDI8L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KPC9zdmc+Cg=="
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGVfdGVtcGVyYXR1cmVfd2luZC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgd2lkdGg9IjY0IgogICBoZWlnaHQ9IjY0IgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzMwIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjEwLjU4NDAwMiIKICAgICBpbmtzY2FwZTpjeD0iMzMuODcxODc2IgogICAgIGlua3NjYXBlOmN5PSIyOS4yNDIyNDciCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxOTIwIgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMDEiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy15PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzI4IiAvPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0Ij4KICAgIDxzdHlsZQogICAgICAgaWQ9InN0eWxlMiI+LmNscy0xe2ZpbGw6bm9uZTt9LmNscy0xLC5jbHMtMntzdHJva2U6IzJkMmEyODtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLXdpZHRoOjJweDt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT4KICA8L2RlZnM+CiAgPHRpdGxlCiAgICAgaWQ9InRpdGxlNiI+dGVtaS12ZW5kaXRhMkAzMDB4MjwvdGl0bGU+CiAgPGcKICAgICBpZD0iTGl2ZWxsb18yIgogICAgIGRhdGEtbmFtZT0iTGl2ZWxsbyAyIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNzU1ODU3MzEsMy44NzM3NzA4KSI+CiAgICA8ZwogICAgICAgaWQ9IkxheWVyXzIiCiAgICAgICBkYXRhLW5hbWU9IkxheWVyIDIiPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDIwLjQyLDQzLjQ4IGMgMCwwIDAuNjcsNi44MSAtNy4xMiw3LjQ5IgogICAgICAgICBpZD0icGF0aDE0IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMjg7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTQuNzAyOTkiCiAgICAgICAgIHkxPSI1Ljc2NTk1NDUiCiAgICAgICAgIHgyPSIxNC43MDI5OSIKICAgICAgICAgeTI9IjM0LjUzNTk1NCIKICAgICAgICAgaWQ9ImxpbmUxNiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMTguMTE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIxOC4xMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjAiCiAgICAgICAgIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utb3BhY2l0eToxIiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIyMy4yMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjIzLjIxODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICA8L2c+CiAgPC9nPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTMxNyI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzp0aXRsZT50ZW1pLXZlbmRpdGEyQDMwMHgyPC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPHBhdGgKICAgICBkPSJtIDUxLjk4NTIxNSwxNi4yNDg1MzEgYyAwLjk4MzMyNywtMS42MDI0MTMgMi40MTI0NTQsLTIuNjEwODU3IDQuMDAzMDEyLC0yLjYxMDg1NyAyLjk2NjE0NywwIDUuMzcwNTIyLDMuNTA2NzcyIDUuMzcwNTIyLDcuODMyNTY4IDAsNC4zMjU5MjcgLTIuNDA0Mzk0LDcuODMyNTcgLTUuMzcwNTIyLDcuODMyNTcgSCAyOS4xMzU2MDMgbSA5Ljg2MjUzNiwtMTkuMTQ2MjY5IGMgMC42NTU1OTYsLTEuMDY4Mjg3IDEuNjA4MzE1LC0xLjc0MDU4NCAyLjY2ODY4MSwtMS43NDA1ODQgMS45Nzc0MjksMCAzLjU4MDM1MywyLjMzNzg0IDMuNTgwMzUzLDUuMjIxNzEyIDAsMi44ODM4NzUgLTEuNjAyOTE0LDUuMjIxNzEzIC0zLjU4MDM1Myw1LjIyMTcxMyBIIDI5LjEzNTYwMyBtIDE1LjIzMzEzNiwyOS41ODk2MTUgYyAwLjY1NTU2NywxLjA2ODM3MSAxLjYwODI4NiwxLjc0MDY1NiAyLjY2ODU4NCwxLjc0MDY1NiAxLjk3NzQzMSwwIDMuNTgwMzUyLC0yLjMzNzc4OCAzLjU4MDM1MiwtNS4yMjE3MTQgMCwtMi44ODM5NDIgLTEuNjAyOTUyLC01LjIyMTcxMSAtMy41ODAzNTIsLTUuMjIxNzExIGggLTE3LjkwMTcyIgogICAgIHN0cm9rZT0iIzAwMDAwMCIKICAgICBzdHJva2Utd2lkdGg9IjIiCiAgICAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiCiAgICAgaWQ9InBhdGgzMTAtMyIKICAgICBpbmtzY2FwZTpsYWJlbD0icGF0aDMxMCIKICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZmZmZmZmO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiAvPgogIDxwYXRoCiAgICAgZD0ibSA1MS45ODUyMTUsMTYuMjQ4NTMxIGMgMC45ODMzMjcsLTEuNjAyNDEzIDIuNDEyNDU0LC0yLjYxMDg1NyA0LjAwMzAxMiwtMi42MTA4NTcgMi45NjYxNDcsMCA1LjM3MDUyMiwzLjUwNjc3MiA1LjM3MDUyMiw3LjgzMjU2OCAwLDQuMzI1OTI3IC0yLjQwNDM5NCw3LjgzMjU3IC01LjM3MDUyMiw3LjgzMjU3IEggMjkuMTM1NjAzIG0gOS44NjI1MzYsLTE5LjE0NjI2OSBjIDAuNjU1NTk2LC0xLjA2ODI4NjkgMS42MDgzMTUsLTEuNzQwNTgzOSAyLjY2ODY4MSwtMS43NDA1ODM5IDEuOTc3NDI5LDAgMy41ODAzNTMsMi4zMzc4Mzk5IDMuNTgwMzUzLDUuMjIxNzExOSAwLDIuODgzODc1IC0xLjYwMjkxNCw1LjIyMTcxMyAtMy41ODAzNTMsNS4yMjE3MTMgSCAyOS4xMzU2MDMgbSAxNS4yMzMxMzYsMjkuNTg5NjE1IGMgMC42NTU1NjcsMS4wNjgzNzEgMS42MDgyODYsMS43NDA2NTYgMi42Njg1ODQsMS43NDA2NTYgMS45Nzc0MzEsMCAzLjU4MDM1MiwtMi4zMzc3ODggMy41ODAzNTIsLTUuMjIxNzE0IDAsLTIuODgzOTQyIC0xLjYwMjk1MiwtNS4yMjE3MTEgLTMuNTgwMzUyLC01LjIyMTcxMSBoIC0xNy45MDE3MiIKICAgICBzdHJva2U9IiMwMDAwMDAiCiAgICAgc3Ryb2tlLXdpZHRoPSIyIgogICAgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIgogICAgIGlkPSJwYXRoMzEwIgogICAgIGlua3NjYXBlOmxhYmVsPSJwYXRoMzEwIgogICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjIuNTtzdHJva2UtZGFzaGFycmF5Om5vbmUiIC8+Cjwvc3ZnPgo="
                                                     },
-                                                    "size": 18
+                                                    "size": 14
                                                 }
                                             ],
                                             "verticalOffset": {
@@ -1621,7 +2226,7 @@
                                                     "resource": {
                                                         "primitive": "square"
                                                     },
-                                                    "size": 26,
+                                                    "size": 22,
                                                     "material": {
                                                         "color": [
                                                             255,
@@ -1633,9 +2238,9 @@
                                                 {
                                                     "type": "Icon",
                                                     "resource": {
-                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGUuc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjIuMSAoOWM2ZDQxZTQxMCwgMjAyMi0wNy0xNCkiCiAgIHdpZHRoPSI2NCIKICAgaGVpZ2h0PSI2NCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXczMCIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIxMC41ODQwMDIiCiAgICAgaW5rc2NhcGU6Y3g9IjYuODk3MjAyIgogICAgIGlua3NjYXBlOmN5PSIyOC4xMDg0NiIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjI0MDAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTQyMSIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnMjgiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiPgogICAgPHN0eWxlCiAgICAgICBpZD0ic3R5bGUyIj4uY2xzLTF7ZmlsbDpub25lO30uY2xzLTEsLmNscy0ye3N0cm9rZTojMmQyYTI4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPgogIDwvZGVmcz4KICA8dGl0bGUKICAgICBpZD0idGl0bGU2Ij50ZW1pLXZlbmRpdGEyQDMwMHgyPC90aXRsZT4KICA8ZwogICAgIGlkPSJMaXZlbGxvXzIiCiAgICAgZGF0YS1uYW1lPSJMaXZlbGxvIDIiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOC40MDg5MTcxLDQuMjUxNjk5NykiPgogICAgPGcKICAgICAgIGlkPSJMYXllcl8yIgogICAgICAgZGF0YS1uYW1lPSJMYXllciAyIj4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDMxLjQ1LDEwLjc0IGMgMCwwIC0wLjIyLDQuNTMgLTUuMDgsOS42MiBDIDIxLjUxLDI1LjQ1IDE1LjY1LDMxLjMgMTcuMDksMzkuOCAxOC41Myw0OC4zIDI4LjQ3LDUxIDMxLjQ1LDUxIDM0LjQzLDUxIDQ0LjM4LDQ4LjMxIDQ1LjgyLDM5LjggNDcuMjYsMzEuMjkgNDEuNCwyNS40NCAzNi41MywyMC4zNiAzMS42NiwxNS4yOCAzMS40NSwxMC43NCAzMS40NSwxMC43NCBaIgogICAgICAgICBpZD0icGF0aDgiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMGZmZmY7ZmlsbC1vcGFjaXR5OjEiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgZD0ibSA0MC43OCwzNC42NCBjIDAsMCAwLjk0LDkuNTQgLTEwLDEwLjQ5IgogICAgICAgICBpZD0icGF0aDEwIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIGQ9Im0gMjAuNDIsNDMuNDggYyAwLDAgMC42Nyw2LjgxIC03LjEyLDcuNDkiCiAgICAgICAgIGlkPSJwYXRoMTQiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjE0LjcwMjk5IgogICAgICAgICB5MT0iNS43NjU5NTQ1IgogICAgICAgICB4Mj0iMTQuNzAyOTkiCiAgICAgICAgIHkyPSIzNC41MzU5NTQiCiAgICAgICAgIGlkPSJsaW5lMTYiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIxOC4xMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjE4LjExODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMCIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMjMuMjE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyMy4yMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjIiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIgLz4KICAgIDwvZz4KICA8L2c+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMzE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOnRpdGxlPnRlbWktdmVuZGl0YTJAMzAweDI8L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KPC9zdmc+Cg=="
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGVfdGVtcGVyYXR1cmVfd2luZC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgd2lkdGg9IjY0IgogICBoZWlnaHQ9IjY0IgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzMwIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjEwLjU4NDAwMiIKICAgICBpbmtzY2FwZTpjeD0iMzMuODcxODc2IgogICAgIGlua3NjYXBlOmN5PSIyOS4yNDIyNDciCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxOTIwIgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMDEiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy15PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzI4IiAvPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0Ij4KICAgIDxzdHlsZQogICAgICAgaWQ9InN0eWxlMiI+LmNscy0xe2ZpbGw6bm9uZTt9LmNscy0xLC5jbHMtMntzdHJva2U6IzJkMmEyODtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLXdpZHRoOjJweDt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT4KICA8L2RlZnM+CiAgPHRpdGxlCiAgICAgaWQ9InRpdGxlNiI+dGVtaS12ZW5kaXRhMkAzMDB4MjwvdGl0bGU+CiAgPGcKICAgICBpZD0iTGl2ZWxsb18yIgogICAgIGRhdGEtbmFtZT0iTGl2ZWxsbyAyIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNzU1ODU3MzEsMy44NzM3NzA4KSI+CiAgICA8ZwogICAgICAgaWQ9IkxheWVyXzIiCiAgICAgICBkYXRhLW5hbWU9IkxheWVyIDIiPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDIwLjQyLDQzLjQ4IGMgMCwwIDAuNjcsNi44MSAtNy4xMiw3LjQ5IgogICAgICAgICBpZD0icGF0aDE0IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMjg7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTQuNzAyOTkiCiAgICAgICAgIHkxPSI1Ljc2NTk1NDUiCiAgICAgICAgIHgyPSIxNC43MDI5OSIKICAgICAgICAgeTI9IjM0LjUzNTk1NCIKICAgICAgICAgaWQ9ImxpbmUxNiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMTguMTE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIxOC4xMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjAiCiAgICAgICAgIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utb3BhY2l0eToxIiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIyMy4yMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjIzLjIxODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICA8L2c+CiAgPC9nPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTMxNyI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzp0aXRsZT50ZW1pLXZlbmRpdGEyQDMwMHgyPC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPHBhdGgKICAgICBkPSJtIDUxLjk4NTIxNSwxNi4yNDg1MzEgYyAwLjk4MzMyNywtMS42MDI0MTMgMi40MTI0NTQsLTIuNjEwODU3IDQuMDAzMDEyLC0yLjYxMDg1NyAyLjk2NjE0NywwIDUuMzcwNTIyLDMuNTA2NzcyIDUuMzcwNTIyLDcuODMyNTY4IDAsNC4zMjU5MjcgLTIuNDA0Mzk0LDcuODMyNTcgLTUuMzcwNTIyLDcuODMyNTcgSCAyOS4xMzU2MDMgbSA5Ljg2MjUzNiwtMTkuMTQ2MjY5IGMgMC42NTU1OTYsLTEuMDY4Mjg3IDEuNjA4MzE1LC0xLjc0MDU4NCAyLjY2ODY4MSwtMS43NDA1ODQgMS45Nzc0MjksMCAzLjU4MDM1MywyLjMzNzg0IDMuNTgwMzUzLDUuMjIxNzEyIDAsMi44ODM4NzUgLTEuNjAyOTE0LDUuMjIxNzEzIC0zLjU4MDM1Myw1LjIyMTcxMyBIIDI5LjEzNTYwMyBtIDE1LjIzMzEzNiwyOS41ODk2MTUgYyAwLjY1NTU2NywxLjA2ODM3MSAxLjYwODI4NiwxLjc0MDY1NiAyLjY2ODU4NCwxLjc0MDY1NiAxLjk3NzQzMSwwIDMuNTgwMzUyLC0yLjMzNzc4OCAzLjU4MDM1MiwtNS4yMjE3MTQgMCwtMi44ODM5NDIgLTEuNjAyOTUyLC01LjIyMTcxMSAtMy41ODAzNTIsLTUuMjIxNzExIGggLTE3LjkwMTcyIgogICAgIHN0cm9rZT0iIzAwMDAwMCIKICAgICBzdHJva2Utd2lkdGg9IjIiCiAgICAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiCiAgICAgaWQ9InBhdGgzMTAtMyIKICAgICBpbmtzY2FwZTpsYWJlbD0icGF0aDMxMCIKICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZmZmZmZmO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiAvPgogIDxwYXRoCiAgICAgZD0ibSA1MS45ODUyMTUsMTYuMjQ4NTMxIGMgMC45ODMzMjcsLTEuNjAyNDEzIDIuNDEyNDU0LC0yLjYxMDg1NyA0LjAwMzAxMiwtMi42MTA4NTcgMi45NjYxNDcsMCA1LjM3MDUyMiwzLjUwNjc3MiA1LjM3MDUyMiw3LjgzMjU2OCAwLDQuMzI1OTI3IC0yLjQwNDM5NCw3LjgzMjU3IC01LjM3MDUyMiw3LjgzMjU3IEggMjkuMTM1NjAzIG0gOS44NjI1MzYsLTE5LjE0NjI2OSBjIDAuNjU1NTk2LC0xLjA2ODI4NjkgMS42MDgzMTUsLTEuNzQwNTgzOSAyLjY2ODY4MSwtMS43NDA1ODM5IDEuOTc3NDI5LDAgMy41ODAzNTMsMi4zMzc4Mzk5IDMuNTgwMzUzLDUuMjIxNzExOSAwLDIuODgzODc1IC0xLjYwMjkxNCw1LjIyMTcxMyAtMy41ODAzNTMsNS4yMjE3MTMgSCAyOS4xMzU2MDMgbSAxNS4yMzMxMzYsMjkuNTg5NjE1IGMgMC42NTU1NjcsMS4wNjgzNzEgMS42MDgyODYsMS43NDA2NTYgMi42Njg1ODQsMS43NDA2NTYgMS45Nzc0MzEsMCAzLjU4MDM1MiwtMi4zMzc3ODggMy41ODAzNTIsLTUuMjIxNzE0IDAsLTIuODgzOTQyIC0xLjYwMjk1MiwtNS4yMjE3MTEgLTMuNTgwMzUyLC01LjIyMTcxMSBoIC0xNy45MDE3MiIKICAgICBzdHJva2U9IiMwMDAwMDAiCiAgICAgc3Ryb2tlLXdpZHRoPSIyIgogICAgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIgogICAgIGlkPSJwYXRoMzEwIgogICAgIGlua3NjYXBlOmxhYmVsPSJwYXRoMzEwIgogICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjIuNTtzdHJva2UtZGFzaGFycmF5Om5vbmUiIC8+Cjwvc3ZnPgo="
                                                     },
-                                                    "size": 18
+                                                    "size": 14
                                                 }
                                             ],
                                             "verticalOffset": {
@@ -1657,7 +2262,7 @@
                                                     "resource": {
                                                         "primitive": "square"
                                                     },
-                                                    "size": 26,
+                                                    "size": 22,
                                                     "material": {
                                                         "color": [
                                                             51,
@@ -1669,9 +2274,9 @@
                                                 {
                                                     "type": "Icon",
                                                     "resource": {
-                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGUuc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjIuMSAoOWM2ZDQxZTQxMCwgMjAyMi0wNy0xNCkiCiAgIHdpZHRoPSI2NCIKICAgaGVpZ2h0PSI2NCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXczMCIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIxMC41ODQwMDIiCiAgICAgaW5rc2NhcGU6Y3g9IjYuODk3MjAyIgogICAgIGlua3NjYXBlOmN5PSIyOC4xMDg0NiIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjI0MDAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTQyMSIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnMjgiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiPgogICAgPHN0eWxlCiAgICAgICBpZD0ic3R5bGUyIj4uY2xzLTF7ZmlsbDpub25lO30uY2xzLTEsLmNscy0ye3N0cm9rZTojMmQyYTI4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPgogIDwvZGVmcz4KICA8dGl0bGUKICAgICBpZD0idGl0bGU2Ij50ZW1pLXZlbmRpdGEyQDMwMHgyPC90aXRsZT4KICA8ZwogICAgIGlkPSJMaXZlbGxvXzIiCiAgICAgZGF0YS1uYW1lPSJMaXZlbGxvIDIiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOC40MDg5MTcxLDQuMjUxNjk5NykiPgogICAgPGcKICAgICAgIGlkPSJMYXllcl8yIgogICAgICAgZGF0YS1uYW1lPSJMYXllciAyIj4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDMxLjQ1LDEwLjc0IGMgMCwwIC0wLjIyLDQuNTMgLTUuMDgsOS42MiBDIDIxLjUxLDI1LjQ1IDE1LjY1LDMxLjMgMTcuMDksMzkuOCAxOC41Myw0OC4zIDI4LjQ3LDUxIDMxLjQ1LDUxIDM0LjQzLDUxIDQ0LjM4LDQ4LjMxIDQ1LjgyLDM5LjggNDcuMjYsMzEuMjkgNDEuNCwyNS40NCAzNi41MywyMC4zNiAzMS42NiwxNS4yOCAzMS40NSwxMC43NCAzMS40NSwxMC43NCBaIgogICAgICAgICBpZD0icGF0aDgiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMGZmZmY7ZmlsbC1vcGFjaXR5OjEiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgZD0ibSA0MC43OCwzNC42NCBjIDAsMCAwLjk0LDkuNTQgLTEwLDEwLjQ5IgogICAgICAgICBpZD0icGF0aDEwIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIGQ9Im0gMjAuNDIsNDMuNDggYyAwLDAgMC42Nyw2LjgxIC03LjEyLDcuNDkiCiAgICAgICAgIGlkPSJwYXRoMTQiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjE0LjcwMjk5IgogICAgICAgICB5MT0iNS43NjU5NTQ1IgogICAgICAgICB4Mj0iMTQuNzAyOTkiCiAgICAgICAgIHkyPSIzNC41MzU5NTQiCiAgICAgICAgIGlkPSJsaW5lMTYiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIxOC4xMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjE4LjExODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMCIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMjMuMjE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyMy4yMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjIiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIgLz4KICAgIDwvZz4KICA8L2c+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMzE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOnRpdGxlPnRlbWktdmVuZGl0YTJAMzAweDI8L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KPC9zdmc+Cg=="
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGVfdGVtcGVyYXR1cmVfd2luZC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgd2lkdGg9IjY0IgogICBoZWlnaHQ9IjY0IgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzMwIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjEwLjU4NDAwMiIKICAgICBpbmtzY2FwZTpjeD0iMzMuODcxODc2IgogICAgIGlua3NjYXBlOmN5PSIyOS4yNDIyNDciCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxOTIwIgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMDEiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy15PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzI4IiAvPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0Ij4KICAgIDxzdHlsZQogICAgICAgaWQ9InN0eWxlMiI+LmNscy0xe2ZpbGw6bm9uZTt9LmNscy0xLC5jbHMtMntzdHJva2U6IzJkMmEyODtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLXdpZHRoOjJweDt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT4KICA8L2RlZnM+CiAgPHRpdGxlCiAgICAgaWQ9InRpdGxlNiI+dGVtaS12ZW5kaXRhMkAzMDB4MjwvdGl0bGU+CiAgPGcKICAgICBpZD0iTGl2ZWxsb18yIgogICAgIGRhdGEtbmFtZT0iTGl2ZWxsbyAyIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNzU1ODU3MzEsMy44NzM3NzA4KSI+CiAgICA8ZwogICAgICAgaWQ9IkxheWVyXzIiCiAgICAgICBkYXRhLW5hbWU9IkxheWVyIDIiPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDIwLjQyLDQzLjQ4IGMgMCwwIDAuNjcsNi44MSAtNy4xMiw3LjQ5IgogICAgICAgICBpZD0icGF0aDE0IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMjg7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTQuNzAyOTkiCiAgICAgICAgIHkxPSI1Ljc2NTk1NDUiCiAgICAgICAgIHgyPSIxNC43MDI5OSIKICAgICAgICAgeTI9IjM0LjUzNTk1NCIKICAgICAgICAgaWQ9ImxpbmUxNiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMTguMTE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIxOC4xMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjAiCiAgICAgICAgIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utb3BhY2l0eToxIiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIyMy4yMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjIzLjIxODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICA8L2c+CiAgPC9nPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTMxNyI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzp0aXRsZT50ZW1pLXZlbmRpdGEyQDMwMHgyPC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPHBhdGgKICAgICBkPSJtIDUxLjk4NTIxNSwxNi4yNDg1MzEgYyAwLjk4MzMyNywtMS42MDI0MTMgMi40MTI0NTQsLTIuNjEwODU3IDQuMDAzMDEyLC0yLjYxMDg1NyAyLjk2NjE0NywwIDUuMzcwNTIyLDMuNTA2NzcyIDUuMzcwNTIyLDcuODMyNTY4IDAsNC4zMjU5MjcgLTIuNDA0Mzk0LDcuODMyNTcgLTUuMzcwNTIyLDcuODMyNTcgSCAyOS4xMzU2MDMgbSA5Ljg2MjUzNiwtMTkuMTQ2MjY5IGMgMC42NTU1OTYsLTEuMDY4Mjg3IDEuNjA4MzE1LC0xLjc0MDU4NCAyLjY2ODY4MSwtMS43NDA1ODQgMS45Nzc0MjksMCAzLjU4MDM1MywyLjMzNzg0IDMuNTgwMzUzLDUuMjIxNzEyIDAsMi44ODM4NzUgLTEuNjAyOTE0LDUuMjIxNzEzIC0zLjU4MDM1Myw1LjIyMTcxMyBIIDI5LjEzNTYwMyBtIDE1LjIzMzEzNiwyOS41ODk2MTUgYyAwLjY1NTU2NywxLjA2ODM3MSAxLjYwODI4NiwxLjc0MDY1NiAyLjY2ODU4NCwxLjc0MDY1NiAxLjk3NzQzMSwwIDMuNTgwMzUyLC0yLjMzNzc4OCAzLjU4MDM1MiwtNS4yMjE3MTQgMCwtMi44ODM5NDIgLTEuNjAyOTUyLC01LjIyMTcxMSAtMy41ODAzNTIsLTUuMjIxNzExIGggLTE3LjkwMTcyIgogICAgIHN0cm9rZT0iIzAwMDAwMCIKICAgICBzdHJva2Utd2lkdGg9IjIiCiAgICAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiCiAgICAgaWQ9InBhdGgzMTAtMyIKICAgICBpbmtzY2FwZTpsYWJlbD0icGF0aDMxMCIKICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZmZmZmZmO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiAvPgogIDxwYXRoCiAgICAgZD0ibSA1MS45ODUyMTUsMTYuMjQ4NTMxIGMgMC45ODMzMjcsLTEuNjAyNDEzIDIuNDEyNDU0LC0yLjYxMDg1NyA0LjAwMzAxMiwtMi42MTA4NTcgMi45NjYxNDcsMCA1LjM3MDUyMiwzLjUwNjc3MiA1LjM3MDUyMiw3LjgzMjU2OCAwLDQuMzI1OTI3IC0yLjQwNDM5NCw3LjgzMjU3IC01LjM3MDUyMiw3LjgzMjU3IEggMjkuMTM1NjAzIG0gOS44NjI1MzYsLTE5LjE0NjI2OSBjIDAuNjU1NTk2LC0xLjA2ODI4NjkgMS42MDgzMTUsLTEuNzQwNTgzOSAyLjY2ODY4MSwtMS43NDA1ODM5IDEuOTc3NDI5LDAgMy41ODAzNTMsMi4zMzc4Mzk5IDMuNTgwMzUzLDUuMjIxNzExOSAwLDIuODgzODc1IC0xLjYwMjkxNCw1LjIyMTcxMyAtMy41ODAzNTMsNS4yMjE3MTMgSCAyOS4xMzU2MDMgbSAxNS4yMzMxMzYsMjkuNTg5NjE1IGMgMC42NTU1NjcsMS4wNjgzNzEgMS42MDgyODYsMS43NDA2NTYgMi42Njg1ODQsMS43NDA2NTYgMS45Nzc0MzEsMCAzLjU4MDM1MiwtMi4zMzc3ODggMy41ODAzNTIsLTUuMjIxNzE0IDAsLTIuODgzOTQyIC0xLjYwMjk1MiwtNS4yMjE3MTEgLTMuNTgwMzUyLC01LjIyMTcxMSBoIC0xNy45MDE3MiIKICAgICBzdHJva2U9IiMwMDAwMDAiCiAgICAgc3Ryb2tlLXdpZHRoPSIyIgogICAgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIgogICAgIGlkPSJwYXRoMzEwIgogICAgIGlua3NjYXBlOmxhYmVsPSJwYXRoMzEwIgogICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjIuNTtzdHJva2UtZGFzaGFycmF5Om5vbmUiIC8+Cjwvc3ZnPgo="
                                                     },
-                                                    "size": 18
+                                                    "size": 14
                                                 }
                                             ],
                                             "verticalOffset": {
@@ -1693,7 +2298,7 @@
                                                     "resource": {
                                                         "primitive": "square"
                                                     },
-                                                    "size": 26,
+                                                    "size": 22,
                                                     "material": {
                                                         "color": [
                                                             0,
@@ -1705,9 +2310,9 @@
                                                 {
                                                     "type": "Icon",
                                                     "resource": {
-                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGUuc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjIuMSAoOWM2ZDQxZTQxMCwgMjAyMi0wNy0xNCkiCiAgIHdpZHRoPSI2NCIKICAgaGVpZ2h0PSI2NCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXczMCIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIxMC41ODQwMDIiCiAgICAgaW5rc2NhcGU6Y3g9IjYuODk3MjAyIgogICAgIGlua3NjYXBlOmN5PSIyOC4xMDg0NiIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjI0MDAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTQyMSIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnMjgiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiPgogICAgPHN0eWxlCiAgICAgICBpZD0ic3R5bGUyIj4uY2xzLTF7ZmlsbDpub25lO30uY2xzLTEsLmNscy0ye3N0cm9rZTojMmQyYTI4O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPgogIDwvZGVmcz4KICA8dGl0bGUKICAgICBpZD0idGl0bGU2Ij50ZW1pLXZlbmRpdGEyQDMwMHgyPC90aXRsZT4KICA8ZwogICAgIGlkPSJMaXZlbGxvXzIiCiAgICAgZGF0YS1uYW1lPSJMaXZlbGxvIDIiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOC40MDg5MTcxLDQuMjUxNjk5NykiPgogICAgPGcKICAgICAgIGlkPSJMYXllcl8yIgogICAgICAgZGF0YS1uYW1lPSJMYXllciAyIj4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDMxLjQ1LDEwLjc0IGMgMCwwIC0wLjIyLDQuNTMgLTUuMDgsOS42MiBDIDIxLjUxLDI1LjQ1IDE1LjY1LDMxLjMgMTcuMDksMzkuOCAxOC41Myw0OC4zIDI4LjQ3LDUxIDMxLjQ1LDUxIDM0LjQzLDUxIDQ0LjM4LDQ4LjMxIDQ1LjgyLDM5LjggNDcuMjYsMzEuMjkgNDEuNCwyNS40NCAzNi41MywyMC4zNiAzMS42NiwxNS4yOCAzMS40NSwxMC43NCAzMS40NSwxMC43NCBaIgogICAgICAgICBpZD0icGF0aDgiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMGZmZmY7ZmlsbC1vcGFjaXR5OjEiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgZD0ibSA0MC43OCwzNC42NCBjIDAsMCAwLjk0LDkuNTQgLTEwLDEwLjQ5IgogICAgICAgICBpZD0icGF0aDEwIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIiAvPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIGQ9Im0gMjAuNDIsNDMuNDggYyAwLDAgMC42Nyw2LjgxIC03LjEyLDcuNDkiCiAgICAgICAgIGlkPSJwYXRoMTQiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjE0LjcwMjk5IgogICAgICAgICB5MT0iNS43NjU5NTQ1IgogICAgICAgICB4Mj0iMTQuNzAyOTkiCiAgICAgICAgIHkyPSIzNC41MzU5NTQiCiAgICAgICAgIGlkPSJsaW5lMTYiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIxOC4xMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjE4LjExODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMCIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMjMuMjE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyMy4yMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjIiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIgLz4KICAgIDwvZz4KICA8L2c+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMzE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOnRpdGxlPnRlbWktdmVuZGl0YTJAMzAweDI8L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KPC9zdmc+Cg=="
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGVfdGVtcGVyYXR1cmVfd2luZC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgd2lkdGg9IjY0IgogICBoZWlnaHQ9IjY0IgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzMwIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjEwLjU4NDAwMiIKICAgICBpbmtzY2FwZTpjeD0iMzMuODcxODc2IgogICAgIGlua3NjYXBlOmN5PSIyOS4yNDIyNDciCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxOTIwIgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMDEiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy15PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzI4IiAvPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0Ij4KICAgIDxzdHlsZQogICAgICAgaWQ9InN0eWxlMiI+LmNscy0xe2ZpbGw6bm9uZTt9LmNscy0xLC5jbHMtMntzdHJva2U6IzJkMmEyODtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLXdpZHRoOjJweDt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT4KICA8L2RlZnM+CiAgPHRpdGxlCiAgICAgaWQ9InRpdGxlNiI+dGVtaS12ZW5kaXRhMkAzMDB4MjwvdGl0bGU+CiAgPGcKICAgICBpZD0iTGl2ZWxsb18yIgogICAgIGRhdGEtbmFtZT0iTGl2ZWxsbyAyIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNzU1ODU3MzEsMy44NzM3NzA4KSI+CiAgICA8ZwogICAgICAgaWQ9IkxheWVyXzIiCiAgICAgICBkYXRhLW5hbWU9IkxheWVyIDIiPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDIwLjQyLDQzLjQ4IGMgMCwwIDAuNjcsNi44MSAtNy4xMiw3LjQ5IgogICAgICAgICBpZD0icGF0aDE0IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMjg7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTQuNzAyOTkiCiAgICAgICAgIHkxPSI1Ljc2NTk1NDUiCiAgICAgICAgIHgyPSIxNC43MDI5OSIKICAgICAgICAgeTI9IjM0LjUzNTk1NCIKICAgICAgICAgaWQ9ImxpbmUxNiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMTguMTE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIxOC4xMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjAiCiAgICAgICAgIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utb3BhY2l0eToxIiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIyMy4yMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjIzLjIxODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICA8L2c+CiAgPC9nPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTMxNyI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzp0aXRsZT50ZW1pLXZlbmRpdGEyQDMwMHgyPC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPHBhdGgKICAgICBkPSJtIDUxLjk4NTIxNSwxNi4yNDg1MzEgYyAwLjk4MzMyNywtMS42MDI0MTMgMi40MTI0NTQsLTIuNjEwODU3IDQuMDAzMDEyLC0yLjYxMDg1NyAyLjk2NjE0NywwIDUuMzcwNTIyLDMuNTA2NzcyIDUuMzcwNTIyLDcuODMyNTY4IDAsNC4zMjU5MjcgLTIuNDA0Mzk0LDcuODMyNTcgLTUuMzcwNTIyLDcuODMyNTcgSCAyOS4xMzU2MDMgbSA5Ljg2MjUzNiwtMTkuMTQ2MjY5IGMgMC42NTU1OTYsLTEuMDY4Mjg3IDEuNjA4MzE1LC0xLjc0MDU4NCAyLjY2ODY4MSwtMS43NDA1ODQgMS45Nzc0MjksMCAzLjU4MDM1MywyLjMzNzg0IDMuNTgwMzUzLDUuMjIxNzEyIDAsMi44ODM4NzUgLTEuNjAyOTE0LDUuMjIxNzEzIC0zLjU4MDM1Myw1LjIyMTcxMyBIIDI5LjEzNTYwMyBtIDE1LjIzMzEzNiwyOS41ODk2MTUgYyAwLjY1NTU2NywxLjA2ODM3MSAxLjYwODI4NiwxLjc0MDY1NiAyLjY2ODU4NCwxLjc0MDY1NiAxLjk3NzQzMSwwIDMuNTgwMzUyLC0yLjMzNzc4OCAzLjU4MDM1MiwtNS4yMjE3MTQgMCwtMi44ODM5NDIgLTEuNjAyOTUyLC01LjIyMTcxMSAtMy41ODAzNTIsLTUuMjIxNzExIGggLTE3LjkwMTcyIgogICAgIHN0cm9rZT0iIzAwMDAwMCIKICAgICBzdHJva2Utd2lkdGg9IjIiCiAgICAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiCiAgICAgaWQ9InBhdGgzMTAtMyIKICAgICBpbmtzY2FwZTpsYWJlbD0icGF0aDMxMCIKICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZmZmZmZmO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiAvPgogIDxwYXRoCiAgICAgZD0ibSA1MS45ODUyMTUsMTYuMjQ4NTMxIGMgMC45ODMzMjcsLTEuNjAyNDEzIDIuNDEyNDU0LC0yLjYxMDg1NyA0LjAwMzAxMiwtMi42MTA4NTcgMi45NjYxNDcsMCA1LjM3MDUyMiwzLjUwNjc3MiA1LjM3MDUyMiw3LjgzMjU2OCAwLDQuMzI1OTI3IC0yLjQwNDM5NCw3LjgzMjU3IC01LjM3MDUyMiw3LjgzMjU3IEggMjkuMTM1NjAzIG0gOS44NjI1MzYsLTE5LjE0NjI2OSBjIDAuNjU1NTk2LC0xLjA2ODI4NjkgMS42MDgzMTUsLTEuNzQwNTgzOSAyLjY2ODY4MSwtMS43NDA1ODM5IDEuOTc3NDI5LDAgMy41ODAzNTMsMi4zMzc4Mzk5IDMuNTgwMzUzLDUuMjIxNzExOSAwLDIuODgzODc1IC0xLjYwMjkxNCw1LjIyMTcxMyAtMy41ODAzNTMsNS4yMjE3MTMgSCAyOS4xMzU2MDMgbSAxNS4yMzMxMzYsMjkuNTg5NjE1IGMgMC42NTU1NjcsMS4wNjgzNzEgMS42MDgyODYsMS43NDA2NTYgMi42Njg1ODQsMS43NDA2NTYgMS45Nzc0MzEsMCAzLjU4MDM1MiwtMi4zMzc3ODggMy41ODAzNTIsLTUuMjIxNzE0IDAsLTIuODgzOTQyIC0xLjYwMjk1MiwtNS4yMjE3MTEgLTMuNTgwMzUyLC01LjIyMTcxMSBoIC0xNy45MDE3MiIKICAgICBzdHJva2U9IiMwMDAwMDAiCiAgICAgc3Ryb2tlLXdpZHRoPSIyIgogICAgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIgogICAgIGlkPSJwYXRoMzEwIgogICAgIGlua3NjYXBlOmxhYmVsPSJwYXRoMzEwIgogICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjIuNTtzdHJva2UtZGFzaGFycmF5Om5vbmUiIC8+Cjwvc3ZnPgo="
                                                     },
-                                                    "size": 18
+                                                    "size": 14
                                                 }
                                             ],
                                             "verticalOffset": {
@@ -1722,9 +2327,9 @@
                             "labelingInfo": [
                                 {
                                     "labelExpressionInfo": {
-                                        "expression": "'Temp: ' + Round($feature[\"airtemperature\"],1) + '\u00b0C' + TextFormatting.NewLine +'Wind: ' + Round($feature[\"averagewindspeed\"],1) + 'm/s' + TextFormatting.NewLine +'Noise: ' + Round($feature[\"noise\"],1) + 'dB'"
+                                        "expression": "'Temp: ' + Round($feature[\"airtemperature\"],1) + '\u00b0C' + TextFormatting.NewLine +'Wind: ' + Round($feature[\"averagewindspeed\"],1) + 'm/s'"
                                     },
-                                    "expression": "'Temp: ' + Round($feature[\"airtemperature\"],1) + '\u00b0C' + TextFormatting.NewLine +'Wind: ' + Round($feature[\"averagewindspeed\"],1) + 'm/s' + TextFormatting.NewLine +'Noise: ' + Round($feature[\"noise\"],1) + 'dB'",
+                                    "expression": "'Temp: ' + Round($feature[\"airtemperature\"],1) + '\u00b0C' + TextFormatting.NewLine +'Wind: ' + Round($feature[\"averagewindspeed\"],1) + 'm/s'",
                                     "symbol": {
                                         "type": "LabelSymbol3D",
                                         "symbolLayers": [
@@ -1758,242 +2363,304 @@
                     "minScale": 50000
                 }
             ],
-            "layerType": "GroupLayer"
+            "layerType": "GroupLayer",
+            "visibilityMode": "independent"
         },
         {
-            "id": "",
-            "showLegend": true,
-            "listMode": "show",
-            "disablePopup": true,
-            "title": "Building",
-            "url": "https://services1.arcgis.com/KGdHCCUjGBpOPPac/ArcGIS/rest/services/Buildings/SceneServer/layers/0",
+            "layerType": "GeoJSON",
+            "title": [
+                "View 360"
+            ],
+            "url": "./data/360View.geojson",
             "visibility": true,
-            "layerDefinition": {
-                "minScale": 0,
-                "maxScale": 0,
-                "excludeObjectIds": [],
-                "definitionExpression": null,
-                "polygonFilter": null,
-                "drawingInfo": {
-                    "renderer": {
-                        "authoringInfo": {},
-                        "type": "simple",
-                        "symbol": {
-                            "type": "MeshSymbol3D",
-                            "symbolLayers": [
-                                {
-                                    "type": "Fill",
-                                    "material": {
-                                        "color": [
-                                            160,
-                                            160,
-                                            160
-                                        ]
-                                    },
-                                    "edges": {
-                                        "type": "solid",
-                                        "color": [
-                                            0,
-                                            0,
-                                            0
-                                        ],
-                                        "size": 0.5
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                }
+            "spatialReference": {
+                "wkid": 4326
             },
-            "layerType": "ArcGISSceneServiceLayer",
-            "showLabels": false,
+            "outFields": [
+                "*"
+            ],
+            "disablePopup": false,
             "popupInfo": {
+                "title": [
+                    "View 360"
+                ],
                 "popupElements": [
                     {
                         "type": "fields"
+                    },
+                    {
+                        "type": "attachments",
+                        "displayType": "auto"
                     }
                 ],
-                "expressionInfos": [],
+                "showAttachments": true,
                 "fieldInfos": [
                     {
-                        "fieldName": "Sheet1__Star_Rating__Nabers_Dat",
+                        "fieldName": "site",
                         "isEditable": true,
-                        "label": "Star_Rating__Nabers_Data_",
+                        "label": "Site",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "view_360_link",
+                        "isEditable": true,
+                        "label": "View 360 Link",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "web_link",
+                        "isEditable": true,
+                        "label": "Web Link",
                         "visible": true
                     }
                 ],
-                "title": "Star Rating"
+                "expressionInfos": []
             },
-            "screenSizePerspective": true,
-            "timeAnimation": true
+            "refreshInterval": 0,
+            "customParameters": null,
+            "layerDefinition": {
+                "fields": [
+                    {
+                        "name": "site",
+                        "alias": "Site",
+                        "editable": false,
+                        "length": 500,
+                        "nullable": true,
+                        "type": "esriFieldTypeString"
+                    },
+                    {
+                        "name": "view_360_link",
+                        "alias": "View 360 Link",
+                        "editable": false,
+                        "length": 3000,
+                        "nullable": true,
+                        "type": "esriFieldTypeString"
+                    },
+                    {
+                        "name": "web_link",
+                        "alias": "Web Link",
+                        "editable": false,
+                        "length": 3000,
+                        "nullable": true,
+                        "type": "esriFieldTypeString"
+                    }
+                ],
+                "displayField": "site",
+                "drawingInfo": {
+                    "renderer": {
+                        "type": "simple",
+                        "symbol": {
+                            "type": "PointSymbol3D",
+                            "symbolLayers": [
+                                {
+                                    "type": "Icon",
+                                    "resource": {
+                                        "primitive": "circle"
+                                    },
+                                    "size": 18,
+                                    "material": {
+                                        "color": [
+                                            255,
+                                            255,
+                                            255
+                                        ]
+                                    },
+                                    "outline": {
+                                        "size": 1,
+                                        "color": [
+                                            110,
+                                            110,
+                                            110
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Icon",
+                                    "resource": {
+                                        "dataURI": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTI5LjggMjQuNmMwIDIuMTQtMy45ODggMy41NDItOC44IDQuMTExdjIuNDhMMTkuNjQ3IDMwbC0xLjcwNS0xLjUgMS43MDUtMS41TDIxIDI1LjgxdjEuODk0YzQuNjgtLjU3NCA3LjgtMS44OTMgNy44LTMuMTA0IDAtMS42MDUtNS40NzQtMy40LTEyLjgtMy40UzMuMiAyMi45OTUgMy4yIDI0LjZjMCAxLjM3NyA0LjAzMiAyLjg5IDkuOCAzLjI5M3YxQzcuMzQ2IDI4LjUwNiAyLjIgMjcuMDMxIDIuMiAyNC42YzAtMi44NTggNy4xMS00LjQgMTMuOC00LjRzMTMuOCAxLjU0MiAxMy44IDQuNHpNMTguMiA3LjVhMS4zIDEuMyAwIDEgMSAxLjMgMS4zIDEuMzAxIDEuMzAxIDAgMCAxLTEuMy0xLjN6bS45NDIuMzU4YS41MDcuNTA3IDAgMSAwIDAtLjcxNy41MDguNTA4IDAgMCAwIDAgLjcxN3pNMzAgMS41ODJ2MTcuODM2QTQ0LjQ4NiA0NC40ODYgMCAwIDAgMTYgMTcuMmE0NC40ODYgNDQuNDg2IDAgMCAwLTE0IDIuMjE4VjEuNTgyQTQ0LjQ4NyA0NC40ODcgMCAwIDAgMTYgMy44YTQ0LjQ4NyA0NC40ODcgMCAwIDAgMTQtMi4yMTh6TTMgMTguMDQ0Yy4yOTUtLjA4Ny42MzctLjE4NCAxLjAxOC0uMjg1bDQuNzg2LTQuNTk3YS40ODEuNDgxIDAgMCAxIC41MzktLjA4OGwuNjIuMjkzIDQuMjI5LTMuNTc2YS40OS40OSAwIDAgMSAuNjQzLjAxczIuNjc5IDIuMzY3IDMuNTMgMy4wOThsMi4xOTMtMi4wNmEuNDkuNDkgMCAwIDEgLjY5NS4wMjVsNy43NDQgNy4xNzkuMDAzLjAwMVYyLjk1NkE0Ny4wNTYgNDcuMDU2IDAgMCAxIDE2IDQuOCA0Ny4wNTYgNDcuMDU2IDAgMCAxIDMgMi45NTZ6TTE2IDE2LjJhNDcuNTQ4IDQ3LjU0OCAwIDAgMSAxMS4xODMgMS4zNTVsLTYuMzE2LTUuNjM1LTEuODE3IDEuNzA4YTEgMSAwIDAgMS0xLjMzNi4wMyA1NTIuMjI1IDU1Mi4yMjUgMCAwIDEtMy4yMTYtMi44MTZsLTMuODkgMy4yODlhMSAxIDAgMCAxLTEuMDcyLjE0bC0uMjk3LS4xNC0zLjI5NCAzLjE2M0E0Ny42MDIgNDcuNjAyIDAgMCAxIDE2IDE2LjJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzMnYzMkgweiIvPjwvc3ZnPg=="
+                                    },
+                                    "size": 10
+                                }
+                            ]
+                        }
+                    },
+                    "labelingInfo": [
+                        {
+                            "labelExpressionInfo": {
+                                "expression": "$feature.site"
+                            },
+                            "expression": "$feature.site",
+                            "minScale": 1000,
+                            "symbol": {
+                                "type": "LabelSymbol3D",
+                                "symbolLayers": [
+                                    {
+                                        "type": "Text",
+                                        "size": 10,
+                                        "material": {
+                                            "color": [
+                                                0,
+                                                0,
+                                                0,
+                                                255
+                                            ]
+                                        },
+                                        "halo": {
+                                            "color": [
+                                                255,
+                                                255,
+                                                255,
+                                                255
+                                            ],
+                                            "size": 1.5
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "",
+            "title": "Melbourne Marathon",
+            "layers": [
+                {
+                    "layerType": "GeoJSON",
+                    "title": [
+                        "Melbourne Marathon Course 42.3 km"
+                    ],
+                    "url": "./data/melbourne_marathon_course_42.3km.geojson",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": [
+                            "Melbourne Marathon Course 42.3 km"
+                        ],
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "name",
+                                "isEditable": true,
+                                "label": "Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "distance",
+                                "isEditable": true,
+                                "label": "Distance",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "profile",
+                                "isEditable": true,
+                                "label": "Profile",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "data_link",
+                                "isEditable": true,
+                                "label": "Data Link",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": []
+                    },
+                    "refreshInterval": 0,
+                    "customParameters": null,
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "name",
+                                "alias": "Name",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "distance",
+                                "alias": "Distance",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "profile",
+                                "alias": "Profile",
+                                "editable": false,
+                                "length": 3000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "data_link",
+                                "alias": "Data Link",
+                                "editable": false,
+                                "length": 3000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            }
+                        ],
+                        "displayField": "name",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "LineSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Path",
+                                            "profile": "quad",
+                                            "material": {
+                                                "color": [
+                                                    255,
+                                                    0,
+                                                    0
+                                                ]
+                                            },
+                                            "size": 10
+                                        }
+                                    ]
+                                }
+                            },
+                            "labelingInfo": []
+                        }
+                    }
+                }
+            ],
+            "layerType": "GroupLayer",
+            "visibilityMode": "independent"
         }
     ],
     "baseMap": {
         "baseMapLayers": [
             {
-                "fullExtent": {
-                    "spatialReference": {
-                        "wkid": 102100
-                    },
-                    "xmin": -20037508.342789244,
-                    "ymin": -20037508.33721075,
-                    "xmax": 20037508.33721075,
-                    "ymax": 20037508.342789244
-                },
-                "id": "19107665030-layer-159",
-                "title": "Vicmap Basemap - Web Mercator 256px - Cartographic",
-                "wmtsInfo": {
-                    "url": "https://base.maps.vic.gov.au/service",
-                    "layerIdentifier": "CARTO_WM_256",
-                    "tileMatrixSet": "EPSG:3857:256"
-                },
+                "id": "VicmapBaseMapVectorTileColour",
+                "layerType": "VectorTileLayer",
+                "title": "Vicmap Vector Tile Basemap Colour WM Hosted",
+                "styleUrl": "https://vicmap.land.vic.gov.au/hosting/rest/services/Hosted/Vicmap_Vector_Tile_Basemap_Colour_WM_Hosted/VectorTileServer/resources/styles/root.json",
+                "itemId": "c84765296c264feca03a26f6b6f3adc2",
                 "visibility": true,
-                "layerType": "WebTiledLayer",
-                "refreshInterval": 0,
-                "templateUrl": "https://base.maps.vic.gov.au/service?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&LAYER=CARTO_WM_256&STYLE=default&FORMAT=image/png&TILEMATRIXSET=EPSG:3857:256&TILEMATRIX={level}&TILEROW={row}&TILECOL={col}",
-                "tileInfo": {
-                    "dpi": 96,
-                    "origin": {
-                        "spatialReference": {
-                            "wkid": 102100
-                        },
-                        "x": -20037508.342789244,
-                        "y": 20037508.342789244
-                    },
-                    "lods": [
-                        {
-                            "level": 0,
-                            "levelValue": "00",
-                            "resolution": 156543.03390624997,
-                            "scale": 591658710.8267716
-                        },
-                        {
-                            "level": 1,
-                            "levelValue": "01",
-                            "resolution": 78271.51696402047,
-                            "scale": 295829355.4545655
-                        },
-                        {
-                            "level": 2,
-                            "levelValue": "02",
-                            "resolution": 39135.758482010235,
-                            "scale": 147914677.72728276
-                        },
-                        {
-                            "level": 3,
-                            "levelValue": "03",
-                            "resolution": 19567.879241005117,
-                            "scale": 73957338.86364138
-                        },
-                        {
-                            "level": 4,
-                            "levelValue": "04",
-                            "resolution": 9783.939620502559,
-                            "scale": 36978669.43182069
-                        },
-                        {
-                            "level": 5,
-                            "levelValue": "05",
-                            "resolution": 4891.969810251279,
-                            "scale": 18489334.715910345
-                        },
-                        {
-                            "level": 6,
-                            "levelValue": "06",
-                            "resolution": 2445.9849051256397,
-                            "scale": 9244667.357955173
-                        },
-                        {
-                            "level": 7,
-                            "levelValue": "07",
-                            "resolution": 1222.9924525628198,
-                            "scale": 4622333.678977586
-                        },
-                        {
-                            "level": 8,
-                            "levelValue": "08",
-                            "resolution": 611.4962262814099,
-                            "scale": 2311166.839488793
-                        },
-                        {
-                            "level": 9,
-                            "levelValue": "09",
-                            "resolution": 305.74811314070496,
-                            "scale": 1155583.4197443966
-                        },
-                        {
-                            "level": 10,
-                            "levelValue": "10",
-                            "resolution": 152.87405657035248,
-                            "scale": 577791.7098721983
-                        },
-                        {
-                            "level": 11,
-                            "levelValue": "11",
-                            "resolution": 76.43702828517624,
-                            "scale": 288895.85493609915
-                        },
-                        {
-                            "level": 12,
-                            "levelValue": "12",
-                            "resolution": 38.21851414258812,
-                            "scale": 144447.92746804957
-                        },
-                        {
-                            "level": 13,
-                            "levelValue": "13",
-                            "resolution": 19.10925707129406,
-                            "scale": 72223.96373402479
-                        },
-                        {
-                            "level": 14,
-                            "levelValue": "14",
-                            "resolution": 9.55462853564703,
-                            "scale": 36111.98186701239
-                        },
-                        {
-                            "level": 15,
-                            "levelValue": "15",
-                            "resolution": 4.777314267823515,
-                            "scale": 18055.990933506197
-                        },
-                        {
-                            "level": 16,
-                            "levelValue": "16",
-                            "resolution": 2.3886571339117575,
-                            "scale": 9027.995466753098
-                        },
-                        {
-                            "level": 17,
-                            "levelValue": "17",
-                            "resolution": 1.1943285669558787,
-                            "scale": 4513.997733376549
-                        },
-                        {
-                            "level": 18,
-                            "levelValue": "18",
-                            "resolution": 0.5971642834779394,
-                            "scale": 2256.9988666882746
-                        },
-                        {
-                            "level": 19,
-                            "levelValue": "19",
-                            "resolution": 0.2985821417389697,
-                            "scale": 1128.4994333441373
-                        },
-                        {
-                            "level": 20,
-                            "levelValue": "20",
-                            "resolution": 0.14929107086948484,
-                            "scale": 564.2497166720686
-                        }
-                    ],
-                    "cols": 256,
-                    "rows": 256,
-                    "spatialReference": {
-                        "wkid": 102100
-                    }
-                }
+                "opacity": 1,
+                "listMode": "show"
             }
         ],
         "id": "",
@@ -2021,16 +2688,16 @@
     },
     "initialState": {
         "viewpoint": {
-            "rotation": 0.5656214683681924,
-            "scale": 8589.993225416441,
+            "rotation": 164.30309882412558,
+            "scale": 23860.11236485139,
             "targetGeometry": {
                 "spatialReference": {
                     "latestWkid": 3857,
                     "wkid": 3857
                 },
-                "x": 16137166.253751462,
-                "y": -4553346.907690696,
-                "z": 32.63943684846163
+                "x": 16138259.19632697,
+                "y": -4555107.167514442,
+                "z": 15.686904416419566
             },
             "camera": {
                 "position": {
@@ -2038,12 +2705,12 @@
                         "latestWkid": 3857,
                         "wkid": 3857
                     },
-                    "x": 16137197.935767349,
-                    "y": -4556556.593134941,
-                    "z": 1913.7762692123652
+                    "x": 16139549.661242591,
+                    "y": -4550516.331983239,
+                    "z": 1290.4059704840183
                 },
-                "heading": 359.4343785316318,
-                "tilt": 53.418850433852434
+                "heading": 195.69690117587442,
+                "tilt": 71.29171607139624
             }
         }
     },
