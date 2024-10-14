@@ -1,0 +1,38 @@
+<MySportsAppSWVersion>
+  <installerInfo platform="windows" minOSVersion="W0510"
+           version="3.3.9" 
+           url="3_3_9/TomTomSportsConnectInstaller-3.3.9.exe"
+           fileSize="36280120" 
+           sha256="2ffbe86d962deffe1e3e05ce5253c5c99729624fe3f94e9dbfa1dbb189e014a1" 
+           patchMinVer="3.2.1"
+           url_patch="3_3_9/TomTomSportsConnectInstallerPatch-3.3.9.exe"
+           fileSize_patch="1849552"
+           sha256_patch="a61f2105e77a577849845d4b503d786e5b25267fe686803f54c7e37ed52cb673"/>
+  <installerInfo platform="osx" minOSVersion="M1060"
+           version="3.3.9"
+           url="3_3_9/TomTomSportsConnectInstaller-3.3.9.pkg"
+           fileSize="43584781" 
+           sha256="7f081deeef0fa7343e297cd68d64f0d3eafb03d0f1d7f762204c924e2227b01b" 
+           patchMinVer="3.2.1"
+           url_patch="3_3_9/TomTomSportsConnectUpdater-3.3.9.pkg"
+           fileSize_patch="5556719"
+           sha256_patch="d25b1a32c5a16a61286092f591d9ada226c9c6ad6da97ff75659be580ca82b60"/>
+  <installerInfo platform="linux" minOSVersion="LINUX"
+           version="3.3.9"
+           url="3_3_9/tomtomsportsconnect-3.3.9.x86_64.deb"
+           fileSize="32473516" 
+           sha256="7ad2ee1ca735ba06be5529d5e7ce4df0d67ac414cb0a889c618d2d65b755b412"/>
+  <latestVersion>
+    <Major>3</Major>
+    <Minor>3</Minor>
+    <Build>9</Build>
+    <isCritical>yes</isCritical>
+    <MACURL>3_3_9/TomTomSportsConnectInstaller-3.3.9.pkg</MACURL>
+    <MACFileSize>43584781</MACFileSize>
+    <WINURL>3_3_9/TomTomSportsConnectInstaller-3.3.9.exe</WINURL>
+    <WINFileSize>36280120</WINFileSize>
+    <LINUXURL>3_3_9/tomtomsportsconnect-3.3.9.x86_64.deb</LINUXURL>
+    <LINUXFileSize>32473516</LINUXFileSize>
+  </latestVersion>
+</MySportsAppSWVersion>
+
