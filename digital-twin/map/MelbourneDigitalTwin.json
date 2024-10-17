@@ -425,7 +425,8 @@
                                 }
                             ]
                         }
-                    }
+                    },
+                    "minScale": 100000
                 },
                 {
                     "layerType": "GeoJSON",
@@ -2490,7 +2491,7 @@
                                 "expression": "$feature.site"
                             },
                             "expression": "$feature.site",
-                            "minScale": 1000,
+                            "minScale": 2500,
                             "symbol": {
                                 "type": "LabelSymbol3D",
                                 "symbolLayers": [
@@ -2520,11 +2521,12 @@
                         }
                     ]
                 }
-            }
+            },
+            "minScale": 20000
         },
         {
             "id": "",
-            "title": "Melbourne Marathon",
+            "title": "Sport Event",
             "layers": [
                 {
                     "layerType": "GeoJSON",
@@ -2532,7 +2534,7 @@
                         "Melbourne Marathon Course 42.3 km"
                     ],
                     "url": "./data/melbourne_marathon_course_42.3km.geojson",
-                    "visibility": true,
+                    "visibility": false,
                     "spatialReference": {
                         "wkid": 4326
                     },
@@ -2633,10 +2635,12 @@
                                                 "color": [
                                                     255,
                                                     0,
-                                                    0
-                                                ]
+                                                    0,
+                                                    30
+                                                ],
+                                                "transparency": 30
                                             },
-                                            "size": 10
+                                            "size": 5
                                         }
                                     ]
                                 }
@@ -2688,16 +2692,16 @@
     },
     "initialState": {
         "viewpoint": {
-            "rotation": 164.30309882412558,
-            "scale": 23860.11236485139,
+            "rotation": 0.5656214683681924,
+            "scale": 8589.993225416441,
             "targetGeometry": {
                 "spatialReference": {
                     "latestWkid": 3857,
                     "wkid": 3857
                 },
-                "x": 16138259.19632697,
-                "y": -4555107.167514442,
-                "z": 15.686904416419566
+                "x": 16137166.253751462,
+                "y": -4553346.907690696,
+                "z": 32.63943684846163
             },
             "camera": {
                 "position": {
@@ -2705,12 +2709,12 @@
                         "latestWkid": 3857,
                         "wkid": 3857
                     },
-                    "x": 16139549.661242591,
-                    "y": -4550516.331983239,
-                    "z": 1290.4059704840183
+                    "x": 16137197.935767349,
+                    "y": -4556556.593134941,
+                    "z": 1913.7762692123652
                 },
-                "heading": 195.69690117587442,
-                "tilt": 71.29171607139624
+                "heading": 359.4343785316318,
+                "tilt": 53.418850433852434
             }
         }
     },

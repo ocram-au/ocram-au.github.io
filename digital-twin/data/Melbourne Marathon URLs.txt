@@ -22,7 +22,7 @@ Nike Melbourne Marathon Course.kmz
 https://www.google.com/maps/d/kml?mid=1C6V4tGncg61LTsyil-z1QER2RcmjbOU&resourcekey&lid=6rijdDinkXo
 
 
-
+<iframe src="https://www.google.com/maps/embed?pb=!4v1728637018941!6m8!1m7!1sg7obiJGr1FcUWwv9ZO20fw!2m2!1d-37.81997703983254!2d144.9834828405979!3f35.96897649792513!4f6.546736276184333!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
 
@@ -41,3 +41,6 @@ https://www.google.com/maps/d/kml?mid\\u003d1C6V4tGncg61LTsyil-z1QER2RcmjbOU\\u0
 https://www.google.com/maps/d/kml?mid\\u003d1C6V4tGncg61LTsyil-z1QER2RcmjbOU\\u0026resourcekey\\u0026lid\\u003d6rijdDinkXo\
 
 https://www.google.com/maps/d/kml?mid\\u003d1C6V4tGncg61LTsyil-z1QER2RcmjbOU\\u0026resourcekey\
+
+
+let elementFullView = (element.parentElement as HTMLElement).querySelector("iframe[data-fullscreen=true]");

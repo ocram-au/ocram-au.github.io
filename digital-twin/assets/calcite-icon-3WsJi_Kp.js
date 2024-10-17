@@ -1,5 +1,0 @@
-import{I as o,d as t}from"./icon-RFnkc7N2.js";import"./index-CdZN6t8g.js";import"./dom-N-INhzKQ.js";import"./guid-DP-7rFCR.js";import"./observers-Di-ERcst.js";/*!
- * All material copyright ESRI, All Rights Reserved, unless otherwise specified.
- * See https://github.com/Esri/calcite-design-system/blob/dev/LICENSE.md for details.
- * v2.11.1
- */const p=o,s=t;export{p as CalciteIcon,s as defineCustomElement};
