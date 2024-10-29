@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Road Closure times </name>
+    <Style id="line-01579B-15725-normal">
+      <LineStyle>
+        <color>ff9b5701</color>
+        <width>15.725</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-01579B-15725-highlight">
+      <LineStyle>
+        <color>ff9b5701</color>
+        <width>23.5875</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-01579B-15725">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-01579B-15725-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-01579B-15725-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-01579B-18438-normal">
+      <LineStyle>
+        <color>ff9b5701</color>
+        <width>18.438</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-01579B-18438-highlight">
+      <LineStyle>
+        <color>ff9b5701</color>
+        <width>27.657</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-01579B-18438">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-01579B-18438-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-01579B-18438-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-3949AB-16306-normal">
+      <LineStyle>
+        <color>ffab4939</color>
+        <width>16.306</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-3949AB-16306-highlight">
+      <LineStyle>
+        <color>ffab4939</color>
+        <width>24.459</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-3949AB-16306">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-3949AB-16306-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-3949AB-16306-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-757575-16306-normal">
+      <LineStyle>
+        <color>ff757575</color>
+        <width>16.306</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-757575-16306-highlight">
+      <LineStyle>
+        <color>ff757575</color>
+        <width>24.459</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-757575-16306">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-757575-16306-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-757575-16306-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-795548-16694-normal">
+      <LineStyle>
+        <color>ff485579</color>
+        <width>16.694</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-795548-16694-highlight">
+      <LineStyle>
+        <color>ff485579</color>
+        <width>25.041</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-795548-16694">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-795548-16694-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-795548-16694-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-7CB342-17275-normal">
+      <LineStyle>
+        <color>ff42b37c</color>
+        <width>17.275</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-7CB342-17275-highlight">
+      <LineStyle>
+        <color>ff42b37c</color>
+        <width>25.9125</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-7CB342-17275">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-7CB342-17275-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-7CB342-17275-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-817717-17856-normal">
+      <LineStyle>
+        <color>ff177781</color>
+        <width>17.856</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-817717-17856-highlight">
+      <LineStyle>
+        <color>ff177781</color>
+        <width>26.784</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-817717-17856">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-817717-17856-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-817717-17856-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-CE93D8-17663-normal">
+      <LineStyle>
+        <color>ffd893ce</color>
+        <width>17.663</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-CE93D8-17663-highlight">
+      <LineStyle>
+        <color>ffd893ce</color>
+        <width>26.4945</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-CE93D8-17663">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-CE93D8-17663-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-CE93D8-17663-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-F9A825-17275-normal">
+      <LineStyle>
+        <color>ff25a8f9</color>
+        <width>17.275</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-F9A825-17275-highlight">
+      <LineStyle>
+        <color>ff25a8f9</color>
+        <width>25.9125</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-F9A825-17275">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-F9A825-17275-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-F9A825-17275-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FFEA00-18631-normal">
+      <LineStyle>
+        <color>ff00eaff</color>
+        <width>18.631</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-FFEA00-18631-highlight">
+      <LineStyle>
+        <color>ff00eaff</color>
+        <width>27.9465</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-FFEA00-18631">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FFEA00-18631-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FFEA00-18631-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Beaconsfield Pde Closed 6.00am - 10.30am</name>
+      <description><![CDATA[Between Bay St & Kerferd Rd                        ]]></description>
+      <styleUrl>#line-FFEA00-18631</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          144.9382495,-37.8433185,0
+          144.9402665,-37.8443691,0
+          144.9411248,-37.8446741,0
+          144.942584,-37.8449452,0
+          144.9452447,-37.8461313,0
+          144.9511241,-37.8490288,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Beach Rd Closed 6.00am - 12.00 noon</name>
+      <description>Beaconsfield Pde - Marine Pde - Jacka Blvd - Ormond Esplanade</description>
+      <styleUrl>#line-7CB342-17275</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          144.9516391,-37.8493168,0
+          144.9640416,-37.8553823,0
+          144.971466,-37.85955,0
+          144.9728822,-37.8615829,0
+          144.9722385,-37.862972,0
+          144.9720668,-37.8642256,0
+          144.9726676,-37.8652081,0
+          144.9741696,-37.8665294,0
+          144.9759292,-37.8692736,0
+          144.9764871,-37.8726613,0
+          144.9770879,-37.8787249,0
+          144.9778604,-37.8818412,0
+          144.9803495,-37.8848219,0
+          144.989705,-37.8905797,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Fitzroy St Closed 5.30am - 11.30am</name>
+      <description>Fitzroy St Closed including all trams closed 5.30am  - 1130 am</description>
+      <styleUrl>#line-3949AB-16306</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          144.9730196,-37.8623766,0
+          144.9825468,-37.8567521,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Albert Park Lake Closed 6.00am - 11.00am</name>
+      <description>Aughtie Drive - Lakeside Dve - Village Green Dve - Hockey Dve</description>
+      <styleUrl>#line-757575-16306</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          144.9801007,-37.857667,0
+          144.9790707,-37.8565488,0
+          144.9785557,-37.8552612,0
+          144.9788132,-37.8537364,0
+          144.9781695,-37.852076,0
+          144.9771395,-37.8495684,0
+          144.9759379,-37.8488568,0
+          144.9749079,-37.848179,0
+          144.9734488,-37.848179,0
+          144.9722901,-37.8473318,0
+          144.9712601,-37.846383,0
+          144.9706164,-37.845468,0
+          144.9706164,-37.8441463,0
+          144.9714747,-37.8423501,0
+          144.9717751,-37.8410284,0
+          144.9713459,-37.8398422,0
+          144.9705735,-37.8388254,0
+          144.9689856,-37.8384526,0
+          144.9679985,-37.8380459,0
+          144.9653378,-37.8389271,0
+          144.9635783,-37.8399778,0
+          144.9634495,-37.8390288,0
+          144.9635353,-37.8409606,0
+          144.9628916,-37.8418079,0
+          144.9621191,-37.8421807,0
+          144.9634066,-37.8441463,0
+          144.966239,-37.8467218,0
+          144.9660244,-37.8476368,0
+          144.9728051,-37.8529231,0
+          144.9741783,-37.8520082,0
+          144.9760666,-37.8540075,0
+          144.9760237,-37.854431,0
+          144.9784699,-37.8560067,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>St Kilda Rd Closed - 5.30am - 12.30pm</name>
+      <description>St Kilda Rd Between St Kilda Junction and Flinders St</description>
+      <styleUrl>#line-01579B-18438</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          144.9828043,-37.856481,0
+          144.9822035,-37.8543124,0
+          144.9755516,-37.8362157,0
+          144.9741783,-37.8342498,0
+          144.9722472,-37.8330974,0
+          144.9713889,-37.8312332,0
+          144.9713889,-37.8271657,0
+          144.970788,-37.8246233,0
+          144.9688998,-37.8204198,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Botanic Gardens Closed 5.30am - 12.30pm</name>
+      <description>Linlithgow Ave - Birdwood Ave - Domain Rd</description>
+      <styleUrl>#line-F9A825-17275</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          144.9736268,-37.8219774,0
+          144.9711806,-37.8231131,0
+          144.9718243,-37.8245877,0
+          144.9727684,-37.826486,0
+          144.9730259,-37.8279774,0
+          144.9744851,-37.8302146,0
+          144.9769742,-37.8312993,0
+          144.9792916,-37.8331296,0
+          144.9820382,-37.8332652,0
+          144.9827248,-37.8343498,0
+          144.9728543,-37.832994,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Southbank Blvd - Alexandra Ave Closed 5.30am - 12.30pm</name>
+      <description>Southbank Blvd - Kavanagh St - Fanning St - Alexandra Ave</description>
+      <styleUrl>#line-CE93D8-17663</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          144.9697215,-37.8234351,0
+          144.9679834,-37.8235877,0
+          144.965902,-37.82313,0
+          144.9670178,-37.8225198,0
+          144.9670607,-37.8211638,0
+          144.9685198,-37.8205536,0
+          144.9700648,-37.820757,0
+          144.9731976,-37.8212994,0
+          144.9747855,-37.8220113,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Batman Ave - City Link - 4.30am - 1.00pm</name>
+      <description>Batman Ave - City Link access</description>
+      <styleUrl>#line-795548-16694</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          144.9762875,-37.8211638,0
+          144.9762017,-37.819062,0
+          144.9753863,-37.8183161,0
+          144.9738842,-37.8174008,0
+          144.9729401,-37.8168245,0
+          144.972511,-37.8161803,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Brunton Ave Closed 4.30am - 2.00pm</name>
+      <description>Brunton Ave - Jolimont Tce</description>
+      <styleUrl>#line-01579B-15725</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          144.9886471,-37.8230113,0
+          144.9855143,-37.822435,0
+          144.981609,-37.8203332,0
+          144.9784333,-37.8183331,0
+          144.9789053,-37.8164007,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Flinders St Wellington Pde Sth Closed 5.00am - 1.30pm</name>
+      <description>Flinders St - Wellington Pde Sth</description>
+      <styleUrl>#line-817717-17856</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          144.9784333,-37.816299,0
+          144.9735409,-37.815587,0
+          144.9673182,-37.8174516,0
+          144.9686915,-37.8201976,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
