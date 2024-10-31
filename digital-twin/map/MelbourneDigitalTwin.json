@@ -221,21 +221,21 @@
                                 "visible": true
                             },
                             {
-                                "fieldName": "next_departure_link",
-                                "isEditable": true,
-                                "label": "Next Departure Link",
-                                "visible": true
-                            },
-                            {
-                                "fieldName": "disruption_link",
-                                "isEditable": true,
-                                "label": "Disruption Link",
-                                "visible": true
-                            },
-                            {
                                 "fieldName": "route_id",
                                 "isEditable": true,
                                 "label": "Route Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "next_departure",
+                                "isEditable": true,
+                                "label": "Next Departure",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "disruption",
+                                "isEditable": true,
+                                "label": "Disruption",
                                 "visible": true
                             },
                             {
@@ -348,21 +348,21 @@
                                 "length": 500
                             },
                             {
-                                "name": "next_departure_link",
-                                "type": "esriFieldTypeString",
-                                "alias": "Next Departure Link",
-                                "length": 50000
-                            },
-                            {
-                                "name": "disruption_link",
-                                "type": "esriFieldTypeString",
-                                "alias": "Disruption Link",
-                                "length": 50000
-                            },
-                            {
                                 "name": "route_id",
                                 "type": "esriFieldTypeString",
                                 "alias": "Route Id",
+                                "length": 500
+                            },
+                            {
+                                "name": "next_departure",
+                                "type": "esriFieldTypeString",
+                                "alias": "Next Departure",
+                                "length": 500
+                            },
+                            {
+                                "name": "disruption",
+                                "type": "esriFieldTypeString",
+                                "alias": "Disruption",
                                 "length": 500
                             },
                             {
@@ -560,21 +560,21 @@
                                 "visible": true
                             },
                             {
-                                "fieldName": "next_departure_link",
-                                "isEditable": true,
-                                "label": "Next Departure Link",
-                                "visible": true
-                            },
-                            {
-                                "fieldName": "disruption_link",
-                                "isEditable": true,
-                                "label": "Disruption Link",
-                                "visible": true
-                            },
-                            {
                                 "fieldName": "route_id",
                                 "isEditable": true,
                                 "label": "Route Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "next_departure",
+                                "isEditable": true,
+                                "label": "Next Departure",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "disruption",
+                                "isEditable": true,
+                                "label": "Disruption",
                                 "visible": true
                             }
                         ],
@@ -681,21 +681,21 @@
                                 "length": 500
                             },
                             {
-                                "name": "next_departure_link",
-                                "type": "esriFieldTypeString",
-                                "alias": "Next Departure Link",
-                                "length": 50000
-                            },
-                            {
-                                "name": "disruption_link",
-                                "type": "esriFieldTypeString",
-                                "alias": "Disruption Link",
-                                "length": 50000
-                            },
-                            {
                                 "name": "route_id",
                                 "type": "esriFieldTypeString",
                                 "alias": "Route Id",
+                                "length": 500
+                            },
+                            {
+                                "name": "next_departure",
+                                "type": "esriFieldTypeString",
+                                "alias": "Next Departure",
+                                "length": 500
+                            },
+                            {
+                                "name": "disruption",
+                                "type": "esriFieldTypeString",
+                                "alias": "Disruption",
                                 "length": 500
                             }
                         ],
