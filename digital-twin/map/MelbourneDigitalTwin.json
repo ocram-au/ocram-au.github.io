@@ -125,6 +125,30 @@
                                 "visible": true
                             },
                             {
+                                "fieldName": "next_departure",
+                                "isEditable": true,
+                                "label": "Next Departure",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "disruption",
+                                "isEditable": true,
+                                "label": "Disruption",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "all_route_run_list_JSON",
+                                "isEditable": true,
+                                "label": "All Route Run List Json",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "about",
+                                "isEditable": true,
+                                "label": "About",
+                                "visible": true
+                            },
+                            {
                                 "fieldName": "stop_suburb",
                                 "isEditable": true,
                                 "label": "Stop Suburb",
@@ -225,24 +249,6 @@
                                 "isEditable": true,
                                 "label": "Route Id",
                                 "visible": true
-                            },
-                            {
-                                "fieldName": "next_departure",
-                                "isEditable": true,
-                                "label": "Next Departure",
-                                "visible": true
-                            },
-                            {
-                                "fieldName": "disruption",
-                                "isEditable": true,
-                                "label": "Disruption",
-                                "visible": true
-                            },
-                            {
-                                "fieldName": "about",
-                                "isEditable": true,
-                                "label": "About",
-                                "visible": true
                             }
                         ],
                         "expressionInfos": []
@@ -255,6 +261,30 @@
                                 "name": "OBJECTID",
                                 "type": "esriFieldTypeOID",
                                 "alias": "OBJECTID"
+                            },
+                            {
+                                "name": "next_departure",
+                                "type": "esriFieldTypeString",
+                                "alias": "Next Departure",
+                                "length": 500
+                            },
+                            {
+                                "name": "disruption",
+                                "type": "esriFieldTypeString",
+                                "alias": "Disruption",
+                                "length": 500
+                            },
+                            {
+                                "name": "all_route_run_list_JSON",
+                                "type": "esriFieldTypeString",
+                                "alias": "All Route Run List Json",
+                                "length": 500
+                            },
+                            {
+                                "name": "about",
+                                "type": "esriFieldTypeString",
+                                "alias": "About",
+                                "length": 500
                             },
                             {
                                 "name": "stop_suburb",
@@ -351,24 +381,6 @@
                                 "name": "route_id",
                                 "type": "esriFieldTypeString",
                                 "alias": "Route Id",
-                                "length": 500
-                            },
-                            {
-                                "name": "next_departure",
-                                "type": "esriFieldTypeString",
-                                "alias": "Next Departure",
-                                "length": 500
-                            },
-                            {
-                                "name": "disruption",
-                                "type": "esriFieldTypeString",
-                                "alias": "Disruption",
-                                "length": 500
-                            },
-                            {
-                                "name": "about",
-                                "type": "esriFieldTypeString",
-                                "alias": "About",
                                 "length": 500
                             }
                         ],
@@ -464,6 +476,24 @@
                                 "visible": true
                             },
                             {
+                                "fieldName": "next_departure",
+                                "isEditable": true,
+                                "label": "Next Departure",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "disruption",
+                                "isEditable": true,
+                                "label": "Disruption",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "all_route_run_list_JSON",
+                                "isEditable": true,
+                                "label": "All Route Run List Json",
+                                "visible": true
+                            },
+                            {
                                 "fieldName": "stop_suburb",
                                 "isEditable": true,
                                 "label": "Stop Suburb",
@@ -564,18 +594,6 @@
                                 "isEditable": true,
                                 "label": "Route Id",
                                 "visible": true
-                            },
-                            {
-                                "fieldName": "next_departure",
-                                "isEditable": true,
-                                "label": "Next Departure",
-                                "visible": true
-                            },
-                            {
-                                "fieldName": "disruption",
-                                "isEditable": true,
-                                "label": "Disruption",
-                                "visible": true
                             }
                         ],
                         "expressionInfos": []
@@ -588,6 +606,24 @@
                                 "name": "OBJECTID",
                                 "type": "esriFieldTypeOID",
                                 "alias": "OBJECTID"
+                            },
+                            {
+                                "name": "next_departure",
+                                "type": "esriFieldTypeString",
+                                "alias": "Next Departure",
+                                "length": 500
+                            },
+                            {
+                                "name": "disruption",
+                                "type": "esriFieldTypeString",
+                                "alias": "Disruption",
+                                "length": 500
+                            },
+                            {
+                                "name": "all_route_run_list_JSON",
+                                "type": "esriFieldTypeString",
+                                "alias": "All Route Run List Json",
+                                "length": 500
                             },
                             {
                                 "name": "stop_suburb",
@@ -684,18 +720,6 @@
                                 "name": "route_id",
                                 "type": "esriFieldTypeString",
                                 "alias": "Route Id",
-                                "length": 500
-                            },
-                            {
-                                "name": "next_departure",
-                                "type": "esriFieldTypeString",
-                                "alias": "Next Departure",
-                                "length": 500
-                            },
-                            {
-                                "name": "disruption",
-                                "type": "esriFieldTypeString",
-                                "alias": "Disruption",
                                 "length": 500
                             }
                         ],
@@ -800,9 +824,9 @@
                                 "visible": true
                             },
                             {
-                                "fieldName": "planning-application-link",
+                                "fieldName": "planning-permit-register",
                                 "isEditable": false,
-                                "label": "Planning Application Link",
+                                "label": "Planning Permit Register",
                                 "visible": true
                             },
                             {
@@ -1054,9 +1078,9 @@
                         ],
                         "expressionInfos": [
                             {
-                                "name": "planning-application-link",
-                                "title": "Planning Application Link",
-                                "expression": "`https://www.melbourne.vic.gov.au/planning-permit-register-search-results?permit=${$feature.town_planning_application}#:~:text=Search%20results`"
+                                "name": "planning-permit-register",
+                                "title": "Planning Permit Register",
+                                "expression": "`<a target='_blank' href='https://www.melbourne.vic.gov.au/planning-permit-register-search-results?permit=${$feature.town_planning_application}#:~:text=Search%20results'>Planning Permit Register</a>`"
                             }
                         ]
                     },
