@@ -137,12 +137,6 @@
                                 "visible": true
                             },
                             {
-                                "fieldName": "all_route_run_list_JSON",
-                                "isEditable": true,
-                                "label": "All Route Run List Json",
-                                "visible": true
-                            },
-                            {
                                 "fieldName": "about",
                                 "isEditable": true,
                                 "label": "About",
@@ -249,6 +243,12 @@
                                 "isEditable": true,
                                 "label": "Route Id",
                                 "visible": true
+                            },
+                            {
+                                "fieldName": "route_departures_JSON",
+                                "isEditable": true,
+                                "label": "Route Departures Json",
+                                "visible": true
                             }
                         ],
                         "expressionInfos": []
@@ -266,25 +266,19 @@
                                 "name": "next_departure",
                                 "type": "esriFieldTypeString",
                                 "alias": "Next Departure",
-                                "length": 500
+                                "length": 50000
                             },
                             {
                                 "name": "disruption",
                                 "type": "esriFieldTypeString",
                                 "alias": "Disruption",
-                                "length": 500
-                            },
-                            {
-                                "name": "all_route_run_list_JSON",
-                                "type": "esriFieldTypeString",
-                                "alias": "All Route Run List Json",
-                                "length": 500
+                                "length": 50000
                             },
                             {
                                 "name": "about",
                                 "type": "esriFieldTypeString",
                                 "alias": "About",
-                                "length": 500
+                                "length": 50000
                             },
                             {
                                 "name": "stop_suburb",
@@ -382,6 +376,12 @@
                                 "type": "esriFieldTypeString",
                                 "alias": "Route Id",
                                 "length": 500
+                            },
+                            {
+                                "name": "route_departures_JSON",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Departures Json",
+                                "length": 500000
                             }
                         ],
                         "displayField": "stop_name",
@@ -488,12 +488,6 @@
                                 "visible": true
                             },
                             {
-                                "fieldName": "all_route_run_list_JSON",
-                                "isEditable": true,
-                                "label": "All Route Run List Json",
-                                "visible": true
-                            },
-                            {
                                 "fieldName": "stop_suburb",
                                 "isEditable": true,
                                 "label": "Stop Suburb",
@@ -594,6 +588,12 @@
                                 "isEditable": true,
                                 "label": "Route Id",
                                 "visible": true
+                            },
+                            {
+                                "fieldName": "route_departures_JSON",
+                                "isEditable": true,
+                                "label": "Route Departures Json",
+                                "visible": true
                             }
                         ],
                         "expressionInfos": []
@@ -611,19 +611,13 @@
                                 "name": "next_departure",
                                 "type": "esriFieldTypeString",
                                 "alias": "Next Departure",
-                                "length": 500
+                                "length": 50000
                             },
                             {
                                 "name": "disruption",
                                 "type": "esriFieldTypeString",
                                 "alias": "Disruption",
-                                "length": 500
-                            },
-                            {
-                                "name": "all_route_run_list_JSON",
-                                "type": "esriFieldTypeString",
-                                "alias": "All Route Run List Json",
-                                "length": 500
+                                "length": 50000
                             },
                             {
                                 "name": "stop_suburb",
@@ -721,6 +715,12 @@
                                 "type": "esriFieldTypeString",
                                 "alias": "Route Id",
                                 "length": 500
+                            },
+                            {
+                                "name": "route_departures_JSON",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Departures Json",
+                                "length": 500000
                             }
                         ],
                         "displayField": "stop_name",
@@ -1641,9 +1641,9 @@
                         "showAttachments": true,
                         "fieldInfos": [
                             {
-                                "fieldName": "data-link",
+                                "fieldName": "data-source",
                                 "isEditable": false,
-                                "label": "Data Link",
+                                "label": "Data Source",
                                 "visible": true
                             },
                             {
@@ -1685,8 +1685,8 @@
                         ],
                         "expressionInfos": [
                             {
-                                "name": "data-link",
-                                "title": "Data Link",
+                                "name": "data-source",
+                                "title": "Data Source",
                                 "expression": "`https://data.melbourne.vic.gov.au/explore/dataset/on-street-parking-bay-sensors`"
                             }
                         ]
@@ -1912,9 +1912,9 @@
                         "showAttachments": true,
                         "fieldInfos": [
                             {
-                                "fieldName": "data-link",
+                                "fieldName": "data-source",
                                 "isEditable": false,
-                                "label": "Data Link",
+                                "label": "Data Source",
                                 "visible": true
                             },
                             {
@@ -2016,8 +2016,8 @@
                         ],
                         "expressionInfos": [
                             {
-                                "name": "data-link",
-                                "title": "Data Link",
+                                "name": "data-source",
+                                "title": "Data Source",
                                 "expression": "`https://data.melbourne.vic.gov.au/explore/dataset/microclimate-sensors-data`"
                             }
                         ]
@@ -2352,9 +2352,9 @@
                             "labelingInfo": [
                                 {
                                     "labelExpressionInfo": {
-                                        "expression": "'Temp: ' + Round($feature[\"airtemperature\"],1) + '\u00b0C' + TextFormatting.NewLine +'Wind: ' + Round($feature[\"averagewindspeed\"],1) + 'm/s'"
+                                        "expression": "'Temp: ' + Round($feature[\"airtemperature\"],1) + '\u00b0C' + TextFormatting.NewLine +'Wind: ' + Round($feature[\"gustwindspeed\"],1) + 'm/s'"
                                     },
-                                    "expression": "'Temp: ' + Round($feature[\"airtemperature\"],1) + '\u00b0C' + TextFormatting.NewLine +'Wind: ' + Round($feature[\"averagewindspeed\"],1) + 'm/s'",
+                                    "expression": "'Temp: ' + Round($feature[\"airtemperature\"],1) + '\u00b0C' + TextFormatting.NewLine +'Wind: ' + Round($feature[\"gustwindspeed\"],1) + 'm/s'",
                                     "symbol": {
                                         "type": "LabelSymbol3D",
                                         "symbolLayers": [
@@ -2433,9 +2433,9 @@
                         "visible": true
                     },
                     {
-                        "fieldName": "web_link",
+                        "fieldName": "home_page",
                         "isEditable": true,
-                        "label": "Web Link",
+                        "label": "Home Page",
                         "visible": true
                     }
                 ],
@@ -2462,8 +2462,8 @@
                         "type": "esriFieldTypeString"
                     },
                     {
-                        "name": "web_link",
-                        "alias": "Web Link",
+                        "name": "home_page",
+                        "alias": "Home Page",
                         "editable": false,
                         "length": 3000,
                         "nullable": true,
@@ -2604,9 +2604,9 @@
                                         "visible": true
                                     },
                                     {
-                                        "fieldName": "data_link",
+                                        "fieldName": "data_source",
                                         "isEditable": true,
-                                        "label": "Data Link",
+                                        "label": "Data Source",
                                         "visible": true
                                     }
                                 ],
@@ -2641,8 +2641,8 @@
                                         "type": "esriFieldTypeString"
                                     },
                                     {
-                                        "name": "data_link",
-                                        "alias": "Data Link",
+                                        "name": "data_source",
+                                        "alias": "Data Source",
                                         "editable": false,
                                         "length": 3000,
                                         "nullable": true,

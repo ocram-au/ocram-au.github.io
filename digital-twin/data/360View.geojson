@@ -12,7 +12,7 @@
             "properties": {
                 "site": "Melbourne Town Hall",
                 "view_360_link": "<iframe src='https://my.matterport.com/show/?play=1&lang=de&m=Knyns6QdBEo&mls=1' allowfullscreen></iframe>",
-				"web_link": "https://www.melbourne.vic.gov.au/melbourne-town-hall-history",
+				"home_page": "https://www.melbourne.vic.gov.au/melbourne-town-hall-history",
 				"view_point": "{\"position\":{\"spatialReference\":{\"latestWkid\":3857,\"wkid\":3857},\"x\":16137618.026569149,\"y\":-4553481.066784462,\"z\":47.33583600167185},\"heading\":7.794009120665575,\"tilt\":80.20093949440522}"
             },
             "geometry": {
@@ -24,7 +24,7 @@
             "properties": {
                 "site": "St Paul's Cathedral",
                 "view_360_link": "<iframe src='https://my.matterport.com/show/?play=1&lang=en-US&m=dhjEzFoUFzH' allowfullscreen></iframe>",
-				"web_link": "https://cathedral.org.au/",
+				"home_page": "https://cathedral.org.au/",
 				"view_point": ""
             },
             "geometry": {
@@ -36,7 +36,7 @@
             "properties": {
                 "site": "RACV City Club",
                 "view_360_link": "<iframe src='https://my.matterport.com/show/?play=1&lang=en-US&m=z4G2MEULNsj' allowfullscreen></iframe>",
-				"web_link": "https://www.racv.com.au/travel-leisure/racv-club/city-club.html",
+				"home_page": "https://www.racv.com.au/travel-leisure/racv-club/city-club.html",
 				"view_point": ""
             },
             "geometry": {
@@ -48,7 +48,7 @@
             "properties": {
                 "site": "Melbourne Athenaeum Theatre",
                 "view_360_link": "<iframe src='https://my.matterport.com/show/?play=1&lang=en-US&m=oshBtzffx4d&sm=2&sr=-.91,-1.06,-.84&sp=-18.65,12.18,23.34' allowfullscreen></iframe>",
-				"web_link": "https://www.athenaeumtheatre.com.au/",
+				"home_page": "https://www.athenaeumtheatre.com.au/",
 				"view_point": ""
             },
             "geometry": {
@@ -60,7 +60,7 @@
             "properties": {
                 "site": "Rod Laver Arena",
                 "view_360_link": "<iframe src='https://my.matterport.com/show/?play=1&lang=en-US&m=MiKGsAqvH6q' allowfullscreen></iframe>",
-				"web_link": "https://rodlaverarena.com.au/",
+				"home_page": "https://rodlaverarena.com.au/",
 				"view_point": ""
             },
             "geometry": {
@@ -72,7 +72,7 @@
             "properties": {
                 "site": "Reading Room at State Library of Victoria",
                 "view_360_link": "<iframe src='https://my.matterport.com/show/?play=1&lang=en-US&m=HF1K24QJ1F1' allowfullscreen></iframe>",
-				"web_link": "https://www.slv.vic.gov.au/visit/our-magnificent-spaces/la-trobe-reading-room",
+				"home_page": "https://www.slv.vic.gov.au/visit/our-magnificent-spaces/la-trobe-reading-room",
 				"view_point": ""
             },
             "geometry": {
@@ -84,7 +84,7 @@
             "properties": {
                 "site": "Rooftop at QT",
                 "view_360_link": "<iframe src='https://my.matterport.com/show/?play=1&lang=en-US&m=CRJsmmUoM2w' allowfullscreen></iframe>",
-				"web_link": "https://www.qthotels.com/melbourne/eat-drink/rooftop-at-qt/",
+				"home_page": "https://www.qthotels.com/melbourne/eat-drink/rooftop-at-qt/",
 				"view_point": ""
             },
             "geometry": {
@@ -96,7 +96,7 @@
             "properties": {
                 "site": "Level 17, 570 Bourke Street",
                 "view_360_link": "<iframe src='https://my.matterport.com/show/?play=1&lang=en-US&m=kvTgEWofq43' allowfullscreen></iframe>",
-				"web_link": "https://www.570bourke.com.au/",
+				"home_page": "https://www.570bourke.com.au/",
 				"view_point": ""
             },
             "geometry": {
@@ -108,7 +108,7 @@
             "properties": {
                 "site": "Old Melbourne Gaol",
                 "view_360_link": "<iframe src='https://my.matterport.com/show/?play=1&lang=it&m=rAg2KS1m1Kv' allowfullscreen></iframe>",
-				"web_link": "https://www.oldmelbournegaol.com.au/",
+				"home_page": "https://www.oldmelbournegaol.com.au/",
 				"view_point": ""
             },
             "geometry": {
@@ -120,7 +120,7 @@
             "properties": {
                 "site": "AC/DC Lane",
                 "view_360_link": "<iframe src='https://my.matterport.com/show/?play=1&lang=en-US&m=qwTb2uqBgcE' allowfullscreen></iframe>",
-				"web_link": "https://www.visitmelbourne.com/regions/melbourne/destinations/streets/vv-acdc-lane",
+				"home_page": "https://www.visitmelbourne.com/regions/melbourne/destinations/streets/vv-acdc-lane",
 				"view_point": ""
             },
             "geometry": {
@@ -132,7 +132,7 @@
             "properties": {
                 "site": "Great Room Foyer",
                 "view_360_link": "<iframe src='https://my.matterport.com/show/?play=1&lang=en-US&m=bHxbQPFed8j' allowfullscreen></iframe>",
-				"web_link": "https://www.marriott.com/en-us/hotels/melwh-w-melbourne/events/",
+				"home_page": "https://www.marriott.com/en-us/hotels/melwh-w-melbourne/events/",
 				"view_point": ""
             },
             "geometry": {
@@ -144,7 +144,7 @@
             "properties": {
                 "site": "Flinders Street Station",
                 "view_360_link": "<iframe src='https://virtual.turbo360.com.au/metrotrains/flindersstreet/' allowfullscreen></iframe>",
-				"web_link": "https://www.metrotrains.com.au/stations/flinders-street/",
+				"home_page": "https://www.metrotrains.com.au/stations/flinders-street/",
 				"view_point": ""
             },
             "geometry": {
@@ -156,7 +156,7 @@
             "properties": {
                 "site": "Parliament Station",
                 "view_360_link": "<iframe src='https://virtual.turbo360.com.au/metrotrains/parliament/' allowfullscreen></iframe>",
-				"web_link": "https://www.metrotrains.com.au/stations/parliament-station/",
+				"home_page": "https://www.metrotrains.com.au/stations/parliament-station/",
 				"view_point": ""
             },
             "geometry": {
@@ -168,7 +168,7 @@
             "properties": {
                 "site": "Fortress Melbourne",
                 "view_360_link": "<iframe src='https://my.matterport.com/show/?play=1&lang=en-US&m=3CSqhkPPTs9' allowfullscreen></iframe>",
-				"web_link": "https://www.fortress.games/",
+				"home_page": "https://www.fortress.games/",
 				"view_point": ""
             },
             "geometry": {
@@ -180,7 +180,7 @@
             "properties": {
                 "site": "Museo Italiano",
                 "view_360_link": "<iframe src='https://my.matterport.com/show/?play=1&lang=en-US&m=vokEs66qQDE' allowfullscreen></iframe>",
-				"web_link": "https://www.coasit.com.au/museoitaliano",
+				"home_page": "https://www.coasit.com.au/museoitaliano",
 				"view_point": ""
             },
             "geometry": {
@@ -192,7 +192,7 @@
             "properties": {
                 "site": "Melbourne Cricket Ground (MCG)",
                 "view_360_link": "<iframe src='https://www.google.com/maps/embed?pb=!4v1728637018941!6m8!1m7!1sg7obiJGr1FcUWwv9ZO20fw!2m2!1d-37.81997703983254!2d144.9834828405979!3f35.96897649792513!4f6.546736276184333!5f0.7820865974627469' allowfullscreen></iframe>",
-				"web_link": "https://www.mcg.org.au/",
+				"home_page": "https://www.mcg.org.au/",
 				"view_point": ""
             },
             "geometry": {
@@ -204,7 +204,7 @@
             "properties": {
                 "site": "AAMI Park",
                 "view_360_link": "<iframe src='https://www.google.com/maps/embed?pb=!4v1575519743924!6m8!1m7!1syx-4Xhf6I0j6VkCHl3bTmg!2m2!1d-37.82511658697336!2d144.9830827503077!3f93.01325127206019!4f-9.974250062052448!5f0.7820865974627469' allowfullscreen></iframe>",
-				"web_link": "https://aamipark.com.au/",
+				"home_page": "https://aamipark.com.au/",
 				"view_point": ""
             },
             "geometry": {
@@ -216,7 +216,7 @@
             "properties": {
                 "site": "Marvel Stadium",
                 "view_360_link": "<iframe src='https://www.google.com/maps/embed?pb=!4v1575512531632!6m8!1m7!1sKiFA0OfMyFYDZneLKb10Tw!2m2!1d-37.81628727381366!2d144.9465302843943!3f99.86382369796989!4f-6.408697125849059!5f0.7820865974627469' allowfullscreen></iframe>",
-				"web_link": "https://www.marvelstadium.com.au/",
+				"home_page": "https://www.marvelstadium.com.au/",
 				"view_point": ""
             },
             "geometry": {
@@ -228,7 +228,7 @@
             "properties": {
                 "site": "Melbourne Central Station",
                 "view_360_link": "<iframe src='https://virtual.turbo360.com.au/metrotrains/melbournecentral/' allowfullscreen></iframe>",
-				"web_link": "https://www.metrotrains.com.au/stations/melbourne-central/",
+				"home_page": "https://www.metrotrains.com.au/stations/melbourne-central/",
 				"view_point": ""
             },
             "geometry": {
@@ -240,7 +240,7 @@
             "properties": {
                 "site": "Flagstaff Station",
                 "view_360_link": "<iframe src='https://virtual.turbo360.com.au/metrotrains/flagstaff/' allowfullscreen></iframe>",
-				"web_link": "https://www.metrotrains.com.au/stations/flagstaff/",
+				"home_page": "https://www.metrotrains.com.au/stations/flagstaff/",
 				"view_point": ""
             },
             "geometry": {
@@ -253,7 +253,7 @@
                 "properties": {
                     "site": "Richmond Station",
                     "view_360_link": "<iframe src='https://virtual.turbo360.com.au/metrotrains/richmond/' allowfullscreen></iframe>",
-					"web_link": "https://www.metrotrains.com.au/stations/richmond/",
+					"home_page": "https://www.metrotrains.com.au/stations/richmond/",
 					"view_point": ""
                 },
                 "geometry": {
@@ -265,7 +265,7 @@
                 "properties": {
                     "site": "North Melbourne Station",
                     "view_360_link": "<iframe src='https://virtual.turbo360.com.au/metrotrains/northmelbourne/' allowfullscreen></iframe>",
-					"web_link": "https://www.metrotrains.com.au/stations/north-melbourne/",
+					"home_page": "https://www.metrotrains.com.au/stations/north-melbourne/",
 					"view_point": ""
                 },
                 "geometry": {
@@ -277,12 +277,25 @@
                 "properties": {
                     "site": "Hub Australia",
                     "view_360_link": "<iframe src='https://my.matterport.com/show/?m=TTEcNUjB6ko&kb=0&play=1' allowfullscreen></iframe>",
-					"web_link": "https://www.hubaustralia.com/locations/melbourne/hub-southern-cross/",
+					"home_page": "https://www.hubaustralia.com/locations/melbourne/hub-southern-cross/",
 					"view_point": ""
                 },
                 "geometry": {
                     "type": "Point",
                     "coordinates": [144.953592588502801, -37.816653329819424, 50.0]
+                }
+            },
+			{
+                "type": "Feature",
+                "properties": {
+                    "site": "Garden State Hotel",
+                    "view_360_link": "<iframe src='https://www.google.com/maps/embed?pb=!4v1730849041819!6m8!1m7!1saxIeVpaaXjIFJYXOPfDztQ!2m2!1d-38.0636259!2d145.1198021!3f180!4f-5.170562594632372!5f1.5264964112917307' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+					"home_page": "https://gardenstatehotel.com.au/home/",
+					"view_point": ""
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [144.97109,-37.81537, 50.0]
                 }
             }
             ]
