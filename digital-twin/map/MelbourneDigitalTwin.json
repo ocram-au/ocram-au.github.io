@@ -6,11 +6,8 @@
             "layers": [
                 {
                     "id": "",
-                    "title": "Google Photorealistic 3D Tiles",
-                    "url": "https://tile.googleapis.com/v1/3dtiles/root.json",
-                    "customParameters": {
-                        "key": "AIzaSyDrSNqujmAmhhZtenz6MEofEuITd3z0JM0"
-                    },
+                    "title": "Chelsea Primary School 3D",
+                    "url": "./data/cesium/chelsea_primary_surrounding_area_epsg4978/tileset/tileset.json",
                     "layerType": "IntegratedMesh3DTilesLayer",
                     "visibility": false
                 },
@@ -245,9 +242,9 @@
                                 "visible": true
                             },
                             {
-                                "fieldName": "route_departures_JSON",
+                                "fieldName": "data_join_route_id",
                                 "isEditable": true,
-                                "label": "Route Departures Json",
+                                "label": "Data Join Route Id",
                                 "visible": true
                             }
                         ],
@@ -378,10 +375,10 @@
                                 "length": 500
                             },
                             {
-                                "name": "route_departures_JSON",
+                                "name": "data_join_route_id",
                                 "type": "esriFieldTypeString",
-                                "alias": "Route Departures Json",
-                                "length": 500000
+                                "alias": "Data Join Route Id",
+                                "length": 50000
                             }
                         ],
                         "displayField": "stop_name",
@@ -590,9 +587,9 @@
                                 "visible": true
                             },
                             {
-                                "fieldName": "route_departures_JSON",
+                                "fieldName": "data_join_route_id",
                                 "isEditable": true,
-                                "label": "Route Departures Json",
+                                "label": "Data Join Route Id",
                                 "visible": true
                             }
                         ],
@@ -717,10 +714,10 @@
                                 "length": 500
                             },
                             {
-                                "name": "route_departures_JSON",
+                                "name": "data_join_route_id",
                                 "type": "esriFieldTypeString",
-                                "alias": "Route Departures Json",
-                                "length": 500000
+                                "alias": "Data Join Route Id",
+                                "length": 50000
                             }
                         ],
                         "displayField": "stop_name",
