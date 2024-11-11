@@ -7,7 +7,7 @@
                 {
                     "id": "",
                     "title": "Chelsea Primary School 3D",
-                    "url": "./data/cesium/chelsea_primary_surrounding_area_epsg4978/tileset/tileset.json",
+                    "url": "https://www.ocram.com.au/digital-twin/data/cesium/chelsea_primary_surrounding_area_epsg4978/tileset/tileset.json",
                     "layerType": "IntegratedMesh3DTilesLayer",
                     "visibility": false
                 },
