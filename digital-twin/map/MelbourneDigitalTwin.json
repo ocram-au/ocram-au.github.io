@@ -6,8 +6,11 @@
             "layers": [
                 {
                     "id": "",
-                    "title": "Chelsea Primary School 3D",
-                    "url": "https://www.ocram.com.au/digital-twin/data/cesium/chelsea_primary_surrounding_area_epsg4978/tileset/tileset.json",
+                    "title": "Google Photorealistic 3D Tiles",
+                    "url": "https://tile.googleapis.com/v1/3dtiles/root.json",
+                    "customParameters": {
+                        "key": "AIzaSyDrSNqujmAmhhZtenz6MEofEuITd3z0JM0"
+                    },
                     "layerType": "IntegratedMesh3DTilesLayer",
                     "visibility": false
                 },
