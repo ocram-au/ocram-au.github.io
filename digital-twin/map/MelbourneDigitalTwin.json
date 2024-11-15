@@ -6,6 +6,14 @@
             "layers": [
                 {
                     "id": "",
+                    "opacity": 1,
+                    "title": "Chelsea Primary School",
+                    "url": "./data/i3s/chelsea_primary_epsg4979/SceneServer/layers/0",
+                    "visibility": false,
+                    "layerType": "ArcGISSceneServiceLayer"
+                },
+                {
+                    "id": "",
                     "title": "Google Photorealistic 3D Tiles",
                     "url": "https://tile.googleapis.com/v1/3dtiles/root.json",
                     "customParameters": {
@@ -13,6 +21,53 @@
                     },
                     "layerType": "IntegratedMesh3DTilesLayer",
                     "visibility": false
+                },
+                {
+                    "id": "",
+                    "showLegend": true,
+                    "listMode": "show",
+                    "disablePopup": true,
+                    "title": "Building Model Textured 2024",
+                    "url": "https://services1.arcgis.com/KGdHCCUjGBpOPPac/ArcGIS/rest/services/BuildingModelTextured_2024_3857/SceneServer/layers/0",
+                    "visibility": true,
+                    "layerDefinition": {
+                        "minScale": 0,
+                        "maxScale": 0,
+                        "excludeObjectIds": [],
+                        "definitionExpression": null,
+                        "polygonFilter": null,
+                        "drawingInfo": {
+                            "renderer": {
+                                "authoringInfo": {},
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "MeshSymbol3D",
+                                    "symbolLayers": []
+                                }
+                            }
+                        }
+                    },
+                    "layerType": "ArcGISSceneServiceLayer",
+                    "showLabels": false,
+                    "popupInfo": {
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            }
+                        ],
+                        "expressionInfos": [],
+                        "fieldInfos": [
+                            {
+                                "fieldName": "Sheet1__Star_Rating__Nabers_Dat",
+                                "isEditable": true,
+                                "label": "Star_Rating__Nabers_Data_",
+                                "visible": true
+                            }
+                        ],
+                        "title": "Star Rating"
+                    },
+                    "screenSizePerspective": true,
+                    "timeAnimation": true
                 },
                 {
                     "id": "",
