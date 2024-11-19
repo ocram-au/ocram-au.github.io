@@ -17,8 +17,20 @@
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [144.96670,-37.81526, 55.0]
+                "coordinates": [144.96670, -37.81526, 55.0]
             }
+        }, {
+            "type": "Feature",
+            "properties": {
+                "site": "Clyde Hotel",
+                "view_360_link": "<iframe src='https://www.google.com/maps/embed?pb=!4v1731995110384!6m8!1m7!1snkF1fnTXXl9_T7FSivYimw!2m2!1d-37.79729243656283!2d144.9656684647135!3f191.41591325991098!4f-6.08648887087341!5f0.7820865974627469' allowfullscreen></iframe>",
+				"home_page": "https://www.theclydehotel.com.au/",
+				"view_point": "{\"position\":{\"spatialReference\":{\"latestWkid\":3857,\"wkid\":3857},\"x\":16137559.478952074,\"y\":-4550766.496153926,\"z\":57.02605692483485},\"heading\":225.7007751773074,\"tilt\":76.8363018693666}"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [144.96584, -37.79713, 55.0]
+            } 
         }, {
             "type": "Feature",
             "properties": {

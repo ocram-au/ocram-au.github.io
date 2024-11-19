@@ -6,14 +6,6 @@
             "layers": [
                 {
                     "id": "",
-                    "opacity": 1,
-                    "title": "Chelsea Primary School 3D",
-                    "url": "https://dtpli.sharepoint.com/:f:/r/sites/LXRP-GIS/Data/test/i3s/SceneServer",
-                    "visibility": false,
-                    "layerType": "ArcGISSceneServiceLayer"
-                },
-                {
-                    "id": "",
                     "title": "Google Photorealistic 3D",
                     "url": "https://tile.googleapis.com/v1/3dtiles/root.json",
                     "customParameters": {
