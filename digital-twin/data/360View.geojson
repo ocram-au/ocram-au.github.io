@@ -301,7 +301,7 @@
                 "type": "Feature",
                 "properties": {
                     "site": "Garden State Hotel",
-                    "view_360_link": "<iframe src='https://www.google.com/maps/embed?pb=!4v1730849041819!6m8!1m7!1saxIeVpaaXjIFJYXOPfDztQ!2m2!1d-38.0636259!2d145.1198021!3f180!4f-5.170562594632372!5f1.5264964112917307' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+                    "view_360_link": "<video controls><source src=\"https://gardenstatehotel.com.au/wp-content/uploads/2023/03/AVC_TGS_2202-REEL-2-ATMOS-16x9-2-1.mp4\" type=\"video/mp4\"></video></br><iframe src='https://www.google.com/maps/embed?pb=!4v1732266297693!6m8!1m7!1sCAoSLEFGMVFpcE56VFoycDY0RWJJek52b2tVQjM3ZHZjdDdlaDZmQjN6VXo3WklG!2m2!1d-37.81549565922088!2d144.9710604669536!3f28.56550401491471!4f-2.6353213564367906!5f0.7820865974627469' allowfullscreen></iframe></br><iframe src='https://www.google.com/maps/embed?pb=!4v1732590672263!6m8!1m7!1srhBTHICfnU3ogSIWyP_k2g!2m2!1d-37.81526302080141!2d144.9710315585473!3f165.42834195434645!4f4.490082387233699!5f0.7820865974627469' allowfullscreen></iframe>",
 					"home_page": "https://gardenstatehotel.com.au/home/",
 					"view_point": ""
                 },

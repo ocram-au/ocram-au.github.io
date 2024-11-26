@@ -178,6 +178,12 @@
                                 "visible": true
                             },
                             {
+                                "fieldName": "departure_schedule",
+                                "isEditable": true,
+                                "label": "Departure Schedule",
+                                "visible": true
+                            },
+                            {
                                 "fieldName": "disruption",
                                 "isEditable": true,
                                 "label": "Disruption",
@@ -290,12 +296,6 @@
                                 "isEditable": true,
                                 "label": "Route Id",
                                 "visible": true
-                            },
-                            {
-                                "fieldName": "data_join_route_id",
-                                "isEditable": true,
-                                "label": "Data Join Route Id",
-                                "visible": true
                             }
                         ],
                         "expressionInfos": []
@@ -313,6 +313,12 @@
                                 "name": "next_departure",
                                 "type": "esriFieldTypeString",
                                 "alias": "Next Departure",
+                                "length": 50000
+                            },
+                            {
+                                "name": "departure_schedule",
+                                "type": "esriFieldTypeString",
+                                "alias": "Departure Schedule",
                                 "length": 50000
                             },
                             {
@@ -423,12 +429,6 @@
                                 "type": "esriFieldTypeString",
                                 "alias": "Route Id",
                                 "length": 500
-                            },
-                            {
-                                "name": "data_join_route_id",
-                                "type": "esriFieldTypeString",
-                                "alias": "Data Join Route Id",
-                                "length": 50000
                             }
                         ],
                         "displayField": "stop_name",
@@ -526,6 +526,12 @@
                                 "fieldName": "next_departure",
                                 "isEditable": true,
                                 "label": "Next Departure",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "departure_schedule",
+                                "isEditable": true,
+                                "label": "Departure Schedule",
                                 "visible": true
                             },
                             {
@@ -635,12 +641,6 @@
                                 "isEditable": true,
                                 "label": "Route Id",
                                 "visible": true
-                            },
-                            {
-                                "fieldName": "data_join_route_id",
-                                "isEditable": true,
-                                "label": "Data Join Route Id",
-                                "visible": true
                             }
                         ],
                         "expressionInfos": []
@@ -658,6 +658,12 @@
                                 "name": "next_departure",
                                 "type": "esriFieldTypeString",
                                 "alias": "Next Departure",
+                                "length": 50000
+                            },
+                            {
+                                "name": "departure_schedule",
+                                "type": "esriFieldTypeString",
+                                "alias": "Departure Schedule",
                                 "length": 50000
                             },
                             {
@@ -762,12 +768,6 @@
                                 "type": "esriFieldTypeString",
                                 "alias": "Route Id",
                                 "length": 500
-                            },
-                            {
-                                "name": "data_join_route_id",
-                                "type": "esriFieldTypeString",
-                                "alias": "Data Join Route Id",
-                                "length": 50000
                             }
                         ],
                         "displayField": "stop_name",
