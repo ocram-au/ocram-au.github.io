@@ -836,9 +836,556 @@
             "visibilityMode": "independent"
         },
         {
+            "layerType": "GeoJSON",
+            "title": [
+                "View 360"
+            ],
+            "url": "./data/360View.geojson",
+            "visibility": true,
+            "spatialReference": {
+                "wkid": 4326
+            },
+            "outFields": [
+                "*"
+            ],
+            "disablePopup": false,
+            "popupInfo": {
+                "title": [
+                    "View 360"
+                ],
+                "popupElements": [
+                    {
+                        "type": "fields"
+                    },
+                    {
+                        "type": "attachments",
+                        "displayType": "auto"
+                    }
+                ],
+                "showAttachments": true,
+                "fieldInfos": [
+                    {
+                        "fieldName": "site",
+                        "isEditable": true,
+                        "label": "Site",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "view_360_link",
+                        "isEditable": true,
+                        "label": "View 360 Link",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "home_page",
+                        "isEditable": true,
+                        "label": "Home Page",
+                        "visible": true
+                    }
+                ],
+                "expressionInfos": []
+            },
+            "refreshInterval": 0,
+            "customParameters": null,
+            "layerDefinition": {
+                "fields": [
+                    {
+                        "name": "site",
+                        "alias": "Site",
+                        "editable": false,
+                        "length": 500,
+                        "nullable": true,
+                        "type": "esriFieldTypeString"
+                    },
+                    {
+                        "name": "view_360_link",
+                        "alias": "View 360 Link",
+                        "editable": false,
+                        "length": 3000,
+                        "nullable": true,
+                        "type": "esriFieldTypeString"
+                    },
+                    {
+                        "name": "home_page",
+                        "alias": "Home Page",
+                        "editable": false,
+                        "length": 3000,
+                        "nullable": true,
+                        "type": "esriFieldTypeString"
+                    }
+                ],
+                "displayField": "site",
+                "drawingInfo": {
+                    "renderer": {
+                        "type": "simple",
+                        "symbol": {
+                            "type": "PointSymbol3D",
+                            "symbolLayers": [
+                                {
+                                    "type": "Icon",
+                                    "resource": {
+                                        "primitive": "circle"
+                                    },
+                                    "size": 18,
+                                    "material": {
+                                        "color": [
+                                            255,
+                                            255,
+                                            255
+                                        ]
+                                    },
+                                    "outline": {
+                                        "size": 1,
+                                        "color": [
+                                            110,
+                                            110,
+                                            110
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Icon",
+                                    "resource": {
+                                        "dataURI": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTI5LjggMjQuNmMwIDIuMTQtMy45ODggMy41NDItOC44IDQuMTExdjIuNDhMMTkuNjQ3IDMwbC0xLjcwNS0xLjUgMS43MDUtMS41TDIxIDI1LjgxdjEuODk0YzQuNjgtLjU3NCA3LjgtMS44OTMgNy44LTMuMTA0IDAtMS42MDUtNS40NzQtMy40LTEyLjgtMy40UzMuMiAyMi45OTUgMy4yIDI0LjZjMCAxLjM3NyA0LjAzMiAyLjg5IDkuOCAzLjI5M3YxQzcuMzQ2IDI4LjUwNiAyLjIgMjcuMDMxIDIuMiAyNC42YzAtMi44NTggNy4xMS00LjQgMTMuOC00LjRzMTMuOCAxLjU0MiAxMy44IDQuNHpNMTguMiA3LjVhMS4zIDEuMyAwIDEgMSAxLjMgMS4zIDEuMzAxIDEuMzAxIDAgMCAxLTEuMy0xLjN6bS45NDIuMzU4YS41MDcuNTA3IDAgMSAwIDAtLjcxNy41MDguNTA4IDAgMCAwIDAgLjcxN3pNMzAgMS41ODJ2MTcuODM2QTQ0LjQ4NiA0NC40ODYgMCAwIDAgMTYgMTcuMmE0NC40ODYgNDQuNDg2IDAgMCAwLTE0IDIuMjE4VjEuNTgyQTQ0LjQ4NyA0NC40ODcgMCAwIDAgMTYgMy44YTQ0LjQ4NyA0NC40ODcgMCAwIDAgMTQtMi4yMTh6TTMgMTguMDQ0Yy4yOTUtLjA4Ny42MzctLjE4NCAxLjAxOC0uMjg1bDQuNzg2LTQuNTk3YS40ODEuNDgxIDAgMCAxIC41MzktLjA4OGwuNjIuMjkzIDQuMjI5LTMuNTc2YS40OS40OSAwIDAgMSAuNjQzLjAxczIuNjc5IDIuMzY3IDMuNTMgMy4wOThsMi4xOTMtMi4wNmEuNDkuNDkgMCAwIDEgLjY5NS4wMjVsNy43NDQgNy4xNzkuMDAzLjAwMVYyLjk1NkE0Ny4wNTYgNDcuMDU2IDAgMCAxIDE2IDQuOCA0Ny4wNTYgNDcuMDU2IDAgMCAxIDMgMi45NTZ6TTE2IDE2LjJhNDcuNTQ4IDQ3LjU0OCAwIDAgMSAxMS4xODMgMS4zNTVsLTYuMzE2LTUuNjM1LTEuODE3IDEuNzA4YTEgMSAwIDAgMS0xLjMzNi4wMyA1NTIuMjI1IDU1Mi4yMjUgMCAwIDEtMy4yMTYtMi44MTZsLTMuODkgMy4yODlhMSAxIDAgMCAxLTEuMDcyLjE0bC0uMjk3LS4xNC0zLjI5NCAzLjE2M0E0Ny42MDIgNDcuNjAyIDAgMCAxIDE2IDE2LjJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzMnYzMkgweiIvPjwvc3ZnPg=="
+                                    },
+                                    "size": 10
+                                }
+                            ]
+                        }
+                    },
+                    "labelingInfo": [
+                        {
+                            "labelExpressionInfo": {
+                                "expression": "$feature.site"
+                            },
+                            "expression": "$feature.site",
+                            "minScale": 2500,
+                            "symbol": {
+                                "type": "LabelSymbol3D",
+                                "symbolLayers": [
+                                    {
+                                        "type": "Text",
+                                        "size": 10,
+                                        "material": {
+                                            "color": [
+                                                0,
+                                                0,
+                                                0,
+                                                255
+                                            ]
+                                        },
+                                        "halo": {
+                                            "color": [
+                                                255,
+                                                255,
+                                                255,
+                                                255
+                                            ],
+                                            "size": 1.5
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "minScale": 20000
+        },
+        {
+            "id": "",
+            "title": "Sport Event",
+            "layers": [
+                {
+                    "id": "",
+                    "title": "Melbourne Marathon",
+                    "layers": [
+                        {
+                            "layerType": "GeoJSON",
+                            "title": [
+                                "Melbourne Marathon Course 42.3 km"
+                            ],
+                            "url": "./data/melbourne_marathon_course_42.3km.geojson",
+                            "visibility": true,
+                            "spatialReference": {
+                                "wkid": 4326
+                            },
+                            "outFields": [
+                                "*"
+                            ],
+                            "disablePopup": false,
+                            "popupInfo": {
+                                "title": [
+                                    "Melbourne Marathon Course 42.3 km"
+                                ],
+                                "popupElements": [
+                                    {
+                                        "type": "fields"
+                                    },
+                                    {
+                                        "type": "attachments",
+                                        "displayType": "auto"
+                                    }
+                                ],
+                                "showAttachments": true,
+                                "fieldInfos": [
+                                    {
+                                        "fieldName": "name",
+                                        "isEditable": true,
+                                        "label": "Name",
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "distance",
+                                        "isEditable": true,
+                                        "label": "Distance",
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "profile",
+                                        "isEditable": true,
+                                        "label": "Profile",
+                                        "visible": true
+                                    },
+                                    {
+                                        "fieldName": "data_source",
+                                        "isEditable": true,
+                                        "label": "Data Source",
+                                        "visible": true
+                                    }
+                                ],
+                                "expressionInfos": []
+                            },
+                            "refreshInterval": 0,
+                            "customParameters": null,
+                            "layerDefinition": {
+                                "fields": [
+                                    {
+                                        "name": "name",
+                                        "alias": "Name",
+                                        "editable": false,
+                                        "length": 500,
+                                        "nullable": true,
+                                        "type": "esriFieldTypeString"
+                                    },
+                                    {
+                                        "name": "distance",
+                                        "alias": "Distance",
+                                        "editable": false,
+                                        "length": 500,
+                                        "nullable": true,
+                                        "type": "esriFieldTypeString"
+                                    },
+                                    {
+                                        "name": "profile",
+                                        "alias": "Profile",
+                                        "editable": false,
+                                        "length": 3000,
+                                        "nullable": true,
+                                        "type": "esriFieldTypeString"
+                                    },
+                                    {
+                                        "name": "data_source",
+                                        "alias": "Data Source",
+                                        "editable": false,
+                                        "length": 3000,
+                                        "nullable": true,
+                                        "type": "esriFieldTypeString"
+                                    }
+                                ],
+                                "displayField": "name",
+                                "drawingInfo": {
+                                    "renderer": {
+                                        "type": "simple",
+                                        "symbol": {
+                                            "type": "LineSymbol3D",
+                                            "symbolLayers": [
+                                                {
+                                                    "type": "Path",
+                                                    "profile": "quad",
+                                                    "material": {
+                                                        "color": [
+                                                            255,
+                                                            0,
+                                                            0,
+                                                            30
+                                                        ],
+                                                        "transparency": 30
+                                                    },
+                                                    "size": 5
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "labelingInfo": []
+                                }
+                            }
+                        }
+                    ],
+                    "layerType": "GroupLayer",
+                    "visibilityMode": "independent",
+                    "visibility": false
+                }
+            ],
+            "layerType": "GroupLayer",
+            "visibilityMode": "independent"
+        },
+        {
             "id": "",
             "title": "Open Data",
             "layers": [
+                {
+                    "layerType": "GeoJSON",
+                    "title": "Live Music Venues",
+                    "url": "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/live-music-venues/exports/geojson",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": "Live Music Venues",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "property_number",
+                                "isEditable": true,
+                                "label": "Property Number",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "venue_name",
+                                "isEditable": true,
+                                "label": "Venue Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "venue_address",
+                                "isEditable": true,
+                                "label": "Venue Address",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "space_type",
+                                "isEditable": true,
+                                "label": "Space Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "website",
+                                "isEditable": true,
+                                "label": "Website",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "lat",
+                                "isEditable": true,
+                                "label": "Lat",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "lon",
+                                "isEditable": true,
+                                "label": "Lon",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "location",
+                                "isEditable": true,
+                                "label": "Location",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "geolocation",
+                                "isEditable": true,
+                                "label": "Geolocation",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": [
+                            {
+                                "name": "website",
+                                "title": "Website",
+                                "expression": "`<a target='_blank' href='${$feature.website}'>{$feature.venue_name}</a>`"
+                            }
+                        ]
+                    },
+                    "refreshInterval": 0,
+                    "customParameters": {
+                        "limit": "-1",
+                        "use_labels": "False",
+                        "epsg": 4326
+                    },
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "property_number",
+                                "alias": "Property Number",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "venue_name",
+                                "alias": "Venue Name",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "venue_address",
+                                "alias": "Venue Address",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "space_type",
+                                "alias": "Space Type",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "website",
+                                "alias": "Website",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "lat",
+                                "alias": "Lat",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "lon",
+                                "alias": "Lon",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "location",
+                                "alias": "Location",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "geolocation",
+                                "alias": "Geolocation",
+                                "editable": false,
+                                "length": 1000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            }
+                        ],
+                        "displayField": "venue_name",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "PointSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "primitive": "circle"
+                                            },
+                                            "size": 18,
+                                            "material": {
+                                                "color": [
+                                                    252,
+                                                    177,
+                                                    248
+                                                ]
+                                            },
+                                            "outline": {
+                                                "size": 1,
+                                                "color": [
+                                                    255,
+                                                    16,
+                                                    240
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "dataURI": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTI1LjA1OSAxMi4xNzRhOS4zMDUgOS4zMDUgMCAwIDAtMy4xNzItMy41OTUgOC4zNDYgOC4zNDYgMCAwIDAtMS4wMjUtLjU5NGguMDEyQTQuNzY2IDQuNzY2IDAgMCAxIDE4IDMuNzI4VjNoLTF2MTkuOWE0LjU1NyA0LjU1NyAwIDAgMC0zLjUxMS0uODQ4Yy0yLjQ4Mi4zMjktNC40OTUgMi4xNDMtNC40ODkgNC4wNDVzMi4wMyAzLjE4IDQuNTExIDIuODUxIDQuNDk1LTIuMTQzIDQuNDg5LTQuMDQ1VjguOTY1YTcuMjY4IDcuMjY4IDAgMCAxIDIuODc4LjkzIDguMDA4IDguMDA4IDAgMCAxIDIuOTAyIDIuODM5IDguMzI1IDguMzI1IDAgMCAxIC4zMzQgNy44MzhsLjY0LjI3OGE5LjE5MyA5LjE5MyAwIDAgMCAuMzA1LTguNjc2eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMzJ2MzJIMHoiLz48L3N2Zz4="
+                                            },
+                                            "size": 10
+                                        }
+                                    ],
+                                    "verticalOffset": {
+                                        "screenLength": 50,
+                                        "maxWorldLength": 100,
+                                        "minWorldLength": 60
+                                    }
+                                }
+                            },
+                            "labelingInfo": [
+                                {
+                                    "labelExpressionInfo": {
+                                        "expression": "$feature.venue_name"
+                                    },
+                                    "expression": "$feature.venue_name",
+                                    "minScale": 2500,
+                                    "symbol": {
+                                        "type": "LabelSymbol3D",
+                                        "symbolLayers": [
+                                            {
+                                                "type": "Text",
+                                                "size": 10,
+                                                "material": {
+                                                    "color": [
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        255
+                                                    ]
+                                                },
+                                                "halo": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "size": 1.5
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "minScale": 20000
+                },
                 {
                     "layerType": "GeoJSON",
                     "title": "Development Activity",
@@ -2437,305 +2984,27 @@
             ],
             "layerType": "GroupLayer",
             "visibilityMode": "independent"
-        },
-        {
-            "layerType": "GeoJSON",
-            "title": [
-                "View 360"
-            ],
-            "url": "./data/360View.geojson",
-            "visibility": true,
-            "spatialReference": {
-                "wkid": 4326
-            },
-            "outFields": [
-                "*"
-            ],
-            "disablePopup": false,
-            "popupInfo": {
-                "title": [
-                    "View 360"
-                ],
-                "popupElements": [
-                    {
-                        "type": "fields"
-                    },
-                    {
-                        "type": "attachments",
-                        "displayType": "auto"
-                    }
-                ],
-                "showAttachments": true,
-                "fieldInfos": [
-                    {
-                        "fieldName": "site",
-                        "isEditable": true,
-                        "label": "Site",
-                        "visible": true
-                    },
-                    {
-                        "fieldName": "view_360_link",
-                        "isEditable": true,
-                        "label": "View 360 Link",
-                        "visible": true
-                    },
-                    {
-                        "fieldName": "home_page",
-                        "isEditable": true,
-                        "label": "Home Page",
-                        "visible": true
-                    }
-                ],
-                "expressionInfos": []
-            },
-            "refreshInterval": 0,
-            "customParameters": null,
-            "layerDefinition": {
-                "fields": [
-                    {
-                        "name": "site",
-                        "alias": "Site",
-                        "editable": false,
-                        "length": 500,
-                        "nullable": true,
-                        "type": "esriFieldTypeString"
-                    },
-                    {
-                        "name": "view_360_link",
-                        "alias": "View 360 Link",
-                        "editable": false,
-                        "length": 3000,
-                        "nullable": true,
-                        "type": "esriFieldTypeString"
-                    },
-                    {
-                        "name": "home_page",
-                        "alias": "Home Page",
-                        "editable": false,
-                        "length": 3000,
-                        "nullable": true,
-                        "type": "esriFieldTypeString"
-                    }
-                ],
-                "displayField": "site",
-                "drawingInfo": {
-                    "renderer": {
-                        "type": "simple",
-                        "symbol": {
-                            "type": "PointSymbol3D",
-                            "symbolLayers": [
-                                {
-                                    "type": "Icon",
-                                    "resource": {
-                                        "primitive": "circle"
-                                    },
-                                    "size": 18,
-                                    "material": {
-                                        "color": [
-                                            255,
-                                            255,
-                                            255
-                                        ]
-                                    },
-                                    "outline": {
-                                        "size": 1,
-                                        "color": [
-                                            110,
-                                            110,
-                                            110
-                                        ]
-                                    }
-                                },
-                                {
-                                    "type": "Icon",
-                                    "resource": {
-                                        "dataURI": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTI5LjggMjQuNmMwIDIuMTQtMy45ODggMy41NDItOC44IDQuMTExdjIuNDhMMTkuNjQ3IDMwbC0xLjcwNS0xLjUgMS43MDUtMS41TDIxIDI1LjgxdjEuODk0YzQuNjgtLjU3NCA3LjgtMS44OTMgNy44LTMuMTA0IDAtMS42MDUtNS40NzQtMy40LTEyLjgtMy40UzMuMiAyMi45OTUgMy4yIDI0LjZjMCAxLjM3NyA0LjAzMiAyLjg5IDkuOCAzLjI5M3YxQzcuMzQ2IDI4LjUwNiAyLjIgMjcuMDMxIDIuMiAyNC42YzAtMi44NTggNy4xMS00LjQgMTMuOC00LjRzMTMuOCAxLjU0MiAxMy44IDQuNHpNMTguMiA3LjVhMS4zIDEuMyAwIDEgMSAxLjMgMS4zIDEuMzAxIDEuMzAxIDAgMCAxLTEuMy0xLjN6bS45NDIuMzU4YS41MDcuNTA3IDAgMSAwIDAtLjcxNy41MDguNTA4IDAgMCAwIDAgLjcxN3pNMzAgMS41ODJ2MTcuODM2QTQ0LjQ4NiA0NC40ODYgMCAwIDAgMTYgMTcuMmE0NC40ODYgNDQuNDg2IDAgMCAwLTE0IDIuMjE4VjEuNTgyQTQ0LjQ4NyA0NC40ODcgMCAwIDAgMTYgMy44YTQ0LjQ4NyA0NC40ODcgMCAwIDAgMTQtMi4yMTh6TTMgMTguMDQ0Yy4yOTUtLjA4Ny42MzctLjE4NCAxLjAxOC0uMjg1bDQuNzg2LTQuNTk3YS40ODEuNDgxIDAgMCAxIC41MzktLjA4OGwuNjIuMjkzIDQuMjI5LTMuNTc2YS40OS40OSAwIDAgMSAuNjQzLjAxczIuNjc5IDIuMzY3IDMuNTMgMy4wOThsMi4xOTMtMi4wNmEuNDkuNDkgMCAwIDEgLjY5NS4wMjVsNy43NDQgNy4xNzkuMDAzLjAwMVYyLjk1NkE0Ny4wNTYgNDcuMDU2IDAgMCAxIDE2IDQuOCA0Ny4wNTYgNDcuMDU2IDAgMCAxIDMgMi45NTZ6TTE2IDE2LjJhNDcuNTQ4IDQ3LjU0OCAwIDAgMSAxMS4xODMgMS4zNTVsLTYuMzE2LTUuNjM1LTEuODE3IDEuNzA4YTEgMSAwIDAgMS0xLjMzNi4wMyA1NTIuMjI1IDU1Mi4yMjUgMCAwIDEtMy4yMTYtMi44MTZsLTMuODkgMy4yODlhMSAxIDAgMCAxLTEuMDcyLjE0bC0uMjk3LS4xNC0zLjI5NCAzLjE2M0E0Ny42MDIgNDcuNjAyIDAgMCAxIDE2IDE2LjJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzMnYzMkgweiIvPjwvc3ZnPg=="
-                                    },
-                                    "size": 10
-                                }
-                            ]
-                        }
-                    },
-                    "labelingInfo": [
-                        {
-                            "labelExpressionInfo": {
-                                "expression": "$feature.site"
-                            },
-                            "expression": "$feature.site",
-                            "minScale": 2500,
-                            "symbol": {
-                                "type": "LabelSymbol3D",
-                                "symbolLayers": [
-                                    {
-                                        "type": "Text",
-                                        "size": 10,
-                                        "material": {
-                                            "color": [
-                                                0,
-                                                0,
-                                                0,
-                                                255
-                                            ]
-                                        },
-                                        "halo": {
-                                            "color": [
-                                                255,
-                                                255,
-                                                255,
-                                                255
-                                            ],
-                                            "size": 1.5
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                }
-            },
-            "minScale": 20000
-        },
-        {
-            "id": "",
-            "title": "Sport Event",
-            "layers": [
-                {
-                    "id": "",
-                    "title": "Melbourne Marathon",
-                    "layers": [
-                        {
-                            "layerType": "GeoJSON",
-                            "title": [
-                                "Melbourne Marathon Course 42.3 km"
-                            ],
-                            "url": "./data/melbourne_marathon_course_42.3km.geojson",
-                            "visibility": true,
-                            "spatialReference": {
-                                "wkid": 4326
-                            },
-                            "outFields": [
-                                "*"
-                            ],
-                            "disablePopup": false,
-                            "popupInfo": {
-                                "title": [
-                                    "Melbourne Marathon Course 42.3 km"
-                                ],
-                                "popupElements": [
-                                    {
-                                        "type": "fields"
-                                    },
-                                    {
-                                        "type": "attachments",
-                                        "displayType": "auto"
-                                    }
-                                ],
-                                "showAttachments": true,
-                                "fieldInfos": [
-                                    {
-                                        "fieldName": "name",
-                                        "isEditable": true,
-                                        "label": "Name",
-                                        "visible": true
-                                    },
-                                    {
-                                        "fieldName": "distance",
-                                        "isEditable": true,
-                                        "label": "Distance",
-                                        "visible": true
-                                    },
-                                    {
-                                        "fieldName": "profile",
-                                        "isEditable": true,
-                                        "label": "Profile",
-                                        "visible": true
-                                    },
-                                    {
-                                        "fieldName": "data_source",
-                                        "isEditable": true,
-                                        "label": "Data Source",
-                                        "visible": true
-                                    }
-                                ],
-                                "expressionInfos": []
-                            },
-                            "refreshInterval": 0,
-                            "customParameters": null,
-                            "layerDefinition": {
-                                "fields": [
-                                    {
-                                        "name": "name",
-                                        "alias": "Name",
-                                        "editable": false,
-                                        "length": 500,
-                                        "nullable": true,
-                                        "type": "esriFieldTypeString"
-                                    },
-                                    {
-                                        "name": "distance",
-                                        "alias": "Distance",
-                                        "editable": false,
-                                        "length": 500,
-                                        "nullable": true,
-                                        "type": "esriFieldTypeString"
-                                    },
-                                    {
-                                        "name": "profile",
-                                        "alias": "Profile",
-                                        "editable": false,
-                                        "length": 3000,
-                                        "nullable": true,
-                                        "type": "esriFieldTypeString"
-                                    },
-                                    {
-                                        "name": "data_source",
-                                        "alias": "Data Source",
-                                        "editable": false,
-                                        "length": 3000,
-                                        "nullable": true,
-                                        "type": "esriFieldTypeString"
-                                    }
-                                ],
-                                "displayField": "name",
-                                "drawingInfo": {
-                                    "renderer": {
-                                        "type": "simple",
-                                        "symbol": {
-                                            "type": "LineSymbol3D",
-                                            "symbolLayers": [
-                                                {
-                                                    "type": "Path",
-                                                    "profile": "quad",
-                                                    "material": {
-                                                        "color": [
-                                                            255,
-                                                            0,
-                                                            0,
-                                                            30
-                                                        ],
-                                                        "transparency": 30
-                                                    },
-                                                    "size": 5
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    "labelingInfo": []
-                                }
-                            }
-                        }
-                    ],
-                    "layerType": "GroupLayer",
-                    "visibilityMode": "independent",
-                    "visibility": false
-                }
-            ],
-            "layerType": "GroupLayer",
-            "visibilityMode": "independent"
         }
     ],
     "baseMap": {
         "baseMapLayers": [
+            {
+                "id": "World_Imagery_2017",
+                "opacity": 1,
+                "title": "World Imagery",
+                "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+                "visibility": true,
+                "layerType": "ArcGISTiledMapServiceLayer"
+            },
+            {
+                "id": "VectorTile_7259",
+                "opacity": 1,
+                "title": "Hybrid Reference Layer",
+                "visibility": true,
+                "layerType": "VectorTileLayer",
+                "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/30d6b8271e1849cd9c3042060001f425/resources/styles/root.json",
+                "isReference": true
+            },
             {
                 "fullExtent": {
                     "spatialReference": {
