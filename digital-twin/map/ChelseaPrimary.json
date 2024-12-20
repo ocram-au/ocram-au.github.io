@@ -1,0 +1,390 @@
+{
+    "operationalLayers": [
+        {
+            "layerType": "GeoJSON",
+            "title": [
+                "Chelsea Primary Zones"
+            ],
+            "url": "./data/chelsea_primary/chelsea_primary_zone_point.geojson",
+            "visibility": true,
+            "spatialReference": {
+                "wkid": 4326
+            },
+            "outFields": [
+                "*"
+            ],
+            "disablePopup": false,
+            "popupInfo": {
+                "title": [
+                    "Chelsea Primary Zones"
+                ],
+                "popupElements": [
+                    {
+                        "type": "fields"
+                    },
+                    {
+                        "type": "attachments",
+                        "displayType": "auto"
+                    }
+                ],
+                "showAttachments": true,
+                "fieldInfos": [
+                    {
+                        "fieldName": "zone",
+                        "isEditable": true,
+                        "label": "Zone",
+                        "visible": true
+                    }
+                ],
+                "expressionInfos": []
+            },
+            "refreshInterval": 0,
+            "customParameters": null,
+            "layerDefinition": {
+                "fields": [
+                    {
+                        "name": "zone",
+                        "alias": "Zone",
+                        "editable": false,
+                        "length": 500,
+                        "nullable": true,
+                        "type": "esriFieldTypeString"
+                    }
+                ],
+                "displayField": "zone",
+                "drawingInfo": {
+                    "renderer": {
+                        "type": "simple",
+                        "symbol": {
+                            "type": "PointSymbol3D",
+                            "symbolLayers": [
+                                {
+                                    "type": "Icon",
+                                    "resource": {},
+                                    "size": 0
+                                }
+                            ],
+                            "verticalOffset": {
+                                "screenLength": 50,
+                                "maxWorldLength": 50,
+                                "minWorldLength": 20
+                            },
+                            "callout": {
+                                "type": "line",
+                                "color": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "size": 1,
+                                "border": {
+                                    "color": [
+                                        255,
+                                        255,
+                                        255
+                                    ],
+                                    "transparency": 50
+                                }
+                            }
+                        }
+                    },
+                    "labelingInfo": [
+                        {
+                            "labelExpressionInfo": {
+                                "expression": "$feature.zone"
+                            },
+                            "expression": "$feature.zone",
+                            "minScale": 5000,
+                            "symbol": {
+                                "type": "LabelSymbol3D",
+                                "symbolLayers": [
+                                    {
+                                        "type": "Text",
+                                        "size": 10,
+                                        "material": {
+                                            "color": [
+                                                0,
+                                                0,
+                                                0,
+                                                255
+                                            ]
+                                        },
+                                        "halo": {
+                                            "color": [
+                                                255,
+                                                255,
+                                                255,
+                                                255
+                                            ],
+                                            "size": 1.5
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "minScale": 20000
+        },
+        {
+            "id": "",
+            "title": "3D Building",
+            "layers": [
+                {
+                    "id": "",
+                    "opacity": 1,
+                    "title": "Chelsea Primary School 3D",
+                    "url": "https://bitbucket.org/ocram-au/chelsea/raw/0eed8c15ccb36cae0de13265b740a84ad4bfa4e8/data/i3s/chelsea_primary_epsg4979/SceneServer",
+                    "visibility": true,
+                    "layerType": "ArcGISSceneServiceLayer"
+                }
+            ],
+            "layerType": "GroupLayer",
+            "visibilityMode": "exclusive"
+        }
+    ],
+    "baseMap": {
+        "baseMapLayers": [
+            {
+                "id": "VectorTile_2333",
+                "opacity": 1,
+                "title": "World Topographic Map",
+                "visibility": true,
+                "layerType": "VectorTileLayer",
+                "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/7dc6cea0b1764a1f9af2e679f642f0f5/resources/styles/root.json"
+            },
+            {
+                "fullExtent": {
+                    "spatialReference": {
+                        "wkid": 102100
+                    },
+                    "xmin": -20037508.342789244,
+                    "ymin": -20037508.33721075,
+                    "xmax": 20037508.33721075,
+                    "ymax": 20037508.342789244
+                },
+                "id": "19107665030-layer-159",
+                "title": "Vicmap Basemap - Web Mercator 256px - Cartographic",
+                "wmtsInfo": {
+                    "url": "https://base.maps.vic.gov.au/service",
+                    "layerIdentifier": "CARTO_WM_256",
+                    "tileMatrixSet": "EPSG:3857:256"
+                },
+                "visibility": true,
+                "layerType": "WebTiledLayer",
+                "refreshInterval": 0,
+                "templateUrl": "https://base.maps.vic.gov.au/service?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&LAYER=CARTO_WM_256&STYLE=default&FORMAT=image/png&TILEMATRIXSET=EPSG:3857:256&TILEMATRIX={level}&TILEROW={row}&TILECOL={col}",
+                "tileInfo": {
+                    "dpi": 96,
+                    "origin": {
+                        "spatialReference": {
+                            "wkid": 102100
+                        },
+                        "x": -20037508.342789244,
+                        "y": 20037508.342789244
+                    },
+                    "lods": [
+                        {
+                            "level": 0,
+                            "levelValue": "00",
+                            "resolution": 156543.03390624997,
+                            "scale": 591658710.8267716
+                        },
+                        {
+                            "level": 1,
+                            "levelValue": "01",
+                            "resolution": 78271.51696402047,
+                            "scale": 295829355.4545655
+                        },
+                        {
+                            "level": 2,
+                            "levelValue": "02",
+                            "resolution": 39135.758482010235,
+                            "scale": 147914677.72728276
+                        },
+                        {
+                            "level": 3,
+                            "levelValue": "03",
+                            "resolution": 19567.879241005117,
+                            "scale": 73957338.86364138
+                        },
+                        {
+                            "level": 4,
+                            "levelValue": "04",
+                            "resolution": 9783.939620502559,
+                            "scale": 36978669.43182069
+                        },
+                        {
+                            "level": 5,
+                            "levelValue": "05",
+                            "resolution": 4891.969810251279,
+                            "scale": 18489334.715910345
+                        },
+                        {
+                            "level": 6,
+                            "levelValue": "06",
+                            "resolution": 2445.9849051256397,
+                            "scale": 9244667.357955173
+                        },
+                        {
+                            "level": 7,
+                            "levelValue": "07",
+                            "resolution": 1222.9924525628198,
+                            "scale": 4622333.678977586
+                        },
+                        {
+                            "level": 8,
+                            "levelValue": "08",
+                            "resolution": 611.4962262814099,
+                            "scale": 2311166.839488793
+                        },
+                        {
+                            "level": 9,
+                            "levelValue": "09",
+                            "resolution": 305.74811314070496,
+                            "scale": 1155583.4197443966
+                        },
+                        {
+                            "level": 10,
+                            "levelValue": "10",
+                            "resolution": 152.87405657035248,
+                            "scale": 577791.7098721983
+                        },
+                        {
+                            "level": 11,
+                            "levelValue": "11",
+                            "resolution": 76.43702828517624,
+                            "scale": 288895.85493609915
+                        },
+                        {
+                            "level": 12,
+                            "levelValue": "12",
+                            "resolution": 38.21851414258812,
+                            "scale": 144447.92746804957
+                        },
+                        {
+                            "level": 13,
+                            "levelValue": "13",
+                            "resolution": 19.10925707129406,
+                            "scale": 72223.96373402479
+                        },
+                        {
+                            "level": 14,
+                            "levelValue": "14",
+                            "resolution": 9.55462853564703,
+                            "scale": 36111.98186701239
+                        },
+                        {
+                            "level": 15,
+                            "levelValue": "15",
+                            "resolution": 4.777314267823515,
+                            "scale": 18055.990933506197
+                        },
+                        {
+                            "level": 16,
+                            "levelValue": "16",
+                            "resolution": 2.3886571339117575,
+                            "scale": 9027.995466753098
+                        },
+                        {
+                            "level": 17,
+                            "levelValue": "17",
+                            "resolution": 1.1943285669558787,
+                            "scale": 4513.997733376549
+                        },
+                        {
+                            "level": 18,
+                            "levelValue": "18",
+                            "resolution": 0.5971642834779394,
+                            "scale": 2256.9988666882746
+                        },
+                        {
+                            "level": 19,
+                            "levelValue": "19",
+                            "resolution": 0.2985821417389697,
+                            "scale": 1128.4994333441373
+                        },
+                        {
+                            "level": 20,
+                            "levelValue": "20",
+                            "resolution": 0.14929107086948484,
+                            "scale": 564.2497166720686
+                        }
+                    ],
+                    "cols": 256,
+                    "rows": 256,
+                    "spatialReference": {
+                        "wkid": 102100
+                    }
+                }
+            },
+            {
+                "id": "VicmapBaseMapVectorTileColour",
+                "layerType": "VectorTileLayer",
+                "title": "Vicmap Vector Tile Basemap Colour WM Hosted",
+                "styleUrl": "https://vicmap.land.vic.gov.au/hosting/rest/services/Hosted/Vicmap_Vector_Tile_Basemap_Colour_WM_Hosted/VectorTileServer/resources/styles/root.json",
+                "visibility": true,
+                "opacity": 1,
+                "listMode": "show"
+            }
+        ],
+        "id": "",
+        "title": "",
+        "elevationLayers": []
+    },
+    "ground": {
+        "layers": [
+            {
+                "id": "DEM_2023_1m_WGS84",
+                "title": "DEM 2023 1m WGS84",
+                "url": "https://tiles.arcgis.com/tiles/KGdHCCUjGBpOPPac/arcgis/rest/services/DEM_2023_1m_WGS84/ImageServer?cacheKey=b647432efb9e81f0",
+                "visibility": true,
+                "layerType": "ArcGISTiledElevationServiceLayer"
+            }
+        ],
+        "transparency": 0,
+        "navigationConstraint": {
+            "type": "stayAbove"
+        }
+    },
+    "heightModelInfo": {
+        "heightModel": "gravity_related_height",
+        "heightUnit": "meter"
+    },
+    "initialState": {
+        "viewpoint": {
+            "rotation": 230.0616469676461,
+            "scale": 1583.141043775979,
+            "targetGeometry": {
+                "spatialReference": {
+                    "latestWkid": 3857,
+                    "wkid": 3857
+                },
+                "x": 16155002.999122042,
+                "y": -4587207.937456775,
+                "z": -8.959323167800903e-06
+            },
+            "camera": {
+                "position": {
+                    "spatialReference": {
+                        "latestWkid": 3857,
+                        "wkid": 3857
+                    },
+                    "x": 16154653.541400047,
+                    "y": -4586915.357802091,
+                    "z": 240.34603645373136
+                },
+                "heading": 129.9383530323539,
+                "tilt": 56.18854725235714
+            }
+        }
+    },
+    "spatialReference": {
+        "latestWkid": 3857,
+        "wkid": 3857
+    },
+    "viewingMode": "global",
+    "version": "1.33",
+    "authoringApp": "OCRAM"
+}

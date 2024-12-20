@@ -1138,7 +1138,7 @@
                     "layerType": "GeoJSON",
                     "title": "Live Music Venues",
                     "url": "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/live-music-venues/exports/geojson",
-                    "visibility": true,
+                    "visibility": false,
                     "spatialReference": {
                         "wkid": 4326
                     },
@@ -2989,21 +2989,12 @@
     "baseMap": {
         "baseMapLayers": [
             {
-                "id": "World_Imagery_2017",
+                "id": "VectorTile_2333",
                 "opacity": 1,
-                "title": "World Imagery",
-                "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
-                "visibility": true,
-                "layerType": "ArcGISTiledMapServiceLayer"
-            },
-            {
-                "id": "VectorTile_7259",
-                "opacity": 1,
-                "title": "Hybrid Reference Layer",
+                "title": "World Topographic Map",
                 "visibility": true,
                 "layerType": "VectorTileLayer",
-                "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/30d6b8271e1849cd9c3042060001f425/resources/styles/root.json",
-                "isReference": true
+                "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/7dc6cea0b1764a1f9af2e679f642f0f5/resources/styles/root.json"
             },
             {
                 "fullExtent": {
