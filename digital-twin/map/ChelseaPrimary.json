@@ -1,6 +1,1053 @@
 {
     "operationalLayers": [
         {
+            "id": "",
+            "title": "Public Transport Victoria",
+            "layers": [
+                {
+                    "layerType": "GeoJSON",
+                    "title": [
+                        "Train Station"
+                    ],
+                    "url": "./data/ptv_stop_train.geojson",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": [
+                            "Train Station"
+                        ],
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "OBJECTID",
+                                "isEditable": true,
+                                "label": "OBJECTID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "next_departure",
+                                "isEditable": true,
+                                "label": "Next Departure",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "departure_schedule",
+                                "isEditable": true,
+                                "label": "Departure Schedule",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "disruption",
+                                "isEditable": true,
+                                "label": "Disruption",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "about",
+                                "isEditable": true,
+                                "label": "About",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_suburb",
+                                "isEditable": true,
+                                "label": "Stop Suburb",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_type",
+                                "isEditable": true,
+                                "label": "Route Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_latitude",
+                                "isEditable": true,
+                                "label": "Stop Latitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_longitude",
+                                "isEditable": true,
+                                "label": "Stop Longitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_sequence",
+                                "isEditable": true,
+                                "label": "Stop Sequence",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ticket_type",
+                                "isEditable": true,
+                                "label": "Ticket Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "zone",
+                                "isEditable": true,
+                                "label": "Zone",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "is_free_fare_zone",
+                                "isEditable": true,
+                                "label": "Is Free Fare Zone",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ticket_machine",
+                                "isEditable": true,
+                                "label": "Ticket Machine",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ticket_checks",
+                                "isEditable": true,
+                                "label": "Ticket Checks",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vline_reservation",
+                                "isEditable": true,
+                                "label": "Vline Reservation",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_id",
+                                "isEditable": true,
+                                "label": "Stop Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_name",
+                                "isEditable": true,
+                                "label": "Stop Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_landmark",
+                                "isEditable": true,
+                                "label": "Stop Landmark",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_name",
+                                "isEditable": true,
+                                "label": "Route Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_number",
+                                "isEditable": true,
+                                "label": "Route Number",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_id",
+                                "isEditable": true,
+                                "label": "Route Id",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": []
+                    },
+                    "refreshInterval": 0,
+                    "customParameters": null,
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "OBJECTID",
+                                "type": "esriFieldTypeOID",
+                                "alias": "OBJECTID"
+                            },
+                            {
+                                "name": "next_departure",
+                                "type": "esriFieldTypeString",
+                                "alias": "Next Departure",
+                                "length": 50000
+                            },
+                            {
+                                "name": "departure_schedule",
+                                "type": "esriFieldTypeString",
+                                "alias": "Departure Schedule",
+                                "length": 50000
+                            },
+                            {
+                                "name": "disruption",
+                                "type": "esriFieldTypeString",
+                                "alias": "Disruption",
+                                "length": 50000
+                            },
+                            {
+                                "name": "about",
+                                "type": "esriFieldTypeString",
+                                "alias": "About",
+                                "length": 50000
+                            },
+                            {
+                                "name": "stop_suburb",
+                                "type": "esriFieldTypeString",
+                                "alias": "Stop Suburb",
+                                "length": 1500
+                            },
+                            {
+                                "name": "route_type",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Route Type"
+                            },
+                            {
+                                "name": "stop_latitude",
+                                "type": "esriFieldTypeSingle",
+                                "alias": "Stop Latitude"
+                            },
+                            {
+                                "name": "stop_longitude",
+                                "type": "esriFieldTypeSingle",
+                                "alias": "Stop Longitude"
+                            },
+                            {
+                                "name": "stop_sequence",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Stop Sequence"
+                            },
+                            {
+                                "name": "ticket_type",
+                                "type": "esriFieldTypeString",
+                                "alias": "Ticket Type",
+                                "length": 1500
+                            },
+                            {
+                                "name": "zone",
+                                "type": "esriFieldTypeString",
+                                "alias": "Zone",
+                                "length": 1500
+                            },
+                            {
+                                "name": "is_free_fare_zone",
+                                "type": "esriFieldTypeString",
+                                "alias": "Is Free Fare Zone",
+                                "length": 1500
+                            },
+                            {
+                                "name": "ticket_machine",
+                                "type": "esriFieldTypeString",
+                                "alias": "Ticket Machine",
+                                "length": 1500
+                            },
+                            {
+                                "name": "ticket_checks",
+                                "type": "esriFieldTypeString",
+                                "alias": "Ticket Checks",
+                                "length": 1500
+                            },
+                            {
+                                "name": "vline_reservation",
+                                "type": "esriFieldTypeString",
+                                "alias": "Vline Reservation",
+                                "length": 1500
+                            },
+                            {
+                                "name": "stop_id",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Stop Id"
+                            },
+                            {
+                                "name": "stop_name",
+                                "type": "esriFieldTypeString",
+                                "alias": "Stop Name",
+                                "length": 1500
+                            },
+                            {
+                                "name": "stop_landmark",
+                                "type": "esriFieldTypeString",
+                                "alias": "Stop Landmark",
+                                "length": 1500
+                            },
+                            {
+                                "name": "route_name",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Name",
+                                "length": 1500
+                            },
+                            {
+                                "name": "route_number",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Number",
+                                "length": 1500
+                            },
+                            {
+                                "name": "route_id",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Id",
+                                "length": 1500
+                            }
+                        ],
+                        "displayField": "stop_name",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "PointSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "dataURI": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii03NzQ3Ljk4NCAxNTUwNyAyMy45ODQgMjMuOTg0Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjMDA3MmNlOwogICAgICB9CgogICAgICAuY2xzLTIgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMyB7CiAgICAgICAgZmlsbDogIzJhNzFiOTsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPGcgaWQ9Ikdyb3VwXzY0MTciIGRhdGEtbmFtZT0iR3JvdXAgNjQxNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTc3NzIuOTg0IDE0NjQzKSI+CiAgICA8cGF0aCBpZD0iUGF0aF85OTE3IiBkYXRhLW5hbWU9IlBhdGggOTkxNyIgY2xhc3M9ImNscy0xIiBkPSJNMTEuOTkyLDBBMTEuOTkyLDExLjk5MiwwLDEsMSwwLDExLjk5MiwxMS45OTIsMTEuOTkyLDAsMCwxLDExLjk5MiwwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjUgODY0KSIvPgogICAgPGcgaWQ9Ikdyb3VwXzY0MTYiIGRhdGEtbmFtZT0iR3JvdXAgNjQxNiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjkuNzk3IDg2OC40NTQpIj4KICAgICAgPHBhdGggaWQ9IlBhdGhfODM0MyIgZGF0YS1uYW1lPSJQYXRoIDgzNDMiIGNsYXNzPSJjbHMtMiIgZD0iTTI1LjUyMiwxOS42SDIyLjU5YzAsLjE5LS4xOSwyLjQtLjE5LDIuNjY1aDMuMTIyWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE4LjUxNyAtMTYuNTkyKSIvPgogICAgICA8cGF0aCBpZD0iUGF0aF84MzQ0IiBkYXRhLW5hbWU9IlBhdGggODM0NCIgY2xhc3M9ImNscy0yIiBkPSJNMzQuNzMxLDE5LjZIMzEuOHYyLjY2NWgzLjEyMkMzNC44ODQsMjIsMzQuNzMxLDE5Ljc5LDM0LjczMSwxOS42WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI0LjMzOCAtMTYuNTkyKSIvPgogICAgICA8cGF0aCBpZD0iUGF0aF84MzQ1IiBkYXRhLW5hbWU9IlBhdGggODM0NSIgY2xhc3M9ImNscy0yIiBkPSJNMjYuMjEsMjUuNDA1SDIzLjdsLS42NDctLjk5aDEuOWEuMjI4LjIyOCwwLDAsMCwwLS40NTdIMjIuNzQ2bC0uNzIzLS45OWgyLjU1MWExLjYwOSwxLjYwOSwwLDAsMCwxLjYtMS42aDBsLS42MDktOC4xMDlWMTMuM2ExLjYwOSwxLjYwOSwwLDAsMC0xLjYtMS42SDE0LjlhMS42MDksMS42MDksMCwwLDAtMS42LDEuNnYtLjAzOGwtLjYwOSw4LjA3MWgwYTEuNjA5LDEuNjA5LDAsMCwwLDEuNiwxLjZoMi41NTFMMTYuMTU5LDI0SDEzLjk1MWEuMjI4LjIyOCwwLDAsMCwwLC40NTdoMS45bC0uNjg1Ljk1MkgxMi42NTdhLjQ1Ny40NTcsMCwxLDAsMCwuOTE0aDEuOWwtLjY0Ny45MTRhLjE3LjE3LDAsMCwwLDAsLjE5LjIwOS4yMDksMCwwLDAsLjE5LjExNGgxLjMzMmEuMjA5LjIwOSwwLDAsMCwuMTktLjExNGwuNDU3LTEuMWg2LjdsLjQ1NywxLjFhLjIwOS4yMDksMCwwLDAsLjE5LjExNEgyNC44Yy4wNzYsMCwuMTUyLS4wMzguMTUyLS4xMTRhLjE3LjE3LDAsMCwwLDAtLjE5bC0uNjQ3LS45MTRoMS45YS40NTcuNDU3LDAsMCwwLDAtLjkxNFpNMjEuOTg0LDIxLjE4YS41MzMuNTMzLDAsMSwxLC41MzMtLjUzM0EuNS41LDAsMCwxLDIxLjk4NCwyMS4xOFpNMjEuODcsMjRIMTdsLjQxOS0xLjAyOGg0LjA3NFptMi4wOTQtMy4zNWEuNTMzLjUzMywwLDEsMS0uNTMzLS41MzNBLjU0NC41NDQsMCwwLDEsMjMuOTY0LDIwLjY0N1ptLTguNzk0LTMuMTYuMjI4LTIuODkzYS43NjQuNzY0LDAsMCwxLC43NjEtLjc2MWg2LjU0OGEuNzY0Ljc2NCwwLDAsMSwuNzYxLjc2MWwuMjI4LDIuODkzdi4wMzhhLjc2NC43NjQsMCwwLDEtLjc2MS43NjFoLTdhLjc3My43NzMsMCwwLDEtLjc2MS0uOFptLjI2NiwzLjY5M2EuNTMzLjUzMywwLDEsMSwuNTMzLS41MzNBLjU0NC41NDQsMCwwLDEsMTUuNDM2LDIxLjE4Wm0uODc2LS41MzNhLjUzMy41MzMsMCwxLDEsLjUzMy41MzNBLjU0NC41NDQsMCwwLDEsMTYuMzEyLDIwLjY0N1ptLjExNCw0Ljc1OS4zODEtLjk5aDUuMjE2bC4zODEuOTlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTIuMiAtMTEuNykiLz4KICAgICAgPHBhdGggaWQ9IlBhdGhfODM0NiIgZGF0YS1uYW1lPSJQYXRoIDgzNDYiIGNsYXNzPSJjbHMtMSIgZD0iTTIwLjc2MSwyMS43NTRoN2EuNzY0Ljc2NCwwLDAsMCwuNzYxLS43NjF2LS4wMzhMMjguMywxOC4wNjFhLjc2NC43NjQsMCwwLDAtLjc2MS0uNzYxSDIwLjk5YS43NjQuNzY0LDAsMCwwLS43NjEuNzYxTDIwLDIwLjk1NXYuMDM4QS43NjQuNzY0LDAsMCwwLDIwLjc2MSwyMS43NTRabTMuNzMxLTMuNTc5aDIuOTMxYzAsLjE5LjE5LDIuNC4xOSwyLjY2NUgyNC40OTJabS0zLjM4OCwwaDIuOTMxdjIuNjY1SDIwLjkxNEMyMC45MTQsMjAuNTc0LDIxLjEsMTguMzY2LDIxLjEsMTguMTc2WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE3LjAzMSAtMTUuMTY4KSIvPgogICAgICA8Y2lyY2xlIGlkPSJFbGxpcHNlXzM3NTAiIGRhdGEtbmFtZT0iRWxsaXBzZSAzNzUwIiBjbGFzcz0iY2xzLTEiIGN4PSIwLjUzMyIgY3k9IjAuNTMzIiByPSIwLjUzMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMi43MDMgOC40MTQpIi8+CiAgICAgIDxwYXRoIGlkPSJQYXRoXzgzNDciIGRhdGEtbmFtZT0iUGF0aCA4MzQ3IiBjbGFzcz0iY2xzLTEiIGQ9Ik0zNy4wMzMsMzMuOGEuNTMzLjUzMywwLDEsMCwuNTMzLjUzM0EuNTIuNTIsMCwwLDAsMzcuMDMzLDMzLjhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjcuMjQ5IC0yNS4zODYpIi8+CiAgICAgIDxjaXJjbGUgaWQ9IkVsbGlwc2VfMzc1MSIgZGF0YS1uYW1lPSJFbGxpcHNlIDM3NTEiIGNsYXNzPSJjbHMtMSIgY3g9IjAuNTMzIiBjeT0iMC41MzMiIHI9IjAuNTMzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMC42OTggOC40MTQpIi8+CiAgICAgIDxwYXRoIGlkPSJQYXRoXzgzNDgiIGRhdGEtbmFtZT0iUGF0aCA4MzQ4IiBjbGFzcz0iY2xzLTEiIGQ9Ik0yNC4wNjYsMzQuMzMzYS41MzMuNTMzLDAsMSwwLS41MzMuNTMzQS41Mi41MiwwLDAsMCwyNC4wNjYsMzQuMzMzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE4Ljg4OCAtMjUuMzg2KSIvPgogICAgICA8cGF0aCBpZD0iUGF0aF84MzQ5IiBkYXRhLW5hbWU9IlBhdGggODM0OSIgY2xhc3M9ImNscy0zIiBkPSJNMjUuMjE5LDQxLjMsMjQuOCw0Mi4zMjhoNC44NzNMMjkuMjU0LDQxLjNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjAuMDAzIC0zMC4wMzEpIi8+CiAgICAgIDxwYXRoIGlkPSJQYXRoXzgzNTAiIGRhdGEtbmFtZT0iUGF0aCA4MzUwIiBjbGFzcz0iY2xzLTMiIGQ9Ik0yMy42ODEsNDUuMmwtLjM4MS45NTJoNi4wMTVsLS4zODEtLjk1MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xOS4wNzQgLTMyLjQ0NikiLz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo="
+                                            },
+                                            "size": 16
+                                        }
+                                    ]
+                                }
+                            },
+                            "labelingInfo": [
+                                {
+                                    "labelExpressionInfo": {
+                                        "expression": "$feature.stop_name"
+                                    },
+                                    "expression": "$feature.stop_name",
+                                    "minScale": 5000,
+                                    "symbol": {
+                                        "type": "LabelSymbol3D",
+                                        "symbolLayers": [
+                                            {
+                                                "type": "Text",
+                                                "size": 10,
+                                                "material": {
+                                                    "color": [
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        255
+                                                    ]
+                                                },
+                                                "halo": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "size": 1.5
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "minScale": 100000
+                },
+                {
+                    "layerType": "GeoJSON",
+                    "title": [
+                        "Tram Stop"
+                    ],
+                    "url": "./data/ptv_stop_tram.geojson",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": [
+                            "Tram Stop"
+                        ],
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "OBJECTID",
+                                "isEditable": true,
+                                "label": "OBJECTID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "next_departure",
+                                "isEditable": true,
+                                "label": "Next Departure",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "departure_schedule",
+                                "isEditable": true,
+                                "label": "Departure Schedule",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "disruption",
+                                "isEditable": true,
+                                "label": "Disruption",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_suburb",
+                                "isEditable": true,
+                                "label": "Stop Suburb",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_type",
+                                "isEditable": true,
+                                "label": "Route Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_latitude",
+                                "isEditable": true,
+                                "label": "Stop Latitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_longitude",
+                                "isEditable": true,
+                                "label": "Stop Longitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_sequence",
+                                "isEditable": true,
+                                "label": "Stop Sequence",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ticket_type",
+                                "isEditable": true,
+                                "label": "Ticket Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "zone",
+                                "isEditable": true,
+                                "label": "Zone",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "is_free_fare_zone",
+                                "isEditable": true,
+                                "label": "Is Free Fare Zone",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ticket_machine",
+                                "isEditable": true,
+                                "label": "Ticket Machine",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ticket_checks",
+                                "isEditable": true,
+                                "label": "Ticket Checks",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vline_reservation",
+                                "isEditable": true,
+                                "label": "Vline Reservation",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_id",
+                                "isEditable": true,
+                                "label": "Stop Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_name",
+                                "isEditable": true,
+                                "label": "Stop Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_landmark",
+                                "isEditable": true,
+                                "label": "Stop Landmark",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_name",
+                                "isEditable": true,
+                                "label": "Route Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_number",
+                                "isEditable": true,
+                                "label": "Route Number",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_id",
+                                "isEditable": true,
+                                "label": "Route Id",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": []
+                    },
+                    "refreshInterval": 0,
+                    "customParameters": null,
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "OBJECTID",
+                                "type": "esriFieldTypeOID",
+                                "alias": "OBJECTID"
+                            },
+                            {
+                                "name": "next_departure",
+                                "type": "esriFieldTypeString",
+                                "alias": "Next Departure",
+                                "length": 50000
+                            },
+                            {
+                                "name": "departure_schedule",
+                                "type": "esriFieldTypeString",
+                                "alias": "Departure Schedule",
+                                "length": 50000
+                            },
+                            {
+                                "name": "disruption",
+                                "type": "esriFieldTypeString",
+                                "alias": "Disruption",
+                                "length": 50000
+                            },
+                            {
+                                "name": "stop_suburb",
+                                "type": "esriFieldTypeString",
+                                "alias": "Stop Suburb",
+                                "length": 1500
+                            },
+                            {
+                                "name": "route_type",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Route Type"
+                            },
+                            {
+                                "name": "stop_latitude",
+                                "type": "esriFieldTypeSingle",
+                                "alias": "Stop Latitude"
+                            },
+                            {
+                                "name": "stop_longitude",
+                                "type": "esriFieldTypeSingle",
+                                "alias": "Stop Longitude"
+                            },
+                            {
+                                "name": "stop_sequence",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Stop Sequence"
+                            },
+                            {
+                                "name": "ticket_type",
+                                "type": "esriFieldTypeString",
+                                "alias": "Ticket Type",
+                                "length": 1500
+                            },
+                            {
+                                "name": "zone",
+                                "type": "esriFieldTypeString",
+                                "alias": "Zone",
+                                "length": 1500
+                            },
+                            {
+                                "name": "is_free_fare_zone",
+                                "type": "esriFieldTypeString",
+                                "alias": "Is Free Fare Zone",
+                                "length": 1500
+                            },
+                            {
+                                "name": "ticket_machine",
+                                "type": "esriFieldTypeString",
+                                "alias": "Ticket Machine",
+                                "length": 1500
+                            },
+                            {
+                                "name": "ticket_checks",
+                                "type": "esriFieldTypeString",
+                                "alias": "Ticket Checks",
+                                "length": 1500
+                            },
+                            {
+                                "name": "vline_reservation",
+                                "type": "esriFieldTypeString",
+                                "alias": "Vline Reservation",
+                                "length": 1500
+                            },
+                            {
+                                "name": "stop_id",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Stop Id"
+                            },
+                            {
+                                "name": "stop_name",
+                                "type": "esriFieldTypeString",
+                                "alias": "Stop Name",
+                                "length": 1500
+                            },
+                            {
+                                "name": "stop_landmark",
+                                "type": "esriFieldTypeString",
+                                "alias": "Stop Landmark",
+                                "length": 1500
+                            },
+                            {
+                                "name": "route_name",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Name",
+                                "length": 1500
+                            },
+                            {
+                                "name": "route_number",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Number",
+                                "length": 1500
+                            },
+                            {
+                                "name": "route_id",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Id",
+                                "length": 1500
+                            }
+                        ],
+                        "displayField": "stop_name",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "PointSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "dataURI": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii03NzQ4LjA2IDE1NTQ3IDI0LjA2IDI0LjA2MSI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzc4YmUyMDsKICAgICAgfQoKICAgICAgLmNscy0yIHsKICAgICAgICBmaWxsOiAjZmZmOwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZpbGw6ICM3OGJlNDM7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxnIGlkPSJHcm91cF82NDE4IiBkYXRhLW5hbWU9Ikdyb3VwIDY0MTgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03ODI5LjA2IDE0NjQzKSI+CiAgICA8Y2lyY2xlIGlkPSJFbGxpcHNlXzM3NTIiIGRhdGEtbmFtZT0iRWxsaXBzZSAzNzUyIiBjbGFzcz0iY2xzLTEiIGN4PSIxMi4wMyIgY3k9IjEyLjAzIiByPSIxMi4wMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODEgOTA0KSIvPgogICAgPHBhdGggaWQ9IlBhdGhfODM1MSIgZGF0YS1uYW1lPSJQYXRoIDgzNTEiIGNsYXNzPSJjbHMtMiIgZD0iTTIyLjM5MSwyNi42OGgyLjc4OEwyNC4wNzEsMjUuMTlsLS4wNzYuNjExYS4yMzIuMjMyLDAsMCwxLS40NTgtLjA3NmwuMzQ0LTMuMDU1YS4yMzIuMjMyLDAsMSwxLC40NTguMDc2bC0uMjI5LDEuODMzLDEuNiwyLjEzOWgzLjMyM2EuMTguMTgsMCwwLDAsLjE5MS0uMTkxYzAtLjAzOC0uMzA2LTYuOC0uMzA2LTYuOHYtLjAzOGEuMTguMTgsMCwwLDAtLjE5MS0uMTkxSDIyLjdhLjE4LjE4LDAsMCwwLS4xOTEuMTkxdi4wMzhzLS4zMDYsNi43Ni0uMzA2LDYuOEEuMTc1LjE3NSwwLDAsMCwyMi4zOTEsMjYuNjhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2Ny4yNzggODkxLjk0NykiLz4KICAgIDxwYXRoIGlkPSJQYXRoXzgzNTIiIGRhdGEtbmFtZT0iUGF0aCA4MzUyIiBjbGFzcz0iY2xzLTIiIGQ9Ik0yNS4zOTMsOS42NDJIMjEuMzQ1VjguNDU4aDMuNDM3YS41NzguNTc4LDAsMCwxLC41NzMuNS4yMzIuMjMyLDAsMCwwLC40NTgtLjA3NkExLDEsMCwwLDAsMjQuNzgyLDhIMTcuNDEyYTEuMDMzLDEuMDMzLDAsMCwwLTEuMDMxLjkxNy4yMzIuMjMyLDAsMCwwLC40NTguMDc2LjU3OC41NzgsMCwwLDEsLjU3My0uNWgzLjQ3NVY5LjcxOUgxNi44MzlhMS42MTQsMS42MTQsMCwwLDAtMS42LDEuNnYtLjAzOEwxNC43LDIyLjUxMmgwYTEuNjE0LDEuNjE0LDAsMCwwLDEuNiwxLjZoMS4zNzV2LjY0OWwtLjg0Ljg0YS4yOS4yOSwwLDAsMC0uMDc2LjE1My4yLjIsMCwwLDAsLjA3Ni4xNTMuMjMyLjIzMiwwLDAsMCwuMzA2LDBsLjg3OC0uOTE3YS4yOS4yOSwwLDAsMCwuMDc2LS4xNTN2LS43NjRIMjMuOTh2Ljc2NGEuMi4yLDAsMCwwLC4wNzYuMTUzbC44NzguOTE3YS4yMzIuMjMyLDAsMCwwLC4zMDYsMCwuMTkxLjE5MSwwLDAsMCwwLS4zMDZsLS44NC0uODR2LS42NDlIMjUuODlhMS42MTQsMS42MTQsMCwwLDAsMS42LTEuNmgwbC0uNTM1LTExLjI2NkExLjU1NywxLjU1NywwLDAsMCwyNS4zOTMsOS42NDJabS04Ljc0Niw5LjczOS4zMDYtNi44di4wMzhhMS4xMDgsMS4xMDgsMCwwLDEsMS4xMDgtMS4xMDhoNi4wNzJhMS4xMDgsMS4xMDgsMCwwLDEsMS4xMDgsMS4xMDh2LS4wMzhsLjMwNiw2Ljh2LjAzOGExLjEwOCwxLjEwOCwwLDAsMS0xLjEwOCwxLjEwOEgxNy43NTVhMS4xNjgsMS4xNjgsMCwwLDEtMS4xMDgtMS4xNDZabTIuMjE1LDIuOTQxSDE2Ljk5MWEuNDU4LjQ1OCwwLDAsMSwwLS45MTdoMS44NzFhLjQ0MS40NDEsMCwwLDEsLjQ1OC40NThBLjQ2NC40NjQsMCwwLDEsMTguODYzLDIyLjMyMVptNi4zNCwwSDIzLjMzMWEuNDU4LjQ1OCwwLDAsMSwwLS45MTdIMjUuMmEuNDQxLjQ0MSwwLDAsMSwuNDU4LjQ1OEEuNDY0LjQ2NCwwLDAsMSwyNS4yLDIyLjMyMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcxLjkxNCA4OTkuMDU1KSIvPgogICAgPHBhdGggaWQ9IlBhdGhfODM1MyIgZGF0YS1uYW1lPSJQYXRoIDgzNTMiIGNsYXNzPSJjbHMtMiIgZD0iTTQ2LjksMTYuNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUyLjAxMSA4OTMuODAyKSIvPgogICAgPHBhdGggaWQ9IlBhdGhfODM1NCIgZGF0YS1uYW1lPSJQYXRoIDgzNTQiIGNsYXNzPSJjbHMtMyIgZD0iTTIwLjkwOCwyNi4xNzVoNi42ODNBMS4xMDgsMS4xMDgsMCwwLDAsMjguNywyNS4wNjd2LS4wMzhsLS4zMDYtNi43NnYuMDM4QTEuMTA4LDEuMTA4LDAsMCwwLDI3LjI4NSwxNy4ySDIxLjIxM2ExLjEwOCwxLjEwOCwwLDAsMC0xLjEwOCwxLjEwOHYtLjAzOGwtLjMwNiw2Ljh2LjAzOEExLjEsMS4xLDAsMCwwLDIwLjkwOCwyNi4xNzVabS4xMTUtNy44NjdoMGEuMjE0LjIxNCwwLDAsMSwuMTkxLS4yMjloNi4wNzJhLjE4LjE4LDAsMCwxLC4xOTEuMTkxdi4wMzhzLjMwNiw2Ljc2LjMwNiw2LjhhLjE4LjE4LDAsMCwxLS4xOTEuMTkxSDI0LjI2OGwtMS42LTIuMTM5LjIyOS0xLjgzM2EuMjMyLjIzMiwwLDEsMC0uNDU4LS4wNzZMMjIuMDkxLDI0LjNhLjIzMi4yMzIsMCwwLDAsLjQ1OC4wNzZsLjA3Ni0uNTczTDIzLjczNCwyNS4zSDIwLjk0NmEuMTguMTgsMCwwLDEtLjE5MS0uMTkxQzIwLjcxNywyNS4wNjcsMjEuMDIyLDE4LjMwOCwyMS4wMjIsMTguMzA4WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjguNzYyIDg5My4zNjkpIi8+CiAgICA8cGF0aCBpZD0iUGF0aF84MzU1IiBkYXRhLW5hbWU9IlBhdGggODM1NSIgY2xhc3M9ImNscy0zIiBkPSJNMjEuODMsNDMuMUgxOS45NThhLjQ1OC40NTgsMCwxLDAsMCwuOTE3SDIxLjgzYS40NTguNDU4LDAsMSwwLDAtLjkxN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY4Ljk0NyA4NzcuMzYpIi8+CiAgICA8cGF0aCBpZD0iUGF0aF84MzU2IiBkYXRhLW5hbWU9IlBhdGggODM1NiIgY2xhc3M9ImNscy0zIiBkPSJNMzguNDMsNDMuMUgzNi41NThhLjQ1OC40NTgsMCwwLDAsMCwuOTE3SDM4LjQzYS40NTguNDU4LDAsMSwwLDAtLjkxN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU4LjY4NyA4NzcuMzYpIi8+CiAgPC9nPgo8L3N2Zz4K"
+                                            },
+                                            "size": 16
+                                        }
+                                    ],
+                                    "verticalOffset": {
+                                        "screenLength": 50,
+                                        "maxWorldLength": 10,
+                                        "minWorldLength": 5
+                                    }
+                                }
+                            },
+                            "labelingInfo": [
+                                {
+                                    "labelExpressionInfo": {
+                                        "expression": "$feature.stop_name"
+                                    },
+                                    "expression": "$feature.stop_name",
+                                    "minScale": 1000,
+                                    "symbol": {
+                                        "type": "LabelSymbol3D",
+                                        "symbolLayers": [
+                                            {
+                                                "type": "Text",
+                                                "size": 10,
+                                                "material": {
+                                                    "color": [
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        255
+                                                    ]
+                                                },
+                                                "halo": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "size": 1.5
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "minScale": 5000
+                },
+                {
+                    "layerType": "GeoJSON",
+                    "title": [
+                        "Bus Stop"
+                    ],
+                    "url": "./data/ptv_stop_bus.geojson",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": [
+                            "Bus Stop"
+                        ],
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "OBJECTID",
+                                "isEditable": true,
+                                "label": "OBJECTID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "next_departure",
+                                "isEditable": true,
+                                "label": "Next Departure",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "departure_schedule",
+                                "isEditable": true,
+                                "label": "Departure Schedule",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "disruption",
+                                "isEditable": true,
+                                "label": "Disruption",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_suburb",
+                                "isEditable": true,
+                                "label": "Stop Suburb",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_type",
+                                "isEditable": true,
+                                "label": "Route Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_latitude",
+                                "isEditable": true,
+                                "label": "Stop Latitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_longitude",
+                                "isEditable": true,
+                                "label": "Stop Longitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_sequence",
+                                "isEditable": true,
+                                "label": "Stop Sequence",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ticket_type",
+                                "isEditable": true,
+                                "label": "Ticket Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "zone",
+                                "isEditable": true,
+                                "label": "Zone",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "is_free_fare_zone",
+                                "isEditable": true,
+                                "label": "Is Free Fare Zone",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ticket_machine",
+                                "isEditable": true,
+                                "label": "Ticket Machine",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ticket_checks",
+                                "isEditable": true,
+                                "label": "Ticket Checks",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vline_reservation",
+                                "isEditable": true,
+                                "label": "Vline Reservation",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_id",
+                                "isEditable": true,
+                                "label": "Stop Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_name",
+                                "isEditable": true,
+                                "label": "Stop Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "stop_landmark",
+                                "isEditable": true,
+                                "label": "Stop Landmark",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_name",
+                                "isEditable": true,
+                                "label": "Route Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_number",
+                                "isEditable": true,
+                                "label": "Route Number",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_id",
+                                "isEditable": true,
+                                "label": "Route Id",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": []
+                    },
+                    "refreshInterval": 0,
+                    "customParameters": null,
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "OBJECTID",
+                                "type": "esriFieldTypeOID",
+                                "alias": "OBJECTID"
+                            },
+                            {
+                                "name": "next_departure",
+                                "type": "esriFieldTypeString",
+                                "alias": "Next Departure",
+                                "length": 50000
+                            },
+                            {
+                                "name": "departure_schedule",
+                                "type": "esriFieldTypeString",
+                                "alias": "Departure Schedule",
+                                "length": 50000
+                            },
+                            {
+                                "name": "disruption",
+                                "type": "esriFieldTypeString",
+                                "alias": "Disruption",
+                                "length": 50000
+                            },
+                            {
+                                "name": "stop_suburb",
+                                "type": "esriFieldTypeString",
+                                "alias": "Stop Suburb",
+                                "length": 1500
+                            },
+                            {
+                                "name": "route_type",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Route Type"
+                            },
+                            {
+                                "name": "stop_latitude",
+                                "type": "esriFieldTypeSingle",
+                                "alias": "Stop Latitude"
+                            },
+                            {
+                                "name": "stop_longitude",
+                                "type": "esriFieldTypeSingle",
+                                "alias": "Stop Longitude"
+                            },
+                            {
+                                "name": "stop_sequence",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Stop Sequence"
+                            },
+                            {
+                                "name": "ticket_type",
+                                "type": "esriFieldTypeString",
+                                "alias": "Ticket Type",
+                                "length": 1500
+                            },
+                            {
+                                "name": "zone",
+                                "type": "esriFieldTypeString",
+                                "alias": "Zone",
+                                "length": 1500
+                            },
+                            {
+                                "name": "is_free_fare_zone",
+                                "type": "esriFieldTypeString",
+                                "alias": "Is Free Fare Zone",
+                                "length": 1500
+                            },
+                            {
+                                "name": "ticket_machine",
+                                "type": "esriFieldTypeString",
+                                "alias": "Ticket Machine",
+                                "length": 1500
+                            },
+                            {
+                                "name": "ticket_checks",
+                                "type": "esriFieldTypeString",
+                                "alias": "Ticket Checks",
+                                "length": 1500
+                            },
+                            {
+                                "name": "vline_reservation",
+                                "type": "esriFieldTypeString",
+                                "alias": "Vline Reservation",
+                                "length": 1500
+                            },
+                            {
+                                "name": "stop_id",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Stop Id"
+                            },
+                            {
+                                "name": "stop_name",
+                                "type": "esriFieldTypeString",
+                                "alias": "Stop Name",
+                                "length": 1500
+                            },
+                            {
+                                "name": "stop_landmark",
+                                "type": "esriFieldTypeString",
+                                "alias": "Stop Landmark",
+                                "length": 1500
+                            },
+                            {
+                                "name": "route_name",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Name",
+                                "length": 1500
+                            },
+                            {
+                                "name": "route_number",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Number",
+                                "length": 1500
+                            },
+                            {
+                                "name": "route_id",
+                                "type": "esriFieldTypeString",
+                                "alias": "Route Id",
+                                "length": 1500
+                            }
+                        ],
+                        "displayField": "stop_name",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "PointSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "dataURI": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii03NzQ4IDE1NTg3IDI0IDI0Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjZmY4MjAwOwogICAgICB9CgogICAgICAuY2xzLTIgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxnIGlkPSJHcm91cF82NDE5IiBkYXRhLW5hbWU9Ikdyb3VwIDY0MTkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03Nzk0IDE0NjQ0KSI+CiAgICA8Y2lyY2xlIGlkPSJFbGxpcHNlXzM3NTMiIGRhdGEtbmFtZT0iRWxsaXBzZSAzNzUzIiBjbGFzcz0iY2xzLTEiIGN4PSIxMiIgY3k9IjEyIiByPSIxMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDYgOTQzKSIvPgogICAgPGNpcmNsZSBpZD0iRWxsaXBzZV8zNzU0IiBkYXRhLW5hbWU9IkVsbGlwc2UgMzc1NCIgY2xhc3M9ImNscy0yIiBjeD0iMC40OTUiIGN5PSIwLjQ5NSIgcj0iMC40OTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUzLjc3MSA5NTguMikiLz4KICAgIDxwYXRoIGlkPSJQYXRoXzgzNTciIGRhdGEtbmFtZT0iUGF0aCA4MzU3IiBjbGFzcz0iY2xzLTIiIGQ9Ik0yNy4wMzMsMTMuNmExLjYxLDEuNjEsMCwwLDAtMS42LTEuNkgxNi40YTEuNjEsMS42MSwwLDAsMC0xLjYsMS42aDBsLS4zLDEwLjMyNGgwYTEuNjEsMS42MSwwLDAsMCwxLjYsMS42aC4yNjd2LjhhLjkxNC45MTQsMCwxLDAsMS44MjksMHYtLjhoNS4zNzF2LjhhLjkyNy45MjcsMCwwLDAsLjkxNC45MTQuOS45LDAsMCwwLC45MTQtLjkxNHYtLjhoLjM0M2ExLjYxLDEuNjEsMCwwLDAsMS42LTEuNmgwbC0uMy0xMC4zMjRabS0xMS4zNTIuMDM4aDBhLjcuNywwLDAsMSwuNzI0LS43MjRoOS4wMjlhLjY4My42ODMsMCwwLDEsLjY4Ni42ODZoMHMwLC4zLjAzOC43NjJIMTUuNjQzQzE1LjY4MSwxMy45LDE1LjY4MSwxMy42MzgsMTUuNjgxLDEzLjYzOFptMS41NjIsMTAuNGEuOTUyLjk1MiwwLDEsMSwuOTUyLS45NTJBLjk0My45NDMsMCwwLDEsMTcuMjQzLDI0LjAzOFptMy4zOS0zLjM5SDE1LjQ1MmMuMDM4LTEuNzkuMTE0LTMuOTI0LjE1Mi01LjM3MWg1LjAyOVptMy44NDgsMy4zOWEuOTUyLjk1MiwwLDAsMSwwLTEuOS45NjguOTY4LDAsMCwxLC45NTIuOTUyQS45NDMuOTQzLDAsMCwxLDI0LjQ4MSwyNC4wMzhabS0zLjM5LTMuMzlWMTUuMzE0aDUuMDY3Yy4wMzgsMS40NDguMTE0LDMuNTgxLjE1Miw1LjM3MUgyMS4wOVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM3LjAyNCA5MzUuNTcxKSIvPgogICAgPHBhdGggaWQ9IlBhdGhfODM1OCIgZGF0YS1uYW1lPSJQYXRoIDgzNTgiIGNsYXNzPSJjbHMtMiIgZD0iTTM5LjksMzkuOWEuNS41LDAsMSwwLC41LjVBLjUuNSwwLDAsMCwzOS45LDM5LjlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMS42MSA5MTguMykiLz4KICAgIDxwYXRoIGlkPSJQYXRoXzgzNTkiIGRhdGEtbmFtZT0iUGF0aCA4MzU5IiBjbGFzcz0iY2xzLTEiIGQ9Ik0xNywyNi4wMzNoNS4xODFWMjAuN0gxNy4xOUMxNy4xNTIsMjIuMTQ4LDE3LjA3NiwyNC4yODEsMTcsMjYuMDMzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzUuNDc2IDkzMC4xODUpIi8+CiAgICA8cGF0aCBpZD0iUGF0aF84MzYwIiBkYXRhLW5hbWU9IlBhdGggODM2MCIgY2xhc3M9ImNscy0xIiBkPSJNMjcuOTc2LDE1LjEyNGgwYS42OTIuNjkyLDAsMCwwLS42ODYtLjcyNEgxOC4yNjJhLjcxNi43MTYsMCwwLDAtLjcyNC42ODZoMHMwLC4zLS4wMzguNzYySDI3Ljk3NloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM1LjE2NyA5MzQuMDg2KSIvPgogICAgPHBhdGggaWQ9IlBhdGhfODM2MSIgZGF0YS1uYW1lPSJQYXRoIDgzNjEiIGNsYXNzPSJjbHMtMSIgZD0iTTMxLjgsMjAuN3Y1LjM3MWg1LjI1N2MtLjAzOC0xLjc5LS4xMTQtMy45MjQtLjE1Mi01LjM3MVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI2LjMxNCA5MzAuMTg1KSIvPgogICAgPHBhdGggaWQ9IlBhdGhfODM2MiIgZGF0YS1uYW1lPSJQYXRoIDgzNjIiIGNsYXNzPSJjbHMtMSIgZD0iTTIwLjE1MiwzOC43YS45NDMuOTQzLDAsMCwwLS45NTIuOTUyLjk2OC45NjgsMCwwLDAsLjk1Mi45NTIuOTUyLjk1MiwwLDEsMCwwLTEuOVptMCwxLjQxYS41LjUsMCwxLDEsLjUtLjVBLjQ4LjQ4LDAsMCwxLDIwLjE1Miw0MC4xMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM0LjExNCA5MTkuMDQzKSIvPgogICAgPHBhdGggaWQ9IlBhdGhfODM2MyIgZGF0YS1uYW1lPSJQYXRoIDgzNjMiIGNsYXNzPSJjbHMtMSIgZD0iTTM5LjE1MiwzOC43YS45NDMuOTQzLDAsMCwwLS45NTIuOTUyLjk1Mi45NTIsMCwwLDAsMS45LDBBLjk0My45NDMsMCwwLDAsMzkuMTUyLDM4LjdabTAsMS40MWEuNS41LDAsMSwxLC41LS41QS40OC40OCwwLDAsMSwzOS4xNTIsNDAuMTFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMi4zNTIgOTE5LjA0MykiLz4KICA8L2c+Cjwvc3ZnPgo="
+                                            },
+                                            "size": 16
+                                        }
+                                    ],
+                                    "verticalOffset": {
+                                        "screenLength": 50,
+                                        "maxWorldLength": 10,
+                                        "minWorldLength": 5
+                                    }
+                                }
+                            },
+                            "labelingInfo": [
+                                {
+                                    "labelExpressionInfo": {
+                                        "expression": "$feature.stop_name"
+                                    },
+                                    "expression": "$feature.stop_name",
+                                    "minScale": 1000,
+                                    "symbol": {
+                                        "type": "LabelSymbol3D",
+                                        "symbolLayers": [
+                                            {
+                                                "type": "Text",
+                                                "size": 10,
+                                                "material": {
+                                                    "color": [
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        255
+                                                    ]
+                                                },
+                                                "halo": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "size": 1.5
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "minScale": 5000
+                }
+            ],
+            "layerType": "GroupLayer",
+            "visibilityMode": "independent"
+        },
+        {
             "layerType": "GeoJSON",
             "title": [
                 "Chelsea Primary Zones"
@@ -135,7 +1182,7 @@
                     "id": "",
                     "opacity": 1,
                     "title": "Chelsea Primary School 3D",
-                    "url": "https://bitbucket.org/ocram-au/chelsea/raw/0eed8c15ccb36cae0de13265b740a84ad4bfa4e8/data/i3s/chelsea_primary_epsg4979/SceneServer",
+                    "url": "https://bitbucket.org/ocram-au/chelsea/raw/580f3e806a85ee222148bdbef5fdaac6160b0313/data/i3s/chelsea_primary_epsg4979/SceneServer",
                     "visibility": true,
                     "layerType": "ArcGISSceneServiceLayer"
                 }

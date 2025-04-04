@@ -1,0 +1,81 @@
+{
+    "operationalLayers": [
+        {
+            "id": "",
+            "title": "Tuvalu, Funafuti Photorealistic 3D",
+            "url": "https://assets.ion.cesium.com/ap-northeast-1/2900160/tileset.json?v=2",
+            "customParameters": {},
+            "layerType": "IntegratedMesh3DTilesLayer",
+            "visibility": true
+        }
+    ],
+    "baseMap": {
+        "baseMapLayers": [
+            {
+                "id": "VectorTile_2333",
+                "opacity": 1,
+                "title": "World Topographic Map",
+                "visibility": true,
+                "layerType": "VectorTileLayer",
+                "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/7dc6cea0b1764a1f9af2e679f642f0f5/resources/styles/root.json"
+            }
+        ],
+        "id": "",
+        "title": "",
+        "elevationLayers": []
+    },
+    "ground": {
+        "layers": [
+            {
+                "id": "DEM_2023_1m_WGS84",
+                "title": "DEM 2023 1m WGS84",
+                "url": "https://tiles.arcgis.com/tiles/KGdHCCUjGBpOPPac/arcgis/rest/services/DEM_2023_1m_WGS84/ImageServer?cacheKey=b647432efb9e81f0",
+                "visibility": true,
+                "layerType": "ArcGISTiledElevationServiceLayer"
+            }
+        ],
+        "transparency": 0,
+        "navigationConstraint": {
+            "type": "stayAbove"
+        }
+    },
+    "heightModelInfo": {
+        "heightModel": "gravity_related_height",
+        "heightUnit": "meter"
+    },
+    "initialState": {
+        "viewpoint": {
+            "rotation": 356.8112330188073,
+            "scale": 102775.06275398681,
+            "targetGeometry": {
+                "spatialReference": {
+                    "latestWkid": 3857,
+                    "wkid": 3857
+                },
+                "x": 19942857.152401134,
+                "y": -950115.7301650391,
+                "z": -0.03907218389213085
+            },
+            "camera": {
+                "position": {
+                    "spatialReference": {
+                        "latestWkid": 3857,
+                        "wkid": 3857
+                    },
+                    "x": 19941539.646436796,
+                    "y": -973770.8483370318,
+                    "z": 11962.26613310352
+                },
+                "heading": 3.1887669811927277,
+                "tilt": 62.8646393654085
+            }
+        }
+    },
+    "spatialReference": {
+        "latestWkid": 3857,
+        "wkid": 3857
+    },
+    "viewingMode": "global",
+    "version": "1.33",
+    "authoringApp": "OCRAM"
+}
