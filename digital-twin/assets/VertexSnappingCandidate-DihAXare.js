@@ -1,1 +1,0 @@
-import{gM as r,gN as s}from"./index-CMElAQvj.js";import{n}from"./PointSnappingHint-DEIAOmmM.js";class a extends r{constructor(t){super({...t,constraint:new s(t.targetPoint)})}get hints(){return[new n(this.targetPoint,this.isDraped,this.domain)]}}export{a as r};
