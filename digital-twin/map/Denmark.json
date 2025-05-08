@@ -3711,7 +3711,7 @@
                             "visibility": true
                         },
                         {
-                            "id": 0,
+                            "id": "denmark_buildings_3D",
                             "version": "2ADED18E-0C77-4927-AB5F-0B34FD7B6B76",
                             "name": "Buildings_LOD2_2",
                             "serviceUpdateTimeStamp": {
@@ -5785,7 +5785,7 @@
                     "visibilityMode": "independent"
                 },
                 {
-                    "id": 0,
+                    "id": "denmark_buildings_3D",
                     "version": "2ADED18E-0C77-4927-AB5F-0B34FD7B6B76",
                     "name": "Buildings_LOD2_2",
                     "serviceUpdateTimeStamp": {
