@@ -1,1 +1,0 @@
-import{gz as m,i1 as i,cz as c}from"./index-BR4NftXd.js";import{p as n}from"./queryTopFeatures-DPJouCir.js";async function d(r,a,o,t){const e=m(r),s={...t},{data:f}=await n(e,i.from(a),o,s);return c.fromJSON(f)}export{d as executeTopFeaturesQuery};
