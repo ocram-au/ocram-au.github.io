@@ -3686,6 +3686,3004 @@
                                 ]
                             }
                         ]
+                    },
+                    "popupInfo": {
+                        "title": "OpenStreetMap 3D Labels",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "Label",
+                                "isEditable": true,
+                                "label": "Label",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ObjectID",
+                                "isEditable": true,
+                                "label": "ObjectID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "OSMID",
+                                "isEditable": true,
+                                "label": "OSMID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "OSMType",
+                                "isEditable": true,
+                                "label": "OSMType",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Type",
+                                "isEditable": true,
+                                "label": "Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "TextType",
+                                "isEditable": true,
+                                "label": "TextType",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_default",
+                                "isEditable": true,
+                                "label": "Label_default",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_international",
+                                "isEditable": true,
+                                "label": "Label_international",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_ar",
+                                "isEditable": true,
+                                "label": "Label_name_ar",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_bs",
+                                "isEditable": true,
+                                "label": "Label_name_bs",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_ca",
+                                "isEditable": true,
+                                "label": "Label_name_ca",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_cs",
+                                "isEditable": true,
+                                "label": "Label_name_cs",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_da",
+                                "isEditable": true,
+                                "label": "Label_name_da",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_de",
+                                "isEditable": true,
+                                "label": "Label_name_de",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_el",
+                                "isEditable": true,
+                                "label": "Label_name_el",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_en",
+                                "isEditable": true,
+                                "label": "Label_name_en",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_es",
+                                "isEditable": true,
+                                "label": "Label_name_es",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_et",
+                                "isEditable": true,
+                                "label": "Label_name_et",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_fi",
+                                "isEditable": true,
+                                "label": "Label_name_fi",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_fr",
+                                "isEditable": true,
+                                "label": "Label_name_fr",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_he",
+                                "isEditable": true,
+                                "label": "Label_name_he",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_hr",
+                                "isEditable": true,
+                                "label": "Label_name_hr",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_hu",
+                                "isEditable": true,
+                                "label": "Label_name_hu",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_id",
+                                "isEditable": true,
+                                "label": "Label_name_id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_it",
+                                "isEditable": true,
+                                "label": "Label_name_it",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_ja",
+                                "isEditable": true,
+                                "label": "Label_name_ja",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_ko",
+                                "isEditable": true,
+                                "label": "Label_name_ko",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_lt",
+                                "isEditable": true,
+                                "label": "Label_name_lt",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_lv",
+                                "isEditable": true,
+                                "label": "Label_name_lv",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_nl",
+                                "isEditable": true,
+                                "label": "Label_name_nl",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_no",
+                                "isEditable": true,
+                                "label": "Label_name_no",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_pl",
+                                "isEditable": true,
+                                "label": "Label_name_pl",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_pt",
+                                "isEditable": true,
+                                "label": "Label_name_pt",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_pt_b",
+                                "isEditable": true,
+                                "label": "Label_name_pt_b",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_ro",
+                                "isEditable": true,
+                                "label": "Label_name_ro",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_ru",
+                                "isEditable": true,
+                                "label": "Label_name_ru",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_sk",
+                                "isEditable": true,
+                                "label": "Label_name_sk",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_sl",
+                                "isEditable": true,
+                                "label": "Label_name_sl",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_sr",
+                                "isEditable": true,
+                                "label": "Label_name_sr",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_sv",
+                                "isEditable": true,
+                                "label": "Label_name_sv",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_th",
+                                "isEditable": true,
+                                "label": "Label_name_th",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_tr",
+                                "isEditable": true,
+                                "label": "Label_name_tr",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_uk",
+                                "isEditable": true,
+                                "label": "Label_name_uk",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_vi",
+                                "isEditable": true,
+                                "label": "Label_name_vi",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_zh",
+                                "isEditable": true,
+                                "label": "Label_name_zh",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_zh_simplified",
+                                "isEditable": true,
+                                "label": "Label_name_zh_simplified",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "Label_name_zh_traditional",
+                                "isEditable": true,
+                                "label": "Label_name_zh_traditional",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": []
+                    }
+                }
+            ],
+            "layerType": "GroupLayer",
+            "visibilityMode": "independent"
+        },
+        {
+            "id": "",
+            "title": "Open Data Transport",
+            "layers": [
+                {
+                    "id": "road_crash",
+                    "showLegend": true,
+                    "listMode": "show",
+                    "disablePopup": false,
+                    "title": "Road Crash",
+                    "url": "https://services-ap1.arcgis.com/sRWrfkKjSushj6ql/ArcGIS/rest/services/road_crash/FeatureServer/0",
+                    "visibility": true,
+                    "layerType": "ArcGISFeatureLayer",
+                    "layerDefinition": {
+                        "currentVersion": 11.2,
+                        "id": 0,
+                        "name": "road crash",
+                        "type": "Feature Layer",
+                        "serviceItemId": "688d3d5392c1486e881519ce4904f580",
+                        "cacheMaxAge": 30,
+                        "displayField": "",
+                        "description": "",
+                        "copyrightText": "",
+                        "defaultVisibility": true,
+                        "editingInfo": {
+                            "lastEditDate": 1746768789675,
+                            "schemaLastEditDate": 1746765636093,
+                            "dataLastEditDate": 1746768789675
+                        },
+                        "relationships": [],
+                        "isDataVersioned": false,
+                        "hasContingentValuesDefinition": false,
+                        "supportsAppend": true,
+                        "supportsCalculate": true,
+                        "supportsASyncCalculate": true,
+                        "supportsTruncate": true,
+                        "supportsAttachmentsByUploadId": true,
+                        "supportsAttachmentsResizing": true,
+                        "supportsRollbackOnFailureParameter": true,
+                        "supportsStatistics": true,
+                        "supportsExceedsLimitStatistics": true,
+                        "supportsAdvancedQueries": true,
+                        "supportsValidateSql": true,
+                        "supportsCoordinatesQuantization": true,
+                        "supportsLayerOverrides": true,
+                        "supportsTilesAndBasicQueriesMode": true,
+                        "supportsFieldDescriptionProperty": true,
+                        "supportsQuantizationEditMode": true,
+                        "supportsColumnStoreIndex": true,
+                        "supportsApplyEditsWithGlobalIds": false,
+                        "supportsReturningQueryGeometry": true,
+                        "enableNullGeometry": false,
+                        "advancedQueryCapabilities": {
+                            "supportsPagination": true,
+                            "supportsQueryAttachmentsCountOnly": true,
+                            "supportsPaginationOnAggregatedQueries": true,
+                            "supportsQueryRelatedPagination": true,
+                            "supportsQueryWithDistance": true,
+                            "supportsReturningQueryExtent": true,
+                            "supportsStatistics": true,
+                            "supportsOrderBy": true,
+                            "supportsDistinct": true,
+                            "supportsQueryWithResultType": true,
+                            "supportsSqlExpression": true,
+                            "supportsTimeRelation": true,
+                            "supportsAdvancedQueryRelated": true,
+                            "supportsCountDistinct": true,
+                            "supportsPercentileStatistics": true,
+                            "supportsApproxPercentileStatistics": true,
+                            "supportsSpatialAggregationStatistics": true,
+                            "supportedSpatialAggregationStatistics": [
+                                "EnvelopeAggregate",
+                                "CentroidAggregate",
+                                "ConvexHullAggregate"
+                            ],
+                            "supportsQueryAttachments": true,
+                            "supportsQueryAttachmentOrderByFields": true,
+                            "supportsLod": true,
+                            "supportsQueryWithLodSR": false,
+                            "supportedLodTypes": [
+                                "geohash"
+                            ],
+                            "supportsReturningGeometryCentroid": false,
+                            "supportsReturningGeometryEnvelope": false,
+                            "supportsQueryWithDatumTransformation": true,
+                            "supportsCurrentUserQueries": true,
+                            "supportsHavingClause": true,
+                            "supportsOutFieldSQLExpression": true,
+                            "supportsMaxRecordCountFactor": true,
+                            "supportsTopFeaturesQuery": true,
+                            "supportsDisjointSpatialRel": true,
+                            "supportsQueryWithCacheHint": true,
+                            "supportedOperationsWithCacheHint": [
+                                "query",
+                                "queryTopFilter",
+                                "queryAnalytics",
+                                "queryAttachments",
+                                "queryRelated",
+                                "queryBins"
+                            ],
+                            "supportsQueryAttachmentsWithReturnUrl": true,
+                            "supportsQueryAnalytic": true,
+                            "supportsQueryBins": true,
+                            "supportsDefaultSR": true,
+                            "supportsFullTextSearch": true,
+                            "fullTextSearchCapabilities": {
+                                "supportsAccentSensitivity": true,
+                                "supportsStopWords": true,
+                                "supportsSearchOperator": true,
+                                "supportsOperator": true
+                            }
+                        },
+                        "advancedQueryAnalyticCapabilities": {
+                            "supportsLinearRegression": true,
+                            "supportsTrendlineRegression": true,
+                            "supportsAsync": true,
+                            "supportsPercentileAnalytic": true
+                        },
+                        "queryBinsCapabilities": {
+                            "supportsAsync": true,
+                            "supportsAutoIntervalBin": true,
+                            "supportsFixedIntervalBin": true,
+                            "supportsFixedBoundariesBin": true,
+                            "supportsDateBin": true,
+                            "supportsStackBy": true,
+                            "supportsSplitBy": true,
+                            "supportsFirstDayOfWeek": true,
+                            "supportsSnapToData": true,
+                            "supportsReturnFullIntervalBin": true,
+                            "supportsNormalization": true,
+                            "supportedStatisticTypes": [
+                                "COUNT",
+                                "SUM",
+                                "AVG",
+                                "VAR",
+                                "STDDEV",
+                                "MIN",
+                                "MAX",
+                                "PERCENTILE_CONT",
+                                "PERCENTILE_DISC",
+                                "APPROX_PERCENTILE_CONT",
+                                "APPROX_PERCENTILE_DISC",
+                                "CentroidAggregate",
+                                "EnvelopeAggregate",
+                                "ConvexHullAggregate"
+                            ],
+                            "supportedNormalizationTypes": [
+                                "boxCox",
+                                "field",
+                                "inverse",
+                                "log",
+                                "naturalLog",
+                                "percentOfTotal",
+                                "squareRoot"
+                            ]
+                        },
+                        "advancedEditingCapabilities": {
+                            "supportedSqlFormatsInCalculate": [
+                                "standard"
+                            ],
+                            "supportsAsyncApplyEdits": true,
+                            "supportsReturnEditResults": true,
+                            "supportsApplyEditsbyUploadID": true,
+                            "supportedApplyEditsUploadIDFormats": "JSON"
+                        },
+                        "infoInEstimates": [
+                            "extent",
+                            "count"
+                        ],
+                        "useStandardizedQueries": true,
+                        "geometryType": "esriGeometryPoint",
+                        "minScale": 0,
+                        "maxScale": 0,
+                        "extent": {
+                            "xmin": 15692316.792632315,
+                            "ymin": -4726088.762689104,
+                            "xmax": 16670925.413668461,
+                            "ymax": -4044347.422196484,
+                            "spatialReference": {
+                                "wkid": 102100,
+                                "latestWkid": 3857
+                            }
+                        },
+                        "spatialReference": {
+                            "wkid": 102100,
+                            "latestWkid": 3857
+                        },
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "uniqueValue",
+                                "field1": "SEVERITY",
+                                "fieldDelimiter": ",",
+                                "uniqueValueGroups": [
+                                    {
+                                        "heading": "",
+                                        "classes": [
+                                            {
+                                                "description": "Fatal accident",
+                                                "label": "Fatal accident",
+                                                "symbol": {
+                                                    "type": "CIMSymbolReference",
+                                                    "symbol": {
+                                                        "type": "CIMPointSymbol",
+                                                        "symbolLayers": [
+                                                            {
+                                                                "type": "CIMVectorMarker",
+                                                                "enable": true,
+                                                                "name": "Group 1",
+                                                                "anchorPoint": {
+                                                                    "x": 0,
+                                                                    "y": 0,
+                                                                    "z": 0
+                                                                },
+                                                                "anchorPointUnits": "Relative",
+                                                                "dominantSizeAxis3D": "Y",
+                                                                "size": 10,
+                                                                "billboardMode3D": "FaceNearPlane",
+                                                                "frame": {
+                                                                    "xmin": -5,
+                                                                    "ymin": -5,
+                                                                    "xmax": 5,
+                                                                    "ymax": 5
+                                                                },
+                                                                "markerGraphics": [
+                                                                    {
+                                                                        "type": "CIMMarkerGraphic",
+                                                                        "geometry": {
+                                                                            "rings": [
+                                                                                [
+                                                                                    [
+                                                                                        0,
+                                                                                        5
+                                                                                    ],
+                                                                                    [
+                                                                                        0.87,
+                                                                                        4.92
+                                                                                    ],
+                                                                                    [
+                                                                                        1.71,
+                                                                                        4.7
+                                                                                    ],
+                                                                                    [
+                                                                                        2.5,
+                                                                                        4.33
+                                                                                    ],
+                                                                                    [
+                                                                                        3.21,
+                                                                                        3.83
+                                                                                    ],
+                                                                                    [
+                                                                                        3.83,
+                                                                                        3.21
+                                                                                    ],
+                                                                                    [
+                                                                                        4.33,
+                                                                                        2.5
+                                                                                    ],
+                                                                                    [
+                                                                                        4.7,
+                                                                                        1.71
+                                                                                    ],
+                                                                                    [
+                                                                                        4.92,
+                                                                                        0.87
+                                                                                    ],
+                                                                                    [
+                                                                                        5,
+                                                                                        0
+                                                                                    ],
+                                                                                    [
+                                                                                        4.92,
+                                                                                        -0.87
+                                                                                    ],
+                                                                                    [
+                                                                                        4.7,
+                                                                                        -1.71
+                                                                                    ],
+                                                                                    [
+                                                                                        4.33,
+                                                                                        -2.5
+                                                                                    ],
+                                                                                    [
+                                                                                        3.83,
+                                                                                        -3.21
+                                                                                    ],
+                                                                                    [
+                                                                                        3.21,
+                                                                                        -3.83
+                                                                                    ],
+                                                                                    [
+                                                                                        2.5,
+                                                                                        -4.33
+                                                                                    ],
+                                                                                    [
+                                                                                        1.71,
+                                                                                        -4.7
+                                                                                    ],
+                                                                                    [
+                                                                                        0.87,
+                                                                                        -4.92
+                                                                                    ],
+                                                                                    [
+                                                                                        0,
+                                                                                        -5
+                                                                                    ],
+                                                                                    [
+                                                                                        -0.87,
+                                                                                        -4.92
+                                                                                    ],
+                                                                                    [
+                                                                                        -1.71,
+                                                                                        -4.7
+                                                                                    ],
+                                                                                    [
+                                                                                        -2.5,
+                                                                                        -4.33
+                                                                                    ],
+                                                                                    [
+                                                                                        -3.21,
+                                                                                        -3.83
+                                                                                    ],
+                                                                                    [
+                                                                                        -3.83,
+                                                                                        -3.21
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.33,
+                                                                                        -2.5
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.7,
+                                                                                        -1.71
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.92,
+                                                                                        -0.87
+                                                                                    ],
+                                                                                    [
+                                                                                        -5,
+                                                                                        0
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.92,
+                                                                                        0.87
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.7,
+                                                                                        1.71
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.33,
+                                                                                        2.5
+                                                                                    ],
+                                                                                    [
+                                                                                        -3.83,
+                                                                                        3.21
+                                                                                    ],
+                                                                                    [
+                                                                                        -3.21,
+                                                                                        3.83
+                                                                                    ],
+                                                                                    [
+                                                                                        -2.5,
+                                                                                        4.33
+                                                                                    ],
+                                                                                    [
+                                                                                        -1.71,
+                                                                                        4.7
+                                                                                    ],
+                                                                                    [
+                                                                                        -0.87,
+                                                                                        4.92
+                                                                                    ],
+                                                                                    [
+                                                                                        0,
+                                                                                        5
+                                                                                    ]
+                                                                                ]
+                                                                            ]
+                                                                        },
+                                                                        "symbol": {
+                                                                            "type": "CIMPolygonSymbol",
+                                                                            "symbolLayers": [
+                                                                                {
+                                                                                    "type": "CIMSolidStroke",
+                                                                                    "enable": true,
+                                                                                    "capStyle": "Round",
+                                                                                    "joinStyle": "Round",
+                                                                                    "lineStyle3D": "Strip",
+                                                                                    "miterLimit": 10,
+                                                                                    "width": 1,
+                                                                                    "height3D": 1,
+                                                                                    "anchor3D": "Center",
+                                                                                    "color": [
+                                                                                        255,
+                                                                                        255,
+                                                                                        255,
+                                                                                        255
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "type": "CIMSolidFill",
+                                                                                    "enable": true,
+                                                                                    "color": [
+                                                                                        222,
+                                                                                        109,
+                                                                                        49,
+                                                                                        255
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "angleAlignment": "Map"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "scaleSymbolsProportionally": true,
+                                                                "respectFrame": true
+                                                            }
+                                                        ],
+                                                        "haloSize": 1,
+                                                        "scaleX": 1,
+                                                        "angleAlignment": "Display"
+                                                    }
+                                                },
+                                                "values": [
+                                                    [
+                                                        "Fatal accident"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "description": "Serious injury accident",
+                                                "label": "Serious injury accident",
+                                                "symbol": {
+                                                    "type": "CIMSymbolReference",
+                                                    "symbol": {
+                                                        "type": "CIMPointSymbol",
+                                                        "symbolLayers": [
+                                                            {
+                                                                "type": "CIMVectorMarker",
+                                                                "enable": true,
+                                                                "name": "Group 2",
+                                                                "anchorPoint": {
+                                                                    "x": 0,
+                                                                    "y": 0,
+                                                                    "z": 0
+                                                                },
+                                                                "anchorPointUnits": "Relative",
+                                                                "dominantSizeAxis3D": "Y",
+                                                                "size": 8,
+                                                                "billboardMode3D": "FaceNearPlane",
+                                                                "frame": {
+                                                                    "xmin": -5,
+                                                                    "ymin": -5,
+                                                                    "xmax": 5,
+                                                                    "ymax": 5
+                                                                },
+                                                                "markerGraphics": [
+                                                                    {
+                                                                        "type": "CIMMarkerGraphic",
+                                                                        "geometry": {
+                                                                            "rings": [
+                                                                                [
+                                                                                    [
+                                                                                        0,
+                                                                                        5
+                                                                                    ],
+                                                                                    [
+                                                                                        0.87,
+                                                                                        4.92
+                                                                                    ],
+                                                                                    [
+                                                                                        1.71,
+                                                                                        4.7
+                                                                                    ],
+                                                                                    [
+                                                                                        2.5,
+                                                                                        4.33
+                                                                                    ],
+                                                                                    [
+                                                                                        3.21,
+                                                                                        3.83
+                                                                                    ],
+                                                                                    [
+                                                                                        3.83,
+                                                                                        3.21
+                                                                                    ],
+                                                                                    [
+                                                                                        4.33,
+                                                                                        2.5
+                                                                                    ],
+                                                                                    [
+                                                                                        4.7,
+                                                                                        1.71
+                                                                                    ],
+                                                                                    [
+                                                                                        4.92,
+                                                                                        0.87
+                                                                                    ],
+                                                                                    [
+                                                                                        5,
+                                                                                        0
+                                                                                    ],
+                                                                                    [
+                                                                                        4.92,
+                                                                                        -0.87
+                                                                                    ],
+                                                                                    [
+                                                                                        4.7,
+                                                                                        -1.71
+                                                                                    ],
+                                                                                    [
+                                                                                        4.33,
+                                                                                        -2.5
+                                                                                    ],
+                                                                                    [
+                                                                                        3.83,
+                                                                                        -3.21
+                                                                                    ],
+                                                                                    [
+                                                                                        3.21,
+                                                                                        -3.83
+                                                                                    ],
+                                                                                    [
+                                                                                        2.5,
+                                                                                        -4.33
+                                                                                    ],
+                                                                                    [
+                                                                                        1.71,
+                                                                                        -4.7
+                                                                                    ],
+                                                                                    [
+                                                                                        0.87,
+                                                                                        -4.92
+                                                                                    ],
+                                                                                    [
+                                                                                        0,
+                                                                                        -5
+                                                                                    ],
+                                                                                    [
+                                                                                        -0.87,
+                                                                                        -4.92
+                                                                                    ],
+                                                                                    [
+                                                                                        -1.71,
+                                                                                        -4.7
+                                                                                    ],
+                                                                                    [
+                                                                                        -2.5,
+                                                                                        -4.33
+                                                                                    ],
+                                                                                    [
+                                                                                        -3.21,
+                                                                                        -3.83
+                                                                                    ],
+                                                                                    [
+                                                                                        -3.83,
+                                                                                        -3.21
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.33,
+                                                                                        -2.5
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.7,
+                                                                                        -1.71
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.92,
+                                                                                        -0.87
+                                                                                    ],
+                                                                                    [
+                                                                                        -5,
+                                                                                        0
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.92,
+                                                                                        0.87
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.7,
+                                                                                        1.71
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.33,
+                                                                                        2.5
+                                                                                    ],
+                                                                                    [
+                                                                                        -3.83,
+                                                                                        3.21
+                                                                                    ],
+                                                                                    [
+                                                                                        -3.21,
+                                                                                        3.83
+                                                                                    ],
+                                                                                    [
+                                                                                        -2.5,
+                                                                                        4.33
+                                                                                    ],
+                                                                                    [
+                                                                                        -1.71,
+                                                                                        4.7
+                                                                                    ],
+                                                                                    [
+                                                                                        -0.87,
+                                                                                        4.92
+                                                                                    ],
+                                                                                    [
+                                                                                        0,
+                                                                                        5
+                                                                                    ]
+                                                                                ]
+                                                                            ]
+                                                                        },
+                                                                        "symbol": {
+                                                                            "type": "CIMPolygonSymbol",
+                                                                            "symbolLayers": [
+                                                                                {
+                                                                                    "type": "CIMSolidStroke",
+                                                                                    "enable": true,
+                                                                                    "capStyle": "Round",
+                                                                                    "joinStyle": "Round",
+                                                                                    "lineStyle3D": "Strip",
+                                                                                    "miterLimit": 10,
+                                                                                    "width": 1,
+                                                                                    "height3D": 1,
+                                                                                    "anchor3D": "Center",
+                                                                                    "color": [
+                                                                                        255,
+                                                                                        255,
+                                                                                        255,
+                                                                                        255
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "type": "CIMSolidFill",
+                                                                                    "enable": true,
+                                                                                    "color": [
+                                                                                        6,
+                                                                                        174,
+                                                                                        163,
+                                                                                        255
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "angleAlignment": "Map"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "scaleSymbolsProportionally": true,
+                                                                "respectFrame": true
+                                                            }
+                                                        ],
+                                                        "haloSize": 1,
+                                                        "scaleX": 1,
+                                                        "angleAlignment": "Display"
+                                                    }
+                                                },
+                                                "values": [
+                                                    [
+                                                        "Serious injury accident"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "description": "Other injury accident",
+                                                "label": "Other injury accident",
+                                                "symbol": {
+                                                    "type": "CIMSymbolReference",
+                                                    "symbol": {
+                                                        "type": "CIMPointSymbol",
+                                                        "symbolLayers": [
+                                                            {
+                                                                "type": "CIMVectorMarker",
+                                                                "enable": true,
+                                                                "name": "Group 3",
+                                                                "anchorPoint": {
+                                                                    "x": 0,
+                                                                    "y": 0,
+                                                                    "z": 0
+                                                                },
+                                                                "anchorPointUnits": "Relative",
+                                                                "dominantSizeAxis3D": "Y",
+                                                                "size": 7,
+                                                                "billboardMode3D": "FaceNearPlane",
+                                                                "frame": {
+                                                                    "xmin": -5,
+                                                                    "ymin": -5,
+                                                                    "xmax": 5,
+                                                                    "ymax": 5
+                                                                },
+                                                                "markerGraphics": [
+                                                                    {
+                                                                        "type": "CIMMarkerGraphic",
+                                                                        "geometry": {
+                                                                            "rings": [
+                                                                                [
+                                                                                    [
+                                                                                        0,
+                                                                                        5
+                                                                                    ],
+                                                                                    [
+                                                                                        0.87,
+                                                                                        4.92
+                                                                                    ],
+                                                                                    [
+                                                                                        1.71,
+                                                                                        4.7
+                                                                                    ],
+                                                                                    [
+                                                                                        2.5,
+                                                                                        4.33
+                                                                                    ],
+                                                                                    [
+                                                                                        3.21,
+                                                                                        3.83
+                                                                                    ],
+                                                                                    [
+                                                                                        3.83,
+                                                                                        3.21
+                                                                                    ],
+                                                                                    [
+                                                                                        4.33,
+                                                                                        2.5
+                                                                                    ],
+                                                                                    [
+                                                                                        4.7,
+                                                                                        1.71
+                                                                                    ],
+                                                                                    [
+                                                                                        4.92,
+                                                                                        0.87
+                                                                                    ],
+                                                                                    [
+                                                                                        5,
+                                                                                        0
+                                                                                    ],
+                                                                                    [
+                                                                                        4.92,
+                                                                                        -0.87
+                                                                                    ],
+                                                                                    [
+                                                                                        4.7,
+                                                                                        -1.71
+                                                                                    ],
+                                                                                    [
+                                                                                        4.33,
+                                                                                        -2.5
+                                                                                    ],
+                                                                                    [
+                                                                                        3.83,
+                                                                                        -3.21
+                                                                                    ],
+                                                                                    [
+                                                                                        3.21,
+                                                                                        -3.83
+                                                                                    ],
+                                                                                    [
+                                                                                        2.5,
+                                                                                        -4.33
+                                                                                    ],
+                                                                                    [
+                                                                                        1.71,
+                                                                                        -4.7
+                                                                                    ],
+                                                                                    [
+                                                                                        0.87,
+                                                                                        -4.92
+                                                                                    ],
+                                                                                    [
+                                                                                        0,
+                                                                                        -5
+                                                                                    ],
+                                                                                    [
+                                                                                        -0.87,
+                                                                                        -4.92
+                                                                                    ],
+                                                                                    [
+                                                                                        -1.71,
+                                                                                        -4.7
+                                                                                    ],
+                                                                                    [
+                                                                                        -2.5,
+                                                                                        -4.33
+                                                                                    ],
+                                                                                    [
+                                                                                        -3.21,
+                                                                                        -3.83
+                                                                                    ],
+                                                                                    [
+                                                                                        -3.83,
+                                                                                        -3.21
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.33,
+                                                                                        -2.5
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.7,
+                                                                                        -1.71
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.92,
+                                                                                        -0.87
+                                                                                    ],
+                                                                                    [
+                                                                                        -5,
+                                                                                        0
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.92,
+                                                                                        0.87
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.7,
+                                                                                        1.71
+                                                                                    ],
+                                                                                    [
+                                                                                        -4.33,
+                                                                                        2.5
+                                                                                    ],
+                                                                                    [
+                                                                                        -3.83,
+                                                                                        3.21
+                                                                                    ],
+                                                                                    [
+                                                                                        -3.21,
+                                                                                        3.83
+                                                                                    ],
+                                                                                    [
+                                                                                        -2.5,
+                                                                                        4.33
+                                                                                    ],
+                                                                                    [
+                                                                                        -1.71,
+                                                                                        4.7
+                                                                                    ],
+                                                                                    [
+                                                                                        -0.87,
+                                                                                        4.92
+                                                                                    ],
+                                                                                    [
+                                                                                        0,
+                                                                                        5
+                                                                                    ]
+                                                                                ]
+                                                                            ]
+                                                                        },
+                                                                        "symbol": {
+                                                                            "type": "CIMPolygonSymbol",
+                                                                            "symbolLayers": [
+                                                                                {
+                                                                                    "type": "CIMSolidStroke",
+                                                                                    "enable": true,
+                                                                                    "capStyle": "Round",
+                                                                                    "joinStyle": "Round",
+                                                                                    "lineStyle3D": "Strip",
+                                                                                    "miterLimit": 10,
+                                                                                    "width": 1,
+                                                                                    "height3D": 1,
+                                                                                    "anchor3D": "Center",
+                                                                                    "color": [
+                                                                                        255,
+                                                                                        255,
+                                                                                        255,
+                                                                                        255
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "type": "CIMSolidFill",
+                                                                                    "enable": true,
+                                                                                    "color": [
+                                                                                        204,
+                                                                                        222,
+                                                                                        0,
+                                                                                        255
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "angleAlignment": "Map"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "scaleSymbolsProportionally": true,
+                                                                "respectFrame": true
+                                                            }
+                                                        ],
+                                                        "haloSize": 1,
+                                                        "scaleX": 1,
+                                                        "angleAlignment": "Display"
+                                                    }
+                                                },
+                                                "values": [
+                                                    [
+                                                        "Other injury accident"
+                                                    ]
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "uniqueValueInfos": [
+                                    {
+                                        "description": "Fatal accident",
+                                        "label": "Fatal accident",
+                                        "symbol": {
+                                            "type": "CIMSymbolReference",
+                                            "symbol": {
+                                                "type": "CIMPointSymbol",
+                                                "symbolLayers": [
+                                                    {
+                                                        "type": "CIMVectorMarker",
+                                                        "enable": true,
+                                                        "name": "Group 1",
+                                                        "anchorPoint": {
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "z": 0
+                                                        },
+                                                        "anchorPointUnits": "Relative",
+                                                        "dominantSizeAxis3D": "Y",
+                                                        "size": 10,
+                                                        "billboardMode3D": "FaceNearPlane",
+                                                        "frame": {
+                                                            "xmin": -5,
+                                                            "ymin": -5,
+                                                            "xmax": 5,
+                                                            "ymax": 5
+                                                        },
+                                                        "markerGraphics": [
+                                                            {
+                                                                "type": "CIMMarkerGraphic",
+                                                                "geometry": {
+                                                                    "rings": [
+                                                                        [
+                                                                            [
+                                                                                0,
+                                                                                5
+                                                                            ],
+                                                                            [
+                                                                                0.87,
+                                                                                4.92
+                                                                            ],
+                                                                            [
+                                                                                1.71,
+                                                                                4.7
+                                                                            ],
+                                                                            [
+                                                                                2.5,
+                                                                                4.33
+                                                                            ],
+                                                                            [
+                                                                                3.21,
+                                                                                3.83
+                                                                            ],
+                                                                            [
+                                                                                3.83,
+                                                                                3.21
+                                                                            ],
+                                                                            [
+                                                                                4.33,
+                                                                                2.5
+                                                                            ],
+                                                                            [
+                                                                                4.7,
+                                                                                1.71
+                                                                            ],
+                                                                            [
+                                                                                4.92,
+                                                                                0.87
+                                                                            ],
+                                                                            [
+                                                                                5,
+                                                                                0
+                                                                            ],
+                                                                            [
+                                                                                4.92,
+                                                                                -0.87
+                                                                            ],
+                                                                            [
+                                                                                4.7,
+                                                                                -1.71
+                                                                            ],
+                                                                            [
+                                                                                4.33,
+                                                                                -2.5
+                                                                            ],
+                                                                            [
+                                                                                3.83,
+                                                                                -3.21
+                                                                            ],
+                                                                            [
+                                                                                3.21,
+                                                                                -3.83
+                                                                            ],
+                                                                            [
+                                                                                2.5,
+                                                                                -4.33
+                                                                            ],
+                                                                            [
+                                                                                1.71,
+                                                                                -4.7
+                                                                            ],
+                                                                            [
+                                                                                0.87,
+                                                                                -4.92
+                                                                            ],
+                                                                            [
+                                                                                0,
+                                                                                -5
+                                                                            ],
+                                                                            [
+                                                                                -0.87,
+                                                                                -4.92
+                                                                            ],
+                                                                            [
+                                                                                -1.71,
+                                                                                -4.7
+                                                                            ],
+                                                                            [
+                                                                                -2.5,
+                                                                                -4.33
+                                                                            ],
+                                                                            [
+                                                                                -3.21,
+                                                                                -3.83
+                                                                            ],
+                                                                            [
+                                                                                -3.83,
+                                                                                -3.21
+                                                                            ],
+                                                                            [
+                                                                                -4.33,
+                                                                                -2.5
+                                                                            ],
+                                                                            [
+                                                                                -4.7,
+                                                                                -1.71
+                                                                            ],
+                                                                            [
+                                                                                -4.92,
+                                                                                -0.87
+                                                                            ],
+                                                                            [
+                                                                                -5,
+                                                                                0
+                                                                            ],
+                                                                            [
+                                                                                -4.92,
+                                                                                0.87
+                                                                            ],
+                                                                            [
+                                                                                -4.7,
+                                                                                1.71
+                                                                            ],
+                                                                            [
+                                                                                -4.33,
+                                                                                2.5
+                                                                            ],
+                                                                            [
+                                                                                -3.83,
+                                                                                3.21
+                                                                            ],
+                                                                            [
+                                                                                -3.21,
+                                                                                3.83
+                                                                            ],
+                                                                            [
+                                                                                -2.5,
+                                                                                4.33
+                                                                            ],
+                                                                            [
+                                                                                -1.71,
+                                                                                4.7
+                                                                            ],
+                                                                            [
+                                                                                -0.87,
+                                                                                4.92
+                                                                            ],
+                                                                            [
+                                                                                0,
+                                                                                5
+                                                                            ]
+                                                                        ]
+                                                                    ]
+                                                                },
+                                                                "symbol": {
+                                                                    "type": "CIMPolygonSymbol",
+                                                                    "symbolLayers": [
+                                                                        {
+                                                                            "type": "CIMSolidStroke",
+                                                                            "enable": true,
+                                                                            "capStyle": "Round",
+                                                                            "joinStyle": "Round",
+                                                                            "lineStyle3D": "Strip",
+                                                                            "miterLimit": 10,
+                                                                            "width": 1,
+                                                                            "height3D": 1,
+                                                                            "anchor3D": "Center",
+                                                                            "color": [
+                                                                                255,
+                                                                                255,
+                                                                                255,
+                                                                                255
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "type": "CIMSolidFill",
+                                                                            "enable": true,
+                                                                            "color": [
+                                                                                222,
+                                                                                109,
+                                                                                49,
+                                                                                255
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "angleAlignment": "Map"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "scaleSymbolsProportionally": true,
+                                                        "respectFrame": true
+                                                    }
+                                                ],
+                                                "haloSize": 1,
+                                                "scaleX": 1,
+                                                "angleAlignment": "Display"
+                                            }
+                                        },
+                                        "value": "Fatal accident"
+                                    },
+                                    {
+                                        "description": "Serious injury accident",
+                                        "label": "Serious injury accident",
+                                        "symbol": {
+                                            "type": "CIMSymbolReference",
+                                            "symbol": {
+                                                "type": "CIMPointSymbol",
+                                                "symbolLayers": [
+                                                    {
+                                                        "type": "CIMVectorMarker",
+                                                        "enable": true,
+                                                        "name": "Group 2",
+                                                        "anchorPoint": {
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "z": 0
+                                                        },
+                                                        "anchorPointUnits": "Relative",
+                                                        "dominantSizeAxis3D": "Y",
+                                                        "size": 8,
+                                                        "billboardMode3D": "FaceNearPlane",
+                                                        "frame": {
+                                                            "xmin": -5,
+                                                            "ymin": -5,
+                                                            "xmax": 5,
+                                                            "ymax": 5
+                                                        },
+                                                        "markerGraphics": [
+                                                            {
+                                                                "type": "CIMMarkerGraphic",
+                                                                "geometry": {
+                                                                    "rings": [
+                                                                        [
+                                                                            [
+                                                                                0,
+                                                                                5
+                                                                            ],
+                                                                            [
+                                                                                0.87,
+                                                                                4.92
+                                                                            ],
+                                                                            [
+                                                                                1.71,
+                                                                                4.7
+                                                                            ],
+                                                                            [
+                                                                                2.5,
+                                                                                4.33
+                                                                            ],
+                                                                            [
+                                                                                3.21,
+                                                                                3.83
+                                                                            ],
+                                                                            [
+                                                                                3.83,
+                                                                                3.21
+                                                                            ],
+                                                                            [
+                                                                                4.33,
+                                                                                2.5
+                                                                            ],
+                                                                            [
+                                                                                4.7,
+                                                                                1.71
+                                                                            ],
+                                                                            [
+                                                                                4.92,
+                                                                                0.87
+                                                                            ],
+                                                                            [
+                                                                                5,
+                                                                                0
+                                                                            ],
+                                                                            [
+                                                                                4.92,
+                                                                                -0.87
+                                                                            ],
+                                                                            [
+                                                                                4.7,
+                                                                                -1.71
+                                                                            ],
+                                                                            [
+                                                                                4.33,
+                                                                                -2.5
+                                                                            ],
+                                                                            [
+                                                                                3.83,
+                                                                                -3.21
+                                                                            ],
+                                                                            [
+                                                                                3.21,
+                                                                                -3.83
+                                                                            ],
+                                                                            [
+                                                                                2.5,
+                                                                                -4.33
+                                                                            ],
+                                                                            [
+                                                                                1.71,
+                                                                                -4.7
+                                                                            ],
+                                                                            [
+                                                                                0.87,
+                                                                                -4.92
+                                                                            ],
+                                                                            [
+                                                                                0,
+                                                                                -5
+                                                                            ],
+                                                                            [
+                                                                                -0.87,
+                                                                                -4.92
+                                                                            ],
+                                                                            [
+                                                                                -1.71,
+                                                                                -4.7
+                                                                            ],
+                                                                            [
+                                                                                -2.5,
+                                                                                -4.33
+                                                                            ],
+                                                                            [
+                                                                                -3.21,
+                                                                                -3.83
+                                                                            ],
+                                                                            [
+                                                                                -3.83,
+                                                                                -3.21
+                                                                            ],
+                                                                            [
+                                                                                -4.33,
+                                                                                -2.5
+                                                                            ],
+                                                                            [
+                                                                                -4.7,
+                                                                                -1.71
+                                                                            ],
+                                                                            [
+                                                                                -4.92,
+                                                                                -0.87
+                                                                            ],
+                                                                            [
+                                                                                -5,
+                                                                                0
+                                                                            ],
+                                                                            [
+                                                                                -4.92,
+                                                                                0.87
+                                                                            ],
+                                                                            [
+                                                                                -4.7,
+                                                                                1.71
+                                                                            ],
+                                                                            [
+                                                                                -4.33,
+                                                                                2.5
+                                                                            ],
+                                                                            [
+                                                                                -3.83,
+                                                                                3.21
+                                                                            ],
+                                                                            [
+                                                                                -3.21,
+                                                                                3.83
+                                                                            ],
+                                                                            [
+                                                                                -2.5,
+                                                                                4.33
+                                                                            ],
+                                                                            [
+                                                                                -1.71,
+                                                                                4.7
+                                                                            ],
+                                                                            [
+                                                                                -0.87,
+                                                                                4.92
+                                                                            ],
+                                                                            [
+                                                                                0,
+                                                                                5
+                                                                            ]
+                                                                        ]
+                                                                    ]
+                                                                },
+                                                                "symbol": {
+                                                                    "type": "CIMPolygonSymbol",
+                                                                    "symbolLayers": [
+                                                                        {
+                                                                            "type": "CIMSolidStroke",
+                                                                            "enable": true,
+                                                                            "capStyle": "Round",
+                                                                            "joinStyle": "Round",
+                                                                            "lineStyle3D": "Strip",
+                                                                            "miterLimit": 10,
+                                                                            "width": 1,
+                                                                            "height3D": 1,
+                                                                            "anchor3D": "Center",
+                                                                            "color": [
+                                                                                255,
+                                                                                255,
+                                                                                255,
+                                                                                255
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "type": "CIMSolidFill",
+                                                                            "enable": true,
+                                                                            "color": [
+                                                                                6,
+                                                                                174,
+                                                                                163,
+                                                                                255
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "angleAlignment": "Map"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "scaleSymbolsProportionally": true,
+                                                        "respectFrame": true
+                                                    }
+                                                ],
+                                                "haloSize": 1,
+                                                "scaleX": 1,
+                                                "angleAlignment": "Display"
+                                            }
+                                        },
+                                        "value": "Serious injury accident"
+                                    },
+                                    {
+                                        "description": "Other injury accident",
+                                        "label": "Other injury accident",
+                                        "symbol": {
+                                            "type": "CIMSymbolReference",
+                                            "symbol": {
+                                                "type": "CIMPointSymbol",
+                                                "symbolLayers": [
+                                                    {
+                                                        "type": "CIMVectorMarker",
+                                                        "enable": true,
+                                                        "name": "Group 3",
+                                                        "anchorPoint": {
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "z": 0
+                                                        },
+                                                        "anchorPointUnits": "Relative",
+                                                        "dominantSizeAxis3D": "Y",
+                                                        "size": 7,
+                                                        "billboardMode3D": "FaceNearPlane",
+                                                        "frame": {
+                                                            "xmin": -5,
+                                                            "ymin": -5,
+                                                            "xmax": 5,
+                                                            "ymax": 5
+                                                        },
+                                                        "markerGraphics": [
+                                                            {
+                                                                "type": "CIMMarkerGraphic",
+                                                                "geometry": {
+                                                                    "rings": [
+                                                                        [
+                                                                            [
+                                                                                0,
+                                                                                5
+                                                                            ],
+                                                                            [
+                                                                                0.87,
+                                                                                4.92
+                                                                            ],
+                                                                            [
+                                                                                1.71,
+                                                                                4.7
+                                                                            ],
+                                                                            [
+                                                                                2.5,
+                                                                                4.33
+                                                                            ],
+                                                                            [
+                                                                                3.21,
+                                                                                3.83
+                                                                            ],
+                                                                            [
+                                                                                3.83,
+                                                                                3.21
+                                                                            ],
+                                                                            [
+                                                                                4.33,
+                                                                                2.5
+                                                                            ],
+                                                                            [
+                                                                                4.7,
+                                                                                1.71
+                                                                            ],
+                                                                            [
+                                                                                4.92,
+                                                                                0.87
+                                                                            ],
+                                                                            [
+                                                                                5,
+                                                                                0
+                                                                            ],
+                                                                            [
+                                                                                4.92,
+                                                                                -0.87
+                                                                            ],
+                                                                            [
+                                                                                4.7,
+                                                                                -1.71
+                                                                            ],
+                                                                            [
+                                                                                4.33,
+                                                                                -2.5
+                                                                            ],
+                                                                            [
+                                                                                3.83,
+                                                                                -3.21
+                                                                            ],
+                                                                            [
+                                                                                3.21,
+                                                                                -3.83
+                                                                            ],
+                                                                            [
+                                                                                2.5,
+                                                                                -4.33
+                                                                            ],
+                                                                            [
+                                                                                1.71,
+                                                                                -4.7
+                                                                            ],
+                                                                            [
+                                                                                0.87,
+                                                                                -4.92
+                                                                            ],
+                                                                            [
+                                                                                0,
+                                                                                -5
+                                                                            ],
+                                                                            [
+                                                                                -0.87,
+                                                                                -4.92
+                                                                            ],
+                                                                            [
+                                                                                -1.71,
+                                                                                -4.7
+                                                                            ],
+                                                                            [
+                                                                                -2.5,
+                                                                                -4.33
+                                                                            ],
+                                                                            [
+                                                                                -3.21,
+                                                                                -3.83
+                                                                            ],
+                                                                            [
+                                                                                -3.83,
+                                                                                -3.21
+                                                                            ],
+                                                                            [
+                                                                                -4.33,
+                                                                                -2.5
+                                                                            ],
+                                                                            [
+                                                                                -4.7,
+                                                                                -1.71
+                                                                            ],
+                                                                            [
+                                                                                -4.92,
+                                                                                -0.87
+                                                                            ],
+                                                                            [
+                                                                                -5,
+                                                                                0
+                                                                            ],
+                                                                            [
+                                                                                -4.92,
+                                                                                0.87
+                                                                            ],
+                                                                            [
+                                                                                -4.7,
+                                                                                1.71
+                                                                            ],
+                                                                            [
+                                                                                -4.33,
+                                                                                2.5
+                                                                            ],
+                                                                            [
+                                                                                -3.83,
+                                                                                3.21
+                                                                            ],
+                                                                            [
+                                                                                -3.21,
+                                                                                3.83
+                                                                            ],
+                                                                            [
+                                                                                -2.5,
+                                                                                4.33
+                                                                            ],
+                                                                            [
+                                                                                -1.71,
+                                                                                4.7
+                                                                            ],
+                                                                            [
+                                                                                -0.87,
+                                                                                4.92
+                                                                            ],
+                                                                            [
+                                                                                0,
+                                                                                5
+                                                                            ]
+                                                                        ]
+                                                                    ]
+                                                                },
+                                                                "symbol": {
+                                                                    "type": "CIMPolygonSymbol",
+                                                                    "symbolLayers": [
+                                                                        {
+                                                                            "type": "CIMSolidStroke",
+                                                                            "enable": true,
+                                                                            "capStyle": "Round",
+                                                                            "joinStyle": "Round",
+                                                                            "lineStyle3D": "Strip",
+                                                                            "miterLimit": 10,
+                                                                            "width": 1,
+                                                                            "height3D": 1,
+                                                                            "anchor3D": "Center",
+                                                                            "color": [
+                                                                                255,
+                                                                                255,
+                                                                                255,
+                                                                                255
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "type": "CIMSolidFill",
+                                                                            "enable": true,
+                                                                            "color": [
+                                                                                204,
+                                                                                222,
+                                                                                0,
+                                                                                255
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "angleAlignment": "Map"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "scaleSymbolsProportionally": true,
+                                                        "respectFrame": true
+                                                    }
+                                                ],
+                                                "haloSize": 1,
+                                                "scaleX": 1,
+                                                "angleAlignment": "Display"
+                                            }
+                                        },
+                                        "value": "Other injury accident"
+                                    }
+                                ]
+                            }
+                        },
+                        "allowGeometryUpdates": true,
+                        "hasAttachments": true,
+                        "attachmentProperties": [
+                            {
+                                "name": "id",
+                                "fieldName": "ATTACHMENTID",
+                                "isEnabled": true
+                            },
+                            {
+                                "name": "globalId",
+                                "fieldName": "AttachmentGlobalID",
+                                "isEnabled": true
+                            },
+                            {
+                                "name": "name",
+                                "fieldName": "ATT_NAME",
+                                "isEnabled": true
+                            },
+                            {
+                                "name": "size",
+                                "fieldName": "DATA_SIZE",
+                                "isEnabled": true
+                            },
+                            {
+                                "name": "contentType",
+                                "fieldName": "CONTENT_TYPE",
+                                "isEnabled": true
+                            },
+                            {
+                                "name": "keywords",
+                                "fieldName": "Keywords",
+                                "isEnabled": true
+                            },
+                            {
+                                "name": "exifInfo",
+                                "fieldName": "ExifInfo",
+                                "isEnabled": true
+                            }
+                        ],
+                        "htmlPopupType": "esriServerHTMLPopupTypeNone",
+                        "hasM": false,
+                        "hasZ": false,
+                        "objectIdField": "OBJECTID",
+                        "uniqueIdField": {
+                            "name": "OBJECTID",
+                            "isSystemMaintained": true
+                        },
+                        "globalIdField": "",
+                        "typeIdField": "",
+                        "collation": {
+                            "locale": "neutral",
+                            "caseSensitive": false,
+                            "accentSensitive": true
+                        },
+                        "fields": [
+                            {
+                                "name": "OBJECTID",
+                                "type": "esriFieldTypeOID",
+                                "alias": "OBJECTID",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": false,
+                                "editable": false,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "ACCIDENT_NO",
+                                "type": "esriFieldTypeString",
+                                "alias": "Accident No.",
+                                "sqlType": "sqlTypeOther",
+                                "length": 20,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "ACCIDENT_TYPE",
+                                "type": "esriFieldTypeString",
+                                "alias": "Accident Type",
+                                "sqlType": "sqlTypeOther",
+                                "length": 60,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "DAY_OF_WEEK",
+                                "type": "esriFieldTypeString",
+                                "alias": "Day of Week",
+                                "sqlType": "sqlTypeOther",
+                                "length": 20,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "ACCIDENT_DATE",
+                                "type": "esriFieldTypeDateOnly",
+                                "alias": "Accident Date",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "ACCIDENT_DATE_STR",
+                                "type": "esriFieldTypeString",
+                                "alias": "Accident Date (Text)",
+                                "sqlType": "sqlTypeOther",
+                                "length": 20,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "ACCIDENT_TIME",
+                                "type": "esriFieldTypeTimeOnly",
+                                "alias": "Accident Time",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "ACCIDENT_TIME_STR",
+                                "type": "esriFieldTypeString",
+                                "alias": "Accident Time (Text)",
+                                "sqlType": "sqlTypeOther",
+                                "length": 20,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "DCA_CODE_DESCRIPTION",
+                                "type": "esriFieldTypeString",
+                                "alias": "DCA Description",
+                                "sqlType": "sqlTypeOther",
+                                "length": 125,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "LIGHT_CONDITION",
+                                "type": "esriFieldTypeString",
+                                "alias": "Light Condition",
+                                "sqlType": "sqlTypeOther",
+                                "length": 60,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "POLICE_ATTEND",
+                                "type": "esriFieldTypeString",
+                                "alias": "Police Attended",
+                                "sqlType": "sqlTypeOther",
+                                "length": 20,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "ROAD_GEOMETRY",
+                                "type": "esriFieldTypeString",
+                                "alias": "Road Geometry",
+                                "sqlType": "sqlTypeOther",
+                                "length": 60,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "SEVERITY",
+                                "type": "esriFieldTypeString",
+                                "alias": "Severity",
+                                "sqlType": "sqlTypeOther",
+                                "length": 100,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "SPEED_ZONE",
+                                "type": "esriFieldTypeString",
+                                "alias": "Speed Zone",
+                                "sqlType": "sqlTypeOther",
+                                "length": 100,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "RUN_OFFROAD",
+                                "type": "esriFieldTypeString",
+                                "alias": "Run Off Road",
+                                "sqlType": "sqlTypeOther",
+                                "length": 50,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "ROAD_NAME",
+                                "type": "esriFieldTypeString",
+                                "alias": "Road Name",
+                                "sqlType": "sqlTypeOther",
+                                "length": 120,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "ROAD_TYPE",
+                                "type": "esriFieldTypeString",
+                                "alias": "Road Type",
+                                "sqlType": "sqlTypeOther",
+                                "length": 60,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "LGA_NAME",
+                                "type": "esriFieldTypeString",
+                                "alias": "LGA Name",
+                                "sqlType": "sqlTypeOther",
+                                "length": 100,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "DTP_REGION",
+                                "type": "esriFieldTypeString",
+                                "alias": "DTP Region",
+                                "sqlType": "sqlTypeOther",
+                                "length": 100,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "LATITUDE",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "Latitude",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "LONGITUDE",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "Longitude",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "VICGRID_X",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "Vicgrid X",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "VICGRID_Y",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "VIicgrid Y",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "TOTAL_PERSONS",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Total Persons",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "FATALITY",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Fatality",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "SERIOUSINJURY",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Serious Injury",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "OTHERINJURY",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Other Injury",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "NONINJURED",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Non Injured",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "MALES",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Males",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "FEMALES",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Females",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "BICYCLIST",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Bicyclist",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "PASSENGER",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Passenger",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "DRIVER",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Driver",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "PEDESTRIAN",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Pedestrian",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "PILLION",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Pillion",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "MOTORCYCLIST",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Motorcyclist",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "UNKNOWN_",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Unknown",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "PED_CYCLIST_5_12",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Pedestrian/Cyclist (Aged 5-12) ",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "PED_CYCLIST_13_18",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Pedestrian/Cyclist (Aged 13-18) ",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "OLD_PED_65_AND_OVER",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Old Pedestrian (Aged 65+)",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "OLD_DRIVER_75_AND_OVER",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Old Driver (Aged 75+)",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "YOUNG_DRIVER_18_25",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Young Driver (Aged 18-25)",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "NO_OF_VEHICLES",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "No. of Vehicles",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "HEAVYVEHICLE",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Heavy Vehicle",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "PASSENGERVEHICLE",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Passenger Vehicle",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "MOTORCYCLE",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Motorcycle",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "PT_VEHICLE",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Public Transport Vehicle",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "DEG_URBAN_NAME",
+                                "type": "esriFieldTypeString",
+                                "alias": "Degree of Urban",
+                                "sqlType": "sqlTypeOther",
+                                "length": 100,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "SRNS",
+                                "type": "esriFieldTypeString",
+                                "alias": "SRNS",
+                                "sqlType": "sqlTypeOther",
+                                "length": 20,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "RMA",
+                                "type": "esriFieldTypeString",
+                                "alias": "RMA",
+                                "sqlType": "sqlTypeOther",
+                                "length": 40,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "DIVIDED",
+                                "type": "esriFieldTypeString",
+                                "alias": "Divided",
+                                "sqlType": "sqlTypeOther",
+                                "length": 50,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "STAT_DIV_NAME",
+                                "type": "esriFieldTypeString",
+                                "alias": "Statistical Division Name",
+                                "sqlType": "sqlTypeOther",
+                                "length": 100,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "DCA_CODE",
+                                "type": "esriFieldTypeString",
+                                "alias": "DCA Code",
+                                "sqlType": "sqlTypeOther",
+                                "length": 50,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "ROAD_ROUTE_1",
+                                "type": "esriFieldTypeString",
+                                "alias": "Road Route 1",
+                                "sqlType": "sqlTypeOther",
+                                "length": 50,
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            },
+                            {
+                                "name": "ACCIDENT_DATE_INT",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Accident Date (Integer)",
+                                "sqlType": "sqlTypeOther",
+                                "nullable": true,
+                                "editable": true,
+                                "domain": null,
+                                "defaultValue": null
+                            }
+                        ],
+                        "indexes": [
+                            {
+                                "name": "road_crash_ROAD_CRASH_Shape_sidx",
+                                "fields": "Shape",
+                                "isAscending": true,
+                                "isUnique": false,
+                                "description": "Shape Index",
+                                "indexType": "Spatial"
+                            },
+                            {
+                                "name": "PK__road_cra__F4B70D851543E977",
+                                "fields": "OBJECTID",
+                                "isAscending": true,
+                                "isUnique": true,
+                                "description": "clustered, unique, primary key",
+                                "indexType": "Attribute"
+                            },
+                            {
+                                "name": "ACCIDENT_NO_Index",
+                                "fields": "ACCIDENT_NO",
+                                "isAscending": true,
+                                "isUnique": false,
+                                "description": "ACCIDENT_NO_Index",
+                                "indexType": "Attribute"
+                            }
+                        ],
+                        "dateFieldsTimeReference": {
+                            "timeZone": "UTC",
+                            "respectsDaylightSaving": false
+                        },
+                        "preferredTimeReference": null,
+                        "types": [],
+                        "templates": [
+                            {
+                                "name": "New Feature",
+                                "description": "",
+                                "drawingTool": "esriFeatureEditToolPoint",
+                                "prototype": {
+                                    "attributes": {
+                                        "ACCIDENT_NO": null,
+                                        "ACCIDENT_TYPE": null,
+                                        "DAY_OF_WEEK": null,
+                                        "ACCIDENT_DATE": null,
+                                        "ACCIDENT_DATE_STR": null,
+                                        "ACCIDENT_TIME": null,
+                                        "ACCIDENT_TIME_STR": null,
+                                        "DCA_CODE_DESCRIPTION": null,
+                                        "LIGHT_CONDITION": null,
+                                        "POLICE_ATTEND": null,
+                                        "ROAD_GEOMETRY": null,
+                                        "SEVERITY": null,
+                                        "SPEED_ZONE": null,
+                                        "RUN_OFFROAD": null,
+                                        "ROAD_NAME": null,
+                                        "ROAD_TYPE": null,
+                                        "LGA_NAME": null,
+                                        "DTP_REGION": null,
+                                        "LATITUDE": null,
+                                        "LONGITUDE": null,
+                                        "VICGRID_X": null,
+                                        "VICGRID_Y": null,
+                                        "TOTAL_PERSONS": null,
+                                        "FATALITY": null,
+                                        "SERIOUSINJURY": null,
+                                        "OTHERINJURY": null,
+                                        "NONINJURED": null,
+                                        "MALES": null,
+                                        "FEMALES": null,
+                                        "BICYCLIST": null,
+                                        "PASSENGER": null,
+                                        "DRIVER": null,
+                                        "PEDESTRIAN": null,
+                                        "PILLION": null,
+                                        "MOTORCYCLIST": null,
+                                        "UNKNOWN_": null,
+                                        "PED_CYCLIST_5_12": null,
+                                        "PED_CYCLIST_13_18": null,
+                                        "OLD_PED_65_AND_OVER": null,
+                                        "OLD_DRIVER_75_AND_OVER": null,
+                                        "YOUNG_DRIVER_18_25": null,
+                                        "NO_OF_VEHICLES": null,
+                                        "HEAVYVEHICLE": null,
+                                        "PASSENGERVEHICLE": null,
+                                        "MOTORCYCLE": null,
+                                        "PT_VEHICLE": null,
+                                        "DEG_URBAN_NAME": null,
+                                        "SRNS": null,
+                                        "RMA": null,
+                                        "DIVIDED": null,
+                                        "STAT_DIV_NAME": null,
+                                        "DCA_CODE": null,
+                                        "ROAD_ROUTE_1": null,
+                                        "ACCIDENT_DATE_INT": null
+                                    }
+                                }
+                            }
+                        ],
+                        "supportedQueryFormats": "JSON, geoJSON, PBF",
+                        "supportedAppendFormats": "sqlite,geoPackage,shapefile,filegdb,featureCollection,geojson,csv,excel,jsonl,featureService,pbf,imageCollection",
+                        "supportedAppendSourceFilterFormats": "sqlite,geoPackage,shapefile,filegdb,featureService",
+                        "supportedExportFormats": "csv,shapefile,sqlite,geoPackage,filegdb,featureCollection,geojson,kml,excel",
+                        "supportedConvertFileFormats": "JSON,PBF",
+                        "supportedConvertContentFormats": "LayerEditCollection,FeatureCollection",
+                        "supportedSpatialRelationships": [
+                            "esriSpatialRelIntersects",
+                            "esriSpatialRelContains",
+                            "esriSpatialRelCrosses",
+                            "esriSpatialRelEnvelopeIntersects",
+                            "esriSpatialRelIndexIntersects",
+                            "esriSpatialRelOverlaps",
+                            "esriSpatialRelTouches",
+                            "esriSpatialRelWithin",
+                            "esriSpatialRelDisjoint",
+                            "esriSpatialRelRelation"
+                        ],
+                        "supportedContingentValuesFormats": "JSON, PBF",
+                        "supportedSyncDataOptions": 260,
+                        "hasStaticData": true,
+                        "maxRecordCount": 2000,
+                        "standardMaxRecordCount": 32000,
+                        "standardMaxRecordCountNoGeometry": 32000,
+                        "tileMaxRecordCount": 8000,
+                        "maxRecordCountFactor": 1,
+                        "capabilities": "Query,Extract"
+                    },
+                    "popupInfo": {
+                        "title": "{}",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "OBJECTID",
+                                "isEditable": true,
+                                "label": "OBJECTID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ACCIDENT_NO",
+                                "isEditable": true,
+                                "label": "Accident No.",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ACCIDENT_TYPE",
+                                "isEditable": true,
+                                "label": "Accident Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "DAY_OF_WEEK",
+                                "isEditable": true,
+                                "label": "Day of Week",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ACCIDENT_DATE",
+                                "isEditable": true,
+                                "label": "Accident Date",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ACCIDENT_DATE_STR",
+                                "isEditable": true,
+                                "label": "Accident Date (Text)",
+                                "visible": false
+                            },
+                            {
+                                "fieldName": "ACCIDENT_TIME",
+                                "isEditable": true,
+                                "label": "Accident Time",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ACCIDENT_TIME_STR",
+                                "isEditable": true,
+                                "label": "Accident Time (Text)",
+                                "visible": false
+                            },
+                            {
+                                "fieldName": "DCA_CODE_DESCRIPTION",
+                                "isEditable": true,
+                                "label": "DCA Description",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "LIGHT_CONDITION",
+                                "isEditable": true,
+                                "label": "Light Condition",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "POLICE_ATTEND",
+                                "isEditable": true,
+                                "label": "Police Attended",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ROAD_GEOMETRY",
+                                "isEditable": true,
+                                "label": "Road Geometry",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "SEVERITY",
+                                "isEditable": true,
+                                "label": "Severity",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "SPEED_ZONE",
+                                "isEditable": true,
+                                "label": "Speed Zone",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "RUN_OFFROAD",
+                                "isEditable": true,
+                                "label": "Run Off Road",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ROAD_NAME",
+                                "isEditable": true,
+                                "label": "Road Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ROAD_TYPE",
+                                "isEditable": true,
+                                "label": "Road Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "LGA_NAME",
+                                "isEditable": true,
+                                "label": "LGA Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "DTP_REGION",
+                                "isEditable": true,
+                                "label": "DTP Region",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "LATITUDE",
+                                "isEditable": true,
+                                "label": "Latitude",
+                                "visible": false
+                            },
+                            {
+                                "fieldName": "LONGITUDE",
+                                "isEditable": true,
+                                "label": "Longitude",
+                                "visible": false
+                            },
+                            {
+                                "fieldName": "VICGRID_X",
+                                "isEditable": true,
+                                "label": "Vicgrid X",
+                                "visible": false
+                            },
+                            {
+                                "fieldName": "VICGRID_Y",
+                                "isEditable": true,
+                                "label": "VIicgrid Y",
+                                "visible": false
+                            },
+                            {
+                                "fieldName": "TOTAL_PERSONS",
+                                "isEditable": true,
+                                "label": "Total Persons",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "FATALITY",
+                                "isEditable": true,
+                                "label": "Fatality",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "SERIOUSINJURY",
+                                "isEditable": true,
+                                "label": "Serious Injury",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "OTHERINJURY",
+                                "isEditable": true,
+                                "label": "Other Injury",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "NONINJURED",
+                                "isEditable": true,
+                                "label": "Non Injured",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "MALES",
+                                "isEditable": true,
+                                "label": "Males",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "FEMALES",
+                                "isEditable": true,
+                                "label": "Females",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "BICYCLIST",
+                                "isEditable": true,
+                                "label": "Bicyclist",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "PASSENGER",
+                                "isEditable": true,
+                                "label": "Passenger",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "DRIVER",
+                                "isEditable": true,
+                                "label": "Driver",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "PEDESTRIAN",
+                                "isEditable": true,
+                                "label": "Pedestrian",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "PILLION",
+                                "isEditable": true,
+                                "label": "Pillion",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "MOTORCYCLIST",
+                                "isEditable": true,
+                                "label": "Motorcyclist",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "UNKNOWN_",
+                                "isEditable": true,
+                                "label": "Unknown",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "PED_CYCLIST_5_12",
+                                "isEditable": true,
+                                "label": "Pedestrian/Cyclist (Aged 5-12) ",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "PED_CYCLIST_13_18",
+                                "isEditable": true,
+                                "label": "Pedestrian/Cyclist (Aged 13-18) ",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "OLD_PED_65_AND_OVER",
+                                "isEditable": true,
+                                "label": "Old Pedestrian (Aged 65+)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "OLD_DRIVER_75_AND_OVER",
+                                "isEditable": true,
+                                "label": "Old Driver (Aged 75+)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "YOUNG_DRIVER_18_25",
+                                "isEditable": true,
+                                "label": "Young Driver (Aged 18-25)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "NO_OF_VEHICLES",
+                                "isEditable": true,
+                                "label": "No. of Vehicles",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "HEAVYVEHICLE",
+                                "isEditable": true,
+                                "label": "Heavy Vehicle",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "PASSENGERVEHICLE",
+                                "isEditable": true,
+                                "label": "Passenger Vehicle",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "MOTORCYCLE",
+                                "isEditable": true,
+                                "label": "Motorcycle",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "PT_VEHICLE",
+                                "isEditable": true,
+                                "label": "Public Transport Vehicle",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "DEG_URBAN_NAME",
+                                "isEditable": true,
+                                "label": "Degree of Urban",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "SRNS",
+                                "isEditable": true,
+                                "label": "SRNS",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "RMA",
+                                "isEditable": true,
+                                "label": "RMA",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "DIVIDED",
+                                "isEditable": true,
+                                "label": "Divided",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "STAT_DIV_NAME",
+                                "isEditable": true,
+                                "label": "Statistical Division Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "DCA_CODE",
+                                "isEditable": true,
+                                "label": "DCA Code",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ROAD_ROUTE_1",
+                                "isEditable": true,
+                                "label": "Road Route 1",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "ACCIDENT_DATE_INT",
+                                "isEditable": true,
+                                "label": "Accident Date (Integer)",
+                                "visible": false
+                            }
+                        ],
+                        "expressionInfos": []
                     }
                 }
             ],
@@ -3815,7 +6813,7 @@
             "title": "Public Transport Victoria",
             "layers": [
                 {
-                    "id": "",
+                    "id": "ptv_train_station",
                     "layerType": "GeoJSON",
                     "title": [
                         "Train Station"
@@ -4165,7 +7163,7 @@
                     "minScale": 100000
                 },
                 {
-                    "id": "",
+                    "id": "ptv_tram_stop",
                     "layerType": "GeoJSON",
                     "title": [
                         "Tram Stop"
@@ -4508,7 +7506,7 @@
                     "minScale": 5000
                 },
                 {
-                    "id": "",
+                    "id": "ptv_bus_stop",
                     "layerType": "GeoJSON",
                     "title": [
                         "Bus Stop"
