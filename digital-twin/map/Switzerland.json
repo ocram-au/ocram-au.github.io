@@ -1,18 +1,1098 @@
 {
     "operationalLayers": [
         {
+            "id": "15e14e20f82-layer-0",
+            "opacity": 1,
+            "title": "Open Government Data WMS Z\u00fcrich",
+            "url": "https://wms.geo.admin.ch/",
+            "visibility": true,
+            "layerType": "WMS",
+            "featureInfoFormat": "text/html",
+            "featureInfoUrl": "https://wms.geo.admin.ch/",
+            "mapUrl": "https://wms.geo.admin.ch/",
+            "layers": [
+                {
+                    "name": "ch.swisstopo.swissimage",
+                    "title": "SWISSIMAGE Hintergrund"
+                }
+            ],
+            "visibleLayers": [
+                "ch.swisstopo.swissimage"
+            ],
+            "spatialReferences": [
+                2056
+            ],
+            "version": "1.3.0"
+        },
+        {
             "id": "",
             "title": "3D",
             "layers": [
                 {
                     "id": "",
-                    "title": "Google Photorealistic 3D",
-                    "url": "https://tile.googleapis.com/v1/3dtiles/root.json",
-                    "customParameters": {
-                        "key": "AIzaSyDrSNqujmAmhhZtenz6MEofEuITd3z0JM0"
+                    "showLegend": true,
+                    "listMode": "show",
+                    "disablePopup": false,
+                    "title": "LV95 3D Buildings Switzerland",
+                    "url": "https://tiles.arcgis.com/tiles/oPre3pOfRfefL8y0/arcgis/rest/services/swissbuildings3D_LOD2_lv95/SceneServer/layers/0",
+                    "visibility": true,
+                    "layerType": "ArcGISSceneServiceLayer",
+                    "layerDefinition": {
+                        "id": 0,
+                        "version": "3CFD2FC3-A0DF-45DD-B0B4-602A91503D16",
+                        "name": "swissbuildings3D_LOD2_v3_lv95_122024",
+                        "serviceUpdateTimeStamp": {
+                            "lastUpdate": 1738608014000
+                        },
+                        "href": "./layers/0",
+                        "associatedLayerID": 0,
+                        "layerType": "3DObject",
+                        "spatialReference": {
+                            "wkid": 2056,
+                            "latestWkid": 2056
+                        },
+                        "ZFactor": 1,
+                        "alias": "swissbuildings3D_LOD2_v3_lv95_122024",
+                        "description": "swissbuildings3D_LOD2_v3_lv95_122024",
+                        "capabilities": [
+                            "View",
+                            "Query"
+                        ],
+                        "cachedDrawingInfo": {
+                            "color": false
+                        },
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "MeshSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Fill",
+                                            "material": {
+                                                "color": [
+                                                    255,
+                                                    255,
+                                                    255
+                                                ],
+                                                "transparency": 0,
+                                                "colorMixMode": "multiply"
+                                            },
+                                            "edges": {
+                                                "type": "solid",
+                                                "color": [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ],
+                                                "size": 1,
+                                                "transparency": 60,
+                                                "extensionLength": 0
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "popupInfo": {
+                            "title": "{NAME}",
+                            "mediaInfos": [],
+                            "popupElements": [
+                                {
+                                    "fieldInfos": [
+                                        {
+                                            "fieldName": "OBJECTID",
+                                            "isEditable": false,
+                                            "format": {
+                                                "places": 0,
+                                                "digitSeparator": false
+                                            },
+                                            "visible": true,
+                                            "label": "OBJECTID"
+                                        },
+                                        {
+                                            "fieldName": "UUID",
+                                            "isEditable": true,
+                                            "visible": true,
+                                            "label": "UUID"
+                                        },
+                                        {
+                                            "fieldName": "OBJEKTART",
+                                            "isEditable": true,
+                                            "visible": true,
+                                            "label": "Object Type"
+                                        },
+                                        {
+                                            "fieldName": "NAME_KOMPLETT",
+                                            "isEditable": true,
+                                            "visible": true,
+                                            "label": "Building Name"
+                                        },
+                                        {
+                                            "fieldName": "GEBAEUDE_NUTZUNG",
+                                            "isEditable": true,
+                                            "visible": true,
+                                            "label": "Building Type"
+                                        },
+                                        {
+                                            "fieldName": "DACH_MAX",
+                                            "isEditable": true,
+                                            "format": {
+                                                "places": 2,
+                                                "digitSeparator": false
+                                            },
+                                            "visible": true,
+                                            "label": "Roof Max"
+                                        },
+                                        {
+                                            "fieldName": "DACH_MIN",
+                                            "isEditable": true,
+                                            "format": {
+                                                "places": 2,
+                                                "digitSeparator": false
+                                            },
+                                            "visible": true,
+                                            "label": "Roof Min"
+                                        },
+                                        {
+                                            "fieldName": "GESAMTHOEHE",
+                                            "isEditable": true,
+                                            "format": {
+                                                "places": 2,
+                                                "digitSeparator": false
+                                            },
+                                            "visible": true,
+                                            "label": "Building Height"
+                                        },
+                                        {
+                                            "fieldName": "GELAENDEPUNKT",
+                                            "isEditable": true,
+                                            "format": {
+                                                "places": 2,
+                                                "digitSeparator": false
+                                            },
+                                            "visible": true,
+                                            "label": "Terrain Point"
+                                        },
+                                        {
+                                            "fieldName": "EGID",
+                                            "isEditable": true,
+                                            "format": {
+                                                "places": 0,
+                                                "digitSeparator": false
+                                            },
+                                            "visible": true,
+                                            "label": "Federal Building ID (EGID)"
+                                        },
+                                        {
+                                            "fieldName": "GEBAEUDEEINHEIT",
+                                            "isEditable": true,
+                                            "visible": true,
+                                            "label": "Building Unit"
+                                        },
+                                        {
+                                            "fieldName": "BFS_NUMMER",
+                                            "isEditable": true,
+                                            "format": {
+                                                "places": 0,
+                                                "digitSeparator": false
+                                            },
+                                            "visible": true,
+                                            "label": "Municipality No."
+                                        },
+                                        {
+                                            "fieldName": "BEZIRKSNUMMER",
+                                            "isEditable": true,
+                                            "format": {
+                                                "places": 0,
+                                                "digitSeparator": false
+                                            },
+                                            "visible": true,
+                                            "label": "District No."
+                                        },
+                                        {
+                                            "fieldName": "KANTONSNUMMER",
+                                            "isEditable": true,
+                                            "format": {
+                                                "places": 0,
+                                                "digitSeparator": false
+                                            },
+                                            "visible": true,
+                                            "label": "Canton No."
+                                        },
+                                        {
+                                            "fieldName": "NAME",
+                                            "isEditable": true,
+                                            "visible": true,
+                                            "label": "Municipality Name"
+                                        }
+                                    ],
+                                    "type": "fields"
+                                }
+                            ],
+                            "fieldInfos": [
+                                {
+                                    "fieldName": "OBJECTID",
+                                    "isEditable": false,
+                                    "format": {
+                                        "places": 0,
+                                        "digitSeparator": false
+                                    },
+                                    "visible": true,
+                                    "label": "OBJECTID"
+                                },
+                                {
+                                    "fieldName": "UUID",
+                                    "isEditable": true,
+                                    "visible": true,
+                                    "label": "UUID"
+                                },
+                                {
+                                    "fieldName": "OBJEKTART",
+                                    "isEditable": true,
+                                    "visible": true,
+                                    "label": "Object Type"
+                                },
+                                {
+                                    "fieldName": "NAME_KOMPLETT",
+                                    "isEditable": true,
+                                    "visible": true,
+                                    "label": "Building Name"
+                                },
+                                {
+                                    "fieldName": "GEBAEUDE_NUTZUNG",
+                                    "isEditable": true,
+                                    "visible": true,
+                                    "label": "Building Type"
+                                },
+                                {
+                                    "fieldName": "DACH_MAX",
+                                    "isEditable": true,
+                                    "format": {
+                                        "places": 2,
+                                        "digitSeparator": false
+                                    },
+                                    "visible": true,
+                                    "label": "Roof Max"
+                                },
+                                {
+                                    "fieldName": "DACH_MIN",
+                                    "isEditable": true,
+                                    "format": {
+                                        "places": 2,
+                                        "digitSeparator": false
+                                    },
+                                    "visible": true,
+                                    "label": "Roof Min"
+                                },
+                                {
+                                    "fieldName": "GESAMTHOEHE",
+                                    "isEditable": true,
+                                    "format": {
+                                        "places": 2,
+                                        "digitSeparator": false
+                                    },
+                                    "visible": true,
+                                    "label": "Building Height"
+                                },
+                                {
+                                    "fieldName": "GELAENDEPUNKT",
+                                    "isEditable": true,
+                                    "format": {
+                                        "places": 2,
+                                        "digitSeparator": false
+                                    },
+                                    "visible": true,
+                                    "label": "Terrain Point"
+                                },
+                                {
+                                    "fieldName": "EGID",
+                                    "isEditable": true,
+                                    "format": {
+                                        "places": 0,
+                                        "digitSeparator": false
+                                    },
+                                    "visible": true,
+                                    "label": "Federal Building ID (EGID)"
+                                },
+                                {
+                                    "fieldName": "GEBAEUDEEINHEIT",
+                                    "isEditable": true,
+                                    "visible": true,
+                                    "label": "Building Unit"
+                                },
+                                {
+                                    "fieldName": "BFS_NUMMER",
+                                    "isEditable": true,
+                                    "format": {
+                                        "places": 0,
+                                        "digitSeparator": false
+                                    },
+                                    "visible": true,
+                                    "label": "Municipality No."
+                                },
+                                {
+                                    "fieldName": "BEZIRKSNUMMER",
+                                    "isEditable": true,
+                                    "format": {
+                                        "places": 0,
+                                        "digitSeparator": false
+                                    },
+                                    "visible": true,
+                                    "label": "District No."
+                                },
+                                {
+                                    "fieldName": "KANTONSNUMMER",
+                                    "isEditable": true,
+                                    "format": {
+                                        "places": 0,
+                                        "digitSeparator": false
+                                    },
+                                    "visible": true,
+                                    "label": "Canton No."
+                                },
+                                {
+                                    "fieldName": "NAME",
+                                    "isEditable": true,
+                                    "visible": true,
+                                    "label": "Municipality Name"
+                                }
+                            ],
+                            "expressionInfos": []
+                        },
+                        "disablePopup": false,
+                        "fullExtent": {
+                            "xmin": 2485682.134999929,
+                            "xmax": 2833854.2180030565,
+                            "ymin": 1075234.9189985255,
+                            "ymax": 1295319.093999941,
+                            "spatialReference": {
+                                "wkid": 2056,
+                                "latestWkid": 2056
+                            },
+                            "zmin": -0.050003466800262686,
+                            "zmax": 4563.2116131249395
+                        },
+                        "fields": [
+                            {
+                                "name": "OBJECTID",
+                                "type": "esriFieldTypeOID",
+                                "alias": "OBJECTID"
+                            },
+                            {
+                                "name": "UUID",
+                                "type": "esriFieldTypeString",
+                                "alias": "UUID"
+                            },
+                            {
+                                "name": "OBJEKTART",
+                                "type": "esriFieldTypeString",
+                                "alias": "Object Type"
+                            },
+                            {
+                                "name": "NAME_KOMPLETT",
+                                "type": "esriFieldTypeString",
+                                "alias": "Building Name"
+                            },
+                            {
+                                "name": "GEBAEUDE_NUTZUNG",
+                                "type": "esriFieldTypeString",
+                                "alias": "Building Type"
+                            },
+                            {
+                                "name": "DACH_MAX",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "Roof Max"
+                            },
+                            {
+                                "name": "DACH_MIN",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "Roof Min"
+                            },
+                            {
+                                "name": "GELAENDEPUNKT",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "Terrain Point"
+                            },
+                            {
+                                "name": "GESAMTHOEHE",
+                                "type": "esriFieldTypeDouble",
+                                "alias": "Building Height"
+                            },
+                            {
+                                "name": "EGID",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Federal Building ID (EGID)"
+                            },
+                            {
+                                "name": "GEBAEUDEEINHEIT",
+                                "type": "esriFieldTypeString",
+                                "alias": "Building Unit"
+                            },
+                            {
+                                "name": "BFS_NUMMER",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Municipality No."
+                            },
+                            {
+                                "name": "BEZIRKSNUMMER",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "District No."
+                            },
+                            {
+                                "name": "KANTONSNUMMER",
+                                "type": "esriFieldTypeInteger",
+                                "alias": "Canton No."
+                            },
+                            {
+                                "name": "NAME",
+                                "type": "esriFieldTypeString",
+                                "alias": "Municipality Name"
+                            }
+                        ],
+                        "statisticsInfo": [
+                            {
+                                "key": "f_1",
+                                "name": "UUID",
+                                "href": "./statistics/f_1/0"
+                            },
+                            {
+                                "key": "f_2",
+                                "name": "OBJEKTART",
+                                "href": "./statistics/f_2/0"
+                            },
+                            {
+                                "key": "f_3",
+                                "name": "NAME_KOMPLETT",
+                                "href": "./statistics/f_3/0"
+                            },
+                            {
+                                "key": "f_4",
+                                "name": "GEBAEUDE_NUTZUNG",
+                                "href": "./statistics/f_4/0"
+                            },
+                            {
+                                "key": "f_5",
+                                "name": "DACH_MAX",
+                                "href": "./statistics/f_5/0"
+                            },
+                            {
+                                "key": "f_6",
+                                "name": "DACH_MIN",
+                                "href": "./statistics/f_6/0"
+                            },
+                            {
+                                "key": "f_7",
+                                "name": "GELAENDEPUNKT",
+                                "href": "./statistics/f_7/0"
+                            },
+                            {
+                                "key": "f_8",
+                                "name": "GESAMTHOEHE",
+                                "href": "./statistics/f_8/0"
+                            },
+                            {
+                                "key": "f_9",
+                                "name": "EGID",
+                                "href": "./statistics/f_9/0"
+                            },
+                            {
+                                "key": "f_10",
+                                "name": "GEBAEUDEEINHEIT",
+                                "href": "./statistics/f_10/0"
+                            },
+                            {
+                                "key": "f_11",
+                                "name": "BFS_NUMMER",
+                                "href": "./statistics/f_11/0"
+                            },
+                            {
+                                "key": "f_12",
+                                "name": "BEZIRKSNUMMER",
+                                "href": "./statistics/f_12/0"
+                            },
+                            {
+                                "key": "f_13",
+                                "name": "KANTONSNUMMER",
+                                "href": "./statistics/f_13/0"
+                            },
+                            {
+                                "key": "f_14",
+                                "name": "NAME",
+                                "href": "./statistics/f_14/0"
+                            }
+                        ],
+                        "attributeStorageInfo": [
+                            {
+                                "key": "f_0",
+                                "name": "OBJECTID",
+                                "header": [
+                                    {
+                                        "property": "count",
+                                        "valueType": "UInt32"
+                                    }
+                                ],
+                                "ordering": [
+                                    "attributeValues"
+                                ],
+                                "attributeValues": {
+                                    "valueType": "Oid32",
+                                    "valuesPerElement": 1
+                                }
+                            },
+                            {
+                                "key": "f_1",
+                                "name": "UUID",
+                                "header": [
+                                    {
+                                        "property": "count",
+                                        "valueType": "UInt32"
+                                    },
+                                    {
+                                        "property": "attributeValuesByteCount",
+                                        "valueType": "UInt32"
+                                    }
+                                ],
+                                "ordering": [
+                                    "attributeByteCounts",
+                                    "attributeValues"
+                                ],
+                                "attributeByteCounts": {
+                                    "valueType": "UInt32",
+                                    "valuesPerElement": 1
+                                },
+                                "attributeValues": {
+                                    "valueType": "String",
+                                    "encoding": "UTF-8",
+                                    "valuesPerElement": 1
+                                }
+                            },
+                            {
+                                "key": "f_2",
+                                "name": "OBJEKTART",
+                                "header": [
+                                    {
+                                        "property": "count",
+                                        "valueType": "UInt32"
+                                    },
+                                    {
+                                        "property": "attributeValuesByteCount",
+                                        "valueType": "UInt32"
+                                    }
+                                ],
+                                "ordering": [
+                                    "attributeByteCounts",
+                                    "attributeValues"
+                                ],
+                                "attributeByteCounts": {
+                                    "valueType": "UInt32",
+                                    "valuesPerElement": 1
+                                },
+                                "attributeValues": {
+                                    "valueType": "String",
+                                    "encoding": "UTF-8",
+                                    "valuesPerElement": 1
+                                }
+                            },
+                            {
+                                "key": "f_3",
+                                "name": "NAME_KOMPLETT",
+                                "header": [
+                                    {
+                                        "property": "count",
+                                        "valueType": "UInt32"
+                                    },
+                                    {
+                                        "property": "attributeValuesByteCount",
+                                        "valueType": "UInt32"
+                                    }
+                                ],
+                                "ordering": [
+                                    "attributeByteCounts",
+                                    "attributeValues"
+                                ],
+                                "attributeByteCounts": {
+                                    "valueType": "UInt32",
+                                    "valuesPerElement": 1
+                                },
+                                "attributeValues": {
+                                    "valueType": "String",
+                                    "encoding": "UTF-8",
+                                    "valuesPerElement": 1
+                                }
+                            },
+                            {
+                                "key": "f_4",
+                                "name": "GEBAEUDE_NUTZUNG",
+                                "header": [
+                                    {
+                                        "property": "count",
+                                        "valueType": "UInt32"
+                                    },
+                                    {
+                                        "property": "attributeValuesByteCount",
+                                        "valueType": "UInt32"
+                                    }
+                                ],
+                                "ordering": [
+                                    "attributeByteCounts",
+                                    "attributeValues"
+                                ],
+                                "attributeByteCounts": {
+                                    "valueType": "UInt32",
+                                    "valuesPerElement": 1
+                                },
+                                "attributeValues": {
+                                    "valueType": "String",
+                                    "encoding": "UTF-8",
+                                    "valuesPerElement": 1
+                                }
+                            },
+                            {
+                                "key": "f_5",
+                                "name": "DACH_MAX",
+                                "header": [
+                                    {
+                                        "property": "count",
+                                        "valueType": "UInt32"
+                                    }
+                                ],
+                                "ordering": [
+                                    "attributeValues"
+                                ],
+                                "attributeValues": {
+                                    "valueType": "Float64",
+                                    "valuesPerElement": 1
+                                }
+                            },
+                            {
+                                "key": "f_6",
+                                "name": "DACH_MIN",
+                                "header": [
+                                    {
+                                        "property": "count",
+                                        "valueType": "UInt32"
+                                    }
+                                ],
+                                "ordering": [
+                                    "attributeValues"
+                                ],
+                                "attributeValues": {
+                                    "valueType": "Float64",
+                                    "valuesPerElement": 1
+                                }
+                            },
+                            {
+                                "key": "f_7",
+                                "name": "GELAENDEPUNKT",
+                                "header": [
+                                    {
+                                        "property": "count",
+                                        "valueType": "UInt32"
+                                    }
+                                ],
+                                "ordering": [
+                                    "attributeValues"
+                                ],
+                                "attributeValues": {
+                                    "valueType": "Float64",
+                                    "valuesPerElement": 1
+                                }
+                            },
+                            {
+                                "key": "f_8",
+                                "name": "GESAMTHOEHE",
+                                "header": [
+                                    {
+                                        "property": "count",
+                                        "valueType": "UInt32"
+                                    }
+                                ],
+                                "ordering": [
+                                    "attributeValues"
+                                ],
+                                "attributeValues": {
+                                    "valueType": "Float64",
+                                    "valuesPerElement": 1
+                                }
+                            },
+                            {
+                                "key": "f_9",
+                                "name": "EGID",
+                                "header": [
+                                    {
+                                        "property": "count",
+                                        "valueType": "UInt32"
+                                    }
+                                ],
+                                "ordering": [
+                                    "attributeValues"
+                                ],
+                                "attributeValues": {
+                                    "valueType": "Int32",
+                                    "valuesPerElement": 1
+                                }
+                            },
+                            {
+                                "key": "f_10",
+                                "name": "GEBAEUDEEINHEIT",
+                                "header": [
+                                    {
+                                        "property": "count",
+                                        "valueType": "UInt32"
+                                    },
+                                    {
+                                        "property": "attributeValuesByteCount",
+                                        "valueType": "UInt32"
+                                    }
+                                ],
+                                "ordering": [
+                                    "attributeByteCounts",
+                                    "attributeValues"
+                                ],
+                                "attributeByteCounts": {
+                                    "valueType": "UInt32",
+                                    "valuesPerElement": 1
+                                },
+                                "attributeValues": {
+                                    "valueType": "String",
+                                    "encoding": "UTF-8",
+                                    "valuesPerElement": 1
+                                }
+                            },
+                            {
+                                "key": "f_11",
+                                "name": "BFS_NUMMER",
+                                "header": [
+                                    {
+                                        "property": "count",
+                                        "valueType": "UInt32"
+                                    }
+                                ],
+                                "ordering": [
+                                    "attributeValues"
+                                ],
+                                "attributeValues": {
+                                    "valueType": "Int32",
+                                    "valuesPerElement": 1
+                                }
+                            },
+                            {
+                                "key": "f_12",
+                                "name": "BEZIRKSNUMMER",
+                                "header": [
+                                    {
+                                        "property": "count",
+                                        "valueType": "UInt32"
+                                    }
+                                ],
+                                "ordering": [
+                                    "attributeValues"
+                                ],
+                                "attributeValues": {
+                                    "valueType": "Int32",
+                                    "valuesPerElement": 1
+                                }
+                            },
+                            {
+                                "key": "f_13",
+                                "name": "KANTONSNUMMER",
+                                "header": [
+                                    {
+                                        "property": "count",
+                                        "valueType": "UInt32"
+                                    }
+                                ],
+                                "ordering": [
+                                    "attributeValues"
+                                ],
+                                "attributeValues": {
+                                    "valueType": "Int32",
+                                    "valuesPerElement": 1
+                                }
+                            },
+                            {
+                                "key": "f_14",
+                                "name": "NAME",
+                                "header": [
+                                    {
+                                        "property": "count",
+                                        "valueType": "UInt32"
+                                    },
+                                    {
+                                        "property": "attributeValuesByteCount",
+                                        "valueType": "UInt32"
+                                    }
+                                ],
+                                "ordering": [
+                                    "attributeByteCounts",
+                                    "attributeValues"
+                                ],
+                                "attributeByteCounts": {
+                                    "valueType": "UInt32",
+                                    "valuesPerElement": 1
+                                },
+                                "attributeValues": {
+                                    "valueType": "String",
+                                    "encoding": "UTF-8",
+                                    "valuesPerElement": 1
+                                }
+                            }
+                        ],
+                        "store": {
+                            "id": "8F38D8B4-11E5-4847-8D57-BA31A1869527",
+                            "profile": "meshpyramids",
+                            "resourcePattern": [
+                                "3dNodeIndexDocument",
+                                "Attributes",
+                                "SharedResource",
+                                "Geometry"
+                            ],
+                            "rootNode": "./nodes/root",
+                            "extent": [
+                                2485682.1350000016,
+                                1075234.9189999998,
+                                2833854.2179999985,
+                                1295319.0940000005
+                            ],
+                            "indexCRS": "http://www.opengis.net/def/crs/EPSG/0/2056",
+                            "vertexCRS": "http://www.opengis.net/def/crs/EPSG/0/2056",
+                            "normalReferenceFrame": "vertex-reference-frame",
+                            "lodType": "MeshPyramid",
+                            "lodModel": "node-switching",
+                            "defaultGeometrySchema": {
+                                "geometryType": "triangles",
+                                "header": [
+                                    {
+                                        "property": "vertexCount",
+                                        "type": "UInt32"
+                                    },
+                                    {
+                                        "property": "featureCount",
+                                        "type": "UInt32"
+                                    }
+                                ],
+                                "topology": "PerAttributeArray",
+                                "ordering": [
+                                    "position",
+                                    "normal",
+                                    "uv0",
+                                    "color"
+                                ],
+                                "vertexAttributes": {
+                                    "position": {
+                                        "valueType": "Float32",
+                                        "valuesPerElement": 3
+                                    },
+                                    "normal": {
+                                        "valueType": "Float32",
+                                        "valuesPerElement": 3
+                                    },
+                                    "uv0": {
+                                        "valueType": "Float32",
+                                        "valuesPerElement": 2
+                                    },
+                                    "color": {
+                                        "valueType": "UInt8",
+                                        "valuesPerElement": 4
+                                    }
+                                },
+                                "featureAttributeOrder": [
+                                    "id",
+                                    "faceRange"
+                                ],
+                                "featureAttributes": {
+                                    "id": {
+                                        "valueType": "UInt64",
+                                        "valuesPerElement": 1
+                                    },
+                                    "faceRange": {
+                                        "valueType": "UInt32",
+                                        "valuesPerElement": 2
+                                    }
+                                }
+                            },
+                            "textureEncoding": [
+                                "image/jpeg",
+                                "image/vnd-ms.dds",
+                                "image/ktx2"
+                            ],
+                            "version": "1.10"
+                        },
+                        "nodePages": {
+                            "nodesPerPage": 64,
+                            "lodSelectionMetricType": "maxScreenThresholdSQ"
+                        },
+                        "materialDefinitions": [
+                            {
+                                "doubleSided": true,
+                                "alphaMode": "opaque",
+                                "pbrMetallicRoughness": {
+                                    "metallicFactor": 0
+                                }
+                            },
+                            {
+                                "doubleSided": true,
+                                "alphaMode": "opaque",
+                                "pbrMetallicRoughness": {
+                                    "metallicFactor": 0
+                                }
+                            }
+                        ],
+                        "geometryDefinitions": [
+                            {
+                                "geometryBuffers": [
+                                    {
+                                        "offset": 8,
+                                        "position": {
+                                            "type": "Float32",
+                                            "component": 3
+                                        },
+                                        "normal": {
+                                            "type": "Float32",
+                                            "component": 3
+                                        },
+                                        "uv0": {
+                                            "type": "Float32",
+                                            "component": 2
+                                        },
+                                        "color": {
+                                            "type": "UInt8",
+                                            "component": 4
+                                        },
+                                        "featureId": {
+                                            "type": "UInt64",
+                                            "component": 1,
+                                            "binding": "per-feature"
+                                        },
+                                        "faceRange": {
+                                            "type": "UInt32",
+                                            "component": 2,
+                                            "binding": "per-feature"
+                                        }
+                                    },
+                                    {
+                                        "compressedAttributes": {
+                                            "encoding": "draco",
+                                            "attributes": [
+                                                "position",
+                                                "uv0",
+                                                "color",
+                                                "feature-index"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "displayField": "OBJEKTART"
                     },
-                    "layerType": "IntegratedMesh3DTilesLayer",
-                    "visibility": true
+                    "popupInfo": {
+                        "title": "{OBJEKTART}",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "OBJECTID",
+                                "isEditable": true,
+                                "label": "OBJECTID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "UUID",
+                                "isEditable": true,
+                                "label": "UUID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "OBJEKTART",
+                                "isEditable": true,
+                                "label": "Object Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "NAME_KOMPLETT",
+                                "isEditable": true,
+                                "label": "Building Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "GEBAEUDE_NUTZUNG",
+                                "isEditable": true,
+                                "label": "Building Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "DACH_MAX",
+                                "isEditable": true,
+                                "label": "Roof Max",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "DACH_MIN",
+                                "isEditable": true,
+                                "label": "Roof Min",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "GELAENDEPUNKT",
+                                "isEditable": true,
+                                "label": "Terrain Point",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "GESAMTHOEHE",
+                                "isEditable": true,
+                                "label": "Building Height",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "EGID",
+                                "isEditable": true,
+                                "label": "Federal Building ID (EGID)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "GEBAEUDEEINHEIT",
+                                "isEditable": true,
+                                "label": "Building Unit",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "BFS_NUMMER",
+                                "isEditable": true,
+                                "label": "Municipality No.",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "BEZIRKSNUMMER",
+                                "isEditable": true,
+                                "label": "District No.",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "KANTONSNUMMER",
+                                "isEditable": true,
+                                "label": "Canton No.",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "NAME",
+                                "isEditable": true,
+                                "label": "Municipality Name",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": []
+                    }
                 }
             ],
             "layerType": "GroupLayer",
@@ -23,19 +1103,20 @@
             "title": "Open Data",
             "layers": [
                 {
+                    "id": "",
                     "layerType": "GeoJSON",
                     "title": "Charging Points Electric Cars",
                     "url": "https://data.geo.admin.ch/ch.bfe.ladestellen-elektromobilitaet/data/ch.bfe.ladestellen-elektromobilitaet_en.json",
                     "visibility": true,
                     "spatialReference": {
-                        "wkid": 3857
+                        "wkid": 2056
                     },
                     "outFields": [
                         "*"
                     ],
                     "disablePopup": false,
                     "popupInfo": {
-                        "title": "Charging Points Electric Cars",
+                        "title": "{location_id}",
                         "popupElements": [
                             {
                                 "type": "fields"
@@ -225,6 +1306,144 @@
                             "labelingInfo": []
                         }
                     }
+                },
+                {
+                    "id": "",
+                    "layerType": "GeoJSON",
+                    "title": "Webcam",
+                    "url": "https://data.geo.admin.ch/ch.meteoschweiz.messnetz-webcams/ch.meteoschweiz.messnetz-webcams_en.json",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 2056
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": "{station_name}",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "id",
+                                "isEditable": true,
+                                "label": "Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "station_name",
+                                "isEditable": true,
+                                "label": "Station Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "altitude",
+                                "isEditable": true,
+                                "label": "Altitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "description",
+                                "isEditable": true,
+                                "label": "Description",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": []
+                    },
+                    "refreshInterval": 0,
+                    "customParameters": {},
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "id",
+                                "alias": "Id",
+                                "editable": false,
+                                "length": 0,
+                                "nullable": true,
+                                "type": "esriFieldTypeOID"
+                            },
+                            {
+                                "name": "station_name",
+                                "alias": "Station Name",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "altitude",
+                                "alias": "Altitude",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "description",
+                                "alias": "Description",
+                                "editable": false,
+                                "length": 3000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            }
+                        ],
+                        "displayField": "station_name",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "PointSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "primitive": "circle"
+                                            },
+                                            "size": 18,
+                                            "material": {
+                                                "color": [
+                                                    252,
+                                                    177,
+                                                    248
+                                                ]
+                                            },
+                                            "outline": {
+                                                "size": 1,
+                                                "color": [
+                                                    255,
+                                                    16,
+                                                    240
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "dataURI": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTI1LjA1OSAxMi4xNzRhOS4zMDUgOS4zMDUgMCAwIDAtMy4xNzItMy41OTUgOC4zNDYgOC4zNDYgMCAwIDAtMS4wMjUtLjU5NGguMDEyQTQuNzY2IDQuNzY2IDAgMCAxIDE4IDMuNzI4VjNoLTF2MTkuOWE0LjU1NyA0LjU1NyAwIDAgMC0zLjUxMS0uODQ4Yy0yLjQ4Mi4zMjktNC40OTUgMi4xNDMtNC40ODkgNC4wNDVzMi4wMyAzLjE4IDQuNTExIDIuODUxIDQuNDk1LTIuMTQzIDQuNDg5LTQuMDQ1VjguOTY1YTcuMjY4IDcuMjY4IDAgMCAxIDIuODc4LjkzIDguMDA4IDguMDA4IDAgMCAxIDIuOTAyIDIuODM5IDguMzI1IDguMzI1IDAgMCAxIC4zMzQgNy44MzhsLjY0LjI3OGE5LjE5MyA5LjE5MyAwIDAgMCAuMzA1LTguNjc2eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMzJ2MzJIMHoiLz48L3N2Zz4="
+                                            },
+                                            "size": 10
+                                        }
+                                    ],
+                                    "verticalOffset": {
+                                        "screenLength": 50,
+                                        "maxWorldLength": 100,
+                                        "minWorldLength": 60
+                                    }
+                                }
+                            },
+                            "labelingInfo": []
+                        }
+                    }
                 }
             ],
             "layerType": "GroupLayer",
@@ -234,12 +1453,12 @@
     "baseMap": {
         "baseMapLayers": [
             {
-                "id": "VectorTile_2333",
+                "id": "LV95_Swiss_Navigation",
                 "opacity": 1,
-                "title": "World Topographic Map",
+                "title": "LV95 Swiss Navigation",
                 "visibility": true,
                 "layerType": "VectorTileLayer",
-                "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/7dc6cea0b1764a1f9af2e679f642f0f5/resources/styles/root.json"
+                "styleUrl": "https://www.arcgis.com/sharing/rest/content/items/f8cd531b3c4e4180a71b9869375a018c/resources/styles/root.json"
             }
         ],
         "id": "",
@@ -249,9 +1468,10 @@
     "ground": {
         "layers": [
             {
-                "id": "DEM_2023_1m_WGS84",
-                "title": "DEM 2023 1m WGS84",
-                "url": "https://tiles.arcgis.com/tiles/KGdHCCUjGBpOPPac/arcgis/rest/services/DEM_2023_1m_WGS84/ImageServer?cacheKey=b647432efb9e81f0",
+                "id": "9a2d5a96c9ec83f5",
+                "listMode": "show",
+                "title": "LV95 Swiss Terrain 3D",
+                "url": "https://tiles.arcgis.com/tiles/oPre3pOfRfefL8y0/arcgis/rest/services/elevation_suisse/ImageServer",
                 "visibility": true,
                 "layerType": "ArcGISTiledElevationServiceLayer"
             }
@@ -267,37 +1487,37 @@
     },
     "initialState": {
         "viewpoint": {
-            "rotation": 356.79857179613657,
-            "scale": 47855.049521631925,
+            "rotation": 161.46283373364363,
+            "scale": 20749.991860140897,
             "targetGeometry": {
                 "spatialReference": {
-                    "latestWkid": 3857,
-                    "wkid": 3857
+                    "latestWkid": 2056,
+                    "wkid": 2056
                 },
-                "x": 952531.8596826161,
-                "y": 6004578.716873802,
-                "z": -0.004872447811067104
+                "x": 2628966.1175115886,
+                "y": 1139370.7615477128,
+                "z": 1960.5009419630333
             },
             "camera": {
                 "position": {
                     "spatialReference": {
-                        "latestWkid": 3857,
-                        "wkid": 3857
+                        "latestWkid": 2056,
+                        "wkid": 2056
                     },
-                    "x": 951458.8517006114,
-                    "y": 5985416.380908295,
-                    "z": 6631.643330484629
+                    "x": 2631869.0278883553,
+                    "y": 1148027.979507324,
+                    "z": 6826.163295761218
                 },
-                "heading": 3.2014282038634265,
-                "tilt": 62.94366943827845
+                "heading": 198.53716626635637,
+                "tilt": 61.94793506420977
             }
         }
     },
     "spatialReference": {
-        "latestWkid": 3857,
-        "wkid": 3857
+        "latestWkid": 2056,
+        "wkid": 2056
     },
-    "viewingMode": "global",
+    "viewingMode": "local",
     "version": "1.33",
     "authoringApp": "OCRAM"
 }
