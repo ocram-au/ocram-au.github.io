@@ -1,1 +1,0 @@
-import{c1 as r,c2 as p}from"./index-QRcEofMq.js";function a(n){return r(n)||p(n)}function i(n,t,c,...o){return r(n)?t.apply(void 0,o):p(n)?c.apply(void 0,o):null}const l=1e5;export{a as e,l as p,i as r};

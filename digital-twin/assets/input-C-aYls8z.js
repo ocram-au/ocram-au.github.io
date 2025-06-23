@@ -1,0 +1,7 @@
+import{am as m,an as p,c9 as a,ca as l,E as T}from"./index--YEV5yv0.js";import{f as d,m as f}from"./ref-ChHY1mpC.js";/**
+ * @license
+ * Copyright 2020 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */const R=m(class extends p{constructor(e){if(super(e),e.type!==a.PROPERTY&&e.type!==a.ATTRIBUTE&&e.type!==a.BOOLEAN_ATTRIBUTE)throw Error("The `live` directive is not allowed on child or event bindings");if(!d(e))throw Error("`live` bindings can only contain a single expression")}render(e){return e}update(e,[r]){if(r===l||r===T)return r;const t=e.element,n=e.name;if(e.type===a.PROPERTY){if(r===t[n])return l}else if(e.type===a.BOOLEAN_ATTRIBUTE){if(!!r===t.hasAttribute(n))return l}else if(e.type===a.ATTRIBUTE&&t.getAttribute(n)===r+"")return l;return f(e),r}});/*! All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+See https://github.com/Esri/calcite-design-system/blob/dev/LICENSE.md for details.
+v3.1.0 */const x=["date","datetime-local","month","number","range","time","week"],E=["email","password","search","tel","text","url"],h=["email","password","search","tel","text","textarea","url"];function i(e,r,t,n){const s=t.toLowerCase(),o=e[t];n&&o!=null?r.setAttribute(s,`${o}`):r.removeAttribute(s)}function b(e,r,t){t.type=e==="textarea"?"text":e;const n=x.includes(e),s=r;i(s,t,"min",n),i(s,t,"max",n),i(s,t,"step",n);const o=h.includes(e),c=r;i(c,t,"minLength",o),i(c,t,"maxLength",o);const u=E.includes(e);i(c,t,"pattern",u)}export{R as l,b as m};

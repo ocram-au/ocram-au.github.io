@@ -3444,27 +3444,6 @@
                                         }
                                     },
                                     {
-                                        "value": 2,
-                                        "label": "Bus halt",
-                                        "symbol": {
-                                            "type": "PointSymbol3D",
-                                            "symbolLayers": [
-                                                {
-                                                    "type": "Icon",
-                                                    "size": 15.75,
-                                                    "resource": {
-                                                        "dataURI": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAFJUlEQVR4nM2Zz0sbaRjHv2+ig0mMacqkS4baYZduXBFz2NwE13hYSsHuoYcWt9KjPXgUlqV/gCzCHnto9ra4K168KJSypUQEexoLbqllaJVod4JNVo0Tk1Yp7x7mR96Mk2RmdFu/MJD3nWcmH973eZ/3eZ8hOIUopQKAOIAeAJ16d1i/VAB5vU8FIBFCFK//RTzCJfRLcPm4CkAGkCWEqG4edAyqA6b0y1bbu9UwABRK7zu//TKab2SnS4ILYEeglNIUgBtWqJdvD+K5d2VhY6eS2Ds8its9Gw1x+VikQxnu46UG8FlCSPZUoPoopqFNswm48qqQePqiMNLq5XZKCF3S5MjXi5ZuhRCS8QSqQ46A8cO5la3UM3l3qHr0MewFkpUNsAog08gVbEF1yFFoqxerm3vxxdV8+p9/qwk7e6+Khrj8xPWrs90XAyxcxi46nAC1juTq5l7896Xc6FmMop0CnF+9OyTOMv6rEkJ+dQL6I3SfXN3ciz/8a2OcvS/yQSTFC4gE2z3DLUgKSpXjur5733+VYWBlQsifDUHZ1W03kiIfxP2bvZ4BWU3NryNXrJjtAOdXJ3/o+Y1xg7po4GMgBTAhaHE1n7ZO92Bv7EwgAeDOd2Jdu3r0Mfzg0etRpiutMwEA2pgbZiCfW9lK2S2cK7Gg+TtXrGBRUlA6PLaa2SoSasfYoNjUZfYOj+JzK1up2wNXJIZJMUGZXQfbu9XwM3l3qNUfL68XsJYrOYIEABSBGeQwce1qU7OnLwojLCilVCKEKMbUm6O38qqQcLLCb6QEVwtK5IMY/MaZ62SevEkzzThQm/oEoI2m0x0nEmzH9FjSMagbSRv7QwCyejMFQPLp0y4AwMu3B7b79efQ47UdY5YFSqnQBn1oASD3ruw4bWNDixuJfLC1EYD98gfW/eJt0JJeAMDGTsXxFjk1v+4YjtXD8YZZYp2eb5ZStwdgLKoeH2qZORqlap9DFpZOM+AbSe95Esvkg54hnXMJJmih9L6zhfEnF8Ok+qAlrHBwxvnkikU6ysZvH2pH2nMnJpPK+9gb0RB3bqCtLG3Qpx4AYpEOxWmIOqu8tJFikQ72OKK0QTtfpwBguI+XZOXAUUQW+SByxYrjnaZUOXaVxAz38RLTlH36Qcr1glqU8piaX8fyerGl7VquhJ9m1jCznHP07gDnVxkWhU3zZMMoIXRJJx89KWN0nIxSJKTZXAhyjkC7+ZDMNPNA7SiSNXptigO2GuzlMT2WRFKMtLQV+SCmx5IYSbV2/wDnV28NXF5iuiRAz0cJISql1PTVhNBl66tbhVrGJPJBczRbZVJ2tuy7WHXzIZkJS2YF0DyFUkrDACaN9s9//D3eLAIYWVCuWGmZSd2/2WsuunuZxp4VDXH5X+70G6UdFcCsAWrGUb2UkjXaE9evzgY4v6vS4GlkVE2YLpmtmLCnUBBCspTSBACh+2JAvTskzloLEIaM1W4tJNjbFrDFh5raDPdfyjJTLhNCFurY7B6ilE6CqTv9nyWdaIjLD/dfyl5LfmGsdAXalNfNZiPQOn/d3q2GHzx6PXrWibVNkUyBViGRrbatyo5mRQ/QChNe66KsApxf7eZDsiUUNoRsCsoAm0UzQ5knb9L6kdYT4K2By0uWUqMMYKFZmdxpaTwNrfJcp8drO4n98ofw881SymNpXIXNwvEMqsO6+tgQi3SULaNmlQQXn3S8fr6JQwN2+/lGgbZ3u/7m5BqUVYMPYgJqOa6ZAcESwN3qP80MMluvPyptAAAAAElFTkSuQmCC"
-                                                    }
-                                                }
-                                            ],
-                                            "verticalOffset": {
-                                                "screenLength": 50,
-                                                "maxWorldLength": 10,
-                                                "minWorldLength": 3
-                                            }
-                                        }
-                                    },
-                                    {
                                         "value": 3,
                                         "label": "Bus stop",
                                         "symbol": {
@@ -5622,7 +5601,9 @@
                             {
                                 "name": "OBJECTID",
                                 "type": "esriFieldTypeOID",
-                                "alias": "OBJECTID",
+                                "alias": {
+                                    "name": "Object ID"
+                                },
                                 "sqlType": "sqlTypeOther",
                                 "nullable": false,
                                 "editable": false,
@@ -6340,7 +6321,7 @@
                             {
                                 "fieldName": "OBJECTID",
                                 "isEditable": true,
-                                "label": "OBJECTID",
+                                "label": "Object ID",
                                 "visible": true
                             },
                             {
@@ -6666,9 +6647,21 @@
                                 "isEditable": true,
                                 "label": "Accident Date (Integer)",
                                 "visible": false
+                            },
+                            {
+                                "fieldName": "data_source",
+                                "label": "Data Source",
+                                "visible": true,
+                                "isEditable": true
                             }
                         ],
-                        "expressionInfos": []
+                        "expressionInfos": [
+                            {
+                                "name": "data_source",
+                                "title": "Data Source",
+                                "expression": "'<a href=\"https://opendata.transport.vic.gov.au/dataset/victoria-road-crash-data\" target=\"_blank\">Data Source</a>'"
+                            }
+                        ]
                     }
                 },
                 {
