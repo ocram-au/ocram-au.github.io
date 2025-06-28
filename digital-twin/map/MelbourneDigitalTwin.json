@@ -3950,6 +3950,1019 @@
         },
         {
             "id": "",
+            "title": "Weather",
+            "layers": [
+                {
+                    "id": "weather_observation",
+                    "layerType": "GeoJSON",
+                    "title": "Observation",
+                    "url": "http://localhost:7071/api/HttpWeatherObservation",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": "{station_description} {local_time}",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "data-source",
+                                "isEditable": false,
+                                "label": "Data Source",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "air_temperature_description",
+                                "isEditable": true,
+                                "label": "Air Temperature",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "apparent_temperature_description",
+                                "isEditable": true,
+                                "label": "Apparent Temperature",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "bureau_of_meteorology_station_id_description",
+                                "isEditable": true,
+                                "label": "Bureau of Meteorology Station ID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "cloud_coverage_description",
+                                "isEditable": true,
+                                "label": "Cloud Coverage",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "cloud_base_height_description",
+                                "isEditable": true,
+                                "label": "Cloud Base Height",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "cloud_coverage_oktas_description",
+                                "isEditable": true,
+                                "label": "Cloud Coverage (oktas)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "cloud_type_description",
+                                "isEditable": true,
+                                "label": "Cloud Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "cloud_type_id_description",
+                                "isEditable": true,
+                                "label": "Cloud Type ID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "delta_temperature_\u0394t_description",
+                                "isEditable": true,
+                                "label": "Delta Temperature (\u0394T)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "station_description",
+                                "isEditable": true,
+                                "label": "Station",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "station_name_description",
+                                "isEditable": true,
+                                "label": "Station Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "station_height_description",
+                                "isEditable": true,
+                                "label": "Station Height",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "dew_point_temperature_description",
+                                "isEditable": true,
+                                "label": "Dew Point Temperature",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "forecast_district_id_description",
+                                "isEditable": true,
+                                "label": "Forecast District ID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "wind_gust_speed_km/h_description",
+                                "isEditable": true,
+                                "label": "Wind Gust Speed (km/h)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "latitude_description",
+                                "isEditable": true,
+                                "label": "Latitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "longitude_description",
+                                "isEditable": true,
+                                "label": "Longitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "maximum_air_temperature_description",
+                                "isEditable": true,
+                                "label": "Maximum Air Temperature",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "maximum_gust_direction_description",
+                                "isEditable": true,
+                                "label": "Maximum Gust Direction",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "maximum_wind_gust_speed_km/h_description",
+                                "isEditable": true,
+                                "label": "Maximum Wind Gust Speed (km/h)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "maximum_wind_gust_speed_knots_description",
+                                "isEditable": true,
+                                "label": "Maximum Wind Gust Speed (knots)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "minimum_air_temperature_description",
+                                "isEditable": true,
+                                "label": "Minimum Air Temperature",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "mean_sea_level_pressure_msl_description",
+                                "isEditable": true,
+                                "label": "Mean Sea Level Pressure (MSL)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "station_pressure_description",
+                                "isEditable": true,
+                                "label": "Station Pressure",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "altimeter_setting_qnh_description",
+                                "isEditable": true,
+                                "label": "Altimeter Setting (QNH)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "rainfall_description",
+                                "isEditable": true,
+                                "label": "Rainfall",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "rainfall_10_min_description",
+                                "isEditable": true,
+                                "label": "Rainfall (10 min)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "rainfall_1_hr_description",
+                                "isEditable": true,
+                                "label": "Rainfall (1 hr)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "rainfall_24_hr_description",
+                                "isEditable": true,
+                                "label": "Rainfall (24 hr)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "relative_humidity_rh_description",
+                                "isEditable": true,
+                                "label": "Relative Humidity (RH)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "local_time_description",
+                                "isEditable": true,
+                                "label": "Local Time",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "utc_time_description",
+                                "isEditable": true,
+                                "label": "UTC Time",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "time_zone_description",
+                                "isEditable": true,
+                                "label": "Time Zone",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "visibility_description",
+                                "isEditable": true,
+                                "label": "Visibility",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "weather_description",
+                                "isEditable": true,
+                                "label": "Weather Description",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "wind_direction_description",
+                                "isEditable": true,
+                                "label": "Wind Direction",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "wind_direction_degrees_description",
+                                "isEditable": true,
+                                "label": "Wind Direction (Degrees)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "wind_gust_speed_knots_description",
+                                "isEditable": true,
+                                "label": "Wind Gust Speed (knots)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "wind_speed_knots_description",
+                                "isEditable": true,
+                                "label": "Wind Speed (knots)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "wind_speed_kmh_description",
+                                "isEditable": true,
+                                "label": "Wind Speed (km/h)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "world_meteorological_organization_id_wmo_description",
+                                "isEditable": true,
+                                "label": "World Meteorological Organization ID (WMO)",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": [
+                            {
+                                "name": "data-source",
+                                "title": "Data Source",
+                                "expression": "`http://www.bom.gov.au/catalogue/observations/about.shtml`"
+                            }
+                        ]
+                    },
+                    "refreshInterval": 10,
+                    "customParameters": {},
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "air_temperature",
+                                "alias": "Air Temperature",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "air_temperature_description",
+                                "alias": "Air Temperature",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "apparent_temperature",
+                                "alias": "Apparent Temperature",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "apparent_temperature_description",
+                                "alias": "Apparent Temperature",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "bureau_of_meteorology_station_id",
+                                "alias": "Bureau of Meteorology Station ID",
+                                "type": "string",
+                                "length": 6
+                            },
+                            {
+                                "name": "bureau_of_meteorology_station_id_description",
+                                "alias": "Bureau of Meteorology Station ID",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "cloud_coverage",
+                                "alias": "Cloud Coverage",
+                                "type": "string",
+                                "length": 20
+                            },
+                            {
+                                "name": "cloud_coverage_description",
+                                "alias": "Cloud Coverage",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "cloud_base_height",
+                                "alias": "Cloud Base Height",
+                                "type": "integer",
+                                "length": 5
+                            },
+                            {
+                                "name": "cloud_base_height_description",
+                                "alias": "Cloud Base Height",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "cloud_coverage_oktas",
+                                "alias": "Cloud Coverage (oktas)",
+                                "type": "integer",
+                                "length": 2
+                            },
+                            {
+                                "name": "cloud_coverage_oktas_description",
+                                "alias": "Cloud Coverage (oktas)",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "cloud_type",
+                                "alias": "Cloud Type",
+                                "type": "string",
+                                "length": 30
+                            },
+                            {
+                                "name": "cloud_type_description",
+                                "alias": "Cloud Type",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "cloud_type_id",
+                                "alias": "Cloud Type ID",
+                                "type": "integer",
+                                "length": 3
+                            },
+                            {
+                                "name": "cloud_type_id_description",
+                                "alias": "Cloud Type ID",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "delta_temperature_\u0394t",
+                                "alias": "Delta Temperature (\u0394T)",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "delta_temperature_\u0394t_description",
+                                "alias": "Delta Temperature (\u0394T)",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "station",
+                                "alias": "Station",
+                                "type": "string",
+                                "length": 50
+                            },
+                            {
+                                "name": "station_description",
+                                "alias": "Station",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "station_name",
+                                "alias": "Station Name",
+                                "type": "string",
+                                "length": 50
+                            },
+                            {
+                                "name": "station_name_description",
+                                "alias": "Station Name",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "station_height",
+                                "alias": "Station Height",
+                                "type": "double",
+                                "length": 6
+                            },
+                            {
+                                "name": "station_height_description",
+                                "alias": "Station Height",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "dew_point_temperature",
+                                "alias": "Dew Point Temperature",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "dew_point_temperature_description",
+                                "alias": "Dew Point Temperature",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "forecast_district_id",
+                                "alias": "Forecast District ID",
+                                "type": "string",
+                                "length": 12
+                            },
+                            {
+                                "name": "forecast_district_id_description",
+                                "alias": "Forecast District ID",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "wind_gust_speed_km/h",
+                                "alias": "Wind Gust Speed (km/h)",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "wind_gust_speed_km/h_description",
+                                "alias": "Wind Gust Speed (km/h)",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "latitude",
+                                "alias": "Latitude",
+                                "type": "double",
+                                "length": 12
+                            },
+                            {
+                                "name": "latitude_description",
+                                "alias": "Latitude",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "longitude",
+                                "alias": "Longitude",
+                                "type": "double",
+                                "length": 12
+                            },
+                            {
+                                "name": "longitude_description",
+                                "alias": "Longitude",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "maximum_air_temperature",
+                                "alias": "Maximum Air Temperature",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "maximum_air_temperature_description",
+                                "alias": "Maximum Air Temperature",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "maximum_gust_direction",
+                                "alias": "Maximum Gust Direction",
+                                "type": "string",
+                                "length": 3
+                            },
+                            {
+                                "name": "maximum_gust_direction_description",
+                                "alias": "Maximum Gust Direction",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "maximum_wind_gust_speed_km/h",
+                                "alias": "Maximum Wind Gust Speed (km/h)",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "maximum_wind_gust_speed_km/h_description",
+                                "alias": "Maximum Wind Gust Speed (km/h)",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "maximum_wind_gust_speed_knots",
+                                "alias": "Maximum Wind Gust Speed (knots)",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "maximum_wind_gust_speed_knots_description",
+                                "alias": "Maximum Wind Gust Speed (knots)",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "minimum_air_temperature",
+                                "alias": "Minimum Air Temperature",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "minimum_air_temperature_description",
+                                "alias": "Minimum Air Temperature",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "mean_sea_level_pressure_msl",
+                                "alias": "Mean Sea Level Pressure (MSL)",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "mean_sea_level_pressure_msl_description",
+                                "alias": "Mean Sea Level Pressure (MSL)",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "station_pressure",
+                                "alias": "Station Pressure",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "station_pressure_description",
+                                "alias": "Station Pressure",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "altimeter_setting_qnh",
+                                "alias": "Altimeter Setting (QNH)",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "altimeter_setting_qnh_description",
+                                "alias": "Altimeter Setting (QNH)",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "rainfall",
+                                "alias": "Rainfall",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "rainfall_description",
+                                "alias": "Rainfall",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "rainfall_10_min",
+                                "alias": "Rainfall (10 min)",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "rainfall_10_min_description",
+                                "alias": "Rainfall (10 min)",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "rainfall_1_hr",
+                                "alias": "Rainfall (1 hr)",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "rainfall_1_hr_description",
+                                "alias": "Rainfall (1 hr)",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "rainfall_24_hr",
+                                "alias": "Rainfall (24 hr)",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "rainfall_24_hr_description",
+                                "alias": "Rainfall (24 hr)",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "relative_humidity_rh",
+                                "alias": "Relative Humidity (RH)",
+                                "type": "integer",
+                                "length": 3
+                            },
+                            {
+                                "name": "relative_humidity_rh_description",
+                                "alias": "Relative Humidity (RH)",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "local_time",
+                                "alias": "Local Time",
+                                "type": "string",
+                                "length": 25
+                            },
+                            {
+                                "name": "local_time_description",
+                                "alias": "Local Time",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "utc_time",
+                                "alias": "UTC Time",
+                                "type": "string",
+                                "length": 25
+                            },
+                            {
+                                "name": "utc_time_description",
+                                "alias": "UTC Time",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "time_zone",
+                                "alias": "Time Zone",
+                                "type": "string",
+                                "length": 32
+                            },
+                            {
+                                "name": "time_zone_description",
+                                "alias": "Time Zone",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "visibility",
+                                "alias": "Visibility",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "visibility_description",
+                                "alias": "Visibility",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "weather_description",
+                                "alias": "Weather Description",
+                                "type": "string",
+                                "length": 30
+                            },
+                            {
+                                "name": "wind_direction",
+                                "alias": "Wind Direction",
+                                "type": "string",
+                                "length": 3
+                            },
+                            {
+                                "name": "wind_direction_description",
+                                "alias": "Wind Direction",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "wind_direction_degrees",
+                                "alias": "Wind Direction (Degrees)",
+                                "type": "integer",
+                                "length": 3
+                            },
+                            {
+                                "name": "wind_direction_degrees_description",
+                                "alias": "Wind Direction (Degrees)",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "wind_gust_speed_knots",
+                                "alias": "Wind Gust Speed (knots)",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "wind_gust_speed_knots_description",
+                                "alias": "Wind Gust Speed (knots)",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "wind_speed_knots",
+                                "alias": "Wind Speed (knots)",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "wind_speed_knots_description",
+                                "alias": "Wind Speed (knots)",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "wind_speed_kmh",
+                                "alias": "Wind Speed (km/h)",
+                                "type": "double",
+                                "length": 8
+                            },
+                            {
+                                "name": "wind_speed_kmh_description",
+                                "alias": "Wind Speed (km/h)",
+                                "type": "string",
+                                "length": 255
+                            },
+                            {
+                                "name": "world_meteorological_organization_id_wmo",
+                                "alias": "World Meteorological Organization ID (WMO)",
+                                "type": "string",
+                                "length": 6
+                            },
+                            {
+                                "name": "world_meteorological_organization_id_wmo_description",
+                                "alias": "World Meteorological Organization ID (WMO)",
+                                "type": "string",
+                                "length": 255
+                            }
+                        ],
+                        "displayField": "{station_description} {local_time}",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "classBreaks",
+                                "field": "air_temperature",
+                                "defaultLabel": "Other",
+                                "classBreakInfos": [
+                                    {
+                                        "classMinValue": -100,
+                                        "classMaxValue": 10,
+                                        "label": "Freezing",
+                                        "symbol": {
+                                            "type": "PointSymbol3D",
+                                            "symbolLayers": [
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "primitive": "square"
+                                                    },
+                                                    "size": 22,
+                                                    "material": {
+                                                        "color": [
+                                                            240,
+                                                            251,
+                                                            255
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGVfdGVtcGVyYXR1cmVfd2luZC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgd2lkdGg9IjY0IgogICBoZWlnaHQ9IjY0IgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzMwIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjEwLjU4NDAwMiIKICAgICBpbmtzY2FwZTpjeD0iMzMuODcxODc2IgogICAgIGlua3NjYXBlOmN5PSIyOS4yNDIyNDciCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxOTIwIgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMDEiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy15PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzI4IiAvPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0Ij4KICAgIDxzdHlsZQogICAgICAgaWQ9InN0eWxlMiI+LmNscy0xe2ZpbGw6bm9uZTt9LmNscy0xLC5jbHMtMntzdHJva2U6IzJkMmEyODtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLXdpZHRoOjJweDt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT4KICA8L2RlZnM+CiAgPHRpdGxlCiAgICAgaWQ9InRpdGxlNiI+dGVtaS12ZW5kaXRhMkAzMDB4MjwvdGl0bGU+CiAgPGcKICAgICBpZD0iTGl2ZWxsb18yIgogICAgIGRhdGEtbmFtZT0iTGl2ZWxsbyAyIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNzU1ODU3MzEsMy44NzM3NzA4KSI+CiAgICA8ZwogICAgICAgaWQ9IkxheWVyXzIiCiAgICAgICBkYXRhLW5hbWU9IkxheWVyIDIiPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDIwLjQyLDQzLjQ4IGMgMCwwIDAuNjcsNi44MSAtNy4xMiw3LjQ5IgogICAgICAgICBpZD0icGF0aDE0IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMjg7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTQuNzAyOTkiCiAgICAgICAgIHkxPSI1Ljc2NTk1NDUiCiAgICAgICAgIHgyPSIxNC43MDI5OSIKICAgICAgICAgeTI9IjM0LjUzNTk1NCIKICAgICAgICAgaWQ9ImxpbmUxNiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMTguMTE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIxOC4xMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjAiCiAgICAgICAgIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utb3BhY2l0eToxIiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIyMy4yMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjIzLjIxODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICA8L2c+CiAgPC9nPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTMxNyI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzp0aXRsZT50ZW1pLXZlbmRpdGEyQDMwMHgyPC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPHBhdGgKICAgICBkPSJtIDUxLjk4NTIxNSwxNi4yNDg1MzEgYyAwLjk4MzMyNywtMS42MDI0MTMgMi40MTI0NTQsLTIuNjEwODU3IDQuMDAzMDEyLC0yLjYxMDg1NyAyLjk2NjE0NywwIDUuMzcwNTIyLDMuNTA2NzcyIDUuMzcwNTIyLDcuODMyNTY4IDAsNC4zMjU5MjcgLTIuNDA0Mzk0LDcuODMyNTcgLTUuMzcwNTIyLDcuODMyNTcgSCAyOS4xMzU2MDMgbSA5Ljg2MjUzNiwtMTkuMTQ2MjY5IGMgMC42NTU1OTYsLTEuMDY4Mjg3IDEuNjA4MzE1LC0xLjc0MDU4NCAyLjY2ODY4MSwtMS43NDA1ODQgMS45Nzc0MjksMCAzLjU4MDM1MywyLjMzNzg0IDMuNTgwMzUzLDUuMjIxNzEyIDAsMi44ODM4NzUgLTEuNjAyOTE0LDUuMjIxNzEzIC0zLjU4MDM1Myw1LjIyMTcxMyBIIDI5LjEzNTYwMyBtIDE1LjIzMzEzNiwyOS41ODk2MTUgYyAwLjY1NTU2NywxLjA2ODM3MSAxLjYwODI4NiwxLjc0MDY1NiAyLjY2ODU4NCwxLjc0MDY1NiAxLjk3NzQzMSwwIDMuNTgwMzUyLC0yLjMzNzc4OCAzLjU4MDM1MiwtNS4yMjE3MTQgMCwtMi44ODM5NDIgLTEuNjAyOTUyLC01LjIyMTcxMSAtMy41ODAzNTIsLTUuMjIxNzExIGggLTE3LjkwMTcyIgogICAgIHN0cm9rZT0iIzAwMDAwMCIKICAgICBzdHJva2Utd2lkdGg9IjIiCiAgICAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiCiAgICAgaWQ9InBhdGgzMTAtMyIKICAgICBpbmtzY2FwZTpsYWJlbD0icGF0aDMxMCIKICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZmZmZmZmO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiAvPgogIDxwYXRoCiAgICAgZD0ibSA1MS45ODUyMTUsMTYuMjQ4NTMxIGMgMC45ODMzMjcsLTEuNjAyNDEzIDIuNDEyNDU0LC0yLjYxMDg1NyA0LjAwMzAxMiwtMi42MTA4NTcgMi45NjYxNDcsMCA1LjM3MDUyMiwzLjUwNjc3MiA1LjM3MDUyMiw3LjgzMjU2OCAwLDQuMzI1OTI3IC0yLjQwNDM5NCw3LjgzMjU3IC01LjM3MDUyMiw3LjgzMjU3IEggMjkuMTM1NjAzIG0gOS44NjI1MzYsLTE5LjE0NjI2OSBjIDAuNjU1NTk2LC0xLjA2ODI4NjkgMS42MDgzMTUsLTEuNzQwNTgzOSAyLjY2ODY4MSwtMS43NDA1ODM5IDEuOTc3NDI5LDAgMy41ODAzNTMsMi4zMzc4Mzk5IDMuNTgwMzUzLDUuMjIxNzExOSAwLDIuODgzODc1IC0xLjYwMjkxNCw1LjIyMTcxMyAtMy41ODAzNTMsNS4yMjE3MTMgSCAyOS4xMzU2MDMgbSAxNS4yMzMxMzYsMjkuNTg5NjE1IGMgMC42NTU1NjcsMS4wNjgzNzEgMS42MDgyODYsMS43NDA2NTYgMi42Njg1ODQsMS43NDA2NTYgMS45Nzc0MzEsMCAzLjU4MDM1MiwtMi4zMzc3ODggMy41ODAzNTIsLTUuMjIxNzE0IDAsLTIuODgzOTQyIC0xLjYwMjk1MiwtNS4yMjE3MTEgLTMuNTgwMzUyLC01LjIyMTcxMSBoIC0xNy45MDE3MiIKICAgICBzdHJva2U9IiMwMDAwMDAiCiAgICAgc3Ryb2tlLXdpZHRoPSIyIgogICAgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIgogICAgIGlkPSJwYXRoMzEwIgogICAgIGlua3NjYXBlOmxhYmVsPSJwYXRoMzEwIgogICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjIuNTtzdHJva2UtZGFzaGFycmF5Om5vbmUiIC8+Cjwvc3ZnPgo="
+                                                    },
+                                                    "size": 14
+                                                }
+                                            ],
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "classMinValue": 10.1,
+                                        "classMaxValue": 15,
+                                        "label": "Cool",
+                                        "symbol": {
+                                            "type": "PointSymbol3D",
+                                            "symbolLayers": [
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "primitive": "square"
+                                                    },
+                                                    "size": 22,
+                                                    "material": {
+                                                        "color": [
+                                                            51,
+                                                            204,
+                                                            254
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGVfdGVtcGVyYXR1cmVfd2luZC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgd2lkdGg9IjY0IgogICBoZWlnaHQ9IjY0IgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzMwIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjEwLjU4NDAwMiIKICAgICBpbmtzY2FwZTpjeD0iMzMuODcxODc2IgogICAgIGlua3NjYXBlOmN5PSIyOS4yNDIyNDciCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxOTIwIgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMDEiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy15PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzI4IiAvPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0Ij4KICAgIDxzdHlsZQogICAgICAgaWQ9InN0eWxlMiI+LmNscy0xe2ZpbGw6bm9uZTt9LmNscy0xLC5jbHMtMntzdHJva2U6IzJkMmEyODtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLXdpZHRoOjJweDt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT4KICA8L2RlZnM+CiAgPHRpdGxlCiAgICAgaWQ9InRpdGxlNiI+dGVtaS12ZW5kaXRhMkAzMDB4MjwvdGl0bGU+CiAgPGcKICAgICBpZD0iTGl2ZWxsb18yIgogICAgIGRhdGEtbmFtZT0iTGl2ZWxsbyAyIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNzU1ODU3MzEsMy44NzM3NzA4KSI+CiAgICA8ZwogICAgICAgaWQ9IkxheWVyXzIiCiAgICAgICBkYXRhLW5hbWU9IkxheWVyIDIiPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDIwLjQyLDQzLjQ4IGMgMCwwIDAuNjcsNi44MSAtNy4xMiw3LjQ5IgogICAgICAgICBpZD0icGF0aDE0IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMjg7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTQuNzAyOTkiCiAgICAgICAgIHkxPSI1Ljc2NTk1NDUiCiAgICAgICAgIHgyPSIxNC43MDI5OSIKICAgICAgICAgeTI9IjM0LjUzNTk1NCIKICAgICAgICAgaWQ9ImxpbmUxNiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMTguMTE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIxOC4xMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjAiCiAgICAgICAgIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utb3BhY2l0eToxIiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIyMy4yMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjIzLjIxODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICA8L2c+CiAgPC9nPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTMxNyI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzp0aXRsZT50ZW1pLXZlbmRpdGEyQDMwMHgyPC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPHBhdGgKICAgICBkPSJtIDUxLjk4NTIxNSwxNi4yNDg1MzEgYyAwLjk4MzMyNywtMS42MDI0MTMgMi40MTI0NTQsLTIuNjEwODU3IDQuMDAzMDEyLC0yLjYxMDg1NyAyLjk2NjE0NywwIDUuMzcwNTIyLDMuNTA2NzcyIDUuMzcwNTIyLDcuODMyNTY4IDAsNC4zMjU5MjcgLTIuNDA0Mzk0LDcuODMyNTcgLTUuMzcwNTIyLDcuODMyNTcgSCAyOS4xMzU2MDMgbSA5Ljg2MjUzNiwtMTkuMTQ2MjY5IGMgMC42NTU1OTYsLTEuMDY4Mjg3IDEuNjA4MzE1LC0xLjc0MDU4NCAyLjY2ODY4MSwtMS43NDA1ODQgMS45Nzc0MjksMCAzLjU4MDM1MywyLjMzNzg0IDMuNTgwMzUzLDUuMjIxNzEyIDAsMi44ODM4NzUgLTEuNjAyOTE0LDUuMjIxNzEzIC0zLjU4MDM1Myw1LjIyMTcxMyBIIDI5LjEzNTYwMyBtIDE1LjIzMzEzNiwyOS41ODk2MTUgYyAwLjY1NTU2NywxLjA2ODM3MSAxLjYwODI4NiwxLjc0MDY1NiAyLjY2ODU4NCwxLjc0MDY1NiAxLjk3NzQzMSwwIDMuNTgwMzUyLC0yLjMzNzc4OCAzLjU4MDM1MiwtNS4yMjE3MTQgMCwtMi44ODM5NDIgLTEuNjAyOTUyLC01LjIyMTcxMSAtMy41ODAzNTIsLTUuMjIxNzExIGggLTE3LjkwMTcyIgogICAgIHN0cm9rZT0iIzAwMDAwMCIKICAgICBzdHJva2Utd2lkdGg9IjIiCiAgICAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiCiAgICAgaWQ9InBhdGgzMTAtMyIKICAgICBpbmtzY2FwZTpsYWJlbD0icGF0aDMxMCIKICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZmZmZmZmO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiAvPgogIDxwYXRoCiAgICAgZD0ibSA1MS45ODUyMTUsMTYuMjQ4NTMxIGMgMC45ODMzMjcsLTEuNjAyNDEzIDIuNDEyNDU0LC0yLjYxMDg1NyA0LjAwMzAxMiwtMi42MTA4NTcgMi45NjYxNDcsMCA1LjM3MDUyMiwzLjUwNjc3MiA1LjM3MDUyMiw3LjgzMjU2OCAwLDQuMzI1OTI3IC0yLjQwNDM5NCw3LjgzMjU3IC01LjM3MDUyMiw3LjgzMjU3IEggMjkuMTM1NjAzIG0gOS44NjI1MzYsLTE5LjE0NjI2OSBjIDAuNjU1NTk2LC0xLjA2ODI4NjkgMS42MDgzMTUsLTEuNzQwNTgzOSAyLjY2ODY4MSwtMS43NDA1ODM5IDEuOTc3NDI5LDAgMy41ODAzNTMsMi4zMzc4Mzk5IDMuNTgwMzUzLDUuMjIxNzExOSAwLDIuODgzODc1IC0xLjYwMjkxNCw1LjIyMTcxMyAtMy41ODAzNTMsNS4yMjE3MTMgSCAyOS4xMzU2MDMgbSAxNS4yMzMxMzYsMjkuNTg5NjE1IGMgMC42NTU1NjcsMS4wNjgzNzEgMS42MDgyODYsMS43NDA2NTYgMi42Njg1ODQsMS43NDA2NTYgMS45Nzc0MzEsMCAzLjU4MDM1MiwtMi4zMzc3ODggMy41ODAzNTIsLTUuMjIxNzE0IDAsLTIuODgzOTQyIC0xLjYwMjk1MiwtNS4yMjE3MTEgLTMuNTgwMzUyLC01LjIyMTcxMSBoIC0xNy45MDE3MiIKICAgICBzdHJva2U9IiMwMDAwMDAiCiAgICAgc3Ryb2tlLXdpZHRoPSIyIgogICAgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIgogICAgIGlkPSJwYXRoMzEwIgogICAgIGlua3NjYXBlOmxhYmVsPSJwYXRoMzEwIgogICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjIuNTtzdHJva2UtZGFzaGFycmF5Om5vbmUiIC8+Cjwvc3ZnPgo="
+                                                    },
+                                                    "size": 14
+                                                }
+                                            ],
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "classMinValue": 15.1,
+                                        "classMaxValue": 20,
+                                        "label": "Mild",
+                                        "symbol": {
+                                            "type": "PointSymbol3D",
+                                            "symbolLayers": [
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "primitive": "square"
+                                                    },
+                                                    "size": 22,
+                                                    "material": {
+                                                        "color": [
+                                                            255,
+                                                            234,
+                                                            0
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGVfdGVtcGVyYXR1cmVfd2luZC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgd2lkdGg9IjY0IgogICBoZWlnaHQ9IjY0IgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzMwIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjEwLjU4NDAwMiIKICAgICBpbmtzY2FwZTpjeD0iMzMuODcxODc2IgogICAgIGlua3NjYXBlOmN5PSIyOS4yNDIyNDciCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxOTIwIgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMDEiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy15PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzI4IiAvPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0Ij4KICAgIDxzdHlsZQogICAgICAgaWQ9InN0eWxlMiI+LmNscy0xe2ZpbGw6bm9uZTt9LmNscy0xLC5jbHMtMntzdHJva2U6IzJkMmEyODtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLXdpZHRoOjJweDt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT4KICA8L2RlZnM+CiAgPHRpdGxlCiAgICAgaWQ9InRpdGxlNiI+dGVtaS12ZW5kaXRhMkAzMDB4MjwvdGl0bGU+CiAgPGcKICAgICBpZD0iTGl2ZWxsb18yIgogICAgIGRhdGEtbmFtZT0iTGl2ZWxsbyAyIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNzU1ODU3MzEsMy44NzM3NzA4KSI+CiAgICA8ZwogICAgICAgaWQ9IkxheWVyXzIiCiAgICAgICBkYXRhLW5hbWU9IkxheWVyIDIiPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDIwLjQyLDQzLjQ4IGMgMCwwIDAuNjcsNi44MSAtNy4xMiw3LjQ5IgogICAgICAgICBpZD0icGF0aDE0IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMjg7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTQuNzAyOTkiCiAgICAgICAgIHkxPSI1Ljc2NTk1NDUiCiAgICAgICAgIHgyPSIxNC43MDI5OSIKICAgICAgICAgeTI9IjM0LjUzNTk1NCIKICAgICAgICAgaWQ9ImxpbmUxNiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMTguMTE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIxOC4xMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjAiCiAgICAgICAgIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utb3BhY2l0eToxIiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIyMy4yMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjIzLjIxODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICA8L2c+CiAgPC9nPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTMxNyI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzp0aXRsZT50ZW1pLXZlbmRpdGEyQDMwMHgyPC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPHBhdGgKICAgICBkPSJtIDUxLjk4NTIxNSwxNi4yNDg1MzEgYyAwLjk4MzMyNywtMS42MDI0MTMgMi40MTI0NTQsLTIuNjEwODU3IDQuMDAzMDEyLC0yLjYxMDg1NyAyLjk2NjE0NywwIDUuMzcwNTIyLDMuNTA2NzcyIDUuMzcwNTIyLDcuODMyNTY4IDAsNC4zMjU5MjcgLTIuNDA0Mzk0LDcuODMyNTcgLTUuMzcwNTIyLDcuODMyNTcgSCAyOS4xMzU2MDMgbSA5Ljg2MjUzNiwtMTkuMTQ2MjY5IGMgMC42NTU1OTYsLTEuMDY4Mjg3IDEuNjA4MzE1LC0xLjc0MDU4NCAyLjY2ODY4MSwtMS43NDA1ODQgMS45Nzc0MjksMCAzLjU4MDM1MywyLjMzNzg0IDMuNTgwMzUzLDUuMjIxNzEyIDAsMi44ODM4NzUgLTEuNjAyOTE0LDUuMjIxNzEzIC0zLjU4MDM1Myw1LjIyMTcxMyBIIDI5LjEzNTYwMyBtIDE1LjIzMzEzNiwyOS41ODk2MTUgYyAwLjY1NTU2NywxLjA2ODM3MSAxLjYwODI4NiwxLjc0MDY1NiAyLjY2ODU4NCwxLjc0MDY1NiAxLjk3NzQzMSwwIDMuNTgwMzUyLC0yLjMzNzc4OCAzLjU4MDM1MiwtNS4yMjE3MTQgMCwtMi44ODM5NDIgLTEuNjAyOTUyLC01LjIyMTcxMSAtMy41ODAzNTIsLTUuMjIxNzExIGggLTE3LjkwMTcyIgogICAgIHN0cm9rZT0iIzAwMDAwMCIKICAgICBzdHJva2Utd2lkdGg9IjIiCiAgICAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiCiAgICAgaWQ9InBhdGgzMTAtMyIKICAgICBpbmtzY2FwZTpsYWJlbD0icGF0aDMxMCIKICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZmZmZmZmO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiAvPgogIDxwYXRoCiAgICAgZD0ibSA1MS45ODUyMTUsMTYuMjQ4NTMxIGMgMC45ODMzMjcsLTEuNjAyNDEzIDIuNDEyNDU0LC0yLjYxMDg1NyA0LjAwMzAxMiwtMi42MTA4NTcgMi45NjYxNDcsMCA1LjM3MDUyMiwzLjUwNjc3MiA1LjM3MDUyMiw3LjgzMjU2OCAwLDQuMzI1OTI3IC0yLjQwNDM5NCw3LjgzMjU3IC01LjM3MDUyMiw3LjgzMjU3IEggMjkuMTM1NjAzIG0gOS44NjI1MzYsLTE5LjE0NjI2OSBjIDAuNjU1NTk2LC0xLjA2ODI4NjkgMS42MDgzMTUsLTEuNzQwNTgzOSAyLjY2ODY4MSwtMS43NDA1ODM5IDEuOTc3NDI5LDAgMy41ODAzNTMsMi4zMzc4Mzk5IDMuNTgwMzUzLDUuMjIxNzExOSAwLDIuODgzODc1IC0xLjYwMjkxNCw1LjIyMTcxMyAtMy41ODAzNTMsNS4yMjE3MTMgSCAyOS4xMzU2MDMgbSAxNS4yMzMxMzYsMjkuNTg5NjE1IGMgMC42NTU1NjcsMS4wNjgzNzEgMS42MDgyODYsMS43NDA2NTYgMi42Njg1ODQsMS43NDA2NTYgMS45Nzc0MzEsMCAzLjU4MDM1MiwtMi4zMzc3ODggMy41ODAzNTIsLTUuMjIxNzE0IDAsLTIuODgzOTQyIC0xLjYwMjk1MiwtNS4yMjE3MTEgLTMuNTgwMzUyLC01LjIyMTcxMSBoIC0xNy45MDE3MiIKICAgICBzdHJva2U9IiMwMDAwMDAiCiAgICAgc3Ryb2tlLXdpZHRoPSIyIgogICAgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIgogICAgIGlkPSJwYXRoMzEwIgogICAgIGlua3NjYXBlOmxhYmVsPSJwYXRoMzEwIgogICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjIuNTtzdHJva2UtZGFzaGFycmF5Om5vbmUiIC8+Cjwvc3ZnPgo="
+                                                    },
+                                                    "size": 14
+                                                }
+                                            ],
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "classMinValue": 20.1,
+                                        "classMaxValue": 29.9,
+                                        "label": "Warm",
+                                        "symbol": {
+                                            "type": "PointSymbol3D",
+                                            "symbolLayers": [
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "primitive": "square"
+                                                    },
+                                                    "size": 22,
+                                                    "material": {
+                                                        "color": [
+                                                            255,
+                                                            166,
+                                                            0
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGVfdGVtcGVyYXR1cmVfd2luZC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgd2lkdGg9IjY0IgogICBoZWlnaHQ9IjY0IgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzMwIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjEwLjU4NDAwMiIKICAgICBpbmtzY2FwZTpjeD0iMzMuODcxODc2IgogICAgIGlua3NjYXBlOmN5PSIyOS4yNDIyNDciCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxOTIwIgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMDEiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy15PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzI4IiAvPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0Ij4KICAgIDxzdHlsZQogICAgICAgaWQ9InN0eWxlMiI+LmNscy0xe2ZpbGw6bm9uZTt9LmNscy0xLC5jbHMtMntzdHJva2U6IzJkMmEyODtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLXdpZHRoOjJweDt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT4KICA8L2RlZnM+CiAgPHRpdGxlCiAgICAgaWQ9InRpdGxlNiI+dGVtaS12ZW5kaXRhMkAzMDB4MjwvdGl0bGU+CiAgPGcKICAgICBpZD0iTGl2ZWxsb18yIgogICAgIGRhdGEtbmFtZT0iTGl2ZWxsbyAyIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNzU1ODU3MzEsMy44NzM3NzA4KSI+CiAgICA8ZwogICAgICAgaWQ9IkxheWVyXzIiCiAgICAgICBkYXRhLW5hbWU9IkxheWVyIDIiPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDIwLjQyLDQzLjQ4IGMgMCwwIDAuNjcsNi44MSAtNy4xMiw3LjQ5IgogICAgICAgICBpZD0icGF0aDE0IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMjg7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTQuNzAyOTkiCiAgICAgICAgIHkxPSI1Ljc2NTk1NDUiCiAgICAgICAgIHgyPSIxNC43MDI5OSIKICAgICAgICAgeTI9IjM0LjUzNTk1NCIKICAgICAgICAgaWQ9ImxpbmUxNiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMTguMTE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIxOC4xMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjAiCiAgICAgICAgIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utb3BhY2l0eToxIiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIyMy4yMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjIzLjIxODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICA8L2c+CiAgPC9nPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTMxNyI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzp0aXRsZT50ZW1pLXZlbmRpdGEyQDMwMHgyPC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPHBhdGgKICAgICBkPSJtIDUxLjk4NTIxNSwxNi4yNDg1MzEgYyAwLjk4MzMyNywtMS42MDI0MTMgMi40MTI0NTQsLTIuNjEwODU3IDQuMDAzMDEyLC0yLjYxMDg1NyAyLjk2NjE0NywwIDUuMzcwNTIyLDMuNTA2NzcyIDUuMzcwNTIyLDcuODMyNTY4IDAsNC4zMjU5MjcgLTIuNDA0Mzk0LDcuODMyNTcgLTUuMzcwNTIyLDcuODMyNTcgSCAyOS4xMzU2MDMgbSA5Ljg2MjUzNiwtMTkuMTQ2MjY5IGMgMC42NTU1OTYsLTEuMDY4Mjg3IDEuNjA4MzE1LC0xLjc0MDU4NCAyLjY2ODY4MSwtMS43NDA1ODQgMS45Nzc0MjksMCAzLjU4MDM1MywyLjMzNzg0IDMuNTgwMzUzLDUuMjIxNzEyIDAsMi44ODM4NzUgLTEuNjAyOTE0LDUuMjIxNzEzIC0zLjU4MDM1Myw1LjIyMTcxMyBIIDI5LjEzNTYwMyBtIDE1LjIzMzEzNiwyOS41ODk2MTUgYyAwLjY1NTU2NywxLjA2ODM3MSAxLjYwODI4NiwxLjc0MDY1NiAyLjY2ODU4NCwxLjc0MDY1NiAxLjk3NzQzMSwwIDMuNTgwMzUyLC0yLjMzNzc4OCAzLjU4MDM1MiwtNS4yMjE3MTQgMCwtMi44ODM5NDIgLTEuNjAyOTUyLC01LjIyMTcxMSAtMy41ODAzNTIsLTUuMjIxNzExIGggLTE3LjkwMTcyIgogICAgIHN0cm9rZT0iIzAwMDAwMCIKICAgICBzdHJva2Utd2lkdGg9IjIiCiAgICAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiCiAgICAgaWQ9InBhdGgzMTAtMyIKICAgICBpbmtzY2FwZTpsYWJlbD0icGF0aDMxMCIKICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZmZmZmZmO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiAvPgogIDxwYXRoCiAgICAgZD0ibSA1MS45ODUyMTUsMTYuMjQ4NTMxIGMgMC45ODMzMjcsLTEuNjAyNDEzIDIuNDEyNDU0LC0yLjYxMDg1NyA0LjAwMzAxMiwtMi42MTA4NTcgMi45NjYxNDcsMCA1LjM3MDUyMiwzLjUwNjc3MiA1LjM3MDUyMiw3LjgzMjU2OCAwLDQuMzI1OTI3IC0yLjQwNDM5NCw3LjgzMjU3IC01LjM3MDUyMiw3LjgzMjU3IEggMjkuMTM1NjAzIG0gOS44NjI1MzYsLTE5LjE0NjI2OSBjIDAuNjU1NTk2LC0xLjA2ODI4NjkgMS42MDgzMTUsLTEuNzQwNTgzOSAyLjY2ODY4MSwtMS43NDA1ODM5IDEuOTc3NDI5LDAgMy41ODAzNTMsMi4zMzc4Mzk5IDMuNTgwMzUzLDUuMjIxNzExOSAwLDIuODgzODc1IC0xLjYwMjkxNCw1LjIyMTcxMyAtMy41ODAzNTMsNS4yMjE3MTMgSCAyOS4xMzU2MDMgbSAxNS4yMzMxMzYsMjkuNTg5NjE1IGMgMC42NTU1NjcsMS4wNjgzNzEgMS42MDgyODYsMS43NDA2NTYgMi42Njg1ODQsMS43NDA2NTYgMS45Nzc0MzEsMCAzLjU4MDM1MiwtMi4zMzc3ODggMy41ODAzNTIsLTUuMjIxNzE0IDAsLTIuODgzOTQyIC0xLjYwMjk1MiwtNS4yMjE3MTEgLTMuNTgwMzUyLC01LjIyMTcxMSBoIC0xNy45MDE3MiIKICAgICBzdHJva2U9IiMwMDAwMDAiCiAgICAgc3Ryb2tlLXdpZHRoPSIyIgogICAgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIgogICAgIGlkPSJwYXRoMzEwIgogICAgIGlua3NjYXBlOmxhYmVsPSJwYXRoMzEwIgogICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjIuNTtzdHJva2UtZGFzaGFycmF5Om5vbmUiIC8+Cjwvc3ZnPgo="
+                                                    },
+                                                    "size": 14
+                                                }
+                                            ],
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "classMinValue": 30,
+                                        "classMaxValue": 100,
+                                        "label": "Hot",
+                                        "symbol": {
+                                            "type": "PointSymbol3D",
+                                            "symbolLayers": [
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "primitive": "square"
+                                                    },
+                                                    "size": 22,
+                                                    "material": {
+                                                        "color": [
+                                                            255,
+                                                            0,
+                                                            0
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGVfdGVtcGVyYXR1cmVfd2luZC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgd2lkdGg9IjY0IgogICBoZWlnaHQ9IjY0IgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzMwIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjEwLjU4NDAwMiIKICAgICBpbmtzY2FwZTpjeD0iMzMuODcxODc2IgogICAgIGlua3NjYXBlOmN5PSIyOS4yNDIyNDciCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxOTIwIgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMDEiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy15PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzI4IiAvPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0Ij4KICAgIDxzdHlsZQogICAgICAgaWQ9InN0eWxlMiI+LmNscy0xe2ZpbGw6bm9uZTt9LmNscy0xLC5jbHMtMntzdHJva2U6IzJkMmEyODtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLXdpZHRoOjJweDt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT4KICA8L2RlZnM+CiAgPHRpdGxlCiAgICAgaWQ9InRpdGxlNiI+dGVtaS12ZW5kaXRhMkAzMDB4MjwvdGl0bGU+CiAgPGcKICAgICBpZD0iTGl2ZWxsb18yIgogICAgIGRhdGEtbmFtZT0iTGl2ZWxsbyAyIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNzU1ODU3MzEsMy44NzM3NzA4KSI+CiAgICA8ZwogICAgICAgaWQ9IkxheWVyXzIiCiAgICAgICBkYXRhLW5hbWU9IkxheWVyIDIiPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDIwLjQyLDQzLjQ4IGMgMCwwIDAuNjcsNi44MSAtNy4xMiw3LjQ5IgogICAgICAgICBpZD0icGF0aDE0IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMjg7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTQuNzAyOTkiCiAgICAgICAgIHkxPSI1Ljc2NTk1NDUiCiAgICAgICAgIHgyPSIxNC43MDI5OSIKICAgICAgICAgeTI9IjM0LjUzNTk1NCIKICAgICAgICAgaWQ9ImxpbmUxNiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMTguMTE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIxOC4xMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjAiCiAgICAgICAgIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utb3BhY2l0eToxIiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIyMy4yMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjIzLjIxODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICA8L2c+CiAgPC9nPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTMxNyI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzp0aXRsZT50ZW1pLXZlbmRpdGEyQDMwMHgyPC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPHBhdGgKICAgICBkPSJtIDUxLjk4NTIxNSwxNi4yNDg1MzEgYyAwLjk4MzMyNywtMS42MDI0MTMgMi40MTI0NTQsLTIuNjEwODU3IDQuMDAzMDEyLC0yLjYxMDg1NyAyLjk2NjE0NywwIDUuMzcwNTIyLDMuNTA2NzcyIDUuMzcwNTIyLDcuODMyNTY4IDAsNC4zMjU5MjcgLTIuNDA0Mzk0LDcuODMyNTcgLTUuMzcwNTIyLDcuODMyNTcgSCAyOS4xMzU2MDMgbSA5Ljg2MjUzNiwtMTkuMTQ2MjY5IGMgMC42NTU1OTYsLTEuMDY4Mjg3IDEuNjA4MzE1LC0xLjc0MDU4NCAyLjY2ODY4MSwtMS43NDA1ODQgMS45Nzc0MjksMCAzLjU4MDM1MywyLjMzNzg0IDMuNTgwMzUzLDUuMjIxNzEyIDAsMi44ODM4NzUgLTEuNjAyOTE0LDUuMjIxNzEzIC0zLjU4MDM1Myw1LjIyMTcxMyBIIDI5LjEzNTYwMyBtIDE1LjIzMzEzNiwyOS41ODk2MTUgYyAwLjY1NTU2NywxLjA2ODM3MSAxLjYwODI4NiwxLjc0MDY1NiAyLjY2ODU4NCwxLjc0MDY1NiAxLjk3NzQzMSwwIDMuNTgwMzUyLC0yLjMzNzc4OCAzLjU4MDM1MiwtNS4yMjE3MTQgMCwtMi44ODM5NDIgLTEuNjAyOTUyLC01LjIyMTcxMSAtMy41ODAzNTIsLTUuMjIxNzExIGggLTE3LjkwMTcyIgogICAgIHN0cm9rZT0iIzAwMDAwMCIKICAgICBzdHJva2Utd2lkdGg9IjIiCiAgICAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiCiAgICAgaWQ9InBhdGgzMTAtMyIKICAgICBpbmtzY2FwZTpsYWJlbD0icGF0aDMxMCIKICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZmZmZmZmO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiAvPgogIDxwYXRoCiAgICAgZD0ibSA1MS45ODUyMTUsMTYuMjQ4NTMxIGMgMC45ODMzMjcsLTEuNjAyNDEzIDIuNDEyNDU0LC0yLjYxMDg1NyA0LjAwMzAxMiwtMi42MTA4NTcgMi45NjYxNDcsMCA1LjM3MDUyMiwzLjUwNjc3MiA1LjM3MDUyMiw3LjgzMjU2OCAwLDQuMzI1OTI3IC0yLjQwNDM5NCw3LjgzMjU3IC01LjM3MDUyMiw3LjgzMjU3IEggMjkuMTM1NjAzIG0gOS44NjI1MzYsLTE5LjE0NjI2OSBjIDAuNjU1NTk2LC0xLjA2ODI4NjkgMS42MDgzMTUsLTEuNzQwNTgzOSAyLjY2ODY4MSwtMS43NDA1ODM5IDEuOTc3NDI5LDAgMy41ODAzNTMsMi4zMzc4Mzk5IDMuNTgwMzUzLDUuMjIxNzExOSAwLDIuODgzODc1IC0xLjYwMjkxNCw1LjIyMTcxMyAtMy41ODAzNTMsNS4yMjE3MTMgSCAyOS4xMzU2MDMgbSAxNS4yMzMxMzYsMjkuNTg5NjE1IGMgMC42NTU1NjcsMS4wNjgzNzEgMS42MDgyODYsMS43NDA2NTYgMi42Njg1ODQsMS43NDA2NTYgMS45Nzc0MzEsMCAzLjU4MDM1MiwtMi4zMzc3ODggMy41ODAzNTIsLTUuMjIxNzE0IDAsLTIuODgzOTQyIC0xLjYwMjk1MiwtNS4yMjE3MTEgLTMuNTgwMzUyLC01LjIyMTcxMSBoIC0xNy45MDE3MiIKICAgICBzdHJva2U9IiMwMDAwMDAiCiAgICAgc3Ryb2tlLXdpZHRoPSIyIgogICAgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIgogICAgIGlkPSJwYXRoMzEwIgogICAgIGlua3NjYXBlOmxhYmVsPSJwYXRoMzEwIgogICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjIuNTtzdHJva2UtZGFzaGFycmF5Om5vbmUiIC8+Cjwvc3ZnPgo="
+                                                    },
+                                                    "size": 14
+                                                }
+                                            ],
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "labelingInfo": [
+                                {
+                                    "labelExpressionInfo": {
+                                        "expression": "'Temp: ' + $feature[\"air_temperature_description\"] + TextFormatting.NewLine +'Wind: ' + $feature[\"wind_speed_kmh_description\"]"
+                                    },
+                                    "expression": "'Temp: ' + $feature[\"air_temperature_description\"] + TextFormatting.NewLine +'Wind: ' + $feature[\"wind_speed_kmh_description\"]",
+                                    "symbol": {
+                                        "type": "LabelSymbol3D",
+                                        "symbolLayers": [
+                                            {
+                                                "type": "Text",
+                                                "size": 10,
+                                                "material": {
+                                                    "color": [
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        255
+                                                    ]
+                                                },
+                                                "halo": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "size": 1.5
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "objectIdField": "world_meteorological_organization_id_wmo"
+                    }
+                }
+            ],
+            "layerType": "GroupLayer",
+            "visibilityMode": "independent"
+        },
+        {
+            "id": "",
             "title": "Open Data Transport",
             "layers": [
                 {
@@ -4119,7 +5132,7 @@
                         ],
                         "useStandardizedQueries": true,
                         "geometryType": "esriGeometryPoint",
-                        "minScale": 0,
+                        "minScale": 100000,
                         "maxScale": 0,
                         "extent": {
                             "xmin": 15692316.792632315,
@@ -6836,7 +7849,7 @@
                         ],
                         "useStandardizedQueries": true,
                         "geometryType": "esriGeometryPolyline",
-                        "minScale": 0,
+                        "minScale": 100000,
                         "maxScale": 0,
                         "extent": {
                             "xmin": 15996427.433762608,
@@ -8967,6 +9980,162 @@
             ],
             "layerType": "GroupLayer",
             "visibilityMode": "independent"
+        },
+        {
+            "id": "",
+            "layerType": "GeoJSON",
+            "title": [
+                "View 360"
+            ],
+            "url": "./data/360View.geojson",
+            "visibility": false,
+            "spatialReference": {
+                "wkid": 4326
+            },
+            "outFields": [
+                "*"
+            ],
+            "disablePopup": false,
+            "popupInfo": {
+                "title": "{site}",
+                "popupElements": [
+                    {
+                        "type": "fields"
+                    },
+                    {
+                        "type": "attachments",
+                        "displayType": "auto"
+                    }
+                ],
+                "showAttachments": true,
+                "fieldInfos": [
+                    {
+                        "fieldName": "site",
+                        "isEditable": true,
+                        "label": "Site",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "view_360_link",
+                        "isEditable": true,
+                        "label": "View 360 Link",
+                        "visible": true
+                    },
+                    {
+                        "fieldName": "home_page",
+                        "isEditable": true,
+                        "label": "Home Page",
+                        "visible": true
+                    }
+                ],
+                "expressionInfos": []
+            },
+            "refreshInterval": 0,
+            "customParameters": null,
+            "layerDefinition": {
+                "fields": [
+                    {
+                        "name": "site",
+                        "alias": "Site",
+                        "editable": false,
+                        "length": 500,
+                        "nullable": true,
+                        "type": "esriFieldTypeString"
+                    },
+                    {
+                        "name": "view_360_link",
+                        "alias": "View 360 Link",
+                        "editable": false,
+                        "length": 3000,
+                        "nullable": true,
+                        "type": "esriFieldTypeString"
+                    },
+                    {
+                        "name": "home_page",
+                        "alias": "Home Page",
+                        "editable": false,
+                        "length": 3000,
+                        "nullable": true,
+                        "type": "esriFieldTypeString"
+                    }
+                ],
+                "displayField": "site",
+                "drawingInfo": {
+                    "renderer": {
+                        "type": "simple",
+                        "symbol": {
+                            "type": "PointSymbol3D",
+                            "symbolLayers": [
+                                {
+                                    "type": "Icon",
+                                    "resource": {
+                                        "primitive": "circle"
+                                    },
+                                    "size": 18,
+                                    "material": {
+                                        "color": [
+                                            255,
+                                            255,
+                                            255
+                                        ]
+                                    },
+                                    "outline": {
+                                        "size": 1,
+                                        "color": [
+                                            110,
+                                            110,
+                                            110
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "Icon",
+                                    "resource": {
+                                        "dataURI": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTI5LjggMjQuNmMwIDIuMTQtMy45ODggMy41NDItOC44IDQuMTExdjIuNDhMMTkuNjQ3IDMwbC0xLjcwNS0xLjUgMS43MDUtMS41TDIxIDI1LjgxdjEuODk0YzQuNjgtLjU3NCA3LjgtMS44OTMgNy44LTMuMTA0IDAtMS42MDUtNS40NzQtMy40LTEyLjgtMy40UzMuMiAyMi45OTUgMy4yIDI0LjZjMCAxLjM3NyA0LjAzMiAyLjg5IDkuOCAzLjI5M3YxQzcuMzQ2IDI4LjUwNiAyLjIgMjcuMDMxIDIuMiAyNC42YzAtMi44NTggNy4xMS00LjQgMTMuOC00LjRzMTMuOCAxLjU0MiAxMy44IDQuNHpNMTguMiA3LjVhMS4zIDEuMyAwIDEgMSAxLjMgMS4zIDEuMzAxIDEuMzAxIDAgMCAxLTEuMy0xLjN6bS45NDIuMzU4YS41MDcuNTA3IDAgMSAwIDAtLjcxNy41MDguNTA4IDAgMCAwIDAgLjcxN3pNMzAgMS41ODJ2MTcuODM2QTQ0LjQ4NiA0NC40ODYgMCAwIDAgMTYgMTcuMmE0NC40ODYgNDQuNDg2IDAgMCAwLTE0IDIuMjE4VjEuNTgyQTQ0LjQ4NyA0NC40ODcgMCAwIDAgMTYgMy44YTQ0LjQ4NyA0NC40ODcgMCAwIDAgMTQtMi4yMTh6TTMgMTguMDQ0Yy4yOTUtLjA4Ny42MzctLjE4NCAxLjAxOC0uMjg1bDQuNzg2LTQuNTk3YS40ODEuNDgxIDAgMCAxIC41MzktLjA4OGwuNjIuMjkzIDQuMjI5LTMuNTc2YS40OS40OSAwIDAgMSAuNjQzLjAxczIuNjc5IDIuMzY3IDMuNTMgMy4wOThsMi4xOTMtMi4wNmEuNDkuNDkgMCAwIDEgLjY5NS4wMjVsNy43NDQgNy4xNzkuMDAzLjAwMVYyLjk1NkE0Ny4wNTYgNDcuMDU2IDAgMCAxIDE2IDQuOCA0Ny4wNTYgNDcuMDU2IDAgMCAxIDMgMi45NTZ6TTE2IDE2LjJhNDcuNTQ4IDQ3LjU0OCAwIDAgMSAxMS4xODMgMS4zNTVsLTYuMzE2LTUuNjM1LTEuODE3IDEuNzA4YTEgMSAwIDAgMS0xLjMzNi4wMyA1NTIuMjI1IDU1Mi4yMjUgMCAwIDEtMy4yMTYtMi44MTZsLTMuODkgMy4yODlhMSAxIDAgMCAxLTEuMDcyLjE0bC0uMjk3LS4xNC0zLjI5NCAzLjE2M0E0Ny42MDIgNDcuNjAyIDAgMCAxIDE2IDE2LjJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzMnYzMkgweiIvPjwvc3ZnPg=="
+                                    },
+                                    "size": 10
+                                }
+                            ]
+                        }
+                    },
+                    "labelingInfo": [
+                        {
+                            "labelExpressionInfo": {
+                                "expression": "$feature.site"
+                            },
+                            "expression": "$feature.site",
+                            "minScale": 2500,
+                            "symbol": {
+                                "type": "LabelSymbol3D",
+                                "symbolLayers": [
+                                    {
+                                        "type": "Text",
+                                        "size": 10,
+                                        "material": {
+                                            "color": [
+                                                0,
+                                                0,
+                                                0,
+                                                255
+                                            ]
+                                        },
+                                        "halo": {
+                                            "color": [
+                                                255,
+                                                255,
+                                                255,
+                                                255
+                                            ],
+                                            "size": 1.5
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "minScale": 20000
         },
         {
             "id": "",
