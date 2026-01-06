@@ -1,0 +1,25 @@
+{
+	
+	"fields" : [
+    { "name": "run_id", "alias": "Run ID", "type": "esriFieldTypeInteger" },
+    { "name": "route_id", "alias": "Route ID", "type": "esriFieldTypeString", "length": 20 },
+    { "name": "route_service_status", "alias": "Route Service Status", "type": "esriFieldTypeString", "length": 50 },
+    { "name": "destination_name", "alias": "Destination Name", "type": "esriFieldTypeString", "length": 100 },
+    { "name": "status", "alias": "Status", "type": "esriFieldTypeString", "length": 30 },
+    { "name": "vehicle_latitude", "alias": "Latitude", "type": "esriFieldTypeDouble" },
+    { "name": "vehicle_longitude", "alias": "Longitude", "type": "esriFieldTypeDouble" },
+    { "name": "vehicle_easting", "alias": "Easting", "type": "esriFieldTypeDouble" },
+    { "name": "vehicle_northing", "alias": "Northing", "type": "esriFieldTypeDouble" },
+    { "name": "vehicle_direction", "alias": "Vehicle Direction", "type": "esriFieldTypeString", "length": 20 },
+    { "name": "vehicle_bearing", "alias": "Bearing", "type": "esriFieldTypeDouble" },
+    { "name": "vehicle_supplier", "alias": "Supplier", "type": "esriFieldTypeString", "length": 100 },
+    { "name": "vehicle_datetime_utc", "alias": "DateTime (UTC)", "type": "esriFieldTypeDate" },
+    { "name": "vehicle_expiry_time", "alias": "Expiry Time", "type": "esriFieldTypeDate" },
+    { "name": "vehicle_operator", "alias": "Operator", "type": "esriFieldTypeString", "length": 100 },
+    { "name": "vehicle_id", "alias": "Vehicle ID", "type": "esriFieldTypeString", "length": 100 },
+    { "name": "vehicle_low_floor", "alias": "Low Floor", "type": "esriFieldTypeString", "length": 10 },
+    { "name": "vehicle_air_conditioned", "alias": "Air Conditioned", "type": "esriFieldTypeString", "length": 10 },
+    { "name": "vehicle_description", "alias": "Description", "type": "esriFieldTypeString", "length": 100 },
+    { "name": "vehicle_length", "alias": "Length", "type": "esriFieldTypeString", "length": 10 }
+  ]
+}

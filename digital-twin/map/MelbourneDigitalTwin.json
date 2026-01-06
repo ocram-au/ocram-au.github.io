@@ -3950,6 +3950,554 @@
         },
         {
             "id": "",
+            "title": "Vicroads Data Exchange",
+            "layers": [
+                {
+                    "id": "vicroads_data_exchange_lane_use_management_signal",
+                    "layerType": "GeoJSON",
+                    "title": [
+                        "Lane Use Management Signal"
+                    ],
+                    "url": "http://localhost:7073/api/HttpDataExchange?operation=lane_use_management_signal",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": "Lane {lane} ({panelValue})",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "siteRAIId",
+                                "isEditable": true,
+                                "label": "Site R A I Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "x",
+                                "isEditable": true,
+                                "label": "X",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "y",
+                                "isEditable": true,
+                                "label": "Y",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "enabled",
+                                "isEditable": true,
+                                "label": "Enabled",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "reportedTime",
+                                "isEditable": true,
+                                "label": "Reported Time",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "lane",
+                                "isEditable": true,
+                                "label": "Lane",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "panelValue",
+                                "isEditable": true,
+                                "label": "Panel Value",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "annulusFlashing",
+                                "isEditable": true,
+                                "label": "Annulus Flashing",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": []
+                    },
+                    "refreshInterval": 1,
+                    "customParameters": {
+                        "operation": "lane_use_management_signal"
+                    },
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "siteRAIId",
+                                "alias": "Site R A I Id",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "x",
+                                "alias": "X",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "y",
+                                "alias": "Y",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "enabled",
+                                "alias": "Enabled",
+                                "editable": false,
+                                "length": 5,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "reportedTime",
+                                "alias": "Reported Time",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "lane",
+                                "alias": "Lane",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "panelValue",
+                                "alias": "Panel Value",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "annulusFlashing",
+                                "alias": "Annulus Flashing",
+                                "editable": false,
+                                "length": 5,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            }
+                        ],
+                        "displayField": "Lane {lane} ({panelValue})",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "PointSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "primitive": "circle"
+                                            },
+                                            "size": 26,
+                                            "material": {
+                                                "color": [
+                                                    255,
+                                                    255,
+                                                    255
+                                                ]
+                                            },
+                                            "outline": {
+                                                "size": 4,
+                                                "color": [
+                                                    255,
+                                                    0,
+                                                    0
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "Icon",
+                                            "resource": {},
+                                            "size": 18
+                                        }
+                                    ]
+                                }
+                            },
+                            "labelingInfo": [
+                                {
+                                    "labelExpressionInfo": {
+                                        "expression": "$feature.panelValue"
+                                    },
+                                    "expression": "$feature.panelValue",
+                                    "minScale": 5000,
+                                    "placement": "centre",
+                                    "symbol": {
+                                        "type": "LabelSymbol3D",
+                                        "symbolLayers": [
+                                            {
+                                                "type": "Text",
+                                                "size": 10,
+                                                "material": {
+                                                    "color": [
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        255
+                                                    ]
+                                                },
+                                                "halo": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "size": 1.5
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "labelPlacement": "esriServerPointLabelPlacementCenterCenter"
+                                }
+                            ]
+                        }
+                    },
+                    "minScale": 200
+                },
+                {
+                    "id": "vicroads_data_exchange_traffic_web_cam",
+                    "layerType": "GeoJSON",
+                    "title": [
+                        "Traffic Web Cam"
+                    ],
+                    "url": "http://localhost:7074/api/HttpWebCam?operation=location",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": "{id}",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "image",
+                                "isEditable": true,
+                                "label": "Image",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": []
+                    },
+                    "refreshInterval": 1,
+                    "customParameters": {
+                        "operation": "location"
+                    },
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "image",
+                                "alias": "Image",
+                                "editable": false,
+                                "length": 3000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            }
+                        ],
+                        "displayField": "id",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "PointSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "dataURI": "http://localhost:7074/api/HttpWebCam?operation=image"
+                                            },
+                                            "size": 200
+                                        }
+                                    ]
+                                }
+                            },
+                            "labelingInfo": [
+                                {
+                                    "labelExpressionInfo": {
+                                        "expression": "$feature.id"
+                                    },
+                                    "expression": "$feature.id",
+                                    "minScale": 5000,
+                                    "placement": "centre",
+                                    "symbol": {
+                                        "type": "LabelSymbol3D",
+                                        "symbolLayers": [
+                                            {
+                                                "type": "Text",
+                                                "size": 10,
+                                                "material": {
+                                                    "color": [
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        255
+                                                    ]
+                                                },
+                                                "halo": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "size": 1.5
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "labelPlacement": "esriServerPointLabelPlacementCenterCenter"
+                                }
+                            ]
+                        }
+                    },
+                    "minScale": 200
+                },
+                {
+                    "id": "vicroads_data_exchange_freeway_travel_time",
+                    "layerType": "GeoJSON",
+                    "title": [
+                        "Freeway Travel Time"
+                    ],
+                    "url": "http://localhost:7073/api/HttpDataExchange?operation=traffic",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": "{freewayName} {segmentName}",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [],
+                        "expressionInfos": []
+                    },
+                    "refreshInterval": 1,
+                    "customParameters": {
+                        "operation": "traffic"
+                    },
+                    "layerDefinition": {
+                        "fields": [],
+                        "displayField": "{freewayName} {segmentName}",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "uniqueValue",
+                                "field1": "Condition",
+                                "defaultLabel": "Other",
+                                "uniqueValueGroups": [
+                                    {
+                                        "classes": [
+                                            {
+                                                "label": "Light",
+                                                "values": [
+                                                    [
+                                                        "Light"
+                                                    ]
+                                                ],
+                                                "symbol": {
+                                                    "type": "LineSymbol3D",
+                                                    "symbolLayers": [
+                                                        {
+                                                            "type": "Path",
+                                                            "profile": "quad",
+                                                            "material": {
+                                                                "color": [
+                                                                    0,
+                                                                    255,
+                                                                    0,
+                                                                    30
+                                                                ],
+                                                                "transparency": 30
+                                                            },
+                                                            "width": 10,
+                                                            "height": 2
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "label": "Blank",
+                                                "values": [
+                                                    [
+                                                        "Blank"
+                                                    ]
+                                                ],
+                                                "symbol": {
+                                                    "type": "LineSymbol3D",
+                                                    "symbolLayers": [
+                                                        {
+                                                            "type": "Path",
+                                                            "profile": "quad",
+                                                            "material": {
+                                                                "color": [
+                                                                    0,
+                                                                    255,
+                                                                    0,
+                                                                    30
+                                                                ],
+                                                                "transparency": 30
+                                                            },
+                                                            "width": 10,
+                                                            "height": 2
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "label": "Medium",
+                                                "values": [
+                                                    [
+                                                        "Medium"
+                                                    ]
+                                                ],
+                                                "symbol": {
+                                                    "type": "LineSymbol3D",
+                                                    "symbolLayers": [
+                                                        {
+                                                            "type": "Path",
+                                                            "profile": "quad",
+                                                            "material": {
+                                                                "color": [
+                                                                    255,
+                                                                    165,
+                                                                    0,
+                                                                    30
+                                                                ],
+                                                                "transparency": 30
+                                                            },
+                                                            "width": 10,
+                                                            "height": 2
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "label": "Heavy",
+                                                "values": [
+                                                    [
+                                                        "Heavy"
+                                                    ]
+                                                ],
+                                                "symbol": {
+                                                    "type": "LineSymbol3D",
+                                                    "symbolLayers": [
+                                                        {
+                                                            "type": "Path",
+                                                            "profile": "quad",
+                                                            "material": {
+                                                                "color": [
+                                                                    255,
+                                                                    0,
+                                                                    0,
+                                                                    30
+                                                                ],
+                                                                "transparency": 30
+                                                            },
+                                                            "width": 10,
+                                                            "height": 2
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "labelingInfo": [
+                                {
+                                    "labelExpressionInfo": {
+                                        "expression": "$feature.freewayName"
+                                    },
+                                    "size": 10,
+                                    "expression": "$feature.freewayName",
+                                    "minScale": 50000,
+                                    "symbol": {
+                                        "type": "LabelSymbol3D",
+                                        "symbolLayers": [
+                                            {
+                                                "type": "Text",
+                                                "size": 10,
+                                                "material": {
+                                                    "color": [
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        255
+                                                    ]
+                                                },
+                                                "halo": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "size": 1.5
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "objectIdField": "id"
+                    },
+                    "minScale": 100000
+                }
+            ],
+            "layerType": "GroupLayer",
+            "visibilityMode": "independent"
+        },
+        {
+            "id": "",
             "title": "Weather",
             "layers": [
                 {
@@ -4955,7 +5503,8 @@
                             ]
                         },
                         "objectIdField": "world_meteorological_organization_id_wmo"
-                    }
+                    },
+                    "minScale": 50000
                 }
             ],
             "layerType": "GroupLayer",
@@ -4970,12 +5519,12 @@
                     "showLegend": true,
                     "listMode": "show",
                     "disablePopup": false,
-                    "title": "Road Crash 2024 Bicyclist",
+                    "title": "Road Crash",
                     "url": "https://services-ap1.arcgis.com/sRWrfkKjSushj6ql/ArcGIS/rest/services/road_crash/FeatureServer/0",
                     "visibility": true,
                     "layerType": "ArcGISFeatureLayer",
                     "layerDefinition": {
-                        "currentVersion": 11.2,
+                        "currentVersion": 11.5,
                         "id": 0,
                         "name": "road crash",
                         "type": "Feature Layer",
@@ -4986,9 +5535,9 @@
                         "copyrightText": "",
                         "defaultVisibility": true,
                         "editingInfo": {
-                            "lastEditDate": 1749521433739,
-                            "schemaLastEditDate": 1749518952943,
-                            "dataLastEditDate": 1749521433739
+                            "lastEditDate": 1765433051202,
+                            "schemaLastEditDate": 1765430432882,
+                            "dataLastEditDate": 1765433051202
                         },
                         "relationships": [],
                         "isDataVersioned": false,
@@ -5015,10 +5564,10 @@
                         "enableNullGeometry": false,
                         "advancedQueryCapabilities": {
                             "supportsPagination": true,
-                            "supportsQueryAttachmentsCountOnly": true,
                             "supportsPaginationOnAggregatedQueries": true,
                             "supportsQueryRelatedPagination": true,
                             "supportsQueryWithDistance": true,
+                            "supportsOutDistance": true,
                             "supportsReturningQueryExtent": true,
                             "supportsStatistics": true,
                             "supportsOrderBy": true,
@@ -5037,7 +5586,9 @@
                                 "ConvexHullAggregate"
                             ],
                             "supportsQueryAttachments": true,
+                            "supportsQueryAttachmentsCountOnly": true,
                             "supportsQueryAttachmentOrderByFields": true,
+                            "supportsQueryAttachmentWithTypeWildcard": true,
                             "supportsLod": true,
                             "supportsQueryWithLodSR": false,
                             "supportedLodTypes": [
@@ -5059,12 +5610,19 @@
                                 "queryAnalytics",
                                 "queryAttachments",
                                 "queryRelated",
-                                "queryBins"
+                                "queryBins",
+                                "queryPivot"
                             ],
                             "supportsQueryAttachmentsWithReturnUrl": true,
                             "supportsQueryAnalytic": true,
+                            "supportsQueryPivot": true,
                             "supportsQueryBins": true,
                             "supportsDefaultSR": true,
+                            "supportsTranslations": false,
+                            "supportsAggIds": true,
+                            "supportsQueryWithCollation": true,
+                            "supportsISODOW": true,
+                            "supportsISOWeek": true,
                             "supportsFullTextSearch": true,
                             "fullTextSearchCapabilities": {
                                 "supportsAccentSensitivity": true,
@@ -5085,11 +5643,13 @@
                             "supportsFixedIntervalBin": true,
                             "supportsFixedBoundariesBin": true,
                             "supportsDateBin": true,
+                            "supportsClassificationBin": true,
                             "supportsStackBy": true,
                             "supportsSplitBy": true,
                             "supportsFirstDayOfWeek": true,
                             "supportsSnapToData": true,
                             "supportsReturnFullIntervalBin": true,
+                            "supportsReturnStackValueRange": true,
                             "supportsNormalization": true,
                             "supportedStatisticTypes": [
                                 "COUNT",
@@ -5117,6 +5677,7 @@
                                 "squareRoot"
                             ]
                         },
+                        "supportedOperationsWithCollation": "query,addField,updateField",
                         "advancedEditingCapabilities": {
                             "supportedSqlFormatsInCalculate": [
                                 "standard"
@@ -5124,7 +5685,9 @@
                             "supportsAsyncApplyEdits": true,
                             "supportsReturnEditResults": true,
                             "supportsApplyEditsbyUploadID": true,
-                            "supportedApplyEditsUploadIDFormats": "JSON"
+                            "supportedApplyEditsUploadIDFormats": "JSON,PBF",
+                            "supportsTranslation": false,
+                            "supportsMaxTranslations": 10
                         },
                         "infoInEstimates": [
                             "extent",
@@ -5135,10 +5698,10 @@
                         "minScale": 100000,
                         "maxScale": 0,
                         "extent": {
-                            "xmin": 15692316.792632315,
+                            "xmin": 15692316.458673846,
                             "ymin": -4726088.762689104,
-                            "xmax": 16670925.413668461,
-                            "ymax": -4044347.422196484,
+                            "xmax": 16670924.523112519,
+                            "ymax": -4044347.6911144312,
                             "spatialReference": {
                                 "wkid": 102100,
                                 "latestWkid": 3857
@@ -7215,6 +7778,7 @@
                         ],
                         "dateFieldsTimeReference": {
                             "timeZone": "UTC",
+                            "timeZoneIANA": "Etc/UTC",
                             "respectsDaylightSaving": false
                         },
                         "preferredTimeReference": null,
@@ -7302,16 +7866,19 @@
                             "esriSpatialRelDisjoint",
                             "esriSpatialRelRelation"
                         ],
+                        "guidFormat": "",
+                        "supportsContingentValues": true,
                         "supportedContingentValuesFormats": "JSON, PBF",
+                        "supportsFieldGroups": true,
                         "supportedSyncDataOptions": 260,
                         "hasStaticData": true,
                         "maxRecordCount": 2000,
-                        "standardMaxRecordCount": 32000,
+                        "standardMaxRecordCount": 16000,
                         "standardMaxRecordCountNoGeometry": 32000,
                         "tileMaxRecordCount": 8000,
                         "maxRecordCountFactor": 1,
                         "capabilities": "Query,Extract",
-                        "definitionExpression": "ACCIDENT_DATE_INT BETWEEN 20240101 AND 20241231 AND BICYCLIST > 0",
+                        "definitionExpression": "ACCIDENT_DATE_INT BETWEEN 20240101 AND 20241231",
                         "elevationInfo": {
                             "mode": "relativeToGround",
                             "offset": 1,
@@ -7687,7 +8254,7 @@
                     "visibility": true,
                     "layerType": "ArcGISFeatureLayer",
                     "layerDefinition": {
-                        "currentVersion": 11.2,
+                        "currentVersion": 11.5,
                         "id": 10,
                         "name": "Bike Lanes",
                         "type": "Feature Layer",
@@ -7733,10 +8300,10 @@
                         },
                         "advancedQueryCapabilities": {
                             "supportsPagination": true,
-                            "supportsQueryAttachmentsCountOnly": true,
                             "supportsPaginationOnAggregatedQueries": true,
                             "supportsQueryRelatedPagination": true,
                             "supportsQueryWithDistance": true,
+                            "supportsOutDistance": true,
                             "supportsReturningQueryExtent": true,
                             "supportsStatistics": true,
                             "supportsOrderBy": true,
@@ -7777,11 +8344,18 @@
                                 "queryAnalytics",
                                 "queryAttachments",
                                 "queryRelated",
-                                "queryBins"
+                                "queryBins",
+                                "queryPivot"
                             ],
                             "supportsQueryAnalytic": true,
+                            "supportsQueryPivot": true,
                             "supportsQueryBins": true,
                             "supportsDefaultSR": true,
+                            "supportsTranslations": false,
+                            "supportsAggIds": true,
+                            "supportsQueryWithCollation": true,
+                            "supportsISODOW": true,
+                            "supportsISOWeek": true,
                             "supportsFullTextSearch": true,
                             "fullTextSearchCapabilities": {
                                 "supportsAccentSensitivity": true,
@@ -7802,11 +8376,13 @@
                             "supportsFixedIntervalBin": true,
                             "supportsFixedBoundariesBin": true,
                             "supportsDateBin": true,
+                            "supportsClassificationBin": true,
                             "supportsStackBy": true,
                             "supportsSplitBy": true,
                             "supportsFirstDayOfWeek": true,
                             "supportsSnapToData": true,
                             "supportsReturnFullIntervalBin": true,
+                            "supportsReturnStackValueRange": true,
                             "supportsNormalization": true,
                             "supportedStatisticTypes": [
                                 "COUNT",
@@ -7834,6 +8410,7 @@
                                 "squareRoot"
                             ]
                         },
+                        "supportedOperationsWithCollation": "query,addField,updateField",
                         "advancedEditingCapabilities": {
                             "supportedSqlFormatsInCalculate": [
                                 "standard"
@@ -7841,7 +8418,9 @@
                             "supportsAsyncApplyEdits": true,
                             "supportsReturnEditResults": true,
                             "supportsApplyEditsbyUploadID": true,
-                            "supportedApplyEditsUploadIDFormats": "JSON"
+                            "supportedApplyEditsUploadIDFormats": "JSON,PBF",
+                            "supportsTranslation": false,
+                            "supportsMaxTranslations": 10
                         },
                         "infoInEstimates": [
                             "extent",
@@ -8524,6 +9103,7 @@
                         ],
                         "dateFieldsTimeReference": {
                             "timeZone": "UTC",
+                            "timeZoneIANA": "Etc/UTC",
                             "respectsDaylightSaving": false
                         },
                         "preferredTimeReference": null,
@@ -8740,11 +9320,14 @@
                             "esriSpatialRelDisjoint",
                             "esriSpatialRelRelation"
                         ],
+                        "guidFormat": "",
+                        "supportsContingentValues": true,
                         "supportedContingentValuesFormats": "JSON, PBF",
+                        "supportsFieldGroups": true,
                         "supportedSyncDataOptions": 260,
                         "hasStaticData": false,
                         "maxRecordCount": 2000,
-                        "standardMaxRecordCount": 4000,
+                        "standardMaxRecordCount": 2000,
                         "standardMaxRecordCountNoGeometry": 32000,
                         "tileMaxRecordCount": 4000,
                         "maxRecordCountFactor": 1,
@@ -8856,7 +9439,8 @@
                 }
             ],
             "layerType": "GroupLayer",
-            "visibilityMode": "independent"
+            "visibilityMode": "independent",
+            "visibility": false
         },
         {
             "id": "",
@@ -8867,7 +9451,7 @@
                     "title": "Google Photorealistic 3D",
                     "url": "https://tile.googleapis.com/v1/3dtiles/root.json",
                     "customParameters": {
-                        "key": "AIzaSyDrSNqujmAmhhZtenz6MEofEuITd3z0JM0"
+                        "key": "AIzaSyAuJtuLbQ1mMTDg9aEAbYP0HQJLYTbjybg"
                     },
                     "layerType": "IntegratedMesh3DTilesLayer",
                     "visibility": false,
@@ -9976,6 +10560,506 @@
                         }
                     },
                     "minScale": 5000
+                },
+                {
+                    "id": "ptv_train_real_time",
+                    "layerType": "GeoJSON",
+                    "title": [
+                        "Train Real Time"
+                    ],
+                    "url": "http://localhost:7072/api/httpPTVRealtime?type=train",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": "{vehicle_id}",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "run_id",
+                                "isEditable": true,
+                                "label": "Run ID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_id",
+                                "isEditable": true,
+                                "label": "Route ID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "route_service_status",
+                                "isEditable": true,
+                                "label": "Route Service Status",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "destination_name",
+                                "isEditable": true,
+                                "label": "Destination Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "status",
+                                "isEditable": true,
+                                "label": "Status",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vehicle_latitude",
+                                "isEditable": true,
+                                "label": "Latitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vehicle_longitude",
+                                "isEditable": true,
+                                "label": "Longitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vehicle_easting",
+                                "isEditable": true,
+                                "label": "Easting",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vehicle_northing",
+                                "isEditable": true,
+                                "label": "Northing",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vehicle_direction",
+                                "isEditable": true,
+                                "label": "Vehicle Direction",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vehicle_bearing",
+                                "isEditable": true,
+                                "label": "Bearing",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vehicle_supplier",
+                                "isEditable": true,
+                                "label": "Supplier",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vehicle_datetime_utc",
+                                "isEditable": true,
+                                "label": "DateTime (UTC)",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vehicle_expiry_time",
+                                "isEditable": true,
+                                "label": "Expiry Time",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vehicle_operator",
+                                "isEditable": true,
+                                "label": "Operator",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vehicle_id",
+                                "isEditable": true,
+                                "label": "Vehicle ID",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vehicle_low_floor",
+                                "isEditable": true,
+                                "label": "Low Floor",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vehicle_air_conditioned",
+                                "isEditable": true,
+                                "label": "Air Conditioned",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vehicle_description",
+                                "isEditable": true,
+                                "label": "Description",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "vehicle_length",
+                                "isEditable": true,
+                                "label": "Length",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": []
+                    },
+                    "refreshInterval": 1,
+                    "customParameters": {
+                        "type": "train"
+                    },
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "run_id",
+                                "alias": "Run ID",
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "route_id",
+                                "alias": "Route ID",
+                                "type": "esriFieldTypeString",
+                                "length": 20
+                            },
+                            {
+                                "name": "route_service_status",
+                                "alias": "Route Service Status",
+                                "type": "esriFieldTypeString",
+                                "length": 50
+                            },
+                            {
+                                "name": "destination_name",
+                                "alias": "Destination Name",
+                                "type": "esriFieldTypeString",
+                                "length": 100
+                            },
+                            {
+                                "name": "status",
+                                "alias": "Status",
+                                "type": "esriFieldTypeString",
+                                "length": 30
+                            },
+                            {
+                                "name": "vehicle_latitude",
+                                "alias": "Latitude",
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "vehicle_longitude",
+                                "alias": "Longitude",
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "vehicle_easting",
+                                "alias": "Easting",
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "vehicle_northing",
+                                "alias": "Northing",
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "vehicle_direction",
+                                "alias": "Vehicle Direction",
+                                "type": "esriFieldTypeString",
+                                "length": 20
+                            },
+                            {
+                                "name": "vehicle_bearing",
+                                "alias": "Bearing",
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "vehicle_supplier",
+                                "alias": "Supplier",
+                                "type": "esriFieldTypeString",
+                                "length": 100
+                            },
+                            {
+                                "name": "vehicle_datetime_utc",
+                                "alias": "DateTime (UTC)",
+                                "type": "esriFieldTypeDate"
+                            },
+                            {
+                                "name": "vehicle_expiry_time",
+                                "alias": "Expiry Time",
+                                "type": "esriFieldTypeDate"
+                            },
+                            {
+                                "name": "vehicle_operator",
+                                "alias": "Operator",
+                                "type": "esriFieldTypeString",
+                                "length": 100
+                            },
+                            {
+                                "name": "vehicle_id",
+                                "alias": "Vehicle ID",
+                                "type": "esriFieldTypeString",
+                                "length": 100
+                            },
+                            {
+                                "name": "vehicle_low_floor",
+                                "alias": "Low Floor",
+                                "type": "esriFieldTypeString",
+                                "length": 10
+                            },
+                            {
+                                "name": "vehicle_air_conditioned",
+                                "alias": "Air Conditioned",
+                                "type": "esriFieldTypeString",
+                                "length": 10
+                            },
+                            {
+                                "name": "vehicle_description",
+                                "alias": "Description",
+                                "type": "esriFieldTypeString",
+                                "length": 100
+                            },
+                            {
+                                "name": "vehicle_length",
+                                "alias": "Length",
+                                "type": "esriFieldTypeString",
+                                "length": 10
+                            }
+                        ],
+                        "displayField": "vehicle_id",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "uniqueValue",
+                                "field1": "vehicle_description",
+                                "defaultLabel": "Train",
+                                "uniqueValueGroups": [
+                                    {
+                                        "classes": [
+                                            {
+                                                "label": "6 Car Xtrapolis",
+                                                "values": [
+                                                    [
+                                                        "6 Car Xtrapolis"
+                                                    ]
+                                                ],
+                                                "symbol": {
+                                                    "type": "PointSymbol3D",
+                                                    "symbolLayers": [
+                                                        {
+                                                            "type": "Icon",
+                                                            "resource": {
+                                                                "dataURI": "data:image/png;base64,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"
+                                                            },
+                                                            "size": 18
+                                                        }
+                                                    ],
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 5,
+                                                        "minWorldLength": 5
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "label": "6 Car Siemens",
+                                                "values": [
+                                                    [
+                                                        "6 Car Siemens"
+                                                    ]
+                                                ],
+                                                "symbol": {
+                                                    "type": "PointSymbol3D",
+                                                    "symbolLayers": [
+                                                        {
+                                                            "type": "Icon",
+                                                            "resource": {
+                                                                "dataURI": "data:image/png;base64,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"
+                                                            },
+                                                            "size": 18
+                                                        }
+                                                    ],
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 5,
+                                                        "minWorldLength": 5
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "label": "6 Car Comeng",
+                                                "values": [
+                                                    [
+                                                        "6 Car Comeng"
+                                                    ]
+                                                ],
+                                                "symbol": {
+                                                    "type": "PointSymbol3D",
+                                                    "symbolLayers": [
+                                                        {
+                                                            "type": "Icon",
+                                                            "resource": {
+                                                                "dataURI": "data:image/png;base64,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"
+                                                            },
+                                                            "size": 18
+                                                        }
+                                                    ],
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 5,
+                                                        "minWorldLength": 5
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "label": "3 Car Silver Hitachi",
+                                                "values": [
+                                                    [
+                                                        "3 Car Silver Hitachi"
+                                                    ]
+                                                ],
+                                                "symbol": {
+                                                    "type": "PointSymbol3D",
+                                                    "symbolLayers": [
+                                                        {
+                                                            "type": "Icon",
+                                                            "resource": {
+                                                                "dataURI": "data:image/png;base64,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"
+                                                            },
+                                                            "size": 18
+                                                        }
+                                                    ],
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 5,
+                                                        "minWorldLength": 5
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "label": "3 Car Xtrapolis",
+                                                "values": [
+                                                    [
+                                                        "3 Car Xtrapolis"
+                                                    ]
+                                                ],
+                                                "symbol": {
+                                                    "type": "PointSymbol3D",
+                                                    "symbolLayers": [
+                                                        {
+                                                            "type": "Icon",
+                                                            "resource": {
+                                                                "dataURI": "data:image/png;base64,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"
+                                                            },
+                                                            "size": 18
+                                                        }
+                                                    ],
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 5,
+                                                        "minWorldLength": 5
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "label": "3 Car Any Type",
+                                                "values": [
+                                                    [
+                                                        "3 Car Any Type"
+                                                    ]
+                                                ],
+                                                "symbol": {
+                                                    "type": "PointSymbol3D",
+                                                    "symbolLayers": [
+                                                        {
+                                                            "type": "Icon",
+                                                            "resource": {
+                                                                "dataURI": "data:image/png;base64,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"
+                                                            },
+                                                            "size": 18
+                                                        }
+                                                    ],
+                                                    "verticalOffset": {
+                                                        "screenLength": 50,
+                                                        "maxWorldLength": 5,
+                                                        "minWorldLength": 5
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "defaultSymbol": {
+                                    "label": "3 Car Any Type",
+                                    "values": [
+                                        [
+                                            "3 Car Any Type"
+                                        ]
+                                    ],
+                                    "symbol": {
+                                        "type": "PointSymbol3D",
+                                        "symbolLayers": [],
+                                        "verticalOffset": {
+                                            "screenLength": 50,
+                                            "maxWorldLength": 5,
+                                            "minWorldLength": 5
+                                        }
+                                    },
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "dataURI": "data:image/png;base64,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"
+                                            },
+                                            "size": 18
+                                        }
+                                    ]
+                                }
+                            },
+                            "labelingInfo": [
+                                {
+                                    "labelExpressionInfo": {
+                                        "expression": "$feature.destination_name  + TextFormatting.NewLine + $feature.route_service_status"
+                                    },
+                                    "size": 8,
+                                    "expression": "$feature.destination_name  + TextFormatting.NewLine + $feature.route_service_status",
+                                    "minScale": 50000,
+                                    "symbol": {
+                                        "type": "LabelSymbol3D",
+                                        "symbolLayers": [
+                                            {
+                                                "type": "Text",
+                                                "size": 8,
+                                                "material": {
+                                                    "color": [
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        255
+                                                    ]
+                                                },
+                                                "halo": {
+                                                    "color": [
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        255
+                                                    ],
+                                                    "size": 1.5
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "objectIdField": "vehicle_id"
+                    },
+                    "minScale": 100000
                 }
             ],
             "layerType": "GroupLayer",
@@ -10142,7 +11226,7 @@
             "title": "Open Data",
             "layers": [
                 {
-                    "id": "",
+                    "id": "development-activity-monitor",
                     "layerType": "GeoJSON",
                     "title": "Development Activity",
                     "url": "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/development-activity-monitor/exports/geojson",
@@ -10977,7 +12061,7 @@
                     }
                 },
                 {
-                    "id": "",
+                    "id": "on-street-parking-bay-sensors",
                     "layerType": "GeoJSON",
                     "title": "On Street Parking Bay",
                     "url": "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/on-street-parking-bay-sensors/exports/geojson",
@@ -11215,7 +12299,7 @@
                                     },
                                     "expression": "var dataDiff = DateDiff(Date(Now()), Date($feature[\"status_timestamp\"]), 'minutes'); var hour = Floor(dataDiff/60); var minute = Round(dataDiff - hour*60); return hour + 'h:' + minute + 'm'",
                                     "where": "LOWER(status_description) = 'present'",
-                                    "minScale": 1000,
+                                    "minScale": 1500,
                                     "symbol": {
                                         "type": "LabelSymbol3D",
                                         "symbolLayers": [
@@ -11249,7 +12333,7 @@
                     "minScale": 1500
                 },
                 {
-                    "id": "",
+                    "id": "microclimate-sensors-data",
                     "layerType": "GeoJSON",
                     "title": "Microclimate",
                     "url": "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/microclimate-sensors-data/exports/geojson",
@@ -11676,7 +12760,7 @@
                                     },
                                     {
                                         "classMinValue": 30,
-                                        "classMaxValue": 100,
+                                        "classMaxValue": 39.9,
                                         "label": "Hot",
                                         "symbol": {
                                             "type": "PointSymbol3D",
@@ -11690,6 +12774,42 @@
                                                     "material": {
                                                         "color": [
                                                             255,
+                                                            0,
+                                                            0
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDYzLjk5OTk5OSA2NCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjgiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1pY3JvX2NsaW1hdGVfdGVtcGVyYXR1cmVfd2luZC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgd2lkdGg9IjY0IgogICBoZWlnaHQ9IjY0IgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9Im5hbWVkdmlldzMwIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjEwLjU4NDAwMiIKICAgICBpbmtzY2FwZTpjeD0iMzMuODcxODc2IgogICAgIGlua3NjYXBlOmN5PSIyOS4yNDIyNDciCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxOTIwIgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMDEiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9Ii05IgogICAgIGlua3NjYXBlOndpbmRvdy15PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzI4IiAvPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0Ij4KICAgIDxzdHlsZQogICAgICAgaWQ9InN0eWxlMiI+LmNscy0xe2ZpbGw6bm9uZTt9LmNscy0xLC5jbHMtMntzdHJva2U6IzJkMmEyODtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLXdpZHRoOjJweDt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT4KICA8L2RlZnM+CiAgPHRpdGxlCiAgICAgaWQ9InRpdGxlNiI+dGVtaS12ZW5kaXRhMkAzMDB4MjwvdGl0bGU+CiAgPGcKICAgICBpZD0iTGl2ZWxsb18yIgogICAgIGRhdGEtbmFtZT0iTGl2ZWxsbyAyIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNzU1ODU3MzEsMy44NzM3NzA4KSI+CiAgICA8ZwogICAgICAgaWQ9IkxheWVyXzIiCiAgICAgICBkYXRhLW5hbWU9IkxheWVyIDIiPgogICAgICA8cGF0aAogICAgICAgICBjbGFzcz0iY2xzLTIiCiAgICAgICAgIGQ9Ik0gMTguMywzNS41MSBWIDUuNDEgYyAwLDAgLTAuNjksLTQuNDEgLTUsLTQuNDEgLTQuMzEsMCAtNSw0LjQxIC01LDQuNDEgdiAzMC4xIGEgMTAuNTQsMTAuNTQgMCAxIDAgMTAsMCB6IgogICAgICAgICBpZD0icGF0aDEyIgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDIwLjQyLDQzLjQ4IGMgMCwwIDAuNjcsNi44MSAtNy4xMiw3LjQ5IgogICAgICAgICBpZD0icGF0aDE0IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMjg7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTQuNzAyOTkiCiAgICAgICAgIHkxPSI1Ljc2NTk1NDUiCiAgICAgICAgIHgyPSIxNC43MDI5OSIKICAgICAgICAgeTI9IjM0LjUzNTk1NCIKICAgICAgICAgaWQ9ImxpbmUxNiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjEyLjgyODcxOSIKICAgICAgICAgeDI9IjkuNDg0NzQ1IgogICAgICAgICB5Mj0iMTIuODI4NzE5IgogICAgICAgICBpZD0ibGluZTE4IgogICAgICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICAgICAgPGxpbmUKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICB4MT0iMTEuNjM5ODE1IgogICAgICAgICB5MT0iMTguMTE4NzE5IgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIxOC4xMTg3MTkiCiAgICAgICAgIGlkPSJsaW5lMjAiCiAgICAgICAgIHN0eWxlPSJzdHJva2U6IzAwMDAwMDtzdHJva2Utb3BhY2l0eToxIiAvPgogICAgICA8bGluZQogICAgICAgICBjbGFzcz0iY2xzLTEiCiAgICAgICAgIHgxPSIxMS42Mzk4MTUiCiAgICAgICAgIHkxPSIyMy4yMTg3MTkiCiAgICAgICAgIHgyPSI5LjQ4NDc0NSIKICAgICAgICAgeTI9IjIzLjIxODcxOSIKICAgICAgICAgaWQ9ImxpbmUyMiIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgIDxsaW5lCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgeDE9IjExLjYzOTgxNSIKICAgICAgICAgeTE9IjI4LjUwODcyIgogICAgICAgICB4Mj0iOS40ODQ3NDUiCiAgICAgICAgIHkyPSIyOC41MDg3MiIKICAgICAgICAgaWQ9ImxpbmUyNCIKICAgICAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICA8L2c+CiAgPC9nPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTMxNyI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzp0aXRsZT50ZW1pLXZlbmRpdGEyQDMwMHgyPC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPHBhdGgKICAgICBkPSJtIDUxLjk4NTIxNSwxNi4yNDg1MzEgYyAwLjk4MzMyNywtMS42MDI0MTMgMi40MTI0NTQsLTIuNjEwODU3IDQuMDAzMDEyLC0yLjYxMDg1NyAyLjk2NjE0NywwIDUuMzcwNTIyLDMuNTA2NzcyIDUuMzcwNTIyLDcuODMyNTY4IDAsNC4zMjU5MjcgLTIuNDA0Mzk0LDcuODMyNTcgLTUuMzcwNTIyLDcuODMyNTcgSCAyOS4xMzU2MDMgbSA5Ljg2MjUzNiwtMTkuMTQ2MjY5IGMgMC42NTU1OTYsLTEuMDY4Mjg3IDEuNjA4MzE1LC0xLjc0MDU4NCAyLjY2ODY4MSwtMS43NDA1ODQgMS45Nzc0MjksMCAzLjU4MDM1MywyLjMzNzg0IDMuNTgwMzUzLDUuMjIxNzEyIDAsMi44ODM4NzUgLTEuNjAyOTE0LDUuMjIxNzEzIC0zLjU4MDM1Myw1LjIyMTcxMyBIIDI5LjEzNTYwMyBtIDE1LjIzMzEzNiwyOS41ODk2MTUgYyAwLjY1NTU2NywxLjA2ODM3MSAxLjYwODI4NiwxLjc0MDY1NiAyLjY2ODU4NCwxLjc0MDY1NiAxLjk3NzQzMSwwIDMuNTgwMzUyLC0yLjMzNzc4OCAzLjU4MDM1MiwtNS4yMjE3MTQgMCwtMi44ODM5NDIgLTEuNjAyOTUyLC01LjIyMTcxMSAtMy41ODAzNTIsLTUuMjIxNzExIGggLTE3LjkwMTcyIgogICAgIHN0cm9rZT0iIzAwMDAwMCIKICAgICBzdHJva2Utd2lkdGg9IjIiCiAgICAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiCiAgICAgaWQ9InBhdGgzMTAtMyIKICAgICBpbmtzY2FwZTpsYWJlbD0icGF0aDMxMCIKICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZmZmZmZmO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiAvPgogIDxwYXRoCiAgICAgZD0ibSA1MS45ODUyMTUsMTYuMjQ4NTMxIGMgMC45ODMzMjcsLTEuNjAyNDEzIDIuNDEyNDU0LC0yLjYxMDg1NyA0LjAwMzAxMiwtMi42MTA4NTcgMi45NjYxNDcsMCA1LjM3MDUyMiwzLjUwNjc3MiA1LjM3MDUyMiw3LjgzMjU2OCAwLDQuMzI1OTI3IC0yLjQwNDM5NCw3LjgzMjU3IC01LjM3MDUyMiw3LjgzMjU3IEggMjkuMTM1NjAzIG0gOS44NjI1MzYsLTE5LjE0NjI2OSBjIDAuNjU1NTk2LC0xLjA2ODI4NjkgMS42MDgzMTUsLTEuNzQwNTgzOSAyLjY2ODY4MSwtMS43NDA1ODM5IDEuOTc3NDI5LDAgMy41ODAzNTMsMi4zMzc4Mzk5IDMuNTgwMzUzLDUuMjIxNzExOSAwLDIuODgzODc1IC0xLjYwMjkxNCw1LjIyMTcxMyAtMy41ODAzNTMsNS4yMjE3MTMgSCAyOS4xMzU2MDMgbSAxNS4yMzMxMzYsMjkuNTg5NjE1IGMgMC42NTU1NjcsMS4wNjgzNzEgMS42MDgyODYsMS43NDA2NTYgMi42Njg1ODQsMS43NDA2NTYgMS45Nzc0MzEsMCAzLjU4MDM1MiwtMi4zMzc3ODggMy41ODAzNTIsLTUuMjIxNzE0IDAsLTIuODgzOTQyIC0xLjYwMjk1MiwtNS4yMjE3MTEgLTMuNTgwMzUyLC01LjIyMTcxMSBoIC0xNy45MDE3MiIKICAgICBzdHJva2U9IiMwMDAwMDAiCiAgICAgc3Ryb2tlLXdpZHRoPSIyIgogICAgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIgogICAgIGlkPSJwYXRoMzEwIgogICAgIGlua3NjYXBlOmxhYmVsPSJwYXRoMzEwIgogICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjIuNTtzdHJva2UtZGFzaGFycmF5Om5vbmUiIC8+Cjwvc3ZnPgo="
+                                                    },
+                                                    "size": 14
+                                                }
+                                            ],
+                                            "verticalOffset": {
+                                                "screenLength": 50,
+                                                "maxWorldLength": 350,
+                                                "minWorldLength": 100
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "classMinValue": 40,
+                                        "classMaxValue": 100,
+                                        "label": "Very Hot",
+                                        "symbol": {
+                                            "type": "PointSymbol3D",
+                                            "symbolLayers": [
+                                                {
+                                                    "type": "Icon",
+                                                    "resource": {
+                                                        "primitive": "square"
+                                                    },
+                                                    "size": 22,
+                                                    "material": {
+                                                        "color": [
+                                                            190,
                                                             0,
                                                             0
                                                         ]
@@ -11751,7 +12871,7 @@
                     "minScale": 50000
                 },
                 {
-                    "id": "",
+                    "id": "taxi-ranks",
                     "layerType": "GeoJSON",
                     "title": "Taxi Rank",
                     "url": "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/taxi-ranks/exports/geojson",
@@ -11946,6 +13066,173 @@
                         }
                     },
                     "minScale": 20000
+                },
+                {
+                    "id": "drinking-fountains",
+                    "layerType": "GeoJSON",
+                    "title": "Drinking Fountain",
+                    "url": "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/drinking-fountains/exports/geojson",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": "{description}",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "data-source",
+                                "isEditable": false,
+                                "label": "Data Source",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "description",
+                                "isEditable": true,
+                                "label": "Description",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "location",
+                                "isEditable": false,
+                                "label": "location",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "co_ordinates",
+                                "isEditable": true,
+                                "label": "Co Ordinates",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "lat",
+                                "isEditable": true,
+                                "label": "Lat",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "lon",
+                                "isEditable": true,
+                                "label": "Lon",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": [
+                            {
+                                "name": "location",
+                                "title": "location",
+                                "expression": "$feature.lat + ', ' + $feature.lon"
+                            },
+                            {
+                                "name": "data-source",
+                                "title": "Data Source",
+                                "expression": "`https://data.melbourne.vic.gov.au/explore/dataset/drinking-fountains`"
+                            }
+                        ]
+                    },
+                    "refreshInterval": 0,
+                    "customParameters": {
+                        "where": "description like '%bottle%'",
+                        "limit": "-1",
+                        "use_labels": "False",
+                        "epsg": 4326
+                    },
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "description",
+                                "alias": "Description",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "co_ordinates",
+                                "alias": "Co Ordinates",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "lat",
+                                "alias": "Lat",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "lon",
+                                "alias": "Lon",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            }
+                        ],
+                        "displayField": "description",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "PointSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "primitive": "circle"
+                                            },
+                                            "size": 18,
+                                            "material": {
+                                                "color": [
+                                                    0,
+                                                    200,
+                                                    255
+                                                ]
+                                            },
+                                            "outline": {
+                                                "size": 1,
+                                                "color": [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB3aWR0aD0iNjRtbSIKICAgaGVpZ2h0PSI2NG1tIgogICB2aWV3Qm94PSIwIDAgNjQgNjQiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzEwMTYiCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgc29kaXBvZGk6ZG9jbmFtZT0id2F0ZXJfZHJvcC5zdmciCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXcxMDE4IgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgaW5rc2NhcGU6ZG9jdW1lbnQtdW5pdHM9Im1tIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIyLjEyNDExNzgiCiAgICAgaW5rc2NhcGU6Y3g9IjM0Ny42NzM3NSIKICAgICBpbmtzY2FwZTpjeT0iOTYuNzQ2MDQ2IgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMzIwMCIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxNzIxIgogICAgIGlua3NjYXBlOndpbmRvdy14PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJsYXllcjEiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczEwMTMiIC8+CiAgPGcKICAgICBpbmtzY2FwZTpsYWJlbD0iTGF5ZXIgMSIKICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgIGlkPSJsYXllcjEiPgogICAgPGcKICAgICAgIGlkPSJnMTM3MSIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDUuNjE0NDk1OSwwLDAsNS41NDI0NjAzLC0yMDYuODUwODQsLTMxLjk1MTQ4MykiCiAgICAgICBzdHlsZT0iZmlsbDojMDBmZmZmO3N0cm9rZS13aWR0aDowLjg5NjMyO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtmaWxsLW9wYWNpdHk6MSI+CiAgICAgIDxwYXRoCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgZD0ibSA0Mi41NDA0OTQsNi4yMTE5MzM3IGMgMCwwIC0wLjA1ODIxLDEuMTk4NTYyNCAtMS4zNDQwODQsMi41NDUyOTE2IC0xLjI4NTg3NSwxLjM0NjcyODcgLTIuODM2MzMzLDIuODk0NTQxNyAtMi40NTUzMzMsNS4xNDM0OTk3IDAuMzgxLDIuMjQ4OTU5IDMuMDEwOTU4LDIuOTYzMzM0IDMuNzk5NDE3LDIuOTYzMzM0IDAuNzg4NDU4LDAgMy40MjEwNjEsLTAuNzExNzMgMy44MDIwNjEsLTIuOTYzMzM0IDAuMzgxLC0yLjI1MTYwNCAtMS4xNjk0NTcsLTMuNzk5NDE3IC0yLjQ1Nzk3OCwtNS4xNDM0OTk3IEMgNDIuNTk2MDU2LDcuNDEzMTQyIDQyLjU0MDQ5NCw2LjIxMTkzMzcgNDIuNTQwNDk0LDYuMjExOTMzNyBaIgogICAgICAgICBpZD0icGF0aDgiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMGZmZmY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOiMyZDJhMjg7c3Ryb2tlLXdpZHRoOjAuODk2MzI7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1kYXNoYXJyYXk6bm9uZSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDQ0Ljc5Njc0MiwxMi40MjE3NzMgYyAwLDAgMC4yNDg3MSwyLjUyNDEyNSAtMi42NDU4NCwyLjc3NTQ4IgogICAgICAgICBpZD0icGF0aDEwIgogICAgICAgICBzdHlsZT0iZmlsbDojMDBmZmZmO3N0cm9rZTojMmQyYTI4O3N0cm9rZS13aWR0aDowLjg5NjMyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtZGFzaGFycmF5Om5vbmU7ZmlsbC1vcGFjaXR5OjEiIC8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K"
+                                            },
+                                            "size": 10
+                                        }
+                                    ],
+                                    "verticalOffset": {
+                                        "screenLength": 50,
+                                        "maxWorldLength": 10,
+                                        "minWorldLength": 3
+                                    }
+                                }
+                            },
+                            "labelingInfo": []
+                        }
+                    },
+                    "minScale": 20000
                 }
             ],
             "layerType": "GroupLayer",
@@ -12131,7 +13418,7 @@
                 "id": "VicmapBaseMapVectorTileColour",
                 "layerType": "VectorTileLayer",
                 "title": "Vicmap Vector Tile Basemap Colour WM Hosted",
-                "styleUrl": "https://vicmap.land.vic.gov.au/hosting/rest/services/Hosted/Vicmap_Vector_Tile_Basemap_Colour_WM_Hosted/VectorTileServer/resources/styles/root.json",
+                "styleUrl": "https://tiles-ap1.arcgis.com/P744lA0wf4LlBZ84/arcgis/rest/services/Vicmap_Vector_Tile_Basemap_Colour_WM/VectorTileServer/resources/styles/root.json",
                 "visibility": true,
                 "opacity": 1,
                 "listMode": "show"
@@ -12160,7 +13447,7 @@
         ],
         "transparency": 0,
         "navigationConstraint": {
-            "type": "stayAbove"
+            "type": "none"
         }
     },
     "heightModelInfo": {
@@ -12200,6 +13487,6 @@
         "wkid": 3857
     },
     "viewingMode": "global",
-    "version": "1.33",
+    "version": "1.37",
     "authoringApp": "OCRAM"
 }
