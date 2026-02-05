@@ -4504,7 +4504,7 @@
                     "id": "weather_observation",
                     "layerType": "GeoJSON",
                     "title": "Observation",
-                    "url": "http://localhost:7071/api/HttpWeatherObservation",
+                    "url": "https://fa-p-lxr-aue-gis-dev.azurewebsites.net/api/WeatherObservation",
                     "visibility": true,
                     "spatialReference": {
                         "wkid": 4326
@@ -4788,7 +4788,9 @@
                         ]
                     },
                     "refreshInterval": 10,
-                    "customParameters": {},
+                    "customParameters": {
+                        "code": "a2qdFMS_q8S79HKRYzFooMmq_YHFqIRkrz1YHoXQ51ySAzFuEluO9g=="
+                    },
                     "layerDefinition": {
                         "fields": [
                             {
@@ -5535,9 +5537,9 @@
                         "copyrightText": "",
                         "defaultVisibility": true,
                         "editingInfo": {
-                            "lastEditDate": 1765433051202,
-                            "schemaLastEditDate": 1765430432882,
-                            "dataLastEditDate": 1765433051202
+                            "lastEditDate": 1769065577145,
+                            "schemaLastEditDate": 1769063098602,
+                            "dataLastEditDate": 1769065577145
                         },
                         "relationships": [],
                         "isDataVersioned": false,
