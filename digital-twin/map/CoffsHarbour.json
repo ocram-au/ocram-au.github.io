@@ -3953,7 +3953,7 @@
             "title": "Google Photorealistic 3D",
             "url": "https://tile.googleapis.com/v1/3dtiles/root.json",
             "customParameters": {
-                "key": "AIzaSyCbO-hnerlEJm2dte3Psf3Ggh3UJTs3Ui0"
+                "key": "AIzaSyAuJtuLbQ1mMTDg9aEAbYP0HQJLYTbjybg"
             },
             "layerType": "IntegratedMesh3DTilesLayer",
             "visibility": false,

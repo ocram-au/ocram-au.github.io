@@ -4227,7 +4227,7 @@
                                 "name": "image",
                                 "alias": "Image",
                                 "editable": false,
-                                "length": 3000,
+                                "length": 1000000,
                                 "nullable": true,
                                 "type": "esriFieldTypeString"
                             }
@@ -5506,7 +5506,7 @@
                         },
                         "objectIdField": "world_meteorological_organization_id_wmo"
                     },
-                    "minScale": 50000
+                    "minScale": 5000000
                 }
             ],
             "layerType": "GroupLayer",
@@ -5526,7 +5526,7 @@
                     "visibility": true,
                     "layerType": "ArcGISFeatureLayer",
                     "layerDefinition": {
-                        "currentVersion": 11.5,
+                        "currentVersion": 12,
                         "id": 0,
                         "name": "road crash",
                         "type": "Feature Layer",
@@ -5537,9 +5537,9 @@
                         "copyrightText": "",
                         "defaultVisibility": true,
                         "editingInfo": {
-                            "lastEditDate": 1769065577145,
-                            "schemaLastEditDate": 1769063098602,
-                            "dataLastEditDate": 1769065577145
+                            "lastEditDate": 1776090002796,
+                            "schemaLastEditDate": 1776087106148,
+                            "dataLastEditDate": 1776090002796
                         },
                         "relationships": [],
                         "isDataVersioned": false,
@@ -8256,7 +8256,7 @@
                     "visibility": true,
                     "layerType": "ArcGISFeatureLayer",
                     "layerDefinition": {
-                        "currentVersion": 11.5,
+                        "currentVersion": 12,
                         "id": 10,
                         "name": "Bike Lanes",
                         "type": "Feature Layer",
@@ -8923,8 +8923,13 @@
                             "labelingInfo": null
                         },
                         "allowGeometryUpdates": true,
+                        "trueCurveSupportMode": "OGC",
                         "supportedCurveTypes": [
                             "esriGeometryCircularArc"
+                        ],
+                        "supportedTrueCurvePbfFeatureEncodings": [
+                            "esriCompressedShapeBuffer",
+                            "esriDefault"
                         ],
                         "allowTrueCurvesUpdates": true,
                         "onlyAllowTrueCurveUpdatesByTrueCurveClients": false,
@@ -11181,7 +11186,29 @@
                                     },
                                     "size": 10
                                 }
-                            ]
+                            ],
+                            "verticalOffset": {
+                                "screenLength": 50,
+                                "maxWorldLength": 350,
+                                "minWorldLength": 100
+                            },
+                            "callout": {
+                                "type": "line",
+                                "color": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "size": 1,
+                                "border": {
+                                    "color": [
+                                        255,
+                                        255,
+                                        255
+                                    ],
+                                    "transparency": 50
+                                }
+                            }
                         }
                     },
                     "labelingInfo": [
@@ -11222,6 +11249,514 @@
                 }
             },
             "minScale": 20000
+        },
+        {
+            "id": "",
+            "title": "Matterport",
+            "layers": [
+                {
+                    "id": "",
+                    "layerType": "GeoJSON",
+                    "title": [
+                        "AC/DC Lane"
+                    ],
+                    "url": "./data/sweeps_qwTb2uqBgcE_world.geojson",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": "{model_name}",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "model_name",
+                                "isEditable": true,
+                                "label": "Model Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "model_presented_by",
+                                "isEditable": true,
+                                "label": "Model Presented By",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "view_360",
+                                "isEditable": true,
+                                "label": "View 360",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "view_model",
+                                "isEditable": true,
+                                "label": "View Model",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "image_1",
+                                "isEditable": true,
+                                "label": "Image 1",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "image_2",
+                                "isEditable": true,
+                                "label": "Image 2",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "model_name",
+                                "isEditable": true,
+                                "label": "Model Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "id",
+                                "isEditable": true,
+                                "label": "Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "index",
+                                "isEditable": true,
+                                "label": "Index",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "local_coordinates",
+                                "isEditable": true,
+                                "label": "Local Coordinates",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "model_id",
+                                "isEditable": true,
+                                "label": "Model Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "password",
+                                "isEditable": true,
+                                "label": "Password",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": []
+                    },
+                    "refreshInterval": 0,
+                    "customParameters": null,
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "model_name",
+                                "alias": "Model Name",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "model_presented_by",
+                                "alias": "Model Presented By",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "view_360",
+                                "alias": "View 360",
+                                "editable": false,
+                                "length": 3000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "view_model",
+                                "alias": "View Model",
+                                "editable": false,
+                                "length": 3000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "image_1",
+                                "alias": "Image 1",
+                                "editable": false,
+                                "length": 1000000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "image_2",
+                                "alias": "Image 2",
+                                "editable": false,
+                                "length": 1000000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "model_name",
+                                "alias": "Model Name",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "id",
+                                "alias": "Id",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "index",
+                                "alias": "Index",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "local_coordinates",
+                                "alias": "Local Coordinates",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "model_id",
+                                "alias": "Model Id",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "password",
+                                "alias": "Password",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            }
+                        ],
+                        "displayField": "model_name",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "PointSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "primitive": "circle"
+                                            },
+                                            "size": 14,
+                                            "material": {
+                                                "color": [
+                                                    136,
+                                                    206,
+                                                    215
+                                                ]
+                                            },
+                                            "outline": {
+                                                "size": 2,
+                                                "color": [
+                                                    18,
+                                                    158,
+                                                    175
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "Icon",
+                                            "resource": {},
+                                            "size": 6
+                                        }
+                                    ],
+                                    "verticalOffset": {
+                                        "screenLength": 50,
+                                        "maxWorldLength": 100,
+                                        "minWorldLength": 30
+                                    }
+                                }
+                            },
+                            "labelingInfo": []
+                        }
+                    }
+                },
+                {
+                    "id": "",
+                    "layerType": "GeoJSON",
+                    "title": [
+                        "Hosier Lane"
+                    ],
+                    "url": "./data/sweeps_ThBQ4pMPgar_world.geojson",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": "{model_name}",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "model_name",
+                                "isEditable": true,
+                                "label": "Model Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "model_presented_by",
+                                "isEditable": true,
+                                "label": "Model Presented By",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "view_360",
+                                "isEditable": true,
+                                "label": "View 360",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "view_model",
+                                "isEditable": true,
+                                "label": "View Model",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "image_1",
+                                "isEditable": true,
+                                "label": "Image 1",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "image_2",
+                                "isEditable": true,
+                                "label": "Image 2",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "model_name",
+                                "isEditable": true,
+                                "label": "Model Name",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "id",
+                                "isEditable": true,
+                                "label": "Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "index",
+                                "isEditable": true,
+                                "label": "Index",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "local_coordinates",
+                                "isEditable": true,
+                                "label": "Local Coordinates",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "model_id",
+                                "isEditable": true,
+                                "label": "Model Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "password",
+                                "isEditable": true,
+                                "label": "Password",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": []
+                    },
+                    "refreshInterval": 0,
+                    "customParameters": null,
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "model_name",
+                                "alias": "Model Name",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "model_presented_by",
+                                "alias": "Model Presented By",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "view_360",
+                                "alias": "View 360",
+                                "editable": false,
+                                "length": 3000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "view_model",
+                                "alias": "View Model",
+                                "editable": false,
+                                "length": 3000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "image_1",
+                                "alias": "Image 1",
+                                "editable": false,
+                                "length": 1000000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "image_2",
+                                "alias": "Image 2",
+                                "editable": false,
+                                "length": 1000000,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "model_name",
+                                "alias": "Model Name",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "id",
+                                "alias": "Id",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "index",
+                                "alias": "Index",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "local_coordinates",
+                                "alias": "Local Coordinates",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "model_id",
+                                "alias": "Model Id",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "password",
+                                "alias": "Password",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            }
+                        ],
+                        "displayField": "model_name",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "PointSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "primitive": "circle"
+                                            },
+                                            "size": 14,
+                                            "material": {
+                                                "color": [
+                                                    136,
+                                                    206,
+                                                    215
+                                                ]
+                                            },
+                                            "outline": {
+                                                "size": 2,
+                                                "color": [
+                                                    18,
+                                                    158,
+                                                    175
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "Icon",
+                                            "resource": {},
+                                            "size": 6
+                                        }
+                                    ],
+                                    "verticalOffset": {
+                                        "screenLength": 50,
+                                        "maxWorldLength": 100,
+                                        "minWorldLength": 30
+                                    }
+                                }
+                            },
+                            "labelingInfo": []
+                        }
+                    }
+                }
+            ],
+            "layerType": "GroupLayer",
+            "visibilityMode": "independent"
         },
         {
             "id": "",
@@ -13074,7 +13609,7 @@
                     "layerType": "GeoJSON",
                     "title": "Drinking Fountain",
                     "url": "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/drinking-fountains/exports/geojson",
-                    "visibility": true,
+                    "visibility": false,
                     "spatialReference": {
                         "wkid": 4326
                     },
@@ -13220,6 +13755,371 @@
                                             "type": "Icon",
                                             "resource": {
                                                 "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB3aWR0aD0iNjRtbSIKICAgaGVpZ2h0PSI2NG1tIgogICB2aWV3Qm94PSIwIDAgNjQgNjQiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzEwMTYiCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4xICg5YzZkNDFlNDEwLCAyMDIyLTA3LTE0KSIKICAgc29kaXBvZGk6ZG9jbmFtZT0id2F0ZXJfZHJvcC5zdmciCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXcxMDE4IgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgaW5rc2NhcGU6ZG9jdW1lbnQtdW5pdHM9Im1tIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIyLjEyNDExNzgiCiAgICAgaW5rc2NhcGU6Y3g9IjM0Ny42NzM3NSIKICAgICBpbmtzY2FwZTpjeT0iOTYuNzQ2MDQ2IgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMzIwMCIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxNzIxIgogICAgIGlua3NjYXBlOndpbmRvdy14PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJsYXllcjEiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczEwMTMiIC8+CiAgPGcKICAgICBpbmtzY2FwZTpsYWJlbD0iTGF5ZXIgMSIKICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgIGlkPSJsYXllcjEiPgogICAgPGcKICAgICAgIGlkPSJnMTM3MSIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDUuNjE0NDk1OSwwLDAsNS41NDI0NjAzLC0yMDYuODUwODQsLTMxLjk1MTQ4MykiCiAgICAgICBzdHlsZT0iZmlsbDojMDBmZmZmO3N0cm9rZS13aWR0aDowLjg5NjMyO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtmaWxsLW9wYWNpdHk6MSI+CiAgICAgIDxwYXRoCiAgICAgICAgIGNsYXNzPSJjbHMtMSIKICAgICAgICAgZD0ibSA0Mi41NDA0OTQsNi4yMTE5MzM3IGMgMCwwIC0wLjA1ODIxLDEuMTk4NTYyNCAtMS4zNDQwODQsMi41NDUyOTE2IC0xLjI4NTg3NSwxLjM0NjcyODcgLTIuODM2MzMzLDIuODk0NTQxNyAtMi40NTUzMzMsNS4xNDM0OTk3IDAuMzgxLDIuMjQ4OTU5IDMuMDEwOTU4LDIuOTYzMzM0IDMuNzk5NDE3LDIuOTYzMzM0IDAuNzg4NDU4LDAgMy40MjEwNjEsLTAuNzExNzMgMy44MDIwNjEsLTIuOTYzMzM0IDAuMzgxLC0yLjI1MTYwNCAtMS4xNjk0NTcsLTMuNzk5NDE3IC0yLjQ1Nzk3OCwtNS4xNDM0OTk3IEMgNDIuNTk2MDU2LDcuNDEzMTQyIDQyLjU0MDQ5NCw2LjIxMTkzMzcgNDIuNTQwNDk0LDYuMjExOTMzNyBaIgogICAgICAgICBpZD0icGF0aDgiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMGZmZmY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOiMyZDJhMjg7c3Ryb2tlLXdpZHRoOjAuODk2MzI7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1kYXNoYXJyYXk6bm9uZSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgY2xhc3M9ImNscy0xIgogICAgICAgICBkPSJtIDQ0Ljc5Njc0MiwxMi40MjE3NzMgYyAwLDAgMC4yNDg3MSwyLjUyNDEyNSAtMi42NDU4NCwyLjc3NTQ4IgogICAgICAgICBpZD0icGF0aDEwIgogICAgICAgICBzdHlsZT0iZmlsbDojMDBmZmZmO3N0cm9rZTojMmQyYTI4O3N0cm9rZS13aWR0aDowLjg5NjMyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtZGFzaGFycmF5Om5vbmU7ZmlsbC1vcGFjaXR5OjEiIC8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K"
+                                            },
+                                            "size": 10
+                                        }
+                                    ],
+                                    "verticalOffset": {
+                                        "screenLength": 50,
+                                        "maxWorldLength": 10,
+                                        "minWorldLength": 3
+                                    }
+                                }
+                            },
+                            "labelingInfo": []
+                        }
+                    },
+                    "minScale": 20000
+                },
+                {
+                    "id": "outdoor-artworks",
+                    "layerType": "GeoJSON",
+                    "title": "Outdoor Art Work",
+                    "url": "https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/outdoor-artworks/exports/geojson",
+                    "visibility": true,
+                    "spatialReference": {
+                        "wkid": 4326
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "disablePopup": false,
+                    "popupInfo": {
+                        "title": "{title}",
+                        "popupElements": [
+                            {
+                                "type": "fields"
+                            },
+                            {
+                                "type": "attachments",
+                                "displayType": "auto"
+                            }
+                        ],
+                        "showAttachments": true,
+                        "fieldInfos": [
+                            {
+                                "fieldName": "title",
+                                "isEditable": true,
+                                "label": "Title",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "inscription",
+                                "isEditable": true,
+                                "label": "Inscription",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "art_date",
+                                "isEditable": true,
+                                "label": "Art Date",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "description",
+                                "isEditable": true,
+                                "label": "Description",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "location",
+                                "isEditable": true,
+                                "label": "Location",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "data-source",
+                                "isEditable": false,
+                                "label": "Data Source",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "geo_point_2d",
+                                "isEditable": true,
+                                "label": "Geo Point 2D",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "geo_shape",
+                                "isEditable": true,
+                                "label": "Geo Shape",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "road_segment",
+                                "isEditable": true,
+                                "label": "Road Segment",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "latitude",
+                                "isEditable": true,
+                                "label": "Latitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "asset_id",
+                                "isEditable": true,
+                                "label": "Asset Id",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "history",
+                                "isEditable": true,
+                                "label": "History",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "owner_type",
+                                "isEditable": true,
+                                "label": "Owner Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "object_type",
+                                "isEditable": true,
+                                "label": "Object Type",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "longitude",
+                                "isEditable": true,
+                                "label": "Longitude",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "company",
+                                "isEditable": true,
+                                "label": "Company",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "service_manager",
+                                "isEditable": true,
+                                "label": "Service Manager",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "makers",
+                                "isEditable": true,
+                                "label": "Makers",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "property",
+                                "isEditable": true,
+                                "label": "Property",
+                                "visible": true
+                            },
+                            {
+                                "fieldName": "classification",
+                                "isEditable": true,
+                                "label": "Classification",
+                                "visible": true
+                            }
+                        ],
+                        "expressionInfos": [
+                            {
+                                "name": "data-source",
+                                "title": "Data Source",
+                                "expression": "`https://data.melbourne.vic.gov.au/explore/dataset/outdoor-artworks`"
+                            }
+                        ]
+                    },
+                    "refreshInterval": 0,
+                    "customParameters": {
+                        "limit": "-1",
+                        "use_labels": "False",
+                        "epsg": 4326
+                    },
+                    "layerDefinition": {
+                        "fields": [
+                            {
+                                "name": "geo_point_2d",
+                                "alias": "Geo Point 2D",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "geo_shape",
+                                "alias": "Geo Shape",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "road_segment",
+                                "alias": "Road Segment",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "location",
+                                "alias": "Location",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "latitude",
+                                "alias": "Latitude",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "asset_id",
+                                "alias": "Asset Id",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeInteger"
+                            },
+                            {
+                                "name": "history",
+                                "alias": "History",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "owner_type",
+                                "alias": "Owner Type",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "description",
+                                "alias": "Description",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "object_type",
+                                "alias": "Object Type",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "art_date",
+                                "alias": "Art Date",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "inscription",
+                                "alias": "Inscription",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "longitude",
+                                "alias": "Longitude",
+                                "editable": false,
+                                "length": null,
+                                "nullable": true,
+                                "type": "esriFieldTypeDouble"
+                            },
+                            {
+                                "name": "company",
+                                "alias": "Company",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "service_manager",
+                                "alias": "Service Manager",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "makers",
+                                "alias": "Makers",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "property",
+                                "alias": "Property",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "classification",
+                                "alias": "Classification",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            },
+                            {
+                                "name": "title",
+                                "alias": "Title",
+                                "editable": false,
+                                "length": 500,
+                                "nullable": true,
+                                "type": "esriFieldTypeString"
+                            }
+                        ],
+                        "displayField": "title",
+                        "drawingInfo": {
+                            "renderer": {
+                                "type": "simple",
+                                "symbol": {
+                                    "type": "PointSymbol3D",
+                                    "symbolLayers": [
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "primitive": "circle"
+                                            },
+                                            "size": 18,
+                                            "material": {
+                                                "color": [
+                                                    255,
+                                                    165,
+                                                    0
+                                                ]
+                                            },
+                                            "outline": {
+                                                "size": 1,
+                                                "color": [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "Icon",
+                                            "resource": {
+                                                "dataURI": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTIyLjg4IDExNy45IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMjIuODggMTE3LjkiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDt9PC9zdHlsZT48Zz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDUuNjYsNS4yMUM1Ni4wMSwwLjc4LDY2LjM3LTAuNzEsNzYsMC4zMWMyOC44NSwzLjA1LDUxLjA0LDI4LjY1LDQ2LjIyLDY1LjE2IGMtMi42NywyMC4yMi05LjE5LDM4LjI1LTI4LjM4LDQ3LjE2Yy05Ljk3LDQuNjMtMjAuNzIsNi4yNC0yOS4zOSw0LjcxYy0yMC4yNS0zLjU3LTE0LjQ0LTE3LjIzLTE5Ljg3LTMxLjM5IGMtNi40LTE2LjctMTkuNjQtMjEuMDItMjUuMTEsMC40MmMtMS4zOCw1LjQyLTYuMjksNy4wOC05LjI2LDcuNDFjLTYuMTMsMC42OC0xMS4wNS03LjI1LTEwLjEtMjEuMjQgQzIuMDgsNDMuNzcsMTguODIsMTYuNyw0NS42Niw1LjIxTDQ1LjY2LDUuMjF6IE0yOS41MywzNy45NmM1LjQ2LDAsOS44OCw0LjQyLDkuODgsOS44OGMwLDUuNDYtNC40Miw5Ljg4LTkuODgsOS44OCBzLTkuODgtNC40Mi05Ljg4LTkuODhDMTkuNjUsNDIuMzksMjQuMDcsMzcuOTYsMjkuNTMsMzcuOTZMMjkuNTMsMzcuOTZ6IE05NC44Nyw2MS41NGMzLjI1LDAsNS44OSwyLjY0LDUuODksNS44OSBjMCwzLjI2LTIuNjQsNS45LTUuODksNS45Yy0zLjI1LDAtNS44OS0yLjY0LTUuODktNS45Qzg4Ljk4LDY0LjE3LDkxLjYyLDYxLjU0LDk0Ljg3LDYxLjU0TDk0Ljg3LDYxLjU0eiBNNzEuNjQsNjkuODYgYzcuNDcsMCwxMy41Miw2LjA1LDEzLjUyLDEzLjUyYzAsNy40Ny02LjA1LDEzLjUyLTEzLjUyLDEzLjUyYy03LjQ3LDAtMTMuNTItNi4wNi0xMy41Mi0xMy41MiBDNTguMTMsNzUuOTEsNjQuMTgsNjkuODYsNzEuNjQsNjkuODZMNzEuNjQsNjkuODZ6IE01Ny40Myw1MC45NmMzLjI1LDAsNS44OSwyLjY0LDUuODksNS44OWMwLDMuMjUtMi42NCw1Ljg5LTUuODksNS44OSBjLTMuMjYsMC01LjktMi42NC01LjktNS44OUM1MS41NCw1My42LDU0LjE4LDUwLjk2LDU3LjQzLDUwLjk2TDU3LjQzLDUwLjk2eiBNODYuOSwyMi41NGM3LjQ3LDAsMTMuNTIsNi4wNSwxMy41MiwxMy41MiBjMCw3LjQ3LTYuMDYsMTMuNTItMTMuNTIsMTMuNTJjLTcuNDcsMC0xMy41Mi02LjA1LTEzLjUyLTEzLjUyQzczLjM4LDI4LjU5LDc5LjQzLDIyLjU0LDg2LjksMjIuNTRMODYuOSwyMi41NHogTTU2LjIyLDIwLjYzIGM0LjU5LDAsOC4zMiwzLjczLDguMzIsOC4zMmMwLDQuNTktMy43Miw4LjMyLTguMzIsOC4zMmMtNC41OSwwLTguMzItMy43My04LjMyLTguMzJDNDcuOSwyNC4zNSw1MS42MywyMC42Myw1Ni4yMiwyMC42MyBMNTYuMjIsMjAuNjN6Ii8+PC9nPjwvc3ZnPg=="
                                             },
                                             "size": 10
                                         }
